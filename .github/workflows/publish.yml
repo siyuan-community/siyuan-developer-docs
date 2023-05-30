@@ -1,10 +1,11 @@
 name: publish
 on:
-  # 监听 push 操作
+  workflow_dispatch:
   push:
     branches:
-      # 推送 main 分支触发以下任务
       - main
+    paths:
+      - docs/**
 
 jobs:
   # 任务ID
