@@ -18,8 +18,8 @@ export default defineConfig({
     themeConfig: {
         // REF https://vitepress.dev/reference/default-theme-config#logo
         logo: {
-            light: '/assets/siyuan-logo-128.png',
-            dark: '/assets/siyuan-logo-dark.svg',
+            light: '/static/siyuan-logo-128.png',
+            dark: '/static/siyuan-logo-dark.svg',
             alt: 'SiYuan logo',
         },
 
