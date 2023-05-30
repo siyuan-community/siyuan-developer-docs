@@ -1,3 +1,10 @@
+# Custom
+temp
+
+# VitePress
+docs/.vitepress/dist
+docs/.vitepress/cache
+
 # Logs
 logs
 *.log

@@ -1,0 +1,85 @@
+import { defineConfig } from 'vitepress'
+import en from './configs/en';
+import zh_Hans from './configs/zh-Hans';
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+    base: '/siyuan-developer-docs/',
+
+    title: "SiYuan Developer Docs",
+    description: "Unofficial documentation for SiYuan community developers",
+
+    // REF https://vitepress.dev/reference/site-config#markdown
+    markdown: {
+        lineNumbers: true,
+    },
+
+    // REF https://vitepress.dev/reference/default-theme-config
+    themeConfig: {
+        // REF https://vitepress.dev/reference/default-theme-config#logo
+        logo: {
+            light: '/assets/siyuan-logo-128.png',
+            dark: '/assets/siyuan-logo-dark.svg',
+            alt: 'SiYuan logo',
+        },
+
+        nav: [
+            { text: '简体中文', link: '/zh-Hans/' },
+            { text: 'English', link: '/en/' },
+            {
+                text: 'SiYuan',
+                items: [
+                    { text: 'Homepage', link: 'https://b3log.org/siyuan/en' },
+                    { text: 'Community', link: 'https://liuyun.com/' },
+                    { text: 'Project team', link: 'https://github.com/siyuan-note' },
+                    { text: 'Source repository', link: 'https://github.com/siyuan-note/siyuan' },
+                ],
+            },
+        ],
+
+        // REF https://vitepress.dev/reference/default-theme-config#sociallinks
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs' },
+        ],
+
+        footer: {
+            message: 'Released under the <a href="https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/blob/main/LICENSE" target="_black">AGPL-3.0</a> License.',
+            copyright: 'Copyright © 2023-present <a href="https://github.com/Zuoqiu-Yingyi" target="_black">Zuoqiu Yingyi</a>'
+        },
+
+        // REF https://vitepress.dev/reference/default-theme-search
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    'zh-Hans': {
+                        translations: {
+                            button: {
+                                buttonText: '搜索文档',
+                                buttonAriaLabel: '搜索文档',
+                            },
+                            modal: {
+                                noResultsText: '无法找到相关结果',
+                                resetButtonTitle: '清除查询条件',
+                                displayDetails: '显示详情列表',
+                                backButtonTitle: '返回',
+                                footer: {
+                                    selectText: '确认',
+                                    navigateText: '切换',
+                                    closeText: '关闭',
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    },
+
+    // REF https://vitepress.dev/guide/i18n
+    locales: {
+        en: en.localeConfig,
+        'zh-Hans': zh_Hans.localeConfig,
+    },
+
+});
