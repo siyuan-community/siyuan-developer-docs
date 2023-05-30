@@ -61,6 +61,7 @@ jobs:
       # 构建
       - name: Build package
         run: |
+          pnpm install
           pnpm run docs:build
 
       # 将构建产物提交到 publish 分支
