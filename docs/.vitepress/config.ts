@@ -9,6 +9,8 @@ export default defineConfig({
     title: "SiYuan Developer Docs",
     description: "Unofficial documentation for SiYuan community developers",
 
+    lastUpdated: true,
+
     // REF https://vitepress.dev/reference/site-config#markdown
     markdown: {
         lineNumbers: true,
