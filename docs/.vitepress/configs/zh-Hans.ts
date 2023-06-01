@@ -44,7 +44,7 @@ export const themeConfig: DefaultTheme.Config = {
 
     // REF https://vitepress.dev/reference/default-theme-config#editlink
     editLink: {
-        pattern: 'https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/edit/main/docs/:path',
+        pattern: 'https://github.com/siyuan-community/siyuan-developer-docs/edit/main/docs/:path',
         text: '在 GitHub 中编辑此页面',
     },
 

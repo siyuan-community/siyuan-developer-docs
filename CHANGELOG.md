@@ -7,3 +7,4 @@
 - 更改 `publish.yml` 工作流触发条件 | Change the trigger condition of `publish.yml` workflow
 - 更新文档 | Update docs
 - 更改访问基本路径 | Change the base pathname of access
+- 更新文档访问地址 | Update docs access address

@@ -21,7 +21,7 @@ Unofficial documentation for [SiYuan note](https://github.com/siyuan-note/siyuan
 
 ## DOCUMENTATION
 
-To check out docs, visit [zuoqiu-yingyi.github.io/siyuan-developer-docs](https://zuoqiu-yingyi.github.io/siyuan-developer-docs/en/).
+To check out docs, visit [docs.siyuan-note.club](https://docs.siyuan-note.club/en/)
 
 ## CHANGE LOGS
 

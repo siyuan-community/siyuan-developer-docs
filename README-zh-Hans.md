@@ -22,7 +22,7 @@
 
 ## 文档
 
-要查看本文档, 请访问 [zuoqiu-yingyi.github.io/siyuan-developer-docs](https://zuoqiu-yingyi.github.io/siyuan-developer-docs/zh-Hans/)
+要查看本文档, 请访问 [docs.siyuan-note.club](https://docs.siyuan-note.club/zh-Hans/)
 
 ## 更改日志
 

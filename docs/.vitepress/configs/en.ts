@@ -21,7 +21,7 @@ import {
 
 export const themeConfig: DefaultTheme.Config = {
     editLink: {
-        pattern: 'https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/edit/main/docs/:path',
+        pattern: 'https://github.com/siyuan-community/siyuan-developer-docs/edit/main/docs/:path',
         text: 'Edit this page on GitHub',
     },
 
