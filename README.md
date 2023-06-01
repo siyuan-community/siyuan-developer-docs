@@ -19,7 +19,6 @@
 
 Unofficial documentation for [SiYuan note](https://github.com/siyuan-note/siyuan) community developers, maintained by [community developers](https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/graphs/contributors) and powered by [VitePress](https://vitepress.vuejs.org/).
 
-
 ## DOCUMENTATION
 
 To check out docs, visit [zuoqiu-yingyi.github.io/siyuan-developer-docs](https://zuoqiu-yingyi.github.io/siyuan-developer-docs/en/).

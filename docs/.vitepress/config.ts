@@ -4,7 +4,7 @@ import zh_Hans from './configs/zh-Hans';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    base: '/siyuan-developer-docs/',
+    // base: '/siyuan-developer-docs/',
 
     title: "SiYuan Developer Docs",
     description: "Unofficial documentation for SiYuan community developers",
