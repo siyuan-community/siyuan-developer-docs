@@ -1,4 +1,9 @@
 {
+  "name": "siyuan-developer-docs",
+  "description": "Unofficial documentation for SiYuan community developers",
+  "author": "SiYuan Community",
+  "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
+  "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "vitepress": "1.0.0-beta.1"
   },

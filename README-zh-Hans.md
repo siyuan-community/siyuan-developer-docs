@@ -2,11 +2,11 @@
 <img src="./docs/public/static/siyuan-logo-512.png" style="width: 8em; height: 8em;">
 
 ---
-[![document publish status](https://img.shields.io/github/actions/workflow/status/Zuoqiu-Yingyi/siyuan-developer-docs/publish.yml?style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/actions/workflows/publish.yml)
-[![GitHub License](https://img.shields.io/github/license/Zuoqiu-Yingyi/siyuan-developer-docs?style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Zuoqiu-Yingyi/siyuan-developer-docs?style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/commits/main)
-![GitHub repo size](https://img.shields.io/github/repo-size/Zuoqiu-Yingyi/siyuan-developer-docs?style=flat-square)
-![hits](https://hits.b3log.org/Zuoqiu-Yingyi/siyuan-developer-docs.svg)
+[![document publish status](https://img.shields.io/github/actions/workflow/status/siyuan-community/siyuan-developer-docs/publish.yml?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/actions/workflows/publish.yml)
+[![GitHub License](https://img.shields.io/github/license/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
+![GitHub repo size](https://img.shields.io/github/repo-size/siyuan-community/siyuan-developer-docs?style=flat-square)
+![hits](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
 [![VitePress version](https://img.shields.io/badge/VitePress-1.0.0--beta.1-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
 
 ---
@@ -17,7 +17,7 @@
 
 # 思源开发者文档
 
-[思源笔记](https://github.com/siyuan-note/siyuan)社区开发者的非官方文档，由[社区开发者们](https://github.com/Zuoqiu-Yingyi/siyuan-developer-docs/graphs/contributors)维护， [VitePress](https://vitepress.vuejs.org/) 驱动
+[思源笔记](https://github.com/siyuan-note/siyuan)社区开发者的非官方文档，由[社区开发者们](https://github.com/siyuan-community/siyuan-developer-docs/graphs/contributors)维护， [VitePress](https://vitepress.vuejs.org/) 驱动
 
 
 ## 文档
