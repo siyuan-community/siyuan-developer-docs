@@ -9,3 +9,4 @@
 - 更改访问基本路径 | Change the base pathname of access
 - 更新文档访问地址 | Update docs access address
 - 更新文档徽标链接 | Update docs badge link
+- 更换文档发布状态徽标 | Change docs publish status badge

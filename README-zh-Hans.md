@@ -2,12 +2,12 @@
 <img src="./docs/public/static/siyuan-logo-512.png" style="width: 8em; height: 8em;">
 
 ---
-[![document publish status](https://img.shields.io/github/actions/workflow/status/siyuan-community/siyuan-developer-docs/publish.yml?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/actions/workflows/publish.yml)
-[![GitHub License](https://img.shields.io/github/license/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
-![GitHub repo size](https://img.shields.io/github/repo-size/siyuan-community/siyuan-developer-docs?style=flat-square)
-![hits](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
-[![VitePress version](https://img.shields.io/badge/VitePress-1.0.0--beta.1-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
+[![Vercel 发布状态](https://vercelbadge.vercel.app/api/siyuan-community/siyuan-developer-docs?style=flat-square)](https://docs.siyuan-note.club)
+[![GitHub 许可证](https://img.shields.io/github/license/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE)
+[![GitHub 最后一次提交时间](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
+![GitHub 仓库大小](https://img.shields.io/github/repo-size/siyuan-community/siyuan-developer-docs?style=flat-square)
+![查看次数](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
+[![VitePress 版本](https://img.shields.io/badge/VitePress-1.0.0--beta.1-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
 
 ---
 简体中文 \| [English](./README.md)
