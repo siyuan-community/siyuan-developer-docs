@@ -245,6 +245,12 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                 ],
             },
+            {
+                text: 'DOM 结构解析',
+                // link: '/zh-Hans/reference/api/kernel/',
+                items: [
+                ],
+            }
         ],
     },
 };
