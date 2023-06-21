@@ -3,7 +3,7 @@ outline: deep
 
 ---
 
-# 前置技能
+## 前置技能
 
 基础技能（必备）
 
@@ -21,7 +21,7 @@ outline: deep
 
 如果同时想要编写美观的交互界面，懂得 Svelte 会更加轻松，当然你也可以使用 Vue，但是推荐使用 Svelte，因为已经有样板工程
 
-# 开发环境及工具
+## 开发环境及工具
 
 * **Node.js** 环境
 
@@ -32,7 +32,7 @@ outline: deep
 
 思源插件开发所依赖的 js 模块以 npm 包的形式发布，并通过 pnpm 下载，代码通过 vscode 编写
 
-## 环境部署
+### 环境部署
 
 1. 下载安装 [nodejs](https://nodejs.org/en)
 2. 下载安装 [vscode](https://code.visualstudio.com/)
@@ -44,9 +44,9 @@ outline: deep
 
    具体参见 [https://pnpm.io/zh/installation](https://pnpm.io/zh/installation)
 
-# 样板工程部署
+## 样板工程部署
 
-## 简介
+### 简介
 
 样板工程目前有两个：
 
@@ -62,7 +62,7 @@ outline: deep
 
 它内置了对 **svelte** 的支持，并且能够将项目文件链接到思源的插件目录下，避免手动复制的麻烦，以及支持热重载，它使用 **vite** 打包项目
 
-## 获取样板工程源码
+### 获取样板工程源码
 
 如果你能够熟练使用 github 来管理代码，或者后续要上架官方集市，那么你应该
 
@@ -75,7 +75,7 @@ outline: deep
 1. 将项目的压缩包下载到本地
 2. 解压并导入 vscode 编辑器进行开发
 
-## 安装项目依赖
+### 安装项目依赖
 
 在 vscode 编辑器的终端中执行
 
@@ -87,7 +87,7 @@ pnpm i
 
 用于安装项目依赖，此时通过 pnpm 会向项目文件夹中创建 `node_modules` ​文件夹并下载所有相关依赖，其中主要包括 svelte 相关依赖，siyuan 插件开发相关依赖，需要注意的是，可能依赖被下载后没有被正确加载，你需要一次甚至多次重启编辑器来确保其成功加载
 
-## 构建
+### 构建
 
 到了这一步，所有准备工作已经做完，不出问题的话，控制台执行
 
@@ -97,14 +97,14 @@ pnpm build
 
 输出信息无报错，且出现 `dist` ​文件夹，以及 package.zip 文件，说明成功编译了所有文件，`dist` ​文件夹放入思源工作空间 `/data/plugin` ​目录下就能够被思源识别和加载
 
-## 具体参见
+### 具体参见
 
 * [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)（官方维护）
 * [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)（社区维护）
 
-# 项目相关文件说明
+## 项目相关文件说明
 
-## 项目结构
+### 项目结构
 
 * **/src**
 
@@ -135,7 +135,7 @@ pnpm build
 
 你需要关注的主要是 `/src` ​目录下的源码部分，以及 `plugin.json` ​这个插件配置文件
 
-## 打包文件结构
+### 打包文件结构
 
 > 无论使用何种方式编译打包，我们最终需要生成一个 package.zip，它至少包含如下文件：
 >
@@ -147,9 +147,9 @@ pnpm build
 > * preview.png (1024*768)
 > * README*.md
 
-# 项目分析及源码解析
+## 项目分析及源码解析
 
-## 项目分析
+### 项目分析
 
 * 打包及发布
 
@@ -178,7 +178,7 @@ pnpm build
 
 由于插件依赖思源本体的插件系统，它无法直接运行，所以我们本地不会有插件系统的源码，你可以在[这里](https://github.com/siyuan-note/siyuan/tree/master/app/src/plugin)查看它的源码
 
-## 源码解析
+### 源码解析
 
 不同于常规的开发，像 C 语言或者 Java 有 Main 函数作为入口，插件的入口在 `/src/index.ts`​ ​中，简化如下：
 
@@ -199,13 +199,13 @@ export default class PluginSample extends Plugin {
 
 本地查看 `siyuan.d.ts`​（在 `/node_modules/siyuan` ​下），或者网络查看[它](https://www.npmjs.com/package/siyuan?activeTab=code)，你能够看到，`Plugin` ​是一个抽象类，它还还定义了 `onunload()` ​和 `onLayoutReady()` ​方法，顾名思义，前者是在插件卸载时执行，后者是在界面加载完毕时执行，以此我们能做更多的事，如果你在开发中遇到问题，需要去了解插件系统的某个方法是如何实现的，你可以随时在[这里](https://github.com/siyuan-note/siyuan/tree/master/app/src/plugin)找到它
 
-## 前后端 API
+### 前后端 API
 
 上面说的 `siyuan.d.ts` ​它定义了前端 API，后端 API 是由思源内核提供的，官方文档在[这里](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)
 
 简而言之，插件开发就是调用前端 API 来给思源编辑器添加交互界面或控件，调用后端 API 来实现功能
 
-### 参考链接
+#### 参考链接
 
 * [一文读懂 TS 的(.d.ts)文件](https://www.jianshu.com/p/cd875a4a6c15)
 * [plugin.json 文件说明](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#pluginjson)
@@ -213,7 +213,7 @@ export default class PluginSample extends Plugin {
 * [思源前端 API 源码](https://github.com/siyuan-note/siyuan/tree/master/app/src/plugin)
 * [思源后端 API 文档](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)
 
-# 代码调试
+## 代码调试
 
 * 官方模板
 
@@ -234,9 +234,9 @@ export default class PluginSample extends Plugin {
 
 无论是在思源的控制台、vscode控制台还是浏览器控制台，你都能够看到调试信息，当然，你应该更习惯于使用浏览器的控制台
 
-# 上架集市、更新插件版本
+## 上架集市、更新插件版本
 
-## 上架集市
+### 上架集市
 
 * [上架集市 (github.com)](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#%E4%B8%8A%E6%9E%B6%E9%9B%86%E5%B8%82)
 
@@ -259,7 +259,7 @@ export default class PluginSample extends Plugin {
 >
 > 正常情况下，社区集市仓库每隔 1 小时会自动更新索引并部署，可在 [https://github.com/siyuan-note/bazaar/actions](https://github.com/siyuan-note/bazaar/actions) 查看部署状态。
 
-## 更新插件版本
+### 更新插件版本
 
 1. 通常需要将代码更改提交到仓库，一是方便代码管理与备份，二是便于他人学习与参考，当然你也可以只发布`package.zip`​
 2. 以插件的版本号作为“Tag version”，也就是`plugin.json`​中的`version`​字段，使用官方样板工程需要手动上传`package.zip`​，使用社区样板工程，在正确配置后会自动打包，无需手动上传
