@@ -104,6 +104,7 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: '快速开始',
                 items: [
+                    {text: '入门', link: '/zh-Hans/guide/plugin/'},
                 ],
             },
             {
@@ -123,6 +124,10 @@ export const themeConfig: DefaultTheme.Config = {
                         text: '事件总线',
                         items: [
                         ],
+                    },
+                    {
+                        text: '社区资源',
+                        link: '/zh-Hans/guide/plugin/development/community',
                     },
                 ],
             },
