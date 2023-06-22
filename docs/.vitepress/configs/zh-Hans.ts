@@ -104,6 +104,7 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: '快速开始',
                 items: [
+                    {text: '入门', link: '/zh-Hans/guide/plugin/startup'},
                 ],
             },
             {
@@ -123,6 +124,10 @@ export const themeConfig: DefaultTheme.Config = {
                         text: '事件总线',
                         items: [
                         ],
+                    },
+                    {
+                        text: '社区资源',
+                        link: '/zh-Hans/guide/plugin/development/community',
                     },
                 ],
             },
@@ -209,9 +214,11 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
-                text: '内核 API',
-                link: '/zh-Hans/reference/api/kernel/',
+                text: '内核',
+                // link: '/zh-Hans/reference/api/kernel/',
                 items: [
+                    {text: '内核 API', link: '/zh-Hans/reference/api/kernel/'},
+                    {text: 'SQL表结构', link: '/zh-Hans/reference/api/kernel/sql'}
                 ],
             },
             {
@@ -240,6 +247,12 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                 ],
             },
+            {
+                text: 'DOM 结构',
+                // link: '/zh-Hans/reference/api/kernel/',
+                items: [
+                ],
+            }
         ],
     },
 };

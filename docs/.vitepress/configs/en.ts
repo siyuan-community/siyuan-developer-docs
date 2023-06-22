@@ -20,6 +20,26 @@ import {
 } from 'vitepress';
 
 export const themeConfig: DefaultTheme.Config = {
+    // REF https://vitepress.dev/reference/default-theme-config#docfooter
+    docFooter: {
+        prev: 'Prev',
+        next: 'Next',
+    },
+
+    // REF https://vitepress.dev/reference/default-theme-config#lastupdatedtext
+    lastUpdatedText: 'Last updated',
+
+    // REF https://vitepress.dev/reference/default-theme-config#darkmodeswitchlabel
+    darkModeSwitchLabel: 'Dark mode',
+
+    // REF https://vitepress.dev/reference/default-theme-config#sidebarmenulabel
+    sidebarMenuLabel: 'Sidebar',
+
+    // REF https://vitepress.dev/reference/default-theme-config#returntotoplabel
+    returnToTopLabel: 'Top',
+
+    // REF https://vitepress.dev/reference/default-theme-config#langmenulabel
+    langMenuLabel: 'Language',
     editLink: {
         pattern: 'https://github.com/siyuan-community/siyuan-developer-docs/edit/main/docs/:path',
         text: 'Edit this page on GitHub',
@@ -98,6 +118,10 @@ export const themeConfig: DefaultTheme.Config = {
                         text: '事件总线',
                         items: [
                         ],
+                    },
+                    {
+                        text: 'Community Support',
+                        // link: '/zh-Hans/guide/plugin/development/community',
                     },
                 ],
             },
@@ -184,9 +208,11 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
-                text: 'Kernel API',
-                link: '/en/reference/api/kernel/',
+                text: 'Kernel',
+                // link: '/en/reference/api/kernel/',
                 items: [
+                    {text: 'Kernel API', link: '/en/reference/api/kernel/'},
+                    {text: 'SQL Table Definition', link: ''}
                 ],
             },
             {
@@ -213,6 +239,12 @@ export const themeConfig: DefaultTheme.Config = {
                         items: [
                         ],
                     },
+                ],
+            },
+            {
+                text: 'DOM Structure',
+                // link: '/zh-Hans/reference/api/kernel/',
+                items: [
                 ],
             },
         ],
