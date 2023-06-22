@@ -214,9 +214,11 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
-                text: '内核 API',
-                link: '/zh-Hans/reference/api/kernel/',
+                text: '内核',
+                // link: '/zh-Hans/reference/api/kernel/',
                 items: [
+                    {text: '内核 API', link: '/zh-Hans/reference/api/kernel/'},
+                    {text: 'SQL表结构', link: ''}
                 ],
             },
             {
@@ -246,7 +248,7 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
-                text: 'DOM 结构解析',
+                text: 'DOM 结构',
                 // link: '/zh-Hans/reference/api/kernel/',
                 items: [
                 ],
