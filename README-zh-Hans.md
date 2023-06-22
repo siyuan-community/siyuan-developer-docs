@@ -7,7 +7,7 @@
 [![GitHub 最后一次提交时间](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
 ![GitHub 仓库大小](https://img.shields.io/github/repo-size/siyuan-community/siyuan-developer-docs?style=flat-square)
 ![查看次数](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
-[![VitePress 版本](https://img.shields.io/badge/VitePress-1.0.0--beta.1-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
+[![VitePress 版本](https://img.shields.io/badge/VitePress-1.0.0--beta.3-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
 
 ---
 简体中文 \| [English](./README.md)

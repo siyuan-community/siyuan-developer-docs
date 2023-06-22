@@ -7,7 +7,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
 ![GitHub repo size](https://img.shields.io/github/repo-size/siyuan-community/siyuan-developer-docs?style=flat-square)
 ![hits](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
-[![VitePress version](https://img.shields.io/badge/VitePress-1.0.0--beta.1-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
+[![VitePress version](https://img.shields.io/badge/VitePress-1.0.0--beta.3-10B981?style=flat-square)](https://github.com/vuejs/vitepress)
 
 ---
 [简体中文](./README-zh-Hans.md) \| English
