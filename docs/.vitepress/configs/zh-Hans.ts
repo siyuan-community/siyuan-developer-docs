@@ -218,7 +218,7 @@ export const themeConfig: DefaultTheme.Config = {
                 // link: '/zh-Hans/reference/api/kernel/',
                 items: [
                     {text: '内核 API', link: '/zh-Hans/reference/api/kernel/'},
-                    {text: 'SQL表结构', link: ''}
+                    {text: 'SQL表结构', link: '/zh-Hans/reference/api/kernel/sql'}
                 ],
             },
             {
