@@ -63,12 +63,18 @@ export const themeConfig: DefaultTheme.Config = {
         },
         { text: '参考', link: '/zh-Hans/reference/' },
         {
+            text: '思源社区',
+            items: [
+                { text: '组织', link: 'https://github.com/siyuan-community' },
+            ],
+        },
+        {
             text: '思源笔记',
             items: [
                 { text: '官网', link: 'https://b3log.org/siyuan' },
                 { text: '社区', link: 'https://ld246.com/domain/siyuan' },
-                { text: '项目组', link: 'https://github.com/siyuan-note' },
-                { text: '源码仓库', link: 'https://github.com/siyuan-note/siyuan' },
+                { text: '组织', link: 'https://github.com/siyuan-note' },
+                { text: '仓库', link: 'https://github.com/siyuan-note/siyuan' },
             ],
         },
     ],
@@ -104,7 +110,7 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: '快速开始',
                 items: [
-                    {text: '入门', link: '/zh-Hans/guide/plugin/startup'},
+                    { text: '入门', link: '/zh-Hans/guide/plugin/startup' },
                 ],
             },
             {
@@ -122,6 +128,7 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                     {
                         text: '事件总线',
+                        link: '/zh-Hans/guide/plugin/development/event-bus/',
                         items: [
                         ],
                     },
@@ -217,8 +224,8 @@ export const themeConfig: DefaultTheme.Config = {
                 text: '内核',
                 // link: '/zh-Hans/reference/api/kernel/',
                 items: [
-                    {text: '内核 API', link: '/zh-Hans/reference/api/kernel/'},
-                    {text: 'SQL表结构', link: '/zh-Hans/reference/api/kernel/sql'}
+                    { text: '内核 API', link: '/zh-Hans/reference/api/kernel/' },
+                    { text: 'SQL表结构', link: '/zh-Hans/reference/api/kernel/sql' }
                 ],
             },
             {

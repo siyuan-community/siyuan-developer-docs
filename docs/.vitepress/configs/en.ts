@@ -59,12 +59,18 @@ export const themeConfig: DefaultTheme.Config = {
         },
         { text: 'Reference', link: '/en/reference/' },
         {
+            text: 'SiYuan Community',
+            items: [
+                { text: 'Organization', link: 'https://github.com/siyuan-community' },
+            ],
+        },
+        {
             text: 'SiYuan',
             items: [
                 { text: 'Homepage', link: 'https://b3log.org/siyuan/en' },
                 { text: 'Community', link: 'https://liuyun.com/' },
-                { text: 'Project team', link: 'https://github.com/siyuan-note' },
-                { text: 'Source repository', link: 'https://github.com/siyuan-note/siyuan' },
+                { text: 'Organization', link: 'https://github.com/siyuan-note' },
+                { text: 'Repository', link: 'https://github.com/siyuan-note/siyuan' },
             ],
         },
     ],
