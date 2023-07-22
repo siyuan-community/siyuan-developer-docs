@@ -233,7 +233,8 @@ export const themeConfig: DefaultTheme.Config = {
                 link: '/zh-Hans/reference/api/plugin/',
                 items: [
                     {
-                        text: '接口',
+                        text: '类型与接口',
+                        link: '/zh-Hans/reference/api/plugin/types',
                         items: [
                         ],
                     },
@@ -268,14 +269,10 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                     {
                         text: '方法',
+                        link: '/zh-Hans/reference/api/plugin/method',
                         items: [
                         ],
-                    },
-                    {
-                        text: '类型',
-                        items: [
-                        ],
-                    },
+                    }
                 ],
             },
             {
