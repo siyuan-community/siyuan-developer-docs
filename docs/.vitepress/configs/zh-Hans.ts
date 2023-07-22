@@ -233,25 +233,46 @@ export const themeConfig: DefaultTheme.Config = {
                 link: '/zh-Hans/reference/api/plugin/',
                 items: [
                     {
-                        text: '类',
+                        text: '类型与接口',
+                        link: '/zh-Hans/reference/api/plugin/types',
                         items: [
                         ],
                     },
                     {
-                        text: '接口',
+                        text: '类',
                         items: [
+                            {
+                                text: 'Plugin',
+                                link: '/zh-Hans/reference/api/plugin/class/Plugin',
+                            },
+                            {
+                                text: 'Dialog',
+                                link: '/zh-Hans/reference/api/plugin/class/Dialog',
+                            },
+                            {
+                                text: 'Menu',
+                                link: '/zh-Hans/reference/api/plugin/class/Menu',
+                            },
+                            {
+                                text: 'EventBus',
+                                link: '/zh-Hans/reference/api/plugin/class/EventBus',
+                            },
+                            {
+                                text: 'Setting',
+                                link: '/zh-Hans/reference/api/plugin/class/Setting',
+                            },
+                            {
+                                text: 'Lute',
+                                link: '/zh-Hans/reference/api/plugin/class/Lute',
+                            }
                         ],
                     },
                     {
                         text: '方法',
+                        link: '/zh-Hans/reference/api/plugin/method',
                         items: [
                         ],
-                    },
-                    {
-                        text: '类型',
-                        items: [
-                        ],
-                    },
+                    }
                 ],
             },
             {
