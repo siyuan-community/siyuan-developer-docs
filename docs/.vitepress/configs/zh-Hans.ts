@@ -77,6 +77,9 @@ export const themeConfig: DefaultTheme.Config = {
                 { text: '仓库', link: 'https://github.com/siyuan-note/siyuan' },
             ],
         },
+        {
+            text: '关于我们', link: '/zh-Hans/about/',
+        }
     ],
 
     // REF https://vitepress.dev/reference/default-theme-sidebar
@@ -108,6 +111,10 @@ export const themeConfig: DefaultTheme.Config = {
                 link: '/zh-Hans/guide/plugin/'
             },
             {
+                text: '5分钟快速开启插件开发',
+                link: '/zh-Hans/guide/plugin/five-minutes-quick-start'
+            },
+            {
                 text: '快速开始',
                 items: [
                     { text: '入门', link: '/zh-Hans/guide/plugin/startup' },
@@ -123,6 +130,7 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                     {
                         text: '用户界面',
+                        link: '/zh-Hans/guide/plugin/user-interface/',
                         items: [
                         ],
                     },
