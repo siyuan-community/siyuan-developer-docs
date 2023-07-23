@@ -16,6 +16,10 @@ export default defineConfig({
         lineNumbers: true,
     },
 
+    head: [
+        ['link', { rel: 'icon', type: 'image/x-icon', href: '/static/siyuan-logo-128.png' }],
+    ],
+
     // REF https://vitepress.dev/reference/default-theme-config
     themeConfig: {
         // REF https://vitepress.dev/reference/default-theme-config#logo
