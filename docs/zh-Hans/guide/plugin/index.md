@@ -7,3 +7,7 @@
     - [社区资源](/zh-Hans/guide/plugin/development/community)
 
 更多文档说明，见[插件API](/zh-Hans/reference/api/plugin/index.md)
+
+## 5分钟快速开启插件开发
+
+如果你拥有web前端开发经验，可以直接查看[5分钟快速开启插件开发](./five-minutes-quick-start.md)
