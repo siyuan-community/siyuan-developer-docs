@@ -128,6 +128,7 @@ export const themeConfig: DefaultTheme.Config = {
                         text: '用户界面',
                         link: '/zh-Hans/guide/plugin/user-interface/',
                         items: [
+                            { text: '顶栏', link: '/zh-Hans/guide/plugin/user-interface/topbar' }
                         ],
                     },
                     {
