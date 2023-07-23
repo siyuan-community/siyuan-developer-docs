@@ -111,10 +111,6 @@ export const themeConfig: DefaultTheme.Config = {
                 link: '/zh-Hans/guide/plugin/'
             },
             {
-                text: '5分钟快速开启插件开发',
-                link: '/zh-Hans/guide/plugin/five-minutes-quick-start'
-            },
-            {
                 text: '快速开始',
                 items: [
                     { text: '入门', link: '/zh-Hans/guide/plugin/startup' },
@@ -151,6 +147,15 @@ export const themeConfig: DefaultTheme.Config = {
                 items: [
                 ],
             },
+            {
+                text: '其他',
+                items: [
+                    {
+                        text: '5分钟快速开启插件开发',
+                        link: '/zh-Hans/guide/plugin/five-minutes-quick-start'
+                    },
+                ]
+            }
         ],
         '/zh-Hans/guide/template': [
             {
