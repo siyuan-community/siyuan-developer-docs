@@ -12,3 +12,4 @@
 - 更换文档发布状态徽标 | Change docs publish status badge
 - 升级 VitePress 版本 | Upgrade VitePress version
 - 添加事件介绍 | Add event introduction
+- 添加社区资源 `siyuan-sdk` 介绍 | Add the introduction of community resource `siyuan-sdk`

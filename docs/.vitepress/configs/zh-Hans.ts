@@ -294,7 +294,19 @@ export const themeConfig: DefaultTheme.Config = {
                 // link: '/zh-Hans/reference/api/kernel/',
                 items: [
                 ],
-            }
+            },
+            {
+                text: '社区资源',
+                link: '/zh-Hans/reference/community/',
+                items: [
+                    {
+                        text: 'siyuan-sdk',
+                        link: '/zh-Hans/reference/community/siyuan-sdk/',
+                        items: [
+                        ],
+                    },
+                ],
+            },
         ],
     },
 };
