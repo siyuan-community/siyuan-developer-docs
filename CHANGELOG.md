@@ -13,3 +13,4 @@
 - 升级 VitePress 版本 | Upgrade VitePress version
 - 添加事件介绍 | Add event introduction
 - 添加社区资源 `siyuan-sdk` 介绍 | Add the introduction of community resource `siyuan-sdk`
+- 完善 `siyuan-sdk` 介绍 | Improve the introduction of `siyuan-sdk`

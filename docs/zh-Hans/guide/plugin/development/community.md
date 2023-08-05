@@ -57,19 +57,4 @@ outline: deep
 
 思源内核 API 的封装，提供了一些常用的方法，可以帮助开发者更快的开发插件。
 
-所有方法提供完整的 [JSON Schema](https://json-schema.org/) 定义与 100% 的测试覆盖率。
-
-### 安装
-
-```bash
-# 使用 npm
-$ npm install @siyuan-community/siyuan-sdk
-
-# 使用 pnpm
-$ pnpm i @siyuan-community/siyuan-sdk
-
-# 使用 yarn
-$ yarn add @siyuan-community/siyuan-sdk
-```
-
 其他详细信息请参阅 [文档](/zh-Hans/reference/community/siyuan-sdk/)

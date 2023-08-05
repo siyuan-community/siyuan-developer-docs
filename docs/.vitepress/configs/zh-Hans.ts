@@ -303,6 +303,10 @@ export const themeConfig: DefaultTheme.Config = {
                         text: 'siyuan-sdk',
                         link: '/zh-Hans/reference/community/siyuan-sdk/',
                         items: [
+                            {
+                                text: '开始',
+                                link: '/zh-Hans/reference/community/siyuan-sdk/start',
+                            },
                         ],
                     },
                 ],
