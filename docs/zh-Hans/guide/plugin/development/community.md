@@ -7,6 +7,45 @@ outline: deep
 
 思源社区在发展的过程中，有热心的开发者为插件开发编写了一些工具包。这里做一些简单介绍
 
+## `siyuan-package-custom-block`
+
+|作者| github | npm |语言环境|
+|---|---|---|---|
+|zuoez02|[siyuan-package-custom-block](https://github.com/zuoez02/siyuan-package-custom-block)|[siyuan-package-custom-block](https://www.npmjs.com/package/siyuan-package-custom-block)||
+
+用于协助开发者控制基于HTML块的自定义块工具。
+
+### 代码示例
+```javascript
+const siyuan = require("siyuan");
+const { CustomBlock, CustomBlockManager } = require('siyuan-package-custom-block');
+
+class CarouselBlock extends CustomBlock {
+  static type = "CarouselBlock";
+  static css = ".hello { color: red; }";
+
+  onMount(el, data) {
+    console.log("hello world");
+    el.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="hello">hello ${data.name}</div>`
+    );
+  }
+}
+
+module.exports = class P extends siyuan.Plugin {
+  onload() {
+    CustomBlockManager.init(this);
+    CustomBlockManager.load(CarouselBlock);
+    const content = CustomBlockManager.buildBlock("CarouselBlock", {
+      name: "123",
+    });
+    // use content for paste in editor.
+    console.log(content);
+  }
+};
+```
+
 ## `sy-plugin-changelog`
 
 | 作者     | github                                                                 | npm                                                                      | 语言环境   |
