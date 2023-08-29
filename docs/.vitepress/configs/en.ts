@@ -217,8 +217,8 @@ export const themeConfig: DefaultTheme.Config = {
                 text: 'Kernel',
                 // link: '/en/reference/api/kernel/',
                 items: [
-                    {text: 'Kernel API', link: '/en/reference/api/kernel/'},
-                    {text: 'SQL Table Definition', link: ''}
+                    { text: 'Kernel API', link: '/en/reference/api/kernel/' },
+                    { text: 'SQL Table Definition', link: '' }
                 ],
             },
             {

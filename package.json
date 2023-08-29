@@ -4,8 +4,10 @@
   "author": "SiYuan Community",
   "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
   "license": "AGPL-3.0-or-later",
+  "type": "module",
   "devDependencies": {
-    "vitepress": "1.0.0-rc.10"
+    "vitepress": "1.0.0-rc.10",
+    "vue": "^3.3.4"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
