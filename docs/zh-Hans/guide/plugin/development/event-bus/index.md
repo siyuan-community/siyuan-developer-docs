@@ -11,7 +11,9 @@ outline: deep
 | `click-editorcontent`         | 编辑区点击事件                          |
 | `click-editortitleicon`       | 文档块菜单打开事件                      |
 | `click-pdf`                   | PDF 注释菜单打开事件                    |
+| `destroy-protyle`             | 编辑器关闭事件                          |
 | `input-search`                | 搜索输入框内容变更事件                  |
+| `loaded-protyle-dynamic`      | 编辑器内容动态加载事件                  |
 | `loaded-protyle`              | 编辑器加载事件                          |
 | `open-menu-av`                | 属性视图右键菜单打开事件                |
 | `open-menu-blockref`          | 块引用右键菜单打开事件                  |
@@ -35,7 +37,11 @@ outline: deep
 
 ## `click-pdf` <Badge type="tip" text="^2.9.0" />
 
+## `destroy-protyle` <Badge type="tip" text="^2.10.2" />
+
 ## `input-search` <Badge type="tip" text="^2.9.6" />
+
+## `loaded-protyle-dynamic` <Badge type="tip" text="^2.10.2" />
 
 ## `loaded-protyle` <Badge type="tip" text="^2.9.0" />
 
