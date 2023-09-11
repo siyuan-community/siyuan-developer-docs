@@ -307,6 +307,14 @@ export const themeConfig: DefaultTheme.Config = {
                                 text: '开始',
                                 link: '/zh-Hans/reference/community/siyuan-sdk/start',
                             },
+                            {
+                                text: '思源内核 API',
+                                link: '/zh-Hans/reference/community/siyuan-sdk/kernel-api',
+                            },
+                            {
+                                text: '思源文件系统',
+                                link: '/zh-Hans/reference/community/siyuan-sdk/file-system',
+                            },
                         ],
                     },
                 ],
