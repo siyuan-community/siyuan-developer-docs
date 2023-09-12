@@ -80,7 +80,7 @@
     * `icon`：图标，可以是一个定义好的 Symbol 标识符，也可以是一个 svg html
     * `title`：图标文本，当鼠标悬浮到图标上的时候会显示对应 title 的 tooltip
     * `callback`: 鼠标点击的回调函数
-    * `postion`: 图标显示在顶栏的左侧还是右侧
+    * `position`: 图标显示在顶栏的左侧还是右侧
 
 
 ## `addStatusBar`
@@ -234,4 +234,3 @@
 * 描述
 
   TODO
-

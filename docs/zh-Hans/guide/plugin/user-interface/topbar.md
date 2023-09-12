@@ -16,7 +16,7 @@ module.exports = class ExamplePlugin extends Plugin {
         this.isMobile = frontEnd === "mobile" || frontEnd === "browser-mobile";
 
         const topBarElement = this.addTopBar({
-            icon: "iconHelp",   // 使用图标库中的图标，可以在工作空间/conf/apperance/icons/index.html中查看内置图标
+            icon: "iconHelp",   // 使用图标库中的图标，可以在工作空间/conf/appearance/icons/index.html中查看内置图标
             title: 'Siyuan Example',
             position: "right",
             callback: () => {

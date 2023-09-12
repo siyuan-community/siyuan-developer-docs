@@ -446,7 +446,7 @@
 * 函数签名
 
     ```ts
-    public SetLinkRef(enalbe: boolean): void;
+    public SetLinkRef(enable: boolean): void;
     ```
 
 * 描述
@@ -551,5 +551,3 @@
 * 描述
 
     #TODO
-
-

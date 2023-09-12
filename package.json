@@ -7,17 +7,19 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.6.0",
+    "cspell": "^7.3.5",
     "vitepress": "1.0.0-rc.12",
     "vue": "^3.3.4"
   },
   "scripts": {
     "init": "npm run init:siyuan-sdk",
     "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
+    "check:spell": "cspell .",
     "docs:dev": "npm run init && vitepress dev docs",
     "docs:build": "npm run init && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@siyuan-community/siyuan-sdk": "^0.3.0"
+    "@siyuan-community/siyuan-sdk": "^0.3.1"
   }
 }
