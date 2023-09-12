@@ -5,6 +5,10 @@ outline: deep
 
 # `siyuan-SDK`
 
+| 作者          | GitHub 仓库                                                                                                                                                                                                                                                                                                              | npm                                                                                                                                                                                                                                                                        | 语言环境                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Zuoqiu-Yingyi | [siyuan-community/siyuan-sdk](https://github.com/siyuan-community/siyuan-sdk)<br/>[![GitHub 最新发行版本 (最新一次发行/预发行)](https://img.shields.io/github/v/release/siyuan-community/siyuan-sdk?include_prereleases&style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-plugin-custom-fonts/releases/latest) | [@siyuan-community/siyuan-sdk](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk)<br/>[![NPM 版本](https://img.shields.io/npm/v/%40siyuan-community/siyuan-sdk?style=flat-square)](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk?activeTab=versions) | JavaScript / TypeScript |
+
 这是一个简单易用的 [思源笔记](https://github.com/siyuan-note/siyuan) 开发工具包 (SDK)，可以帮助开发者更快的开发插件与挂件。
 
 - **100%** 的测试覆盖率
