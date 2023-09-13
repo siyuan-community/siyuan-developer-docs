@@ -16,7 +16,7 @@ type TEventBus = "ws-main" |
 表示不同的事件名称。这些事件将作为 [`EventBus`](./class/EventBus.md) 类的输入参数，以实现思源和插件之间的通信。
 
 
-详细解释见[事件总线](../../../guide/plugin/development/event-bus/index.md)。
+详细解释见[事件总线](./event-bus/)。
 
 
 ---
@@ -28,11 +28,11 @@ type TCardType = "doc" | "notebook" | "all"
 ```
 
 
-| Name                  | Explanation               |
-|-----------------------|---------------------------|
-| `"doc"`               | TODO |
-| `"notebook"`          | TODO |
-| `"all"`               | TODO |
+| Name         | Explanation |
+| ------------ | ----------- |
+| `"doc"`      | TODO        |
+| `"notebook"` | TODO        |
+| `"all"`      | TODO        |
 
 
 
