@@ -133,9 +133,7 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                     {
                         text: '事件总线',
-                        link: '/zh-Hans/guide/plugin/development/event-bus/',
-                        items: [
-                        ],
+                        link: '/zh-Hans/reference/api/plugin/event-bus/',
                     },
                     {
                         text: '社区资源',
@@ -225,95 +223,143 @@ export const themeConfig: DefaultTheme.Config = {
         '/zh-Hans/reference/': [
             {
                 text: '清单文件',
-                link: '/zh-Hans/reference/manifest/',
+                base: '/zh-Hans/reference/manifest/',
+                link: './',
                 items: [
-                    { text: 'icon.json', link: '/zh-Hans/reference/manifest/icon' },
-                    { text: 'plugin.json', link: '/zh-Hans/reference/manifest/plugin' },
-                    { text: 'template.json', link: '/zh-Hans/reference/manifest/template' },
-                    { text: 'theme.json', link: '/zh-Hans/reference/manifest/theme' },
-                    { text: 'widget.json', link: '/zh-Hans/reference/manifest/widget' },
+                    { text: 'icon.json', link: './icon' },
+                    { text: 'plugin.json', link: './plugin' },
+                    { text: 'template.json', link: './template' },
+                    { text: 'theme.json', link: './theme' },
+                    { text: 'widget.json', link: './widget' },
                 ],
             },
             {
-                text: '内核',
-                // link: '/zh-Hans/reference/api/kernel/',
+                text: '数据库',
+                base: '/zh-Hans/reference/database/',
+                // link: './',
                 items: [
-                    { text: '内核 API', link: '/zh-Hans/reference/api/kernel/' },
-                    { text: 'SQL表结构', link: '/zh-Hans/reference/api/kernel/sql' }
+                    { text: '表与字段', link: './table' },
+                ],
+            },
+            {
+                text: '内核 API',
+                base: '/zh-Hans/reference/api/kernel/',
+                link: './',
+                items: [
                 ],
             },
             {
                 text: '插件 API',
-                link: '/zh-Hans/reference/api/plugin/',
+                base: '/zh-Hans/reference/api/plugin/',
+                link: './',
                 items: [
                     {
                         text: '类型与接口',
-                        link: '/zh-Hans/reference/api/plugin/types',
+                        link: './types',
                         items: [
                         ],
                     },
                     {
+                        text: '事件总线',
+                        link: './event-bus/',
+                    },
+                    {
                         text: '类',
+                        base: './class/',
                         items: [
                             {
                                 text: 'Plugin',
-                                link: '/zh-Hans/reference/api/plugin/class/Plugin',
+                                link: './Plugin',
                             },
                             {
                                 text: 'Dialog',
-                                link: '/zh-Hans/reference/api/plugin/class/Dialog',
+                                link: './Dialog',
                             },
                             {
                                 text: 'Menu',
-                                link: '/zh-Hans/reference/api/plugin/class/Menu',
+                                link: './Menu',
                             },
                             {
                                 text: 'EventBus',
-                                link: '/zh-Hans/reference/api/plugin/class/EventBus',
+                                link: './EventBus',
                             },
                             {
                                 text: 'Setting',
-                                link: '/zh-Hans/reference/api/plugin/class/Setting',
+                                link: './Setting',
                             },
                             {
                                 text: 'Lute',
-                                link: '/zh-Hans/reference/api/plugin/class/Lute',
-                            }
+                                link: './Lute',
+                            },
                         ],
                     },
                     {
                         text: '方法',
-                        link: '/zh-Hans/reference/api/plugin/method',
+                        link: './method',
                         items: [
                         ],
-                    }
+                    },
                 ],
             },
             {
                 text: 'DOM 结构',
-                // link: '/zh-Hans/reference/api/kernel/',
+                base: '/zh-Hans/reference/api/kernel/',
+                // link: './',
                 items: [
                 ],
             },
             {
                 text: '社区资源',
-                link: '/zh-Hans/reference/community/',
+                base: '/zh-Hans/reference/community/',
+                link: './',
                 items: [
                     {
                         text: 'siyuan-sdk',
-                        link: '/zh-Hans/reference/community/siyuan-sdk/',
+                        base: '/zh-Hans/reference/community/siyuan-sdk/',
+                        link: './',
                         items: [
                             {
                                 text: '开始',
-                                link: '/zh-Hans/reference/community/siyuan-sdk/start',
+                                link: './start',
                             },
                             {
                                 text: '思源内核 API',
-                                link: '/zh-Hans/reference/community/siyuan-sdk/kernel-api',
+                                base: '/zh-Hans/reference/community/siyuan-sdk/kernel/',
+                                link: './',
+                                items: [
+                                    {
+                                        text: 'api',
+                                        base: '/zh-Hans/reference/community/siyuan-sdk/kernel/api/',
+                                        collapsed: true,
+                                        items: [
+                                            { text: 'asset', link: './asset' },
+                                            { text: 'attr', link: './attr' },
+                                            { text: 'block', link: './block' },
+                                            { text: 'broadcast', link: './broadcast' },
+                                            { text: 'convert', link: './convert' },
+                                            { text: 'export', link: './export' },
+                                            { text: 'file', link: './file' },
+                                            { text: 'filetree', link: './filetree' },
+                                            { text: 'history', link: './history' },
+                                            { text: 'inbox', link: './inbox' },
+                                            { text: 'network', link: './network' },
+                                            { text: 'notebook', link: './notebook' },
+                                            { text: 'notification', link: './notification' },
+                                            { text: 'query', link: './query' },
+                                            { text: 'repo', link: './repo' },
+                                            { text: 'search', link: './search' },
+                                            { text: 'snippet', link: './snippet' },
+                                            { text: 'storage', link: './storage' },
+                                            { text: 'system', link: './system' },
+                                            { text: 'template', link: './template' },
+                                        ],
+                                    },
+                                    { text: 'ws', link: './ws' },
+                                ],
                             },
                             {
                                 text: '思源文件系统',
-                                link: '/zh-Hans/reference/community/siyuan-sdk/file-system',
+                                link: './file-system',
                             },
                         ],
                     },

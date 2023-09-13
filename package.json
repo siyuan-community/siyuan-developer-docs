@@ -7,7 +7,7 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.6.0",
-    "cspell": "^7.3.5",
+    "cspell": "^7.3.6",
     "vitepress": "1.0.0-rc.12",
     "vue": "^3.3.4"
   },
