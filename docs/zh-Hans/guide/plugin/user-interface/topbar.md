@@ -6,7 +6,8 @@
 
 ## 代码示例
 
-将下面的代码粘贴到你的插件的index.js中，即可查看这部分效果。
+将下面的代码粘贴到你的插件的 `index.js` 中，即可查看这部分效果。
+
 ```javascript
 const { Plugin, Menu, getFrontend } = require('siyuan');
 
@@ -58,7 +59,9 @@ module.exports = class ExamplePlugin extends Plugin {
     }
 }
 ```
+
 ## 效果
+
 ![图标](/static/user-interface/topbar-1.png)
 
 ![图标](/static/user-interface/topbar-2.png)

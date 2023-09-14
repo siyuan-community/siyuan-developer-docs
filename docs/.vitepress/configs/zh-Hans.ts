@@ -27,6 +27,8 @@ export const themeConfig: DefaultTheme.Config = {
         next: '下一节',
     },
 
+    outlineTitle: '目录',
+
     // REF https://vitepress.dev/reference/default-theme-config#lastupdatedtext
     lastUpdatedText: '更新时间',
 

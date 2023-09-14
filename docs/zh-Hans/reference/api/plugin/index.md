@@ -3,13 +3,13 @@ outline: deep
 
 ---
 
-
-- [类型与接口](/zh-Hans/reference/api/plugin/types)
+- [类型与接口](./types.md)
+- [事件总线](./event-bus/)
 - 类
-    - [Plugin](/zh-Hans/reference/api/plugin/class/Plugin)
-    - [Dialog](/zh-Hans/reference/api/plugin/class/Dialog)
-    - [Plugin](/zh-Hans/reference/api/plugin/class/Plugin)
-    - [Menu](/zh-Hans/reference/api/plugin/class/Menu)
-    - [EventBus](/zh-Hans/reference/api/plugin/class/EventBus)
-    - [Lute](/zh-Hans/reference/api/plugin/class/Lute)
-- [方法](/zh-Hans/reference/api/plugin/method)
+    - [Plugin](./class/Plugin.md)
+    - [Dialog](./class/Dialog.md)
+    - [Plugin](./class/Plugin.md)
+    - [Menu](./class/Menu.md)
+    - [EventBus](./class/EventBus.md)
+    - [Lute](./class/Lute.md)
+- [方法](./method.md)

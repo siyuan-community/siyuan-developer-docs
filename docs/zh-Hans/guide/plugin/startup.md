@@ -83,10 +83,12 @@ outline: deep
 
 在 vscode 编辑器的终端中执行
 
-```html
-pnpm install
-或
-pnpm i
+```shell
+$ pnpm install
+
+# 或者
+
+$ pnpm i
 ```
 
 用于安装项目依赖，此时通过 pnpm 会向项目文件夹中创建 `node_modules` 文件夹并下载所有相关依赖，其中主要包括 svelte 相关依赖，siyuan 插件开发相关依赖，需要注意的是，可能依赖被下载后没有被正确加载，你需要一次甚至多次重启编辑器来确保其成功加载
@@ -95,8 +97,8 @@ pnpm i
 
 到了这一步，所有准备工作已经做完，不出问题的话，控制台执行
 
-```html
-pnpm build
+```shell
+$ pnpm build
 ```
 
 输出信息无报错，且出现 `dist` 文件夹，以及 package.zip 文件，说明成功编译了所有文件，`dist` 文件夹放入思源工作空间 `/data/plugin` 目录下就能够被思源识别和加载

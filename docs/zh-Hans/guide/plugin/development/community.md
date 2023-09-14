@@ -96,4 +96,4 @@ module.exports = class P extends siyuan.Plugin {
 
 思源内核 API 的封装，提供了一些常用的方法，可以帮助开发者更快的开发插件。
 
-其他详细信息请参阅 [文档](/zh-Hans/reference/community/siyuan-sdk/)
+其他详细信息请参阅 [siyuan-sdk 文档](/zh-Hans/reference/community/siyuan-sdk/)

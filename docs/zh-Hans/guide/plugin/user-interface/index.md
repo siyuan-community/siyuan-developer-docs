@@ -4,7 +4,7 @@
 
 ![布局](/static/user-interface/layout.png)
 
-- 顶部TopBar
-- 侧边栏Sidebar
-- 状态栏StatusBar
-- 编辑器Editor
+- 顶部标题栏 TopBar
+- 侧边栏 Sidebar
+- 编辑器 Editor
+- 底部状态栏 StatusBar
