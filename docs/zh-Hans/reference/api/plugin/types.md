@@ -1,32 +1,32 @@
-# 类型于接口
+# 类型与接口定义
+
+- 类型与接口定义模块 [siyuan - npm](https://www.npmjs.com/package/siyuan)
 
 ## `type TEventBus`
 
-```ts
+```typescript
 type TEventBus = "ws-main" |
     "click-blockicon" | "click-editorcontent" | "click-pdf" | "click-editortitleicon" |
     "open-noneditableblock" |
     "open-menu-blockref" | "open-menu-fileannotationref" | "open-menu-tag" | "open-menu-link" | "open-menu-image" |
-    "open-menu-av" | "open-menu-content" |
-    "open-menu-breadcrumbmore" |
+    "open-menu-av" | "open-menu-content" | "open-menu-breadcrumbmore" |
+    "open-siyuan-url-plugin" | "open-siyuan-url-block" |
     "input-search" |
-    "loaded-protyle"
+    "loaded-protyle" | "loaded-protyle-dynamic" |
+    "destroy-protyle"
 ```
 
 表示不同的事件名称。这些事件将作为 [`EventBus`](./class/EventBus.md) 类的输入参数，以实现思源和插件之间的通信。
 
-
-详细解释见[事件总线](./event-bus/)。
-
+详情请参考 [事件总线](./event-bus/)。
 
 ---
 
 ## `type TCardType`
 
-```ts
+```typescript
 type TCardType = "doc" | "notebook" | "all"
 ```
-
 
 | Name         | Explanation |
 | ------------ | ----------- |
@@ -34,13 +34,11 @@ type TCardType = "doc" | "notebook" | "all"
 | `"notebook"` | TODO        |
 | `"all"`      | TODO        |
 
-
-
 ---
 
 ## `interface ITab`
 
-```ts
+```typescript
 interface ITab {
     id: string;
     headElement: HTMLElement;
@@ -56,8 +54,6 @@ interface ITab {
     close: () => void;
 }
 ```
-
-
 
 * `id`: `string`, TODO
 * `headElement`: `HTMLElement`, TODO
@@ -76,7 +72,7 @@ interface ITab {
 
 ## `interface IModel`
 
-```ts
+```typescript
 interface IModel {
     element: Element;
     tab: ITab;
@@ -84,8 +80,6 @@ interface IModel {
     type: string;
 }
 ```
-
-
 
 * `element`: `Element`, TODO
 * `tab`: `ITab`, TODO
@@ -98,7 +92,7 @@ interface IModel {
 
 ## `interface IObject`
 
-```ts
+```typescript
 interface IObject {
     [key: string]: string;
 }
@@ -106,7 +100,7 @@ interface IObject {
 
 ## `interface I18N`
 
-```ts
+```typescript
 interface I18N {
     [key: string]: any;
 }
@@ -114,7 +108,7 @@ interface I18N {
 
 ## `interface ILuteNode`
 
-```ts
+```typescript
 interface ILuteNode {
     TokensStr: () => string;
     __internal_object__: {
@@ -128,7 +122,7 @@ interface ILuteNode {
 
 ## `interface ISearchOption`
 
-```ts
+```typescript
 interface ISearchOption {
     page?: number
     group?: number,
@@ -179,7 +173,7 @@ interface ISearchOption {
 
 ## `interface IWebSocketData`
 
-```ts
+```typescript
 interface IWebSocketData {
     cmd: string
     callback?: string
@@ -199,7 +193,7 @@ interface IWebSocketData {
 
 ## `interface IPluginDockTab`
 
-```ts
+```typescript
 interface IPluginDockTab {
     position: "LeftTop" | "LeftBottom" | "RightTop" | "RightBottom" | "BottomLeft" | "BottomRight",
     size: { width: number, height: number },
@@ -222,7 +216,7 @@ interface IPluginDockTab {
 
 ## `interface IMenuItemOption`
 
-```ts
+```typescript
 interface IMenuItemOption {
     label?: string,
     click?: (element: HTMLElement) => void,
@@ -259,7 +253,7 @@ interface IMenuItemOption {
 
 ## `interface ICommandOption`
 
-```ts
+```typescript
 interface ICommandOption {
     langKey: string,
     langText?: string,
@@ -283,7 +277,7 @@ interface ICommandOption {
 
 ## `interface IProtyleOption`
 
-```ts
+```typescript
 interface IProtyleOption {
     action?: string[],
     mode?: "preview" | "wysiwyg",

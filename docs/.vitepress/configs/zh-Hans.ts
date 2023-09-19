@@ -305,7 +305,7 @@ export const themeConfig: DefaultTheme.Config = {
             },
             {
                 text: 'DOM 结构',
-                base: '/zh-Hans/reference/api/kernel/',
+                base: '/zh-Hans/reference/dom/',
                 // link: './',
                 items: [
                 ],

@@ -15,3 +15,4 @@
 - 添加社区资源 `siyuan-sdk` 介绍 | Add the introduction of community resource `siyuan-sdk`
 - 完善 `siyuan-sdk` 介绍 | Improve the introduction of `siyuan-sdk`
 - 修复拼写错误 | Fix spelling errors
+- 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version

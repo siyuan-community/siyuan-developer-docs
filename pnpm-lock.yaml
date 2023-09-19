@@ -6,19 +6,19 @@ settings:
 
 dependencies:
   '@siyuan-community/siyuan-sdk':
-    specifier: ^0.3.1
-    version: 0.3.1(ws@8.14.1)
+    specifier: ^0.3.2
+    version: 0.3.2(ws@8.14.1)
 
 devDependencies:
   '@types/node':
-    specifier: ^20.6.0
-    version: 20.6.0
+    specifier: ^20.6.2
+    version: 20.6.2
   cspell:
     specifier: ^7.3.6
     version: 7.3.6
   vitepress:
-    specifier: 1.0.0-rc.13
-    version: 1.0.0-rc.13(@algolia/client-search@4.20.0)(@types/node@20.6.0)(search-insights@2.8.2)
+    specifier: 1.0.0-rc.14
+    version: 1.0.0-rc.14(@algolia/client-search@4.20.0)(@types/node@20.6.2)(search-insights@2.8.2)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -163,7 +163,7 @@ packages:
     resolution: {integrity: sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/highlight': 7.22.13
+      '@babel/highlight': 7.22.20
       chalk: 2.4.2
     dev: true
 
@@ -172,16 +172,16 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/helper-validator-identifier@7.22.15:
-    resolution: {integrity: sha512-4E/F9IIEi8WR94324mbDUMo074YTheJmd7eZF5vITTeYchqAi6sYXRLHUVsmkdmY4QjfKTcB2jB7dVP3NaBElQ==}
+  /@babel/helper-validator-identifier@7.22.20:
+    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/highlight@7.22.13:
-    resolution: {integrity: sha512-C/BaXcnnvBCmHTpz/VGZ8jgtE2aYlW4hxDhseJAWZb7gqGM/qtCK6iZUb0TyKFf7BOUsBH7Q7fkRsDRhg1XklQ==}
+  /@babel/highlight@7.22.20:
+    resolution: {integrity: sha512-dkdMCN3py0+ksCgYmGG8jKeGA/8Tk+gJwSYYlFGxG5lmhfKNoAy004YpLxpS1W2J8m/EK2Ew+yOs9pVRwO89mg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.15
+      '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
@@ -191,15 +191,15 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.22.17
+      '@babel/types': 7.22.19
     dev: true
 
-  /@babel/types@7.22.17:
-    resolution: {integrity: sha512-YSQPHLFtQNE5xN9tHuZnzu8vPr61wVTBZdfv1meex1NBosa4iT05k/Jw06ddJugi4bk7The/oSwQGFcksmEJQg==}
+  /@babel/types@7.22.19:
+    resolution: {integrity: sha512-P7LAw/LbojPzkgp5oznjE6tQEIWbp4PkkfrZDINTro9zgBRtI324/EYsiSI7lhPbpIQ+DCeR2NNmMWANGGfZsg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-string-parser': 7.22.5
-      '@babel/helper-validator-identifier': 7.22.15
+      '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
     dev: true
 
@@ -240,7 +240,7 @@ packages:
       '@cspell/dict-lua': 4.0.1
       '@cspell/dict-node': 4.0.3
       '@cspell/dict-npm': 5.0.8
-      '@cspell/dict-php': 4.0.2
+      '@cspell/dict-php': 4.0.3
       '@cspell/dict-powershell': 5.0.2
       '@cspell/dict-public-licenses': 2.0.3
       '@cspell/dict-python': 4.1.8
@@ -421,8 +421,8 @@ packages:
     resolution: {integrity: sha512-KuqH8tEsFD6DPKqKwIfWr9E+admE3yghaC0AKXG8jPaf77N0lkctKaS3dm0oxWUXkYKA/eXj6LCtz3VcTyxFPg==}
     dev: true
 
-  /@cspell/dict-php@4.0.2:
-    resolution: {integrity: sha512-7yglcmMoFHDPQXHW+9QAl8YjAToMm1qOi+4x/yGY1FSIEjZbCpjeDgyKMGg/NgpooQQceEN38AR59Pn23EDriA==}
+  /@cspell/dict-php@4.0.3:
+    resolution: {integrity: sha512-PxtSmWJCDEB4M8R9ER9ijxBum/tvUqYT26QeuV58q2IFs5IrPZ6hocQKvnFGXItjCWH4oYXyAEAAzINlBC4Opg==}
     dev: true
 
   /@cspell/dict-powershell@5.0.2:
@@ -757,8 +757,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@siyuan-community/siyuan-sdk@0.3.1(ws@8.14.1):
-    resolution: {integrity: sha512-DMiHxKJB2FY5z+BItJ73Izra1Da9Xnp0R0PUXbhnowYuOE8OzqlnwYzX1DQQYu+rSIVhd82shmtlqb+ziMLvHA==}
+  /@siyuan-community/siyuan-sdk@0.3.2(ws@8.14.1):
+    resolution: {integrity: sha512-QM3NDUcKKTADzXyfVSNaRdUl+MkMeBkNEtyytC8492oHSfdghRq2TTGhmthRibu8XB7O6flc2w+xmqkyEFrq4A==}
     dependencies:
       axios: 1.5.0
       isomorphic-ws: 5.0.0(ws@8.14.1)
@@ -768,8 +768,8 @@ packages:
       - ws
     dev: false
 
-  /@types/node@20.6.0:
-    resolution: {integrity: sha512-najjVq5KN2vsH2U/xyh2opaSEz6cZMR2SetLIlxlj08nOcmPOemJmUK2o4kUzfLqfrWE0PIrNeE16XhYDd3nqg==}
+  /@types/node@20.6.2:
+    resolution: {integrity: sha512-Y+/1vGBHV/cYk6OI1Na/LHzwnlNCAfU3ZNGrc1LdRe/LAIbdDPTTv/HU3M7yXN448aTVDq3eKRm2cg7iKLb8gw==}
     dev: true
 
   /@types/web-bluetooth@0.0.17:
@@ -803,7 +803,7 @@ packages:
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       magic-string: 0.30.3
-      postcss: 8.4.29
+      postcss: 8.4.30
       source-map-js: 1.0.2
     dev: true
 
@@ -1363,13 +1363,13 @@ packages:
     resolution: {integrity: sha512-OHx4Qwrrt0E4jEIcI5/Xb+f+QmJYNj2rrK8wiIdQOIrB9WrrJL8cjZvXdXuBTkkEwEqLycb5BeZDV1o2i9bTew==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      flatted: 3.2.7
+      flatted: 3.2.9
       keyv: 4.5.3
       rimraf: 3.0.2
     dev: true
 
-  /flatted@3.2.7:
-    resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
+  /flatted@3.2.9:
+    resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
   /focus-trap@7.5.2:
@@ -1746,8 +1746,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /postcss@8.4.29:
-    resolution: {integrity: sha512-cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==}
+  /postcss@8.4.30:
+    resolution: {integrity: sha512-7ZEao1g4kd68l97aWG/etQKPKq07us0ieSZ2TnFDk11i0ZfDW2AwKHYU8qv4MZKqN2fdBfg+7q0ES06UA73C1g==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -1794,8 +1794,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup@3.29.1:
-    resolution: {integrity: sha512-c+ebvQz0VIH4KhhCpDsI+Bik0eT8ZFEVZEYw0cGMVqIP8zc+gnwl7iXCamTw7vzv2MeuZFZfdx5JJIq+ehzDlg==}
+  /rollup@3.29.2:
+    resolution: {integrity: sha512-CJouHoZ27v6siztc21eEQGo0kIcE5D1gVPA571ez0mMYb25LGYGKnVNXpEj5MGlepmDWGXNjDB5q7uNiPHC11A==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1894,7 +1894,7 @@ packages:
       crypto-random-string: 4.0.0
     dev: true
 
-  /vite@4.4.9(@types/node@20.6.0):
+  /vite@4.4.9(@types/node@20.6.2):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1922,17 +1922,22 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.6.0
+      '@types/node': 20.6.2
       esbuild: 0.18.20
-      postcss: 8.4.29
-      rollup: 3.29.1
+      postcss: 8.4.30
+      rollup: 3.29.2
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.13(@algolia/client-search@4.20.0)(@types/node@20.6.0)(search-insights@2.8.2):
-    resolution: {integrity: sha512-TnVydQOZE38rtXu9gHCb7EGdN03jTcmYkDdhCqox6+pfKYgiyfm1qk2Uy8BZatnM9wXpa64f+T5p30R8P/9Z+A==}
+  /vitepress@1.0.0-rc.14(@algolia/client-search@4.20.0)(@types/node@20.6.2)(search-insights@2.8.2):
+    resolution: {integrity: sha512-yChIeXOAcNvVnSVjhziH1vte0uhKb00PuZf7KdIMfx3ixTMAz73Nn+6gREvCv0SdH+anteGUKz5eljv0ygcgGQ==}
     hasBin: true
+    peerDependencies:
+      markdown-it-mathjax3: ^4.3.2
+    peerDependenciesMeta:
+      markdown-it-mathjax3:
+        optional: true
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.20.0)(search-insights@2.8.2)
@@ -1943,7 +1948,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.1.0
       shiki: 0.14.4
-      vite: 4.4.9(@types/node@20.6.0)
+      vite: 4.4.9(@types/node@20.6.2)
       vue: 3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
