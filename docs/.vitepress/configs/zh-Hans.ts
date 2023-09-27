@@ -244,6 +244,15 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
+                text: '内容块',
+                base: '/zh-Hans/reference/block/',
+                // link: './',
+                items: [
+                    { text: '块类型', link: './type' },
+                    { text: '块属性', link: './attribute' },
+                ],
+            },
+            {
                 text: '内核 API',
                 base: '/zh-Hans/reference/api/kernel/',
                 link: './',
