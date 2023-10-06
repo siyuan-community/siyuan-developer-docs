@@ -17,3 +17,4 @@
 - 修复拼写错误 | Fix spelling errors
 - 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version
 - 添加 `块类型` 与 `块属性` 说明 | Add `Block Type` and `Block Attribute` descriptions
+- 添加内置块属性 `custom-avs` | Add built-in block attribute `custom-avs`

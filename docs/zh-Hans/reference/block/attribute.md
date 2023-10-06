@@ -7,16 +7,29 @@ outline: deep
 
 | 块属性名                                              | 适用块类型 |
 | :---------------------------------------------------- | ---------- |
+| [`custom-avs`](#custom-avs)                           | 所有块     |
 | [`custom-data-assets`](#custom-data-assets)           | 挂件块     |
 | [`custom-heading-mode`](#custom-heading-mode)         | 嵌入块     |
 | [`custom-hidden`](#custom-hidden)                     | 文档块     |
 | [`custom-liandi-articleId`](#custom-liandi-articleId) | 文档块     |
+| [`custom-reminder-wechat`](#custom-reminder-wechat)   | 所有块     |
 | [`custom-riff-decks`](#custom-riff-decks)             | 所有块     |
 | [`custom-sy-fullwidth`](#custom-sy-fullwidth)         | 文档块     |
 | [`custom-sy-readonly`](#custom-sy-readonly)           | 文档块     |
 | [`data-assets`](#data-assets)                         | 挂件块     |
 | [`data-export-html`](#data-export-html)               | 挂件块     |
 | [`data-export-md`](#data-export-md)                   | 挂件块     |
+
+## `custom-avs`
+
+- 所有块
+- 所有关联到该块的属性视图的 ID 列表
+- 属性值示例
+  - `20230927002636-rksmxa0`
+    - ID 为 `20230927002636-rksmxa0` 的属性视图
+  - `20230927002636-rksmxa0,20231007002428-w7z858y`
+    - ID 为 `20230927002636-rksmxa0` 的属性视图
+    - ID 为 `20231007002428-w7z858y` 的属性视图
 
 ## `custom-data-assets`
 
@@ -42,6 +55,12 @@ outline: deep
 - 文档块
 - 属性值
   - 分享到链滴的帖子 ID
+
+## `custom-reminder-wechat`
+
+- 所有块
+- 属性值
+  - 预定的微信推送提醒时间
 
 ## `custom-riff-decks`
 
