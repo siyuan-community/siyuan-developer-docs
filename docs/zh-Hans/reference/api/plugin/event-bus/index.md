@@ -19,6 +19,7 @@ outline: deep
 | [`open-menu-blockref`](#open-menu-blockref)                   | 块引用右键菜单打开事件                  |
 | [`open-menu-breadcrumbmore`](#open-menu-breadcrumbmore)       | 面包屑`更多`菜单打开事件                |
 | [`open-menu-content`](#open-menu-content)                     | 文本划选右键菜单打开事件                |
+| [`open-menu-doctree`](#open-menu-doctree)                     | 文档树右键菜单打开事件                  |
 | [`open-menu-fileannotationref`](#open-menu-fileannotationref) | 附件引用右键菜单打开事件                |
 | [`open-menu-image`](#open-menu-image)                         | 图片菜单打开事件                        |
 | [`open-menu-link`](#open-menu-link)                           | 超链接右键菜单打开事件                  |
@@ -52,6 +53,8 @@ outline: deep
 ## `open-menu-breadcrumbmore` <Badge type="tip" text="^2.9.5" />
 
 ## `open-menu-content` <Badge type="tip" text="^2.9.5" />
+
+## `open-menu-doctree` <Badge type="tip" text="^2.10.9" />
 
 ## `open-menu-fileannotationref` <Badge type="tip" text="^2.9.5" />
 
