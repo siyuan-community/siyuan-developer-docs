@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/snippet`
 
----
 ## `getSnippet`
-
----
 
 - 🛠 获取代码片段
 - `/api/snippet/getSnippet`
@@ -31,10 +28,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/snippet/getSnippet/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `setSnippet`
-
----
 
 - 🛠 设置代码片段
 - `/api/snippet/setSnippet`

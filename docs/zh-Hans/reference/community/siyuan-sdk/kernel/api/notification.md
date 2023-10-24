@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/notification`
 
----
 ## `pushErrMsg`
-
----
 
 - 🔥 推送错误消息
 - `/api/notification/pushErrMsg`
@@ -31,10 +28,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/notification/pushErrMsg/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `pushMsg`
-
----
 
 - 🔥 推送消息
 - `/api/notification/pushMsg`

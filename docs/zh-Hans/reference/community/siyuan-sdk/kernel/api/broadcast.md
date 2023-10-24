@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/broadcast`
 
----
 ## `channels`
-
----
 
 - 🛠 获取当前所有消息通道的信息
 - `/api/broadcast/channels`
@@ -22,10 +19,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/channels/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `getChannelInfo`
-
----
 
 - 🛠 获取指定消息通道的信息
 - `/api/broadcast/getChannelInfo`
@@ -48,10 +42,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/getChannelInfo/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `postMessage`
-
----
 
 - 🛠 向指定消息通道推送消息
 - `/api/broadcast/postMessage`

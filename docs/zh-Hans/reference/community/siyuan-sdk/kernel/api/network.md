@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/network`
 
----
 ## `forwardProxy`
-
----
 
 - 🔥 前置代理
 - `/api/network/forwardProxy`

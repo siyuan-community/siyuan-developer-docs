@@ -3,13 +3,9 @@ outline: deep
 
 ---
 
-
 # `/api/asset`
 
----
 ## `upload`
-
----
 
 - 🔥 上传资源文件
 - `/api/asset/upload`

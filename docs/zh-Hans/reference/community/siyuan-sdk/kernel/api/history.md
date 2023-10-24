@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/history`
 
----
 ## `getDocHistoryContent`
-
----
 
 - 🛠 获取历史文档内容
 - `/api/history/getDocHistoryContent`
@@ -31,10 +28,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/history/getDocHistoryContent/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `getHistoryItems`
-
----
 
 - 🛠 查询历史项
 - `/api/history/getHistoryItems`

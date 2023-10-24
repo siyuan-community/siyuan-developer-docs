@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/system`
 
----
 ## `bootProgress`
-
----
 
 - 🔥 获取内核启动进度
 - `/api/system/bootProgress`
@@ -22,10 +19,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/bootProgress/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `currentTime`
-
----
 
 - 🔥 获取当前时间
 - `/api/system/currentTime`
@@ -39,10 +33,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/currentTime/response.schema.json [JSON Schema (json)]
 :::
 
----
 ## `version`
-
----
 
 - 🔥 获取内核版本
 - `/api/system/version`

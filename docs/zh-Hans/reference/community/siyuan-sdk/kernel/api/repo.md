@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/repo`
 
----
 ## `openRepoSnapshotDoc`
-
----
 
 - 🛠 读取快照文件内容
 - `/api/repo/openRepoSnapshotDoc`

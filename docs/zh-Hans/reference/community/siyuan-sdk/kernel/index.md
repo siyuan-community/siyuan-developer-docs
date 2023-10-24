@@ -92,7 +92,9 @@ outline: deep
     - [`getSnippet`](./api/snippet.md#getsnippet): 🛠 获取代码片段
     - [`setSnippet`](./api/snippet.md#setsnippet): 🛠 设置代码片段
   - [`storage`](./api/storage.md): 存储操作
+    - [`getLocalStorage`](./api/storage.md#getLocalStorage): 🛠 获取持久化的本地存储数据
     - [`getRecentDocs`](./api/storage.md#getrecentdocs): 🛠 获取最近打开的文档
+    - [`setLocalStorage`](./api/storage.md#setLocalStorage): 🛠 持久化本地存储数据
   - [`system`](./api/system.md): 系统操作
     - [`bootProgress`](./api/system.md#bootprogress): 🔥 获取内核启动进度
     - [`currentTime`](./api/system.md#currenttime): 🔥 获取当前时间

@@ -5,10 +5,7 @@ outline: deep
 
 # `/api/convert`
 
----
 ## `pandoc`
-
----
 
 - 🔥 使用 [Pandoc](https://www.pandoc.org/) 进行文件转换
 - `/api/convert/pandoc`
