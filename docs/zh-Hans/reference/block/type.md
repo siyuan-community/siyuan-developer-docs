@@ -21,7 +21,7 @@ outline: deep
 | └─ [UML 图](#NodeCodeBlock-plantuml)      | `NodeCodeBlock`          | `plantuml`                  |                    | [PlantUML](https://plantuml.com)                                                  |
 | [文档块](#NodeDocument)                   | `NodeDocument`           |                             | `#iconFile`        | 容器块                                                                            |
 | [HTML 块](#NodeHTMLBlock)                 | `NodeHTMLBlock`          |                             | `#iconHTML5`       | 叶子块                                                                            |
-| [标题块](#NodeHeading)                    | `NodeHeading`            |                             |                    | 叶子块                                                                            |
+| [标题块](#NodeHeading)                    | `NodeHeading`            |                             | `#iconHeadings`    | 叶子块                                                                            |
 | ├─ [一级标题](#NodeHeading-h1)            | `NodeHeading`            | `h1`                        | `#iconH1`          | ↑                                                                                 |
 | ├─ [二级标题](#NodeHeading-h2)            | `NodeHeading`            | `h2`                        | `#iconH2`          | ↑                                                                                 |
 | ├─ [三级标题](#NodeHeading-h3)            | `NodeHeading`            | `h3`                        | `#iconH3`          | ↑                                                                                 |

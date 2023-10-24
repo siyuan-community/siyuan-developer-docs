@@ -20,3 +20,4 @@
 - 添加内置块属性 `custom-avs` | Add built-in block attribute `custom-avs`
 - 添加事件总线 `open-menu-doctree` | Add event bus `open-menu-doctree`
 - 完善数据库 `blocks` 表中 `type` 与 `subtype` 字段的说明 | Improve the description of the `type` and `subtype` fields in the database `blocks` table
+- 添加事件总线 `loaded-protyle-static` | Add event bus `loaded-protyle-static`
