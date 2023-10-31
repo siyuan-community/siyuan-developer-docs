@@ -15,7 +15,7 @@ outline: deep
 | [`input-search`](#input-search) <Badge type="tip" text="^2.9.6" />                               | ✅ 搜索输入框内容变更事件                  |
 | [`loaded-protyle-dynamic`](#loaded-protyle-dynamic) <Badge type="tip" text="^2.10.2" />          | ✅ 编辑器内容动态加载事件                  |
 | [`loaded-protyle-static`](#loaded-protyle-static) <Badge type="tip" text="^2.10.12" />           | ✅ 编辑器内容静态加载事件                  |
-| [`loaded-protyle`](#loaded-protyle) <Badge type="warning" text="2.9.0 ~ 2.10.12" />              | ⚠ 编辑器加载事件                          |
+| [`loaded-protyle`](#loaded-protyle) <Badge type="danger" text="2.9.0 ~ 2.10.12" />               | 🚫 编辑器加载事件                          |
 | [`open-menu-av`](#open-menu-av) <Badge type="tip" text="^2.9.5" />                               | ✅ 属性视图右键菜单打开事件                |
 | [`open-menu-blockref`](#open-menu-blockref) <Badge type="tip" text="^2.9.5" />                   | ✅ 块引用右键菜单打开事件                  |
 | [`open-menu-breadcrumbmore`](#open-menu-breadcrumbmore) <Badge type="tip" text="^2.9.5" />       | ✅ 面包屑`更多`菜单打开事件                |
@@ -29,6 +29,7 @@ outline: deep
 | [`open-siyuan-url-block`](#open-siyuan-url-block) <Badge type="tip" text="^2.10.0" />            | ✅ 打开思源超链接 `siyuan://blocks/` 事件  |
 | [`open-siyuan-url-plugin`](#open-siyuan-url-plugin) <Badge type="tip" text="^2.10.0" />          | ✅ 打开思源超链接 `siyuan://plugins/` 事件 |
 | [`paste`](#paste) <Badge type="tip" text="^2.10.12" />                                           | ✅ 剪贴板粘贴事件                          |
+| [`switch-protyle`](#switch-protyle) <Badge type="tip" text="^2.10.13" />                         | ✅ 编辑器切换事件                          |
 | [`ws-main`](#ws-main) <Badge type="tip" text="^2.9.0" />                                         | ✅ 编辑事件 & 其他消息事件                 |
 
 - ✅: [思源最新版本](https://github.com/siyuan-note/siyuan/releases/latest)可用
@@ -53,7 +54,7 @@ outline: deep
 
 ## `loaded-protyle-static` <Badge type="tip" text="^2.10.12" />
 
-## `loaded-protyle` <Badge type="warning" text="2.9.0 ~ 2.10.12" />
+## `loaded-protyle` <Badge type="danger" text="2.9.0 ~ 2.10.12" />
 
 ## `open-menu-av` <Badge type="tip" text="^2.9.5" />
 
@@ -80,5 +81,7 @@ outline: deep
 ## `open-siyuan-url-plugin` <Badge type="tip" text="^2.10.0" />
 
 ## `paste` <Badge type="tip" text="^2.10.12" />
+
+## `switch-protyle` <Badge type="tip" text="^2.10.13" />
 
 ## `ws-main` <Badge type="tip" text="^2.9.0" />

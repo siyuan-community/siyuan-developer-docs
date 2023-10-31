@@ -23,3 +23,4 @@
 - 添加事件总线 `loaded-protyle-static` | Add event bus `loaded-protyle-static`
 - 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version
 - 添加事件总线 `paste` | Add event bus `paste`
+- 添加事件总线 `switch-protyle` | Add event bus `switch-protyle`
