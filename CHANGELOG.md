@@ -1,5 +1,11 @@
 # 更改日志
 
+## 2023-11-01
+
+- 添加对插件配置清单的 `keywords` 字段的介绍 | Add an introduction to the `keywords` field of the plugin manifest
+
+## 2023
+
 - 初始化项目 | Initialize project
 - 新增 `publish.yml` 工作流 | Add `publish.yml` workflow
 - 修复 `publish.yml` 工作流 | Fix `publish.yml` workflow

@@ -8,10 +8,21 @@ outline: deep
   "name": "plugin-sample",
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/plugin-sample",
-  "version": "0.1.3",
-  "minAppVersion": "2.8.8",
-  "backends": ["windows", "linux", "darwin"],
-  "frontends": ["desktop"],
+  "version": "0.2.7",
+  "minAppVersion": "2.10.13",
+  "keywords": [
+    "sample",
+    "示例"
+  ],
+  "backends": [
+    "windows",
+    "linux",
+    "darwin"
+  ],
+  "frontends": [
+    "desktop",
+    "desktop-window"
+  ],
   "displayName": {
     "default": "Plugin Sample",
     "zh_CN": "插件示例"
@@ -40,6 +51,7 @@ outline: deep
 * `url`：插件仓库地址
 * `version`：插件版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
 * `minAppVersion`：插件支持的最低思源笔记版本号
+* `keywords`: 用于辅助搜索的关键词列表
 * `backends`：插件需要的后端环境，可选值为 `windows`, `linux`, `darwin`, `docker`, `android`, `ios` and `all`
   * `windows`：Windows 桌面端
   * `linux`：Linux 桌面端
