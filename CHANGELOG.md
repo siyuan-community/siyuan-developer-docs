@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2023-11-15
+
+- 新增 API `/api/filetree/getIDsByHPath` 的介绍 | Add an introduction to the API `/api/filetree/getIDsByHPath`
+
 ## 2023-11-01
 
 - 添加对插件配置清单的 `keywords` 字段的介绍 | Add an introduction to the `keywords` field of the plugin manifest

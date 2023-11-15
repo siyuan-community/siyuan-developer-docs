@@ -59,6 +59,7 @@ outline: deep
     - [`getHPathByID`](./api/filetree.md#gethpathbyid): 🔥 通过块 ID 获取文档的可读路径
     - [`getHPathByPath`](./api/filetree.md#gethpathbypath): 🔥 通过文档路径获取文档的可读路径
     - [`listDocsByPath`](./api/filetree.md#listdocsbypath): 🛠 通过文档路径获取下级文档列表
+    - [`getIDsByHPath`](./api/filetree.md#getIDsByHPath): 🔥 通过人类可读路径获取文档 ID 列表
     - [`moveDocs`](./api/filetree.md#movedocs): 🔥 移动文档
     - [`removeDoc`](./api/filetree.md#removedoc): 🔥 删除文档
     - [`renameDoc`](./api/filetree.md#renamedoc): 🔥 重命名文档

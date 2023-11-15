@@ -120,6 +120,29 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/listDocsByPath/response.schema.json [JSON Schema (json)]
 :::
 
+## `getIDsByHPath`
+
+- 🔥 通过文档路径获取下级文档列表
+- `/api/filetree/getIDsByHPath`
+
+---
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/filetree/getIDsByHPath/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getIDsByHPath/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getIDsByHPath/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/filetree/getIDsByHPath/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getIDsByHPath/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getIDsByHPath/response.schema.json [JSON Schema (json)]
+:::
+
 ## `moveDocs`
 
 - 🔥 移动文档
