@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2023-11-20
+
+- 添加思源笔记社区版新特性介绍 | Add new features introduction of SiYuan Community Edition
+
 ## 2023-11-15
 
 - 新增 API `/api/filetree/getIDsByHPath` 的介绍 | Add an introduction to the API `/api/filetree/getIDsByHPath`

@@ -325,6 +325,17 @@ export const themeConfig: DefaultTheme.Config = {
                 link: './',
                 items: [
                     {
+                        text: '思源笔记社区版',
+                        base: '/zh-Hans/reference/community/siyuan-CE/',
+                        link: './',
+                        items: [
+                            {
+                                text: '新特性',
+                                link: './feature',
+                            },
+                        ],
+                    },
+                    {
                         text: 'siyuan-sdk',
                         base: '/zh-Hans/reference/community/siyuan-sdk/',
                         link: './',

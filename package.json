@@ -6,9 +6,9 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.9.0",
+    "@types/node": "^20.9.2",
     "cspell": "^8.0.0",
-    "vitepress": "1.0.0-rc.25",
+    "vitepress": "1.0.0-rc.29",
     "vue": "^3.3.8"
   },
   "scripts": {
