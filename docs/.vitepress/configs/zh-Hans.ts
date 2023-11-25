@@ -276,7 +276,7 @@ export const themeConfig: DefaultTheme.Config = {
                     },
                     {
                         text: '类',
-                        base: './class/',
+                        base: '/zh-Hans/reference/api/plugin/class/',
                         items: [
                             {
                                 text: 'Plugin',
