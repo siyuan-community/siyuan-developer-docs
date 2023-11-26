@@ -8,7 +8,6 @@ outline: deep
 - 类
     - [Plugin](./class/Plugin.md)
     - [Dialog](./class/Dialog.md)
-    - [Plugin](./class/Plugin.md)
     - [Menu](./class/Menu.md)
     - [EventBus](./class/EventBus.md)
     - [Lute](./class/Lute.md)
