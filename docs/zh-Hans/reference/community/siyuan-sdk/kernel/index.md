@@ -70,6 +70,7 @@ outline: deep
   - [`inbox`](./api/inbox.md): 收集箱操作
     - [`getShorthand`](./api/inbox.md#getshorthand): 🛠 获取收集箱速记内容
   - [`network`](./api/network.md): 网络操作
+    - [`echo`](./api/network.md#echo): 🛠 回显请求内容
     - [`forwardProxy`](./api/network.md#forwardproxy): 🔥 前置代理
   - [`notebook`](./api/notebook.md): 笔记本操作
     - [`closeNotebook`](./api/notebook.md#closenotebook): 🔥 关闭笔记本

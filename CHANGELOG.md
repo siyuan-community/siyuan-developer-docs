@@ -2,6 +2,7 @@
 
 - 删除 API `/api/broadcast/channels` 的介绍 | Delete the introduction to the API `/api/broadcast/channels`
 - 添加 API `/api/broadcast/getChannels` 的介绍 | Add the introduction to the API `/api/broadcast/getChannels`
+- 添加 API `/api/broadcast/echo` 的介绍 | Add the introduction to the API `/api/broadcast/echo`
 
 ## 2023-11-20
 
