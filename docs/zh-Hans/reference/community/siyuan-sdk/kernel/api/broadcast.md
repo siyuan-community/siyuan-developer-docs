@@ -5,20 +5,6 @@ outline: deep
 
 # `/api/broadcast`
 
-## `channels`
-
-- 🛠 获取当前所有消息通道的信息
-- `/api/broadcast/channels`
-
----
-**响应**
-
-::: code-group
-<<< @/snippets/siyuan-sdk/types/kernel/api/broadcast/channels/response.d.ts#content [Types]
-<<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/channels/response.schema.json5 [JSON Schema (json5)]
-<<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/channels/response.schema.json [JSON Schema (json)]
-:::
-
 ## `getChannelInfo`
 
 - 🛠 获取指定消息通道的信息
@@ -40,6 +26,20 @@ outline: deep
 <<< @/snippets/siyuan-sdk/types/kernel/api/broadcast/getChannelInfo/response.d.ts#content [Types]
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/getChannelInfo/response.schema.json5 [JSON Schema (json5)]
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/getChannelInfo/response.schema.json [JSON Schema (json)]
+:::
+
+## `getChannels`
+
+- 🛠 获取当前所有消息通道的信息
+- `/api/broadcast/getChannels`
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/broadcast/getChannels/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/getChannels/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/broadcast/getChannels/response.schema.json [JSON Schema (json)]
 :::
 
 ## `postMessage`

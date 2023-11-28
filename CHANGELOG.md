@@ -1,5 +1,8 @@
 # 更改日志
 
+- 删除 API `/api/broadcast/channels` 的介绍 | Delete the introduction to the API `/api/broadcast/channels`
+- 添加 API `/api/broadcast/getChannels` 的介绍 | Add the introduction to the API `/api/broadcast/getChannels`
+
 ## 2023-11-20
 
 - 添加思源笔记社区版新特性介绍 | Add new features introduction of SiYuan Community Edition

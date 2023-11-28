@@ -46,7 +46,7 @@ outline: deep
     - 默认值: `<思源工作空间>/conf/tls/siyuan.pem.key`
   - `--hostname`
     - 指定 SSL/TLS 证书的主机名, 桌面端使用该主机名访问本地的思源笔记服务
-    - 示例: `--hostname=siyuan.location`
+    - 示例: `--hostname=siyuan.localhost`
     - 默认值: `127.0.0.1`
   - `--ignore-certificate-errors`
     - 忽略 SSL/TLS 证书错误

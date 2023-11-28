@@ -39,8 +39,8 @@ outline: deep
     - [`transferBlockRef`](./api/block.md#transferblockref): 🔥 转移块引用
     - [`updateBlock`](./api/block.md#updateblock): 🔥 更新块
   - [`broadcast`](./api/broadcast.md): 消息广播操作
-    - [`channels`](./api/broadcast.md#channels): 🛠 获取当前所有消息通道的信息
     - [`getChannelInfo`](./api/broadcast.md#getchannelinfo): 🛠 获取指定消息通道的信息
+    - [`getChannels`](./api/broadcast.md#getchannels): 🛠 获取当前所有消息通道的信息
     - [`postMessage`](./api/broadcast.md#postmessage): 🛠 向指定消息通道推送消息
   - [`convert`](./api/convert.md): 文件转换操作
     - [`pandoc`](./api/convert.md#pandoc): 🔥 使用 [Pandoc](https://www.pandoc.org/) 进行文件转换
