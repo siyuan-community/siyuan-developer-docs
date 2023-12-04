@@ -202,24 +202,9 @@ export const themeConfig: DefaultTheme.Config = {
         ],
         '/zh-Hans/guide/widget': [
             {
-                text: '介绍',
+                text: '5分钟上手挂件开发',
                 link: '/zh-Hans/guide/widget/'
-            },
-            {
-                text: '快速开始',
-                items: [
-                ],
-            },
-            {
-                text: '开发',
-                items: [
-                ],
-            },
-            {
-                text: '发布',
-                items: [
-                ],
-            },
+            }
         ],
 
         '/zh-Hans/reference/': [

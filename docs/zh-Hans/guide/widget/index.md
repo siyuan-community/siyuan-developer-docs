@@ -1,15 +1,14 @@
-- [介绍](#挂件是什么)
-- [入门](#挂件文件内容)
-- [开发](#开发步骤)
-- [发布](#发布到集市)
+# 5分钟上手挂件开发
+
 ## 挂件是什么
 挂件是以可调整大小的html网页块儿形式展示在笔记正文里面的元素，可以通过快捷指令快速插入到笔记中，实现一些交互，记录，同时可以引入第三方js，以及调用本地思源的API来实现更多功能，例如实现与思源笔记数据的交互。
+
 ## 挂件文件内容
 ### 语法：HTML
 HTML（HyperText Markup Language）是一种用于创建网页的标记语言。它由一系列的标签（tag）组成，这些标签用于描述网页的结构和内容。HTML标记语言使用尖括号（<>）将标签包围起来，标签通常成对出现，分为开始标签和结束标签。
 
 HTML通过使用不同的标签来定义网页的结构，包括标题、段落、链接、图像、表格等元素。标签可以包含属性，用于提供关于元素的额外信息，如颜色、大小、链接目标等。
-
+ 
 HTML是构建网页的基础，它与CSS（层叠样式表）和JavaScript等技术一起使用，可以实现丰富的网页交互和样式效果。通过编写HTML代码，开发人员可以创建具有文本、图像、链接和多媒体等内容的网页，并将其发布到互联网上供用户访问。
 当创建网页时，使用HTML可以定义页面的结构和内容。下面是一些常用的HTML标签和它们的作用：
 
@@ -95,7 +94,7 @@ const id = window.frameElement.parentElement.parentElement.getAttribute(​"data
 ```
 这里获取到的`id`是当前挂件所在的块id，可以用来给数据加上唯一性标识，并和它所在的块儿联系起来。
 示意图：
-![](assets/Pasted%20image%2020231204153852.png)
+![](/static/widget/Pasted%20image%2020231204153852.png)
 如图，成功让挂件在自己的界面输出了自己所在的块id。
 #### 储存数据
 获得了可以作为数据唯一键对值的id，下一步就是想办法储存数据，我们可以借助官方给出的API文档中的写入文件的API来进行数据存储。
@@ -235,20 +234,20 @@ function putFileContent(path, content) {
 这里通过寻找有没有id对应的city，来返回结果，可以自定义在两种情况下进行什么自定义操作。
 ### 与插件联通
 一些插件提供了可供前台调用的插件API，我们可以通过调用这些API来实现更多功能，例如[运行javascript](https://github.com/frostime/sy-run-js)插件就为我们开放了几乎所有的api端口：
-![](assets/Pasted%20image%2020231204161953.png)
+![](/static/widget/Pasted%20image%2020231204161953.png)
 当然，我们也可以在外部编写js，通过该插件提供的接口，将代码片段传入，来运行我们的js脚本：
 详情请见[添加 run-js-code 的 api](https://github.com/frostime/sy-run-js/commit/d002c4a5e70b929cfd19e5113208cc447f5e77df)
-![](assets/Pasted%20image%2020231204162145.png)
+![](/static/widget/Pasted%20image%2020231204162145.png)
 ## 发布到集市
 ### 注册github并发布版本
 集市的挂件系统通过对github仓库的发布版本进行定时抓取来更新插件，实际抓取的是package.zip这个压缩包，这个压缩包里面应该至少有index.html，widget.json，README.md（英文说明），README_zh_CN.md（中文说明）这四个文件，如果你的挂件还需要引用外部资源（js，png，svg等等），可以用相对路径进行引用，然后一块儿压缩到package.zip里面，通过release来发布这个package.zip，一定要用版本号作为tag，否则不予索引，例如下图，版本号是0.0.2
-![|500](assets/Pasted%20image%2020231204162525.png)
+![|500](/static/widget/Pasted%20image%2020231204162525.png)
 ### 第一次发布
 第一次发布首先要占坑，也就是署名索引，需要到集市仓库地址的[挂件索引](https://github.com/siyuan-note/bazaar/blob/main/widgets.json)位置，点击编辑，在最后一行添加你的`github用户名/挂件仓库名`，然后可能会提示你需要fork本仓库才能编辑，fork即可，写完直接commit，然后creat pull request，等待开发者审核收录即可，可以在[pull request](https://github.com/siyuan-note/bazaar/pulls)查看收录情况
 **例如**
 将末尾：
-![|500](assets/Pasted%20image%2020231204162655.png)
+![|500](/static/widget/Pasted%20image%2020231204162655.png)
 修改为：
-![](assets/Pasted%20image%2020231204163237.png)
+![](/static/widget/Pasted%20image%2020231204163237.png)
 ### 后续版本更新
 后续修改完挂件代码后，只需要更改widget里面的version为更高的版本，然后打包成package.zip，在github上发布release，tag和更新的version统一即可，集市会隔一段时间自动收录
