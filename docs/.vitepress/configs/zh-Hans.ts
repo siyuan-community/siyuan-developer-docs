@@ -80,7 +80,11 @@ export const themeConfig: DefaultTheme.Config = {
             ],
         },
         {
-            text: '关于我们', link: '/zh-Hans/about/',
+            text: '关于',
+            items: [
+                { text: '加入我们', link: '/zh-Hans/about/' },
+                { text: '如何贡献', link: '/zh-Hans/about/contribute' }
+            ]
         }
     ],
 
@@ -136,6 +140,10 @@ export const themeConfig: DefaultTheme.Config = {
                     {
                         text: '事件总线',
                         link: '/zh-Hans/reference/api/plugin/event-bus/',
+                    },
+                    {
+                        text: 'Svelte组件库',
+                        link: '/zh-Hans/guide/plugin/development/svelte-kit',
                     },
                     {
                         text: '社区资源',
