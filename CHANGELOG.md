@@ -4,6 +4,7 @@
 
 - 添加 API `/api/filetree/createDailyNote` 的介绍 | Add the introduction to the API `/api/filetree/createDailyNote`
 - 添加 `siyuan-CE` 中命令行参数 `--proxy` 的介绍 | Add the introduction to the command line argument `--proxy` in `siyuan-CE`
+- 添加事件总线 `open-menu-inbox` | Add event bus `open-menu-inbox`
 
 ## 2023-11-29
 

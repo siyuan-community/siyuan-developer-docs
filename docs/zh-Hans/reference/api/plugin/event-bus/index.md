@@ -23,6 +23,7 @@ outline: deep
 | [`open-menu-doctree`](#open-menu-doctree) <Badge type="tip" text="^2.10.9" />                    | ✅ 文档树右键菜单打开事件                  |
 | [`open-menu-fileannotationref`](#open-menu-fileannotationref) <Badge type="tip" text="^2.9.5" /> | ✅ 附件引用右键菜单打开事件                |
 | [`open-menu-image`](#open-menu-image) <Badge type="tip" text="^2.9.5" />                         | ✅ 图片菜单打开事件                        |
+| [`open-menu-inbox`](#open-menu-inbox) <Badge type="tip" text="^2.11.4" />                        | ✅ 云收集箱右键菜单打开事件                |
 | [`open-menu-link`](#open-menu-link) <Badge type="tip" text="^2.9.5" />                           | ✅ 超链接右键菜单打开事件                  |
 | [`open-menu-tag`](#open-menu-tag) <Badge type="tip" text="^2.9.5" />                             | ✅ 标签右键菜单打开事件                    |
 | [`open-noneditableblock`](#open-noneditableblock) <Badge type="tip" text="^2.9.0" />             | ✅ 文本编辑框打开事件                      |
@@ -69,6 +70,8 @@ outline: deep
 ## `open-menu-fileannotationref` <Badge type="tip" text="^2.9.5" />
 
 ## `open-menu-image` <Badge type="tip" text="^2.9.5" />
+
+## `open-menu-inbox` <Badge type="tip" text="^2.11.4" />
 
 ## `open-menu-link` <Badge type="tip" text="^2.9.5" />
 
