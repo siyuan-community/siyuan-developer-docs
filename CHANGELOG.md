@@ -3,6 +3,7 @@
 ## 2023-12-26
 
 - 添加 API `/api/filetree/createDailyNote` 的介绍 | Add the introduction to the API `/api/filetree/createDailyNote`
+- 添加 `siyuan-CE` 中命令行参数 `--proxy` 的介绍 | Add the introduction to the command line argument `--proxy` in `siyuan-CE`
 
 ## 2023-11-29
 

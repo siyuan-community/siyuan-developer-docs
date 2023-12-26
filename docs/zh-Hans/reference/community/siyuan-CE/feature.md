@@ -25,6 +25,18 @@ outline: deep
     - 示例: `--remote=https://your.domain.name:12345`
     - 无默认值
 
+## 单独配置 Electron 网络代理 <Badge type="tip" text="^2.11.4" />
+
+- 该功能默认关闭
+- 桌面端命令行参数
+  - `--proxy`
+    - 指定所使用的网络代理服务地址
+    - 设置该参数后，桌面端将不再使用用户所指定的网络代理服务地址，而是使用该参数指定的网络代理服务地址
+    - 配合 `--remote` 参数使用
+      - 以避免本地 Electron 的网络代理服务地址被远程思源笔记内核服务的网络代理服务地址覆盖
+    - 示例: `--proxy=socks5://username:password@localhost:1080`
+    - 在设置了 `--remote` 时默认使用系统代理
+
 ## 内核 `SSL/TLS` 安全服务 <Badge type="tip" text="^2.10.16" />
 
 - 该功能默认关闭
