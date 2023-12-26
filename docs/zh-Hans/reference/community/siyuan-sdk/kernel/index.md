@@ -54,12 +54,13 @@ outline: deep
     - [`removeFile`](./api/file.md#removefile): 🔥 删除 文件/目录
     - [`renameFile`](./api/file.md#renamefile): 🔥 重命名/移动 文件/目录
   - [`filetree`](./api/filetree.md): 文件树操作
+    - [`createDailyNote`](./api/filetree.md#createdailynote): 🛠 创建每日笔记 (Daily Note)
     - [`createDocWithMd`](./api/filetree.md#createdocwithmd): 🔥 通过 Markdown 创建文档
     - [`getDoc`](./api/filetree.md#getdoc): 🛠 获取文档内容
     - [`getHPathByID`](./api/filetree.md#gethpathbyid): 🔥 通过块 ID 获取文档的可读路径
     - [`getHPathByPath`](./api/filetree.md#gethpathbypath): 🔥 通过文档路径获取文档的可读路径
     - [`listDocsByPath`](./api/filetree.md#listdocsbypath): 🛠 通过文档路径获取下级文档列表
-    - [`getIDsByHPath`](./api/filetree.md#getIDsByHPath): 🔥 通过人类可读路径获取文档 ID 列表
+    - [`getIDsByHPath`](./api/filetree.md#getidsbyhPath): 🔥 通过人类可读路径获取文档 ID 列表
     - [`moveDocs`](./api/filetree.md#movedocs): 🔥 移动文档
     - [`removeDoc`](./api/filetree.md#removedoc): 🔥 删除文档
     - [`renameDoc`](./api/filetree.md#renamedoc): 🔥 重命名文档
@@ -94,9 +95,9 @@ outline: deep
     - [`getSnippet`](./api/snippet.md#getsnippet): 🛠 获取代码片段
     - [`setSnippet`](./api/snippet.md#setsnippet): 🛠 设置代码片段
   - [`storage`](./api/storage.md): 存储操作
-    - [`getLocalStorage`](./api/storage.md#getLocalStorage): 🛠 获取持久化的本地存储数据
+    - [`getLocalStorage`](./api/storage.md#getlocalstorage): 🛠 获取持久化的本地存储数据
     - [`getRecentDocs`](./api/storage.md#getrecentdocs): 🛠 获取最近打开的文档
-    - [`setLocalStorage`](./api/storage.md#setLocalStorage): 🛠 持久化本地存储数据
+    - [`setLocalStorage`](./api/storage.md#setlocalstorage): 🛠 持久化本地存储数据
   - [`system`](./api/system.md): 系统操作
     - [`bootProgress`](./api/system.md#bootprogress): 🔥 获取内核启动进度
     - [`currentTime`](./api/system.md#currenttime): 🔥 获取当前时间

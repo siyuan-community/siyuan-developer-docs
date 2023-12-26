@@ -5,6 +5,29 @@ outline: deep
 
 # `/api/filetree`
 
+## `createDailyNote`
+
+- 🛠 创建每日笔记 (Daily Note)
+- `/api/filetree/createDailyNote`
+
+---
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/filetree/createDailyNote/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDailyNote/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDailyNote/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/filetree/createDailyNote/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDailyNote/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDailyNote/response.schema.json [JSON Schema (json)]
+:::
+
 ## `createDocWithMd`
 
 - 🔥 通过 Markdown 创建文档
