@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2023-12-28
+
+- 添加 `sprig` 模板函数介绍 | Add `sprig` template function introduction
+
 ## 2023-12-26
 
 - 添加 API `/api/filetree/createDailyNote` 的介绍 | Add the introduction to the API `/api/filetree/createDailyNote`

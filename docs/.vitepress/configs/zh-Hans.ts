@@ -246,6 +246,14 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
             {
+                text: '模板',
+                base: '/zh-Hans/reference/template/',
+                // link: './',
+                items: [
+                    { text: 'Sprig', link: './sprig/' },
+                ],
+            },
+            {
                 text: '内核 API',
                 base: '/zh-Hans/reference/api/kernel/',
                 link: './',
