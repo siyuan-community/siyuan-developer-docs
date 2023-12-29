@@ -9,3 +9,24 @@ outline: deep
 * 仓库: [Masterminds/sprig: Useful template functions for Go templates.](https://github.com/Masterminds/sprig)
 
 ## `Sprig` 函数文档
+
+- 字符串函数
+  - 字符串切片函数
+- 整数数学函数
+  - 整数切片函数
+- 浮点数数学函数
+- 日期函数
+- 默认值函数
+- 编码函数
+- 列表函数
+- 字典函数
+- 类型转换函数
+- 路径与文件路径函数
+- 流控制函数
+- 高级函数
+  - UUID 函数
+  - 操作系统函数
+  - 版本号比较函数
+  - 反射函数
+  - 密码学与安全函数
+  - 网络函数
