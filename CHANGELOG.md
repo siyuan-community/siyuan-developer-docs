@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-01-01
+
+- 添加 `uuidv4` 函数介绍 | Add `uuidv4` function introduction
+
 ## 2023-12-28
 
 - 添加 `sprig` 模板函数介绍 | Add `sprig` template function introduction
