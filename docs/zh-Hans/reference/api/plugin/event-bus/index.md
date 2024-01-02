@@ -16,6 +16,7 @@ outline: deep
 | [`loaded-protyle-dynamic`](#loaded-protyle-dynamic) <Badge type="tip" text="^2.10.2" />          | ✅ 编辑器内容动态加载事件                  |
 | [`loaded-protyle-static`](#loaded-protyle-static) <Badge type="tip" text="^2.10.12" />           | ✅ 编辑器内容静态加载事件                  |
 | [`loaded-protyle`](#loaded-protyle) <Badge type="danger" text="2.9.0 ~ 2.10.12" />               | 🚫 编辑器加载事件                          |
+| [`lock-screen`](#lock-screen) <Badge type="tip" text="^2.12.0" />                                | ✅ 锁屏事件                                |
 | [`open-menu-av`](#open-menu-av) <Badge type="tip" text="^2.9.5" />                               | ✅ 属性视图右键菜单打开事件                |
 | [`open-menu-blockref`](#open-menu-blockref) <Badge type="tip" text="^2.9.5" />                   | ✅ 块引用右键菜单打开事件                  |
 | [`open-menu-breadcrumbmore`](#open-menu-breadcrumbmore) <Badge type="tip" text="^2.9.5" />       | ✅ 面包屑`更多`菜单打开事件                |
@@ -23,7 +24,7 @@ outline: deep
 | [`open-menu-doctree`](#open-menu-doctree) <Badge type="tip" text="^2.10.9" />                    | ✅ 文档树右键菜单打开事件                  |
 | [`open-menu-fileannotationref`](#open-menu-fileannotationref) <Badge type="tip" text="^2.9.5" /> | ✅ 附件引用右键菜单打开事件                |
 | [`open-menu-image`](#open-menu-image) <Badge type="tip" text="^2.9.5" />                         | ✅ 图片菜单打开事件                        |
-| [`open-menu-inbox`](#open-menu-inbox) <Badge type="tip" text="^2.11.4" />                        | ✅ 云收集箱右键菜单打开事件                |
+| [`open-menu-inbox`](#open-menu-inbox) <Badge type="tip" text="^2.12.0" />                        | ✅ 云收集箱右键菜单打开事件                |
 | [`open-menu-link`](#open-menu-link) <Badge type="tip" text="^2.9.5" />                           | ✅ 超链接右键菜单打开事件                  |
 | [`open-menu-tag`](#open-menu-tag) <Badge type="tip" text="^2.9.5" />                             | ✅ 标签右键菜单打开事件                    |
 | [`open-noneditableblock`](#open-noneditableblock) <Badge type="tip" text="^2.9.0" />             | ✅ 文本编辑框打开事件                      |
@@ -57,6 +58,8 @@ outline: deep
 
 ## `loaded-protyle` <Badge type="danger" text="2.9.0 ~ 2.10.12" />
 
+## `lock-screen` <Badge type="tip" text="^2.12.0" />
+
 ## `open-menu-av` <Badge type="tip" text="^2.9.5" />
 
 ## `open-menu-blockref` <Badge type="tip" text="^2.9.5" />
@@ -71,7 +74,7 @@ outline: deep
 
 ## `open-menu-image` <Badge type="tip" text="^2.9.5" />
 
-## `open-menu-inbox` <Badge type="tip" text="^2.11.4" />
+## `open-menu-inbox` <Badge type="tip" text="^2.12.0" />
 
 ## `open-menu-link` <Badge type="tip" text="^2.9.5" />
 

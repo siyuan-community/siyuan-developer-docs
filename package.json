@@ -6,10 +6,10 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "cspell": "^8.2.3",
-    "vitepress": "1.0.0-rc.33",
-    "vue": "^3.3.13"
+    "@types/node": "^20.10.6",
+    "cspell": "^8.3.1",
+    "vitepress": "1.0.0-rc.34",
+    "vue": "^3.4.3"
   },
   "scripts": {
     "init": "npm run init:siyuan-sdk",

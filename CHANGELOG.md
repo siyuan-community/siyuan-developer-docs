@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-01-02
+
+- 添加事件总线 `lock-screen` | Add event bus `lock-screen`
+
 ## 2024-01-01
 
 - 添加 `uuidv4` 函数介绍 | Add `uuidv4` function introduction
