@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-01-05
+
+- 添加 `Sprig` 中字符串处理函数介绍 | Add `Sprig` string processing function introduction
+
 ## 2024-01-02
 
 - 添加事件总线 `lock-screen` | Add event bus `lock-screen`

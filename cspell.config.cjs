@@ -8,6 +8,7 @@ module.exports = {
     language: "en",
     // words - list of words to be always considered correct
     words: [
+        "vuepress",
         "abcjs",
         "afterbegin",
         "backlink",
@@ -28,6 +29,7 @@ module.exports = {
         "filetree",
         "frontends",
         "frostime",
+        "fullchain",
         "fullscreen",
         "fullwidth",
         "graphviz",
@@ -35,12 +37,14 @@ module.exports = {
         "iframe",
         "jsdeliver",
         "katex",
+        "keymap",
         "liandi",
         "mindmap",
         "noneditableblock",
         "ofetch",
         "pandoc",
         "plantuml",
+        "privkey",
         "protyle",
         "reponame",
         "setext",
@@ -48,7 +52,9 @@ module.exports = {
         "succ",
         "terwer",
         "topbar",
+        "uuidv",
         "vitepress",
+        "webdav",
         "webpake",
         "wechat",
         "yingyi",
@@ -72,5 +78,6 @@ module.exports = {
 
         "./docs/.vitepress/cache/**",
         "./docs/.vitepress/dist/**",
+        "./docs/snippets/siyuan-sdk/**",
     ],
 };

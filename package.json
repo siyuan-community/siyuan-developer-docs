@@ -7,9 +7,9 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.10.6",
-    "cspell": "^8.3.1",
-    "vitepress": "1.0.0-rc.34",
-    "vue": "^3.4.3"
+    "cspell": "^8.3.2",
+    "vitepress": "1.0.0-rc.35",
+    "vue": "^3.4.5"
   },
   "scripts": {
     "init": "npm run init:siyuan-sdk",
