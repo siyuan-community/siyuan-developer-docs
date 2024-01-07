@@ -3,6 +3,7 @@
 ## 2024-01-07
 
 - 添加 `Sprig` 中字符串切片处理函数介绍 | Add `Sprig` string slice processing function introduction
+- 添加 `Sprig` 中整数数学函数介绍 | Add `Sprig` integer math function introduction
 
 ## 2024-01-05
 
