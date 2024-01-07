@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-01-07
+
+- 添加 `Sprig` 中字符串切片处理函数介绍 | Add `Sprig` string slice processing function introduction
+
 ## 2024-01-05
 
 - 添加 `Sprig` 中字符串处理函数介绍 | Add `Sprig` string processing function introduction
