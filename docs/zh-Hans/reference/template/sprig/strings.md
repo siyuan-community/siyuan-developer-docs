@@ -1,4 +1,3 @@
-<!-- spell-checker: disable -->
 ---
 outline: deep
 

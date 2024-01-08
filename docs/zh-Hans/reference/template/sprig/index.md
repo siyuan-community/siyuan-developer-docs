@@ -13,7 +13,7 @@ outline: deep
 - [字符串函数](./strings.md)
   - [字符串切片函数](./string-slice.md)
 - [整数数学函数](./math.md)
-  - 整数切片函数
+  - [整数切片函数](./integer-slice.md)
 - 浮点数数学函数
 - 日期函数
 - 默认值函数
