@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-01-12
+
+- 添加 `Sprig` 中浮点数处理函数介绍 | Add `Sprig` floating point processing function introduction
+
 ## 2024-01-08
 
 - 添加 `Sprig` 中整数切片处理函数介绍 | Add `Sprig` integer slice processing function introduction

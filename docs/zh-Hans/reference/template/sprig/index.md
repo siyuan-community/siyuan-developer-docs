@@ -14,7 +14,7 @@ outline: deep
   - [字符串切片函数](./string-slice.md)
 - [整数数学函数](./math.md)
   - [整数切片函数](./integer-slice.md)
-- 浮点数数学函数
+- [浮点数数学函数](./mathf.md)
 - 日期函数
 - 默认值函数
 - 编码函数
