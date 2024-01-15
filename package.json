@@ -6,11 +6,11 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.11.2",
     "@vercel/node": "^3.0.16",
     "cspell": "^8.3.2",
     "vitepress": "1.0.0-rc.36",
-    "vue": "^3.4.10"
+    "vue": "^3.4.13"
   },
   "scripts": {
     "init": "npm run init:siyuan-sdk",

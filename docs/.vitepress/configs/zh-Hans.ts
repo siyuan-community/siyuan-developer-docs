@@ -250,7 +250,22 @@ export const themeConfig: DefaultTheme.Config = {
                 base: '/zh-Hans/reference/template/',
                 // link: './',
                 items: [
-                    { text: 'Sprig', link: './sprig/' },
+                    {
+                        text: 'Sprig 模板函数',
+                        base: '/zh-Hans/reference/template/sprig/',
+                        link: './',
+                        collapsed: true,
+                        items: [
+                            { text: '字符串', link: './strings' },
+                            { text: '字符串切片', link: './string-slice' },
+                            { text: '整数', link: './math' },
+                            { text: '整数切片', link: './integer-slice' },
+                            { text: '浮点数', link: './mathf' },
+                            { text: '日期', link: './date' },
+                            { text: 'UUID', link: './uuid' },
+                            { text: '操作系统', link: './os' },
+                        ],
+                    },
                 ],
             },
             {
