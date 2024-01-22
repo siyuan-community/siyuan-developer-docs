@@ -74,7 +74,7 @@ export const themeConfig: DefaultTheme.Config = {
             text: '思源笔记',
             items: [
                 { text: '官网', link: 'https://b3log.org/siyuan' },
-                { text: '社区', link: 'https://ld246.com/domain/siyuan' },
+                { text: '社区', link: 'https://ld246.com/tags/siyuan' },
                 { text: '组织', link: 'https://github.com/siyuan-note' },
                 { text: '仓库', link: 'https://github.com/siyuan-note/siyuan' },
             ],

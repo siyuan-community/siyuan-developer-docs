@@ -22,8 +22,6 @@ let selectedRankType = ref("all");
 
 const version = ref(null);
 
-const VERSION = "2.12.2";
-
 const Constants = {
   AliyunServer: "/siyuan-sync", // 云端服务地址，阿里云负载均衡，用于接口，数据同步文件上传、下载会走七牛云 OSS SiYuanSyncServer
   SiYuanSyncServer: "/siyuan-data", // 云端数据同步服务地址，七牛云 OSS，用于数据同步文件上传、下载
@@ -34,7 +32,7 @@ const Constants = {
 
 const getSiyuanVersions = async () => {
   version.value = await fetch(
-    `${Constants.AliyunServer}/apis/siyuan/version?ver=${VERSION}`,
+    `${Constants.AliyunServer}/apis/siyuan/version`,
     { method: "GET", mode: "cors" }
   ).then((res) => res.json());
   bazaarHash.value = version.value.bazaar;
