@@ -104,7 +104,6 @@ const namedUserRepos = computed(() => {
   if (selectedRankType.value !== "all") {
     result = result.filter((v) => v.type === selectedRankType.value);
   }
-  console.log(result);
   return result.sort((a, b) => b.downloads - a.downloads);
 });
 const total = computed(() =>
@@ -113,15 +112,9 @@ const total = computed(() =>
 
 const getStyle = (type) => {
   return {
-    color: "white",
     backgroundColor: ["red", "blue", "orange", "green"][
       ["theme", "template", "plugin", "widget"].findIndex((v) => v === type)
     ],
-    border: "0",
-    borderRadius: "4px",
-    padding: "2px 2px",
-    display: "inline-block",
-    marginLeft: '4px',
   };
 };
 
@@ -201,11 +194,25 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.devtool-plugin-tab {
+  font-size: 12px;
+  line-height: 1.4;
+}
 .b3-button {
     padding: 4px 6px;
-    border-radius: 2px;
+    margin-bottom: 8px;
+    border-radius: 4px;
     color: var(--vp-button-brand-text);
     background-color: var(--vp-button-brand-bg);
+}
+.type {
+  color: white;
+  border: 0px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  display: inline-block;
+  margin-left: 4px;
+  line-height: 1;
 }
 .center {
     text-align: center;
@@ -239,15 +246,15 @@ dt {
   width: 100%;
 }
 .user-repo {
-  margin: 12px 8px;
-  width: 400px;
+  margin: 12px 6px 0;
+  width: 320px;
   border: 1px solid var(--vp-input-border-color);
   background-color: var(--vp-input-switch-bg-color);
   border-radius: 4px;
   padding: 12px;
 }
 .user-repo-icon {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 </style>
