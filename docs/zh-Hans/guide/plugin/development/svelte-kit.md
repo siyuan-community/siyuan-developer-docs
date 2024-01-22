@@ -34,22 +34,21 @@ const value = 123;
 组件库包括了基本的表单元素以及其他常用的高级组件，更多的组件正在实现中
 
 ### 原子组件
-+ [按钮Button](https://svelte-kit.siyuan-note.club/?path=/docs/示例-button--docs)
-+ [开关Switch](https://svelte-kit.siyuan-note.club/?path=/docs/示例-switch--docs)
-+ [输入Input(文字、数字)](https://svelte-kit.siyuan-note.club/?path=/docs/示例-input--docs)
-+ [文本域Textarea](https://svelte-kit.siyuan-note.club/?path=/docs/示例-textarea--docs)
-+ [滑块Slider](https://svelte-kit.siyuan-note.club/?path=/docs/示例-slider--docs)
-+ [选择Select](https://svelte-kit.siyuan-note.club/?path=/docs/示例-select--docs)
-+ [图标Icon](https://svelte-kit.siyuan-note.club/?path=/docs/示例-icon--docs)
++ [按钮Button](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-button--docs)
++ [开关Switch](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-switch--docs)
++ [输入Input(文字、数字)](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-input--docs)
++ [文本域Textarea](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-textarea--docs)
++ [滑块Slider](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-slider--docs)
++ [选择Select](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-select--docs)
++ [图标Icon](https://svelte-kit.siyuan-note.club/?path=/docs/BaseComponent-icon--docs)
 
-### 高级组件
-+ [树型结构Tree](https://svelte-kit.siyuan-note.club/?path=/docs/示例-tree--docs)
-+ 侧边Dock（插槽：标题、按钮组、内容）
-+ Dialog（插槽）
-+ Tab
+## 高级组件
++ [树型结构Tree](https://svelte-kit.siyuan-note.club/?path=/docs/HighLevel-tree--docs)
++ [侧边Dock](https://svelte-kit.siyuan-note.club/?path=/docs/HighLevel-dock--docs)（插槽：标题、按钮组、内容）
++ [Dialog](https://svelte-kit.siyuan-note.club/?path=/story/highlevel-dialog--docs)
 
 ### 业务组件
-+ 设置Setting
++ Setting
 + Protyle
 
 ### 布局组件
