@@ -1,0 +1,4 @@
+---
+layout: page
+---
+<Bazaar></Bazaar>

@@ -80,12 +80,16 @@ export const themeConfig: DefaultTheme.Config = {
             ],
         },
         {
+            text: '集市',
+            link: '/zh-Hans/bazaar/'
+        },
+        {
             text: '关于',
             items: [
                 { text: '加入我们', link: '/zh-Hans/about/' },
                 { text: '如何贡献', link: '/zh-Hans/about/contribute' }
             ]
-        }
+        },
     ],
 
     // REF https://vitepress.dev/reference/default-theme-sidebar
