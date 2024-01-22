@@ -88,6 +88,8 @@ const loadData = async () => {
     return getUserRepos();
 }
 
+exports.default = handler;
+
 export default async function handler(
     request: VercelRequest,
     response: VercelResponse,
