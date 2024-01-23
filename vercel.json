@@ -28,7 +28,7 @@
 		}
 	],
 	"functions": {
-		"api/cron.ts": {
+		"api/cron.cjs": {
 			"memory": 1024,
 			"maxDuration": 10
 		}
