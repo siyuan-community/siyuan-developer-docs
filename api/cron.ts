@@ -1,4 +1,4 @@
-const { createClient } = require("@vercel/kv");
+import { createClient } from '@vercel/kv';
 
 const loadData = async () => {
   let version, bazaarHash, plugins, templates, themes, widgets, downloadCounts;
@@ -76,7 +76,7 @@ const loadData = async () => {
   return getUserRepos();
 };
 
-module.exports = async function handler(request, response) {
+export default async function handler(request, response) {
   if (!request.url) return response.status(400);
 
   const date = new Date();
