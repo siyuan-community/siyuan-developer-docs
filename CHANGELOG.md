@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-13
+
+- 添加 `Sprig` 中类型转换函数介绍 | Add `Sprig` type conversion function introduction
+
 ## 2024-02-12
 
 - 添加 `Sprig` 中编码函数介绍 | Add `Sprig` encoding function introduction
