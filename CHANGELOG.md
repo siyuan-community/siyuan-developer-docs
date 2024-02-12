@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-12
+
+- 添加 `Sprig` 中编码函数介绍 | Add `Sprig` encoding function introduction
+
 ## 2024-02-11
 
 - 添加 `Sprig` 中反射函数介绍 | Add `Sprig` reflection function introduction
