@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-15
+
+- 添加 `Sprig` 中流程控制函数介绍 | Add `Sprig` flow control function introduction
+
 ## 2024-02-13
 
 - 添加 `Sprig` 中类型转换函数介绍 | Add `Sprig` type conversion function introduction
