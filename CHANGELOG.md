@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-16
+
+- 添加 `Sprig` 中默认值函数介绍 | Add `Sprig` default value function introduction
+
 ## 2024-02-15
 
 - 添加 `Sprig` 中流程控制函数介绍 | Add `Sprig` flow control function introduction

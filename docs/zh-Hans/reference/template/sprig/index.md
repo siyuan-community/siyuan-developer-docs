@@ -20,7 +20,7 @@ outline: deep
   - [浮点数数学函数](./mathf.md)
 - 时间与日期
   - [日期函数](./date.md)
-- 默认值函数
+- [默认值函数](./defaults.md)
 - [编码函数](./encoding.md)
 - 列表函数
 - 字典函数
