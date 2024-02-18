@@ -25,7 +25,7 @@ outline: deep
 - 列表函数
 - 字典函数
 - [类型转换函数](./conversion.md)
-- 路径与文件路径函数
+- [路径和文件路径函数](./paths.md)
 - [流控制函数](./flow-control.md)
 - 高级函数
   - [UUID 函数](./uuid.md)

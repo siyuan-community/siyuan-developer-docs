@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-18
+
+- 添加 `Sprig` 中路径和文件路径函数介绍 | Add `Sprig` path and file path function introduction
+
 ## 2024-02-16
 
 - 添加 `Sprig` 中默认值函数介绍 | Add `Sprig` default value function introduction
