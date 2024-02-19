@@ -8,8 +8,8 @@
   "devDependencies": {
     "@types/node": "^20.11.19",
     "@vercel/node": "^3.0.19",
-    "cspell": "^8.3.2",
-    "vitepress": "1.0.0-rc.43",
+    "cspell": "^8.4.0",
+    "vitepress": "1.0.0-rc.44",
     "vue": "^3.4.19"
   },
   "scripts": {
