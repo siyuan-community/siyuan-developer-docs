@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-25
+
+- 添加 `Sprig` 中列表和列表函数介绍 | Add `Sprig` list and list function introduction
+
 ## 2024-02-19
 
 - 添加 `Sprig` 中语义化版本号函数介绍 | Add `Sprig` semantic versioning function introduction

@@ -22,7 +22,7 @@ outline: deep
   - [日期函数](./date.md)
 - [默认值函数](./defaults.md)
 - [编码函数](./encoding.md)
-- 列表函数
+- [列表和列表函数](./lists.md)
 - 字典函数
 - [类型转换函数](./conversion.md)
 - [路径和文件路径函数](./paths.md)
