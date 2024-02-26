@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-02-26
+
+- 添加 `Sprig` 中字典和字典函数介绍 | Add `Sprig` dictionary and dictionary function introduction
+
 ## 2024-02-25
 
 - 添加 `Sprig` 中列表和列表函数介绍 | Add `Sprig` list and list function introduction

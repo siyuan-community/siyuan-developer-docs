@@ -17,7 +17,7 @@ $myList := list 1 2 3 4 5
 
 ## `first`，`mustFirst`
 
-要获取列表的头项，请使用 `first`。
+要获取列表的第一项，请使用 `first`。
 
 `first $myList` 返回 `1`
 
@@ -39,14 +39,14 @@ $myList := list 1 2 3 4 5
 
 ## `initial`，`mustInitial`
 
-这个函数通过返回除最后一个元素外的所有元素来补充 `last` 函数。
+要获取列表除最后一个元素外的所有元素，请使用 `initial`。
 `initial $myList` 返回 `[1 2 3 4]`。
 
 如果有问题，则 `initial` 会产生 panic，而 `mustInitial` 会返回错误到模板引擎。
 
 ## `append`，`mustAppend`
 
-将新项目附加到现有列表中，创建一个新列表。
+将新元素附加到现有列表的尾部，创建一个新列表。
 
 ```
 $new = append $myList 6
@@ -58,7 +58,7 @@ $new = append $myList 6
 
 ## `prepend`，`mustPrepend`
 
-将元素推入列表的前端，创建一个新列表。
+将元素推入现有列表的首部，创建一个新列表。
 
 ```
 prepend $myList 0
@@ -80,7 +80,7 @@ concat $myList ( list 6 7 ) ( list 8 )
 
 ## `reverse`，`mustReverse`
 
-生成一个具有给定列表的反向元素的新列表。
+生成一个具有给定列表的元素顺序翻转的新列表。
 
 ```
 reverse $myList
@@ -92,7 +92,7 @@ reverse $myList
 
 ## `uniq`，`mustUniq`
 
-生成一个删除所有重复项的列表。
+生成一个删除所有重复项的新列表。
 
 ```
 list 1 1 1 2 | uniq
@@ -112,7 +112,7 @@ without $myList 3
 
 上面将生成 `[1 2 4 5]`
 
-Without 可以使用多个过滤器：
+`without` 可以使用多个过滤器：
 
 ```
 without $myList 1 3 5
@@ -130,7 +130,7 @@ without $myList 1 3 5
 has 4 $myList
 ```
 
-上述代码将返回 `true`，而 `has "hello" $myList` 将返回 false。
+上述代码将返回 `true`，而 `has "hello" $myList` 将返回 `false`。
 
 如果有问题，则 `has` 会产生 panic，而 `mustHas` 会返回错误到模板引擎。
 
@@ -143,7 +143,7 @@ $list := list 1 "a" "foo" ""
 $copy := compact $list
 ```
 
-`compact` 将返回一个新列表，其中删除了空（即“”）项。
+`compact` 将返回一个新列表，其中删除了空项（即`“”`）。
 
 如果有问题，则 `compact` 会产生 panic，而 `mustCompact` 会返回错误到模板引擎。
 

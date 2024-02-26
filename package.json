@@ -10,7 +10,7 @@
     "@vercel/node": "^3.0.20",
     "cspell": "^8.4.1",
     "vitepress": "1.0.0-rc.44",
-    "vue": "^3.4.19"
+    "vue": "^3.4.20"
   },
   "scripts": {
     "init": "npm run init:siyuan-sdk",
