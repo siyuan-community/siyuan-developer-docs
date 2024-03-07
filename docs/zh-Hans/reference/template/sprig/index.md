@@ -32,5 +32,5 @@ outline: deep
   - [操作系统函数](./os.md)
   - [语义化版本号函数](./semver.md)
   - [反射函数](./reflection.md)
-  - 密码学与安全函数
+  - [密码学与安全函数](./crypto.md)
   - [网络函数](./network.md)

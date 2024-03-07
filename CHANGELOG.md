@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-03-07
+
+- 添加 `Sprig` 中密码学与安全函数介绍 | Add `Sprig` cryptography and security function introduction
+
 ## 2024-02-26
 
 - 添加 `Sprig` 中字典和字典函数介绍 | Add `Sprig` dictionary and dictionary function introduction
