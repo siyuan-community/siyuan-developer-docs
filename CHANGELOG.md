@@ -3,6 +3,7 @@
 ## 2024-03-07
 
 - 添加 `Sprig` 中密码学与安全函数介绍 | Add `Sprig` cryptography and security function introduction
+- 完善 `Sprig` 文档的侧边导航栏 | Improve the side navigation bar of `Sprig` documentation
 
 ## 2024-02-26
 

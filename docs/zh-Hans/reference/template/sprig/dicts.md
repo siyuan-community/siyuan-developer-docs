@@ -3,7 +3,7 @@ outline: deep
 
 ---
 
-# 字典和字典函数
+# 字典与字典函数
 
 Sprig 提供了一个称为 `dict`（dictionary 的缩写，类比 Python 中的字典）的键/值存储类型。`dict` 是一个*无序*类型。
 

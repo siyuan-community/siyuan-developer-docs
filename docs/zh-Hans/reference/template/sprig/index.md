@@ -22,10 +22,10 @@ outline: deep
   - [日期函数](./date.md)
 - [默认值函数](./defaults.md)
 - [编码函数](./encoding.md)
-- [列表和列表函数](./lists.md)
-- [字典和字典函数](./dicts.md)
+- [列表与列表函数](./lists.md)
+- [字典与字典函数](./dicts.md)
 - [类型转换函数](./conversion.md)
-- [路径和文件路径函数](./paths.md)
+- [路径与文件路径函数](./paths.md)
 - [流控制函数](./flow-control.md)
 - 高级函数
   - [UUID 函数](./uuid.md)
