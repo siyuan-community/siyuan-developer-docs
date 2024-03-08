@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-03-08
+
+- 修复 `Sprig` 文档中部分错误的示例 | Fix some incorrect examples in `Sprig`
+
 ## 2024-03-07
 
 - 添加 `Sprig` 中密码学与安全函数介绍 | Add `Sprig` cryptography and security function introduction
