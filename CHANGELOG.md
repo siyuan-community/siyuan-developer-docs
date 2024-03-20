@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-03-20
+
+- 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version
+
 ## 2024-03-08
 
 - 修复 `Sprig` 文档中部分错误的示例 | Fix some incorrect examples in `Sprig`

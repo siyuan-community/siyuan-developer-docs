@@ -94,6 +94,8 @@ outline: deep
   - [`snippet`](./api/snippet.md): 代码片段操作
     - [`getSnippet`](./api/snippet.md#getsnippet): 🛠 获取代码片段
     - [`setSnippet`](./api/snippet.md#setsnippet): 🛠 设置代码片段
+  - [`sqlite`](./api/sqlite.md): 代码片段操作
+    - [`flushTransaction`](./api/sqlite.md#flushtransaction): 🛠 等待业务数据持久化完成
   - [`storage`](./api/storage.md): 存储操作
     - [`getLocalStorage`](./api/storage.md#getlocalstorage): 🛠 获取持久化的本地存储数据
     - [`getRecentDocs`](./api/storage.md#getrecentdocs): 🛠 获取最近打开的文档
@@ -101,6 +103,8 @@ outline: deep
   - [`system`](./api/system.md): 系统操作
     - [`bootProgress`](./api/system.md#bootprogress): 🔥 获取内核启动进度
     - [`currentTime`](./api/system.md#currenttime): 🔥 获取当前时间
+    - [`getConf`](./api/system.md#getconf): 🛠 获取工作空间完整配置
+    - [`logoutAuth`](./api/system.md#logoutauth): 🛠 注销登录状态
     - [`version`](./api/system.md#version): 🔥 获取内核版本
   - [`template`](./api/template.md): 模板操作
     - [`render`](./api/template.md#render): 🔥 渲染模板

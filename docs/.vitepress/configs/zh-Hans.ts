@@ -402,6 +402,7 @@ export const themeConfig: DefaultTheme.Config = {
                                             { text: 'repo', link: './repo' },
                                             { text: 'search', link: './search' },
                                             { text: 'snippet', link: './snippet' },
+                                            { text: 'sqlite', link: './sqlite' },
                                             { text: 'storage', link: './storage' },
                                             { text: 'system', link: './system' },
                                             { text: 'template', link: './template' },
