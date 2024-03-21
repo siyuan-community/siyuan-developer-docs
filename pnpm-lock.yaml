@@ -26,7 +26,7 @@ devDependencies:
     specifier: ^8.6.0
     version: 8.6.0
   vitepress:
-    specifier: 1.0.0-rc.45
+    specifier: ^1.0.0-rc.45
     version: 1.0.0-rc.45(@algolia/client-search@4.22.1)(@types/node@20.11.30)(search-insights@2.13.0)(typescript@4.9.5)
   vue:
     specifier: ^3.4.21
