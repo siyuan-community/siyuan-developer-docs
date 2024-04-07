@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-04-08
+
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+
 ## 2024-04-07
 
 - 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version

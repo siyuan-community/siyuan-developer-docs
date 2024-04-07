@@ -33,6 +33,29 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/currentTime/response.schema.json [JSON Schema (json)]
 :::
 
+## `exit`
+
+- 🛠 退出内核
+- `/api/system/exit`
+
+---
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/system/exit/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/system/exit/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/system/exit/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/system/exit/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/system/exit/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/system/exit/response.schema.json [JSON Schema (json)]
+:::
+
 ## `getConf`
 
 - 🛠 获取工作空间完整配置

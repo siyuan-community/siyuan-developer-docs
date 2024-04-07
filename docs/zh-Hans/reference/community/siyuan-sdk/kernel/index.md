@@ -27,6 +27,7 @@ outline: deep
   - [`block`](./api/block.md): 内容块操作
     - [`appendBlock`](./api/block.md#appendblock): 🔥 在下级块尾部插入块
     - [`deleteBlock`](./api/block.md#deleteblock): 🔥 删除块
+    - [`foldBlock`](./api/block.md#foldblock): 🔥 折叠块
     - [`getBlockBreadcrumb`](./api/block.md#getblockbreadcrumb): 🛠 获取块面包屑
     - [`getBlockDOM`](./api/block.md#getblockdom): 🛠 获取块 HTML DOM
     - [`getBlockInfo`](./api/block.md#getblockinfo): 🛠 获取块信息
@@ -37,6 +38,7 @@ outline: deep
     - [`moveBlock`](./api/block.md#moveblock): 🔥 移动块
     - [`prependBlock`](./api/block.md#prependblock): 🔥 在下级块首部插入块
     - [`transferBlockRef`](./api/block.md#transferblockref): 🔥 转移块引用
+    - [`unfoldBlock`](./api/block.md#unfoldblock): 🔥 展开块
     - [`updateBlock`](./api/block.md#updateblock): 🔥 更新块
   - [`broadcast`](./api/broadcast.md): 消息广播操作
     - [`getChannelInfo`](./api/broadcast.md#getchannelinfo): 🛠 获取指定消息通道的信息
@@ -103,6 +105,7 @@ outline: deep
   - [`system`](./api/system.md): 系统操作
     - [`bootProgress`](./api/system.md#bootprogress): 🔥 获取内核启动进度
     - [`currentTime`](./api/system.md#currenttime): 🔥 获取当前时间
+    - [`exit`](./api/system.md#exit): 🛠 退出内核
     - [`getConf`](./api/system.md#getconf): 🛠 获取工作空间完整配置
     - [`logoutAuth`](./api/system.md#logoutauth): 🛠 注销登录状态
     - [`version`](./api/system.md#version): 🔥 获取内核版本

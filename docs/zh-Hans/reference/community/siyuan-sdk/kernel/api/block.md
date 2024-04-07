@@ -51,6 +51,29 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/deleteBlock/response.schema.json [JSON Schema (json)]
 :::
 
+## `foldBlock`
+
+- 🔥 折叠块
+- `/api/block/foldBlock`
+
+---
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/foldBlock/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/foldBlock/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/response.schema.json [JSON Schema (json)]
+:::
+
 ## `getBlockBreadcrumb`
 
 - 🛠 获取块面包屑
@@ -279,6 +302,30 @@ outline: deep
 <<< @/snippets/siyuan-sdk/types/kernel/api/block/transferBlockRef/response.d.ts#content [Types]
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/transferBlockRef/response.schema.json5 [JSON Schema (json5)]
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/transferBlockRef/response.schema.json [JSON Schema (json)]
+:::
+
+
+## `unfoldBlock`
+
+- 🔥 展开块
+- `/api/block/unfoldBlock`
+
+---
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/unfoldBlock/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/unfoldBlock/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/response.schema.json [JSON Schema (json)]
 :::
 
 ## `updateBlock`
