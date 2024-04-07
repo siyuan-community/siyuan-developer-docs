@@ -6,10 +6,10 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.11.30",
-    "@vercel/node": "^3.0.24",
-    "cspell": "^8.6.0",
-    "vitepress": "^1.0.0-rc.45",
+    "@types/node": "^20.12.5",
+    "@vercel/node": "^3.0.26",
+    "cspell": "^8.6.1",
+    "vitepress": "^1.0.2",
     "vue": "^3.4.21"
   },
   "scripts": {
@@ -21,7 +21,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@siyuan-community/siyuan-sdk": "^0.3.8",
+    "@siyuan-community/siyuan-sdk": "^0.3.9",
     "@vercel/kv": "^1.0.1",
     "@vercel/speed-insights": "^1.0.10"
   }
