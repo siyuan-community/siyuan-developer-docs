@@ -16,7 +16,7 @@ outline: deep
 | [`custom-riff-decks`](#custom-riff-decks)             | 所有块     |
 | [`custom-sy-fullwidth`](#custom-sy-fullwidth)         | 文档块     |
 | [`custom-sy-readonly`](#custom-sy-readonly)           | 文档块     |
-| [`custom-dailynote-{yymmdd}`](#custom-dailynote-{yymmdd})           | 文档块     |
+| [`custom-dailynote-{yyyymmdd}`](#custom-dailynote-{yyyymmdd})| 文档块 |
 | [`data-assets`](#data-assets)                         | 挂件块     |
 | [`data-export-html`](#data-export-html)               | 挂件块     |
 | [`data-export-md`](#data-export-md)                   | 挂件块     |
@@ -88,10 +88,10 @@ outline: deep
 - 文档块
   - daily note 文档
 - 属性名
-  - `custom-dailynote-{yymmdd}`
-  - `{yymmdd}` 为日期，格式为 `YYMMDD`，例如 `211001` 代表 2021 年 10 月 1 日
+  - `custom-dailynote-{yyyymmdd}`
+  - `{yyyymmdd}` 为日期，格式为 `YYYYMMDD`，例如 `20211001` 代表 2021 年 10 月 1 日
 - 属性值
-  - `yymmdd`: 日期，格式为 `YYMMDD`，例如 `211001` 代表 2021 年 10 月 1 日
+  - `yyyymmdd`: 日期，格式为 `YYYYMMDD`
 - 详细细节请见: [Github Issue #9807](https://github.com/siyuan-note/siyuan/issues/9807)
 
 ## `data-assets`
