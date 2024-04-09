@@ -29,12 +29,12 @@ ago .CreatedAt"
 now | date "2006-01-02"
 ```
 
-使用 Go 的时间日期格式化方案
+Go 中的日期格式化[有点不同](https://www.pauladamsmith.com/blog/2011/05/go_time.html)
 
 简而言之，将以下日期作为格式化的模板日期
 
 ```
-1月2日 15:04:05 2006年
+Mon Jan 2 15:04:05 MST 2006
 ```
 
 ## `dateInZone`
