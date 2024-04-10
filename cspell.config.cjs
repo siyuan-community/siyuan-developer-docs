@@ -8,7 +8,6 @@ module.exports = {
     language: "en",
     // words - list of words to be always considered correct
     words: [
-        "vuepress",
         "abcjs",
         "afterbegin",
         "backlink",
@@ -17,6 +16,7 @@ module.exports = {
         "blockref",
         "breadcrumbmore",
         "contenteditable",
+        "dailynote",
         "docpath",
         "doctree",
         "echarts",
@@ -54,6 +54,7 @@ module.exports = {
         "topbar",
         "uuidv",
         "vitepress",
+        "vuepress",
         "webdav",
         "webpake",
         "wechat",

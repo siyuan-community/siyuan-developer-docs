@@ -158,12 +158,12 @@ outline: deep
 | `path`     | `/20200812220555-lj3enxa.sy`                                                                                                                                  | 元素所在文档块路径                 |
 | `content`  | `请勿在帮助指南中保存数据`                                                                                                                                    | 元素内容                           |
 | `markdown` | `请勿在帮助指南中保存数据`                                                                                                                                    | 包含完整 Markdown 标记符的元素内容 |
-| `type`     | 元素类型，参考 [spans.type](#spans-type)                                                                                                                                                      | 元素类型                           |
+| `type`     | 元素类型，参考 [spans.type](#spans-type)                                                                                                                      | 元素类型                           |
 | `ial`      | `{: style="background-image: linear-gradient(to right, var(--b3-theme-primary), var(--b3-theme-error)); -webkit-background-clip: text; color: transparent;"}` | 元素样式                           |
 
 ### `spans.type`
 | 字段值               | 说明     |
-|----------------------|----------|
+| -------------------- | -------- |
 | img                  | 图片     |
 | tag                  | 文档标签 |
 | textmark a           | 链接     |

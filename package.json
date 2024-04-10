@@ -6,10 +6,10 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "@vercel/node": "^3.0.26",
     "cspell": "^8.6.1",
-    "vitepress": "^1.0.2",
+    "vitepress": "^1.1.0",
     "vue": "^3.4.21"
   },
   "scripts": {

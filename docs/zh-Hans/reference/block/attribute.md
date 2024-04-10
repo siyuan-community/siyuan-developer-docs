@@ -5,21 +5,21 @@ outline: deep
 
 # 块属性
 
-| 块属性名                                              | 适用块类型 |
-| :---------------------------------------------------- | ---------- |
-| [`custom-avs`](#custom-avs)                           | 所有块     |
-| [`custom-data-assets`](#custom-data-assets)           | 挂件块     |
-| [`custom-heading-mode`](#custom-heading-mode)         | 嵌入块     |
-| [`custom-hidden`](#custom-hidden)                     | 文档块     |
-| [`custom-liandi-articleId`](#custom-liandi-articleId) | 文档块     |
-| [`custom-reminder-wechat`](#custom-reminder-wechat)   | 所有块     |
-| [`custom-riff-decks`](#custom-riff-decks)             | 所有块     |
-| [`custom-sy-fullwidth`](#custom-sy-fullwidth)         | 文档块     |
-| [`custom-sy-readonly`](#custom-sy-readonly)           | 文档块     |
-| [`custom-dailynote-{yyyymmdd}`](#custom-dailynote-{yyyymmdd})| 文档块 |
-| [`data-assets`](#data-assets)                         | 挂件块     |
-| [`data-export-html`](#data-export-html)               | 挂件块     |
-| [`data-export-md`](#data-export-md)                   | 挂件块     |
+| 块属性名                                                      | 适用块类型 |
+| :------------------------------------------------------------ | ---------- |
+| [`custom-avs`](#custom-avs)                                   | 所有块     |
+| [`custom-data-assets`](#custom-data-assets)                   | 挂件块     |
+| [`custom-heading-mode`](#custom-heading-mode)                 | 嵌入块     |
+| [`custom-hidden`](#custom-hidden)                             | 文档块     |
+| [`custom-liandi-articleId`](#custom-liandi-articleId)         | 文档块     |
+| [`custom-reminder-wechat`](#custom-reminder-wechat)           | 所有块     |
+| [`custom-riff-decks`](#custom-riff-decks)                     | 所有块     |
+| [`custom-sy-fullwidth`](#custom-sy-fullwidth)                 | 文档块     |
+| [`custom-sy-readonly`](#custom-sy-readonly)                   | 文档块     |
+| [`custom-dailynote-{yyyymmdd}`](#custom-dailynote-{yyyymmdd}) | 文档块     |
+| [`data-assets`](#data-assets)                                 | 挂件块     |
+| [`data-export-html`](#data-export-html)                       | 挂件块     |
+| [`data-export-md`](#data-export-md)                           | 挂件块     |
 
 ## `custom-avs`
 

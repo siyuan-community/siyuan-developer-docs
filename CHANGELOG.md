@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-04-10
+
+- 格式化代码 | Format code
+
 ## 2024-04-08
 
 - 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
