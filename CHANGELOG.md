@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-04-27
+
+- 添加事件总线 `click-flashcard-action` | Add event bus `click-flashcard-action`
+
 ## 2024-04-10
 
 - 格式化代码 | Format code

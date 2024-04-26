@@ -10,6 +10,7 @@ outline: deep
 | [`click-blockicon`](#click-blockicon) <Badge type="tip" text="^2.9.0" />                         | ✅ 块菜单打开事件                          |
 | [`click-editorcontent`](#click-editorcontent) <Badge type="tip" text="^2.9.0" />                 | ✅ 编辑区点击事件                          |
 | [`click-editortitleicon`](#click-editortitleicon) <Badge type="tip" text="^2.9.0" />             | ✅ 文档块菜单打开事件                      |
+| [`click-flashcard-action`](#click-flashcard-action) <Badge type="tip" text="^2.12.8" />          | ✅ 文档块菜单打开事件                      |
 | [`click-pdf`](#click-pdf) <Badge type="tip" text="^2.9.0" />                                     | ✅ PDF 注释菜单打开事件                    |
 | [`destroy-protyle`](#destroy-protyle) <Badge type="tip" text="^2.10.2" />                        | ✅ 编辑器关闭事件                          |
 | [`input-search`](#input-search) <Badge type="tip" text="^2.9.6" />                               | ✅ 搜索输入框内容变更事件                  |
@@ -45,6 +46,8 @@ outline: deep
 ## `click-editorcontent` <Badge type="tip" text="^2.9.0" />
 
 ## `click-editortitleicon` <Badge type="tip" text="^2.9.0" />
+
+## `click-flashcard-action` <Badge type="tip" text="^2.12.8" />
 
 ## `click-pdf` <Badge type="tip" text="^2.9.0" />
 
