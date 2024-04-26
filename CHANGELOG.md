@@ -3,6 +3,8 @@
 ## 2024-04-27
 
 - 添加事件总线 `click-flashcard-action` | Add event bus `click-flashcard-action`
+- 添加事件总线 `mobile-keyboard-hide` | Add event bus `mobile-keyboard-hide`
+- 添加事件总线 `mobile-keyboard-show` | Add event bus `mobile-keyboard-show`
 
 ## 2024-04-10
 
