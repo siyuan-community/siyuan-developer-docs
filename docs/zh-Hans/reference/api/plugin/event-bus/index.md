@@ -10,7 +10,7 @@ outline: deep
 | [`click-blockicon`](#click-blockicon) <Badge type="tip" text="^2.9.0" />                         | ✅ 块菜单打开事件                          |
 | [`click-editorcontent`](#click-editorcontent) <Badge type="tip" text="^2.9.0" />                 | ✅ 编辑区点击事件                          |
 | [`click-editortitleicon`](#click-editortitleicon) <Badge type="tip" text="^2.9.0" />             | ✅ 文档块菜单打开事件                      |
-| [`click-flashcard-action`](#click-flashcard-action) <Badge type="tip" text="^2.12.8" />          | ✅ 点击闪卡选项                            |
+| [`click-flashcard-action`](#click-flashcard-action) <Badge type="tip" text="^2.12.8" />          | ✅ 点击闪卡选项事件                        |
 | [`click-pdf`](#click-pdf) <Badge type="tip" text="^2.9.0" />                                     | ✅ PDF 注释菜单打开事件                    |
 | [`destroy-protyle`](#destroy-protyle) <Badge type="tip" text="^2.10.2" />                        | ✅ 编辑器关闭事件                          |
 | [`input-search`](#input-search) <Badge type="tip" text="^2.9.6" />                               | ✅ 搜索输入框内容变更事件                  |
@@ -35,6 +35,9 @@ outline: deep
 | [`open-siyuan-url-plugin`](#open-siyuan-url-plugin) <Badge type="tip" text="^2.10.0" />          | ✅ 打开思源超链接 `siyuan://plugins/` 事件 |
 | [`paste`](#paste) <Badge type="tip" text="^2.10.12" />                                           | ✅ 剪贴板粘贴事件                          |
 | [`switch-protyle`](#switch-protyle) <Badge type="tip" text="^2.10.13" />                         | ✅ 编辑器切换事件                          |
+| [`sync-end`](#sync-end) <Badge type="tip" text="^2.11.1" />                                      | ✅ 同步结束事件                            |
+| [`sync-fail`](#sync-fail) <Badge type="tip" text="^2.11.1" />                                    | ✅ 同步失败事件                            |
+| [`sync-start`](#sync-start) <Badge type="tip" text="^2.11.1" />                                  | ✅ 同步开始事件                            |
 | [`ws-main`](#ws-main) <Badge type="tip" text="^2.9.0" />                                         | ✅ 编辑事件 & 其他消息事件                 |
 
 - ✅: [思源最新版本](https://github.com/siyuan-note/siyuan/releases/latest)可用
@@ -102,5 +105,18 @@ outline: deep
 ## `paste` <Badge type="tip" text="^2.10.12" />
 
 ## `switch-protyle` <Badge type="tip" text="^2.10.13" />
+
+## `sync-end` <Badge type="tip" text="^2.11.1" />
+
+- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+
+## `sync-fail` <Badge type="tip" text="^2.11.1" />
+
+- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+
+## `sync-start` <Badge type="tip" text="^2.11.1" />
+
+- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+
 
 ## `ws-main` <Badge type="tip" text="^2.9.0" />

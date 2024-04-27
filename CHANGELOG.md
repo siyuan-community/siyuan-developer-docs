@@ -1,5 +1,11 @@
 # 更改日志
 
+## 2024-04-28
+
+- 添加事件总线 `sync-end` | Add event bus `sync-end`
+- 添加事件总线 `sync-fail` | Add event bus `sync-fail`
+- 添加事件总线 `sync-start` | Add event bus `sync-start`
+
 ## 2024-04-27
 
 - 添加事件总线 `click-flashcard-action` | Add event bus `click-flashcard-action`
