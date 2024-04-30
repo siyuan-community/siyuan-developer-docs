@@ -24,7 +24,21 @@
 
 * 描述
 
-    #TODO
+    New 创建一个新的 Lute 引擎。
+
+    默认启用的解析选项：
+    - GFM 支持
+    - 脚注
+    - 标题自定义 ID
+    - Emoji 别名替换，比如 :heart: 替换为 ❤️
+    - YAML Front Matter
+
+    默认启用的渲染选项：
+    - 软换行转硬换行
+    - 代码块语法高亮
+    - 中西文间插入空格
+    - 修正术语拼写
+    - 标题自定义 ID
 
 ## 静态方法: `EChartsMindmapStr`
 * 函数签名
@@ -366,7 +380,10 @@
 
 * 描述
 
-    #TODO
+    SetSanitize 设置为 true 时表示对输出进行 XSS 过滤。该方法定义在`lute.go`文件中。
+    
+    > [!WARNING]
+    > 根据官方描述，Lute 目前的实现存在一些漏洞，请不要依赖它来防御 XSS 攻击。
 
 ## 方法: `SetHeadingAnchor`
 * 函数签名
@@ -533,7 +550,7 @@
 
 * 描述
 
-    #TODO
+    IsValidLinkDest 判断 text 是否为合法的链接地址。
 
 ## 方法: `BlockDOM2InlineBlockDOM`
 * 函数签名
