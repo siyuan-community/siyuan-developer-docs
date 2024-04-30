@@ -1,5 +1,8 @@
 # `Lute`
 
+> [!TIP]
+> Lute 是由 go 语言项目 [88250/lute](https://github.com/88250/lute) 通过 [gopherjs](https://github.com/gopherjs/gopherjs) 转换为 JavaScript 代码生成的。其在思源中通过引入 js 文件的方式直接挂载到全局对象下，所以在[siyuan](https://github.com/siyuan-note/siyuan)项目中只有 TypeScript 类定义(`declare`)，没有实际的源代码。
+
 下面是根据给定的 TypeScript 类定义生成的说明文档模板：
 
 
@@ -484,7 +487,9 @@
 
 * 描述
 
-    #TODO
+    用于转换和修正块，该方法返回值为思源块 html 文本，参数`html`可以是原来的块 html 文本，也可以是 Markdown 文本，因为其工作流程为：参数`html`转换为 Markdown 文本，转换为抽象语法树，生成返回值。
+
+    从调用情况看，该方法多用于在以下情况下生成正确的块 html 文本：通过`/`菜单新建块、在编辑器中输入 Markdown 标记文本（如在行首输入`# `）、在编辑器中输入回车等。
 
 ## 方法: `Md2BlockDOM`
 * 函数签名
