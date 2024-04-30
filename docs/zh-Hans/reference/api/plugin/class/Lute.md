@@ -1,5 +1,8 @@
 # `Lute`
 
+> [!TIP]
+> Lute 是由 go 语言项目 [88250/lute](https://github.com/88250/lute) 通过 [gopherjs](https://github.com/gopherjs/gopherjs) 转换为 JavaScript 代码生成的。其在思源中通过引入 js 文件的方式直接挂载到全局对象下，所以在[siyuan](https://github.com/siyuan-note/siyuan)项目中只有 TypeScript 类定义(`declare`)，没有实际的源代码。
+
 下面是根据给定的 TypeScript 类定义生成的说明文档模板：
 
 
