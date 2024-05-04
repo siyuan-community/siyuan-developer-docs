@@ -20,16 +20,16 @@ outline: deep
 | [`lock-screen`](#lock-screen) <Badge type="tip" text="^2.12.0" />                                | ✅ 锁屏事件                                |
 | [`mobile-keyboard-hide`](#mobile-keyboard-hide) <Badge type="tip" text="^2.11.1" />              | ✅ 移动端隐藏悬浮键盘                      |
 | [`mobile-keyboard-show`](#mobile-keyboard-show) <Badge type="tip" text="^2.11.1" />              | ✅ 移动端显示悬浮键盘                      |
-| [`open-menu-av`](#open-menu-av) <Badge type="tip" text="^2.9.5" />                               | ✅ 属性视图右键菜单打开事件                |
-| [`open-menu-blockref`](#open-menu-blockref) <Badge type="tip" text="^2.9.5" />                   | ✅ 块引用右键菜单打开事件                  |
-| [`open-menu-breadcrumbmore`](#open-menu-breadcrumbmore) <Badge type="tip" text="^2.9.5" />       | ✅ 面包屑`更多`菜单打开事件                |
-| [`open-menu-content`](#open-menu-content) <Badge type="tip" text="^2.9.5" />                     | ✅ 文本划选右键菜单打开事件                |
+| [`open-menu-av`](#open-menu-av) <Badge type="tip" text="^2.9.4" />                               | ✅ 属性视图右键菜单打开事件                |
+| [`open-menu-blockref`](#open-menu-blockref) <Badge type="tip" text="^2.9.4" />                   | ✅ 块引用右键菜单打开事件                  |
+| [`open-menu-breadcrumbmore`](#open-menu-breadcrumbmore) <Badge type="tip" text="^2.9.4" />       | ✅ 面包屑`更多`菜单打开事件                |
+| [`open-menu-content`](#open-menu-content) <Badge type="tip" text="^2.9.4" />                     | ✅ 文本划选右键菜单打开事件                |
 | [`open-menu-doctree`](#open-menu-doctree) <Badge type="tip" text="^2.10.9" />                    | ✅ 文档树右键菜单打开事件                  |
-| [`open-menu-fileannotationref`](#open-menu-fileannotationref) <Badge type="tip" text="^2.9.5" /> | ✅ 附件引用右键菜单打开事件                |
-| [`open-menu-image`](#open-menu-image) <Badge type="tip" text="^2.9.5" />                         | ✅ 图片菜单打开事件                        |
+| [`open-menu-fileannotationref`](#open-menu-fileannotationref) <Badge type="tip" text="^2.9.4" /> | ✅ 附件引用右键菜单打开事件                |
+| [`open-menu-image`](#open-menu-image) <Badge type="tip" text="^2.9.4" />                         | ✅ 图片菜单打开事件                        |
 | [`open-menu-inbox`](#open-menu-inbox) <Badge type="tip" text="^2.12.0" />                        | ✅ 云收集箱右键菜单打开事件                |
-| [`open-menu-link`](#open-menu-link) <Badge type="tip" text="^2.9.5" />                           | ✅ 超链接右键菜单打开事件                  |
-| [`open-menu-tag`](#open-menu-tag) <Badge type="tip" text="^2.9.5" />                             | ✅ 标签右键菜单打开事件                    |
+| [`open-menu-link`](#open-menu-link) <Badge type="tip" text="^2.9.4" />                           | ✅ 超链接右键菜单打开事件                  |
+| [`open-menu-tag`](#open-menu-tag) <Badge type="tip" text="^2.9.4" />                             | ✅ 标签右键菜单打开事件                    |
 | [`open-noneditableblock`](#open-noneditableblock) <Badge type="tip" text="^2.9.0" />             | ✅ 文本编辑框打开事件                      |
 | [`open-siyuan-url-block`](#open-siyuan-url-block) <Badge type="tip" text="^2.10.0" />            | ✅ 打开思源超链接 `siyuan://blocks/` 事件  |
 | [`open-siyuan-url-plugin`](#open-siyuan-url-plugin) <Badge type="tip" text="^2.10.0" />          | ✅ 打开思源超链接 `siyuan://plugins/` 事件 |
@@ -48,75 +48,128 @@ outline: deep
 
 ## `click-blockicon` <Badge type="tip" text="^2.9.0" />
 
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+
 ## `click-editorcontent` <Badge type="tip" text="^2.9.0" />
+
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `click-editortitleicon` <Badge type="tip" text="^2.9.0" />
 
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+
 ## `click-flashcard-action` <Badge type="tip" text="^2.12.8" />
+
+- 议题 (Issues): [siyuan-note/siyuan #10318](https://github.com/siyuan-note/siyuan/issues/10318)
 
 ## `click-pdf` <Badge type="tip" text="^2.9.0" />
 
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+
 ## `destroy-protyle` <Badge type="tip" text="^2.10.2" />
+
+- 议题 (Issues): [siyuan-note/siyuan #9033](https://github.com/siyuan-note/siyuan/issues/9033)
 
 ## `input-search` <Badge type="tip" text="^2.9.6" />
 
+- 议题 (Issues): [siyuan-note/siyuan #8725](https://github.com/siyuan-note/siyuan/issues/8725)
+
 ## `loaded-protyle-dynamic` <Badge type="tip" text="^2.10.2" />
+
+- 议题 (Issues): [siyuan-note/siyuan #9021](https://github.com/siyuan-note/siyuan/issues/9021)
 
 ## `loaded-protyle-static` <Badge type="tip" text="^2.10.12" />
 
+- 议题 (Issues): [siyuan-note/siyuan #9468](https://github.com/siyuan-note/siyuan/issues/9468)
+
 ## `loaded-protyle` <Badge type="danger" text="2.9.0 ~ 2.10.12" />
+
+- 议题 (Issues): [siyuan-note/siyuan #9468](https://github.com/siyuan-note/siyuan/issues/9468)
 
 ## `lock-screen` <Badge type="tip" text="^2.12.0" />
 
+- 议题 (Issues): [siyuan-note/siyuan #10006](https://github.com/siyuan-note/siyuan/issues/10006)
+
 ## `mobile-keyboard-hide` <Badge type="tip" text="^2.11.1" />
 
-- Issues: [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
+- 议题 (Issues): [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
 
 ## `mobile-keyboard-show` <Badge type="tip" text="^2.11.1" />
 
-- Issues: [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
+- 议题 (Issues): [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
 
-## `open-menu-av` <Badge type="tip" text="^2.9.5" />
+## `open-menu-av` <Badge type="tip" text="^2.9.4" />
 
-## `open-menu-blockref` <Badge type="tip" text="^2.9.5" />
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
 
-## `open-menu-breadcrumbmore` <Badge type="tip" text="^2.9.5" />
+## `open-menu-blockref` <Badge type="tip" text="^2.9.4" />
 
-## `open-menu-content` <Badge type="tip" text="^2.9.5" />
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+
+## `open-menu-breadcrumbmore` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+
+## `open-menu-content` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-doctree` <Badge type="tip" text="^2.10.9" />
 
-## `open-menu-fileannotationref` <Badge type="tip" text="^2.9.5" />
+- 议题 (Issues): [siyuan-note/siyuan #9351](https://github.com/siyuan-note/siyuan/issues/9351)
 
-## `open-menu-image` <Badge type="tip" text="^2.9.5" />
+## `open-menu-fileannotationref` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+
+## `open-menu-image` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-inbox` <Badge type="tip" text="^2.12.0" />
 
-## `open-menu-link` <Badge type="tip" text="^2.9.5" />
+- 拉取请求 (PR): [siyuan-note/siyuan #9967](https://github.com/siyuan-note/siyuan/pull/9967)
 
-## `open-menu-tag` <Badge type="tip" text="^2.9.5" />
+## `open-menu-link` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+
+## `open-menu-tag` <Badge type="tip" text="^2.9.4" />
+
+- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-noneditableblock` <Badge type="tip" text="^2.9.0" />
 
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+
 ## `open-siyuan-url-block` <Badge type="tip" text="^2.10.0" />
+
+- 拉取请求 (PR): [siyuan-note/siyuan #8927](https://github.com/siyuan-note/siyuan/pull/8927)
 
 ## `open-siyuan-url-plugin` <Badge type="tip" text="^2.10.0" />
 
+- 拉取请求 (PR): [siyuan-note/siyuan #8927](https://github.com/siyuan-note/siyuan/pull/8927)
+
 ## `paste` <Badge type="tip" text="^2.10.12" />
+
+- 议题 (Issues): [siyuan-note/siyuan #9452](https://github.com/siyuan-note/siyuan/issues/9452)
 
 ## `switch-protyle` <Badge type="tip" text="^2.10.13" />
 
+- 议题 (Issues): [siyuan-note/siyuan #9454](https://github.com/siyuan-note/siyuan/issues/9454)
+
 ## `sync-end` <Badge type="tip" text="^2.11.1" />
 
-- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `sync-fail` <Badge type="tip" text="^2.11.1" />
 
-- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `sync-start` <Badge type="tip" text="^2.11.1" />
 
-- Issues: [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
-
+- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `ws-main` <Badge type="tip" text="^2.9.0" />
+
+- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)

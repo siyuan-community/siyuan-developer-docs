@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-04
+
+- 完善事件总线内容 | Improve event bus content
+
 ## 2024-04-28
 
 - 添加事件总线 `sync-end` | Add event bus `sync-end`
