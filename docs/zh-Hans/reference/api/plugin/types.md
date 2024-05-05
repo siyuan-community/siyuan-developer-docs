@@ -2,21 +2,103 @@
 
 - 类型与接口定义模块 [siyuan - npm](https://www.npmjs.com/package/siyuan)
 
-## `type TEventBus`
+## `type IEventBusMap`
 
 ```typescript
-type TEventBus = "ws-main" |
-    "click-blockicon" | "click-editorcontent" | "click-pdf" | "click-editortitleicon" |
-    "open-noneditableblock" |
-    "open-menu-blockref" | "open-menu-fileannotationref" | "open-menu-tag" | "open-menu-link" | "open-menu-image" |
-    "open-menu-av" | "open-menu-content" | "open-menu-breadcrumbmore" |
-    "open-siyuan-url-plugin" | "open-siyuan-url-block" |
-    "input-search" |
-    "loaded-protyle" | "loaded-protyle-dynamic" |
-    "destroy-protyle"
+interface IEventBusMap {
+    "click-blockicon": {
+        menu: EventMenu,
+        protyle: IProtyle,
+        blockElements: HTMLElement[],
+    };
+    "click-editorcontent": {
+        protyle: IProtyle,
+        event: MouseEvent,
+    };
+    "click-editortitleicon": {
+        menu: EventMenu,
+        protyle: IProtyle,
+        data: IGetDocInfo,
+    };
+    "click-flashcard-action": {
+        card: ICard,
+        type: string,
+    };
+    "click-pdf": {
+        event: MouseEvent,
+    };
+    "destroy-protyle": {
+        protyle: IProtyle,
+    };
+    "input-search": {
+        protyle: Protyle,
+        config: ISearchOption,
+        searchElement: HTMLInputElement,
+    };
+    "loaded-protyle-dynamic": {
+        protyle: IProtyle,
+        positon: "afterend" | "beforebegin",
+    };
+    "loaded-protyle-static": {
+        protyle: IProtyle,
+    };
+    "lock-screen": void;
+    "mobile-keyboard-show": void;
+    "mobile-keyboard-hide": void;
+    "open-menu-av": IMenuBaseDetail & { selectRowElements: HTMLElement[] };
+    "open-menu-blockref": IMenuBaseDetail;
+    "open-menu-breadcrumbmore": {
+        menu: EventMenu,
+        protyle: IProtyle,
+        data: IGetTreeStat,
+    };
+    "open-menu-content": IMenuBaseDetail & { range: Range };
+    "open-menu-fileannotationref": IMenuBaseDetail;
+    "open-menu-image": IMenuBaseDetail;
+    "open-menu-link": IMenuBaseDetail;
+    "open-menu-tag": IMenuBaseDetail;
+    "open-menu-doctree": {
+        menu: EventMenu,
+        elements: NodeListOf<HTMLElement>,
+        type: "doc" | "docs" | "notebook",
+    };
+    "open-menu-inbox": {
+        menu: EventMenu,
+        element: HTMLElement,
+        ids: string[],
+    };
+    "open-noneditableblock": {
+        protyle: IProtyle,
+        toolbar: Toolbar,
+    };
+    "open-siyuan-url-block": {
+        url: string,
+        id: string,
+        focus: boolean,
+        exist: boolean,
+    };
+    "open-siyuan-url-plugin": {
+        url: string,
+    };
+    "paste": {
+        protyle: IProtyle,
+        resolve: new <T>(value: T | PromiseLike<T>) => void,
+        textHTML: string,
+        textPlain: string,
+        siyuanHTML: string,
+        files: FileList | DataTransferItemList;
+    }
+    "switch-protyle": {
+        protyle: IProtyle,
+    };
+    "sync-end": IWebSocketData;
+    "sync-fail": IWebSocketData;
+    "sync-start": IWebSocketData;
+    "ws-main": IWebSocketData;
+}
 ```
 
-表示不同的事件名称。这些事件将作为 [`EventBus`](./class/EventBus.md) 类的输入参数，以实现思源和插件之间的通信。
+表示不同的事件名称与事件对应的 `detail` 属性。这些事件将作为 [`EventBus`](./class/EventBus.md) 类的输入参数，以实现思源和插件之间的通信。
 
 详情请参考 [事件总线](./event-bus/)。
 
@@ -28,11 +110,11 @@ type TEventBus = "ws-main" |
 type TCardType = "doc" | "notebook" | "all"
 ```
 
-| Name         | Explanation |
-| ------------ | ----------- |
-| `"doc"`      | TODO        |
-| `"notebook"` | TODO        |
-| `"all"`      | TODO        |
+| Name         | Explanation        |
+| ------------ | ------------------ |
+| `"doc"`      | 文档目录下的闪卡   |
+| `"notebook"` | 笔记本目录下的闪卡 |
+| `"all"`      | 所有闪卡           |
 
 ---
 
