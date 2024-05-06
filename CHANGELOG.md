@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-06
+
+- 完善事件总线内容 | Improve event bus content
+
 ## 2024-05-05
 
 - 完善插件相关类型说明 | Improve plugin-related type descriptions

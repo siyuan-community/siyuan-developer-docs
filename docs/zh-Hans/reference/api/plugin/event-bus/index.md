@@ -48,128 +48,160 @@ outline: deep
 
 ## `click-blockicon` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- 块菜单打开事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `click-editorcontent` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- 编辑区点击事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `click-editortitleicon` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- 文档块菜单打开事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `click-flashcard-action` <Badge type="tip" text="^2.12.8" />
 
-- 议题 (Issues): [siyuan-note/siyuan #10318](https://github.com/siyuan-note/siyuan/issues/10318)
+- 点击闪卡选项事件
+- 参考: [Issue #10318 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/10318)
 
 ## `click-pdf` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- PDF 注释菜单打开事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `destroy-protyle` <Badge type="tip" text="^2.10.2" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9033](https://github.com/siyuan-note/siyuan/issues/9033)
+- 编辑器关闭事件
+- 参考: [Issue #9033 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9033)
 
 ## `input-search` <Badge type="tip" text="^2.9.6" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8725](https://github.com/siyuan-note/siyuan/issues/8725)
+- 搜索输入框内容变更事件
+- 参考: [Issue #8725 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8725)
 
 ## `loaded-protyle-dynamic` <Badge type="tip" text="^2.10.2" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9021](https://github.com/siyuan-note/siyuan/issues/9021)
+- 编辑器内容动态加载事件
+- 参考: [Issue #9021 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9021)
 
 ## `loaded-protyle-static` <Badge type="tip" text="^2.10.12" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9468](https://github.com/siyuan-note/siyuan/issues/9468)
+- 编辑器内容静态加载事件
+- 参考: [Issue #9468 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9468)
 
 ## `loaded-protyle` <Badge type="danger" text="2.9.0 ~ 2.10.12" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9468](https://github.com/siyuan-note/siyuan/issues/9468)
+- 编辑器加载事件
+- 参考: [Issue #9468 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9468)
 
 ## `lock-screen` <Badge type="tip" text="^2.12.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #10006](https://github.com/siyuan-note/siyuan/issues/10006)
+- 锁屏事件
+- 参考: [Issue #10006 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/10006)
 
 ## `mobile-keyboard-hide` <Badge type="tip" text="^2.11.1" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
+- 移动端隐藏悬浮键盘
+- 参考: [Issue #9773 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9773)
 
 ## `mobile-keyboard-show` <Badge type="tip" text="^2.11.1" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9773](https://github.com/siyuan-note/siyuan/issues/9773)
+- 移动端显示悬浮键盘
+- 参考: [Issue #9773 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9773)
 
 ## `open-menu-av` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 属性视图右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-blockref` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 块引用右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-breadcrumbmore` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 面包屑`更多`菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-content` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 文本划选右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-doctree` <Badge type="tip" text="^2.10.9" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9351](https://github.com/siyuan-note/siyuan/issues/9351)
+- 文档树右键菜单打开事件
+- 参考: [Issue #9351 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9351)
 
 ## `open-menu-fileannotationref` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 附件引用右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-image` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 图片菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-inbox` <Badge type="tip" text="^2.12.0" />
 
-- 拉取请求 (PR): [siyuan-note/siyuan #9967](https://github.com/siyuan-note/siyuan/pull/9967)
+- 云收集箱右键菜单打开事件
+- 参考: [Pull Request #9967 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/pull/9967)
 
 ## `open-menu-link` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 超链接右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-menu-tag` <Badge type="tip" text="^2.9.4" />
 
-- 议题 (Issues): [siyuan-note/siyuan #8617](https://github.com/siyuan-note/siyuan/issues/8617)
+- 标签右键菜单打开事件
+- 参考: [Issue #8617 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/8617)
 
 ## `open-noneditableblock` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- 文本编辑框打开事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)
 
 ## `open-siyuan-url-block` <Badge type="tip" text="^2.10.0" />
 
-- 拉取请求 (PR): [siyuan-note/siyuan #8927](https://github.com/siyuan-note/siyuan/pull/8927)
+- 打开思源超链接 `siyuan://blocks/` 事件
+- 参考: [Pull Request #8927 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/pull/8927)
 
 ## `open-siyuan-url-plugin` <Badge type="tip" text="^2.10.0" />
 
-- 拉取请求 (PR): [siyuan-note/siyuan #8927](https://github.com/siyuan-note/siyuan/pull/8927)
+- 打开思源超链接 `siyuan://plugins/` 事件
+- 参考: [Pull Request #8927 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/pull/8927)
 
 ## `paste` <Badge type="tip" text="^2.10.12" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9452](https://github.com/siyuan-note/siyuan/issues/9452)
+- 剪贴板粘贴事件
+- 参考: [Issue #9452 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9452)
 
 ## `switch-protyle` <Badge type="tip" text="^2.10.13" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9454](https://github.com/siyuan-note/siyuan/issues/9454)
+- 编辑器切换事件
+- 参考: [Issue #9454 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9454)
 
 ## `sync-end` <Badge type="tip" text="^2.11.1" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+- 同步结束事件
+- 参考: [Issue #9798 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `sync-fail` <Badge type="tip" text="^2.11.1" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+- 同步失败事件
+- 参考: [Issue #9798 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `sync-start` <Badge type="tip" text="^2.11.1" />
 
-- 议题 (Issues): [siyuan-note/siyuan #9798](https://github.com/siyuan-note/siyuan/issues/9798)
+- 同步开始事件
+- 参考: [Issue #9798 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/9798)
 
 ## `ws-main` <Badge type="tip" text="^2.9.0" />
 
-- 议题 (Issues): [siyuan-note/siyuan #5066](https://github.com/siyuan-note/siyuan/issues/5066)
+- 编辑事件 & 其他消息事件
+- 参考: [Issue #5066 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/issues/5066)

@@ -6,7 +6,7 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.12.9",
     "@vercel/node": "^3.0.28",
     "cspell": "^8.8.0",
     "vitepress": "^1.1.4",
