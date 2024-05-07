@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/asset`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/asset/upload`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -18,6 +18,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

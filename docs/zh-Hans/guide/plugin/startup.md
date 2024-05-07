@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 插件开发入门
@@ -11,15 +10,15 @@ outline: deep
 
 基础技能（必备）
 
-* **JavaScript**
-* HTML
-* CSS
+- **JavaScript**
+- HTML
+- CSS
 
 进阶技能（可选）
 
-* SASS（CSS 扩展语言）
-* Svelte（前端 UI 框架）
-* TypeScript（JS 的扩展语言）
+- SASS（CSS 扩展语言）
+- Svelte（前端 UI 框架）
+- TypeScript（JS 的扩展语言）
 
 最低限度，需要有 JS 语法基础，如果懂得 TS 是最好的，不懂也没关系，TS 是 JS 的超集，完全兼容 JS 语法
 
@@ -27,12 +26,13 @@ outline: deep
 
 ## 开发环境及工具
 
-* **Node.js** 环境
+- **Node.js** 环境
 
-  * 它提供了 npm 包管理器，以及 typescript 的运行环境
-  * 用其包管理工具 npm 安装更现代化的包管理工具 **pnpm**
-* **VScode** 编辑器
-* 一个至少能流畅访问 github 的网络环境
+  - 它提供了 npm 包管理器，以及 typescript 的运行环境
+  - 用其包管理工具 npm 安装更现代化的包管理工具 **pnpm**
+
+- **VScode** 编辑器
+- 一个至少能流畅访问 github 的网络环境
 
 思源插件开发所依赖的 js 模块以 npm 包的形式发布，并通过 pnpm 下载，代码通过 vscode 编写
 
@@ -56,13 +56,13 @@ outline: deep
 
 一个是<u>官方维护</u>的
 
-* [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)
+- [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)
 
 它使用 **webpake** 打包项目
 
 一个是<u>社区维护</u>的
 
-* [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)
+- [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)
 
 它内置了对 **svelte** 的支持，并且能够将项目文件链接到思源的插件目录下，避免手动复制的麻烦，以及支持热重载，它使用 **vite** 打包项目
 
@@ -105,39 +105,46 @@ $ pnpm build
 
 ### 具体参见
 
-* [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)（官方维护）
-* [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)（社区维护）
+- [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)（官方维护）
+- [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)（社区维护）
 
 ## 项目相关文件说明
 
 ### 项目结构
 
-* **/src**
+- **/src**
 
-  * `*.ts或*.scss`
+  - `*.ts或*.scss`
 
-    * 插件源码
-  * `/i18n/*`
+    - 插件源码
 
-    * 其中的文件用于插件的国际化，通常会包含中英双语，方便其他国家用户使用
-* **plugin.json**
+  - `/i18n/*`
 
-  * 插件配置文件，具体参见[这里](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#pluginjson)
-* icon.png (160*160)
+    - 其中的文件用于插件的国际化，通常会包含中英双语，方便其他国家用户使用
 
-  * 插件图标
-* index.css
+- **plugin.json**
 
-  * 插件加载的 CSS 样式
-* index.js
+  - 插件配置文件，具体参见[这里](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#pluginjson)
 
-  * 插件代码
-* preview.png (1024*768)
+- icon.png (160\*160)
 
-  * 插件预览图片
-* README*.md
+  - 插件图标
 
-  * 插件说明文档
+- index.css
+
+  - 插件加载的 CSS 样式
+
+- index.js
+
+  - 插件代码
+
+- preview.png (1024\*768)
+
+  - 插件预览图片
+
+- README\*.md
+
+  - 插件说明文档
 
 你需要关注的主要是 `/src` 目录下的源码部分，以及 `plugin.json` 这个插件配置文件
 
@@ -145,36 +152,39 @@ $ pnpm build
 
 > 无论使用何种方式编译打包，我们最终需要生成一个 package.zip，它至少包含如下文件：
 >
-> * i18n/*
-> * icon.png (160*160)
-> * index.css
-> * index.js
-> * plugin.json
-> * preview.png (1024*768)
-> * README*.md
+> - i18n/\*
+> - icon.png (160\*160)
+> - index.css
+> - index.js
+> - plugin.json
+> - preview.png (1024\*768)
+> - README\*.md
 
 ## 项目分析及源码解析
 
 ### 项目分析
 
-* 打包及发布
+- 打包及发布
 
   1. 项目使用打包工具（webpack 或 vite），将源码及相关资源文件打包
 
-     * 源码
+     - 源码
 
-       * `*.ts（*.svelte）` 被编译为 `index.js`
-       * `*.scss` 被编译为 `index.css`
-     * 资源文件
+       - `*.ts（*.svelte）` 被编译为 `index.js`
+       - `*.scss` 被编译为 `index.css`
 
-       * 直接复制
+     - 资源文件
+
+       - 直接复制
+
   2. 打包后，会输出到项目的 `/dist` 目录下，并在项目的根目录下输出一个 `package.zip` 文件
   3. `package.zip` 需要开发者手动上传到 github 仓库供思源集市拉取
 
-     * 社区样板工程支持自动打包发布
-* 核心依赖
+     - 社区样板工程支持自动打包发布
 
-  * 插件核心依赖主要是 `siyuan` 这个 npm 包，它的文件中，只有 `siyuan.d.ts` 生效，它只对插件系统的 API 类型进行声明，以此确保开发者正确调用 API，所以你常常需要执行以下代码，确保项目的依赖是最新的：
+- 核心依赖
+
+  - 插件核心依赖主要是 `siyuan` 这个 npm 包，它的文件中，只有 `siyuan.d.ts` 生效，它只对插件系统的 API 类型进行声明，以此确保开发者正确调用 API，所以你常常需要执行以下代码，确保项目的依赖是最新的：
 
     ```
     pnpm up --latest
@@ -193,11 +203,9 @@ import { Plugin } from "siyuan";
 import "./index.scss";
 
 export default class PluginSample extends Plugin {
-
-    onload() {
-        console.log("Hello World!");
-    }
-
+  onload() {
+    console.log("Hello World!");
+  }
 }
 ```
 
@@ -213,28 +221,28 @@ export default class PluginSample extends Plugin {
 
 #### 参考链接
 
-* [一文读懂 TS 的(.d.ts)文件](https://www.jianshu.com/p/cd875a4a6c15)
-* [plugin.json 文件说明](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#pluginjson)
-* [前端 API 声明文件 siyuan.d.ts](https://www.npmjs.com/package/siyuan)
-* [思源前端 API 源码](https://github.com/siyuan-note/siyuan/tree/master/app/src/plugin)
-* [思源后端 API 文档](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)
+- [一文读懂 TS 的(.d.ts)文件](https://www.jianshu.com/p/cd875a4a6c15)
+- [plugin.json 文件说明](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#pluginjson)
+- [前端 API 声明文件 siyuan.d.ts](https://www.npmjs.com/package/siyuan)
+- [思源前端 API 源码](https://github.com/siyuan-note/siyuan/tree/master/app/src/plugin)
+- [思源后端 API 文档](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)
 
 ## 代码调试
 
-* 官方模板
+- 官方模板
 
   > 将你的库克隆到本地开发文件夹中，为了方便可以直接将开发文件夹放置在 `{工作空间}/data/plugins/` 下
-  >
 
   但是项目中的所有文件都会被同步到云端，删除插件时，整个文件夹会被移除，容易导致项目丢失
-* 社区模板
+
+- 社区模板
 
   使用软链接，将`/dist`目录下的文件链接到插件文件夹下，其中的内容不会被同步
 
 代码更改后，执行`pnpm run build`，会将源代码和资源文件打包输出到`/dist`目录下，并在项目根目录输出`package.zip`，你需要重启思源，或者先禁用再启用插件，来让插件重新加载，因此你最好直接配置vscode
 
-* 点击vscode的运行按钮或按<kbd>F5</kbd>
-* 首次运行时，将端口配置为思源的`6806`端口，会启动浏览器访问思源，只要刷新网页便会重载思源界面，方便开发
+- 点击vscode的运行按钮或按<kbd>F5</kbd>
+- 首次运行时，将端口配置为思源的`6806`端口，会启动浏览器访问思源，只要刷新网页便会重载思源界面，方便开发
 
 如果使用的是社区样版工程，执行`pnpm run dev`，会在后台挂起脚本实时编译，每当你按下<kbd>CTRL+S</kbd>保存，就会进行一次编译，并刷新浏览器，你能够立即看到更改，以便于**快速开发**
 
@@ -244,20 +252,18 @@ export default class PluginSample extends Plugin {
 
 ### 上架集市
 
-* [上架集市 (github.com)](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#%E4%B8%8A%E6%9E%B6%E9%9B%86%E5%B8%82)
+- [上架集市 (github.com)](https://github.com/siyuan-note/plugin-sample/blob/main/README_zh_CN.md#%E4%B8%8A%E6%9E%B6%E9%9B%86%E5%B8%82)
 
-> * 执行 `pnpm run build` 生成 package.zip
-> * 在 GitHub 上创建一个新的发布，使用插件版本号作为 “Tag version”，示例 [https://github.com/siyuan-note/plugin-sample/releases](https://github.com/siyuan-note/plugin-sample/releases)
-> * 上传 package.zip 作为二进制附件
-> * 提交发布
+> - 执行 `pnpm run build` 生成 package.zip
+> - 在 GitHub 上创建一个新的发布，使用插件版本号作为 “Tag version”，示例 [https://github.com/siyuan-note/plugin-sample/releases](https://github.com/siyuan-note/plugin-sample/releases)
+> - 上传 package.zip 作为二进制附件
+> - 提交发布
 >
 > 如果是第一次发布版本，还需要创建一个 PR 到 [Community Bazaar](https://github.com/siyuan-note/bazaar) 社区集市仓库，修改该库的 plugins.json。该文件是所有社区插件库的索引，格式为：
 >
 > ```json
 > {
->   "repos": [
->     "username/reponame"
->   ]
+>   "repos": ["username/reponame"]
 > }
 > ```
 >

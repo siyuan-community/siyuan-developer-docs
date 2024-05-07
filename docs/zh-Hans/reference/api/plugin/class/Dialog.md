@@ -1,51 +1,52 @@
 # `Dialog`
 
-
 ## 属性
-| Property         | Type                                              | Description                              |
-| :--------------- | :------------------------------------------------ | :--------------------------------------- |
-| `element`        | `HTMLElement`                                     | #TODO                                    |
+
+| Property  | Type          | Description |
+| :-------- | :------------ | :---------- |
+| `element` | `HTMLElement` | #TODO       |
 
 ## 构造函数
 
-* 函数签名
+- 函数签名
 
-    ```ts
-    constructor(options: {
-        title?: string,
-        transparent?: boolean,
-        content: string,
-        width?: string,
-        height?: string,
-        destroyCallback?: (options?: IObject) => void,
-        disableClose?: boolean,
-        disableAnimation?: boolean,
-    });
-    ```
+  ```ts
+  constructor(options: {
+      title?: string,
+      transparent?: boolean,
+      content: string,
+      width?: string,
+      height?: string,
+      destroyCallback?: (options?: IObject) => void,
+      disableClose?: boolean,
+      disableAnimation?: boolean,
+  });
+  ```
 
-* 描述
+- 描述
 
-    #TODO
+  #TODO
 
 ## 方法: `destroy`
-* 函数签名
 
-    ```ts
-    destroy(options?: IObject): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  destroy(options?: IObject): void;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `bindInput`
-* 函数签名
 
-    ```ts
-    bindInput(inputElement: HTMLInputElement | HTMLTextAreaElement, enterEvent?: () => void): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  bindInput(inputElement: HTMLInputElement | HTMLTextAreaElement, enterEvent?: () => void): void;
+  ```
 
-    #TODO
+- 描述
 
+  #TODO

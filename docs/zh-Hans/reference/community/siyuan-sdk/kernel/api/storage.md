@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/storage`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/storage/getLocalStorage`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -25,6 +25,7 @@ outline: deep
 - `/api/storage/getRecentDocs`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -39,6 +40,7 @@ outline: deep
 - `/api/storage/setLocalStorage`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -48,6 +50,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

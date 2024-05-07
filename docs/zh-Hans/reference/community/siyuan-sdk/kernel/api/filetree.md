@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/filetree`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/filetree/createDailyNote`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -34,6 +35,7 @@ outline: deep
 - `/api/filetree/createDocWithMd`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -57,6 +60,7 @@ outline: deep
 - `/api/filetree/getDoc`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -66,6 +70,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -80,6 +85,7 @@ outline: deep
 - `/api/filetree/getHPathByID`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -89,6 +95,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -103,6 +110,7 @@ outline: deep
 - `/api/filetree/getHPathByPath`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -112,6 +120,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -126,6 +135,7 @@ outline: deep
 - `/api/filetree/listDocsByPath`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -135,6 +145,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -149,6 +160,7 @@ outline: deep
 - `/api/filetree/getIDsByHPath`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -158,6 +170,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -172,6 +185,7 @@ outline: deep
 - `/api/filetree/moveDocs`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -181,6 +195,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -195,6 +210,7 @@ outline: deep
 - `/api/filetree/removeDoc`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -204,6 +220,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -218,6 +235,7 @@ outline: deep
 - `/api/filetree/renameDoc`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -227,6 +245,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -241,6 +260,7 @@ outline: deep
 - `/api/filetree/searchDocs`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -250,6 +270,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

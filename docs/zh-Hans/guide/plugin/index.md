@@ -1,13 +1,12 @@
-
 - [入门](./startup.md)
 - 开发
-    - 开发环境
-    - 用户界面
-    - [事件总线](/zh-Hans/reference/api/plugin/event-bus/)
-    - [Svelte组件库](./development/svelte-kit.md)
-    - [社区资源](./development/community.md)
+  - 开发环境
+  - 用户界面
+  - [事件总线](/zh-Hans/reference/api/plugin/event-bus/)
+  - [Svelte组件库](./development/svelte-kit.md)
+  - [社区资源](./development/community.md)
 - 其他
-    - [5 分钟快速开启插件开发](./five-minutes-quick-start.md)
+  - [5 分钟快速开启插件开发](./five-minutes-quick-start.md)
 
 更多文档说明请参考 [插件 API](/zh-Hans/reference/api/plugin/)
 

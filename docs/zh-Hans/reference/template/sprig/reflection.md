@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 反射函数
@@ -37,9 +36,9 @@ kindIs "int" 123
 
 类型稍微复杂些，因此有三个不同的函数：
 
-* `typeOf`: 返回一个值的底层类型：`typeOf $foo`
-* `typeIs`: 类似于 `kindIs`，但用于类型：`typeIs "*io.Buffer" $myVal`
-* `typeIsLike`: 与 `typeIs` 相似，但也会解引用指针。
+- `typeOf`: 返回一个值的底层类型：`typeOf $foo`
+- `typeIs`: 类似于 `kindIs`，但用于类型：`typeIs "*io.Buffer" $myVal`
+- `typeIsLike`: 与 `typeIs` 相似，但也会解引用指针。
 
 **注意：** 这些函数都不能测试某个对象是否实现了给定的接口，因为这将需要提前编译接口。
 

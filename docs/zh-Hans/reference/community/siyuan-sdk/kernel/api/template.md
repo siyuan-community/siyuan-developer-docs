@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/template`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/template/render`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -34,6 +35,7 @@ outline: deep
 - `/api/template/renderSprig`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

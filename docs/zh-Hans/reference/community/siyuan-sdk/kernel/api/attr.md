@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/attr`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/attr/getBlockAttrs`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -34,6 +35,7 @@ outline: deep
 - `/api/attr/getBookmarkLabels`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -48,6 +50,7 @@ outline: deep
 - `/api/attr/setBlockAttrs`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -57,6 +60,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

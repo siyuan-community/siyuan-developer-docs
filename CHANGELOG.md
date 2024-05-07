@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-07
+
+- 配置 prettier | Configure prettier
+
 ## 2024-05-06
 
 - 完善事件总线内容 | Improve event bus content
@@ -37,7 +41,6 @@
 - 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version
 
 ## 2024-03-20
-
 
 ## 2024-03-08
 

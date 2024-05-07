@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 整数切片函数
@@ -31,15 +30,17 @@ untilStep 3 6 2
 
 作用类似于 bash 的 `seq` 命令。
 
-* 1个参数 `(end)`
+- 1个参数 `(end)`
 
-  * 生成从 1 到 `end`（包括 `end`）的所有整数组成的列表
-* 2个参数 `(start, end)`
+  - 生成从 1 到 `end`（包括 `end`）的所有整数组成的列表
 
-  * 生成从 `start` 到 `end`（包括 `start` 和 `end`）以 `1` 为步长递增或递减的所有整数组成的列表
-* 3个参数 `(start, step, end)`
+- 2个参数 `(start, end)`
 
-  * 生成从 `start` 到 `end`（包括 `start` 和 `end`）以 `step` 为步长递增或递减的所有整数组成的列表
+  - 生成从 `start` 到 `end`（包括 `start` 和 `end`）以 `1` 为步长递增或递减的所有整数组成的列表
+
+- 3个参数 `(start, step, end)`
+
+  - 生成从 `start` 到 `end`（包括 `start` 和 `end`）以 `step` 为步长递增或递减的所有整数组成的列表
 
 ```
 seq 5       => 1 2 3 4 5

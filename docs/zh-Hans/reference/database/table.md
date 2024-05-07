@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 数据库表与字段
@@ -34,7 +33,6 @@ outline: deep
 | `sort`      | 排序权重，数值越小排序越靠前                      | `5`                                                                        |
 | `created`   | 创建时间                                          | `20210104091228`                                                           |
 | `updated`   | 更新时间                                          | `20210604222535`                                                           |
-
 
 ### `blocks.type`
 
@@ -96,20 +94,18 @@ outline: deep
 | `markdown`            | 包含完整 Markdown 标记符的文本 | `((20200925095848-aon4lem "元类型"))`                                      |
 | `type`                | 引用类型                       | `ref_id`                                                                   |
 
-
 ## `attributes`
 
 | 字段名     | 说明           | 字段值示例                   |
 | ---------- | -------------- | ---------------------------- |
 | `id`       | 属性 ID<br />  | `20211127144458-h7y55zu`     |
 | `name`     | 属性名称<br /> | `bookmark`                   |
-| `value`    | 属性值         | `✨`                          |
+| `value`    | 属性值         | `✨`                         |
 | `type`     | 类型<br />     | `b`                          |
 | `block_id` | 块 ID          | `20210428212840-859h45j`     |
 | `root_id`  | 文档 ID        | `20200812220555-lj3enxa`     |
 | `box`      | 笔记本 ID      | `20210808180117-czj9bvb`     |
 | `path`     | 文档文件路径   | `/20200812220555-lj3enxa.sy` |
-
 
 ## `assets`
 
@@ -127,7 +123,6 @@ outline: deep
 | `title`    | `源于思考，饮水思源`                                               | 资源标题     |
 | `hash`     | `788c154262194a126b433b1055fbddcf5ada066e0d1f565a54e5550125675075` | 资源哈希值   |
 
-
 ## `file_annotation_refs`
 
 文件 PDF 的注释引用
@@ -143,7 +138,6 @@ outline: deep
 | path          | `/20211230002404-5spavgt.sy`                                      | 引用所在文档块路径 |
 | content       | `Vim 中文手册`                                                    | 引用锚文本         |
 | type          |                                                                   | 注释类型           |
-
 
 ## `spans`
 
@@ -162,6 +156,7 @@ outline: deep
 | `ial`      | `{: style="background-image: linear-gradient(to right, var(--b3-theme-primary), var(--b3-theme-error)); -webkit-background-clip: text; color: transparent;"}` | 元素样式                           |
 
 ### `spans.type`
+
 | 字段值               | 说明     |
 | -------------------- | -------- |
 | img                  | 图片     |

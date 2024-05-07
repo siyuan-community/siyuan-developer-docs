@@ -2,6 +2,7 @@
 <img src="./docs/public/static/siyuan-logo-512.png" style="width: 8em; height: 8em;">
 
 ---
+
 [![Vercel 发布状态](https://vercelbadge.vercel.app/api/siyuan-community/siyuan-developer-docs?style=flat-square)](https://docs.siyuan-note.club)
 [![GitHub 许可证](https://img.shields.io/github/license/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE)
 [![GitHub 最后一次提交时间](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
@@ -9,15 +10,16 @@
 ![查看次数](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
 
 ---
+
 简体中文 \| [English](./README.md)
 
 ---
+
 </div>
 
 # 思源开发者文档
 
 [思源笔记](https://github.com/siyuan-note/siyuan)社区开发者的非官方文档，由[社区开发者们](https://github.com/siyuan-community/siyuan-developer-docs/graphs/contributors)维护， [VitePress](https://vitepress.vuejs.org/) 驱动
-
 
 ## 文档
 

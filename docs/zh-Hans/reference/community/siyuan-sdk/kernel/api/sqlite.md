@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/sqlite`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/sqlite/flushTransaction`
 
 ---
+
 **响应**
 
 ::: code-group

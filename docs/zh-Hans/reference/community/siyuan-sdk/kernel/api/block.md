@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/block`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/block/appendBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -34,6 +35,7 @@ outline: deep
 - `/api/block/deleteBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -57,6 +60,7 @@ outline: deep
 - `/api/block/foldBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -66,6 +70,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -80,6 +85,7 @@ outline: deep
 - `/api/block/getBlockBreadcrumb`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -89,6 +95,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -103,6 +110,7 @@ outline: deep
 - `/api/block/getBlockDOM`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -112,6 +120,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -126,6 +135,7 @@ outline: deep
 - `/api/block/getBlockInfo`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -135,6 +145,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -149,6 +160,7 @@ outline: deep
 - `/api/block/getBlockKramdown`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -158,6 +170,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -172,6 +185,7 @@ outline: deep
 - `/api/block/getChildBlocks`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -181,6 +195,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -195,6 +210,7 @@ outline: deep
 - `/api/block/getDocInfo`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -204,6 +220,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -218,6 +235,7 @@ outline: deep
 - `/api/block/insertBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -227,6 +245,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -241,6 +260,7 @@ outline: deep
 - `/api/block/moveBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -250,6 +270,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -264,6 +285,7 @@ outline: deep
 - `/api/block/prependBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -273,6 +295,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -287,6 +310,7 @@ outline: deep
 - `/api/block/transferBlockRef`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -296,6 +320,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -304,13 +329,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/transferBlockRef/response.schema.json [JSON Schema (json)]
 :::
 
-
 ## `unfoldBlock`
 
 - 🔥 展开块
 - `/api/block/unfoldBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -320,6 +345,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -334,6 +360,7 @@ outline: deep
 - `/api/block/updateBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -343,6 +370,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

@@ -10,7 +10,10 @@ module.exports = {
     words: [
         "abcjs",
         "afterbegin",
+        "afterend",
+        "aliyun",
         "backlink",
+        "beforebegin",
         "blockicon",
         "blockquote",
         "blockref",
@@ -51,6 +54,7 @@ module.exports = {
         "siyuan",
         "succ",
         "terwer",
+        "textmark",
         "topbar",
         "uuidv",
         "vitepress",

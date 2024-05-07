@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 密码学与安全函数
@@ -75,10 +74,10 @@ derivePassword 1 "long" "password" "user" "example.com"
 
 它使用以下值之一作为第一个参数：
 
-* `ecdsa`：生成椭圆曲线 DSA 密钥（P256）
-* `dsa`：生成 DSA 密钥（L2048N256）
-* `rsa`：生成 RSA 4096 密钥
-* `ed25519`：生成 Ed25519 密钥
+- `ecdsa`：生成椭圆曲线 DSA 密钥（P256）
+- `dsa`：生成 DSA 密钥（L2048N256）
+- `rsa`：生成 RSA 4096 密钥
+- `ed25519`：生成 Ed25519 密钥
 
 ## `buildCustomCert`
 
@@ -86,13 +85,13 @@ derivePassword 1 "long" "password" "user" "example.com"
 
 它接受以下字符串参数：
 
-* base64 编码的 PEM 格式证书
-* base64 编码的 PEM 格式私钥
+- base64 编码的 PEM 格式证书
+- base64 编码的 PEM 格式私钥
 
 它返回具有以下属性的证书对象：
 
-* `Cert`：PEM 编码的证书
-* `Key`：PEM 编码的私钥
+- `Cert`：PEM 编码的证书
+- `Key`：PEM 编码的私钥
 
 示例：
 
@@ -108,13 +107,13 @@ $ca := buildCustomCert "base64-encoded-ca-crt" "base64-encoded-ca-key"
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 证书有效期（以天为单位）
+- 主体的通用名称（cn）
+- 证书有效期（以天为单位）
 
 它返回具有以下属性的对象：
 
-* `Cert`：PEM 编码的证书
-* `Key`：PEM 编码的私钥
+- `Cert`：PEM 编码的证书
+- `Key`：PEM 编码的私钥
 
 示例：
 
@@ -130,14 +129,14 @@ $ca := genCA "foo-ca" 365
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 证书有效期（以天为单位）
-* 私钥（PEM 编码）；不支持 DSA 密钥
+- 主体的通用名称（cn）
+- 证书有效期（以天为单位）
+- 私钥（PEM 编码）；不支持 DSA 密钥
 
 它返回具有以下属性的对象：
 
-* `Cert`：PEM 编码的证书
-* `Key`：PEM 编码的私钥
+- `Cert`：PEM 编码的证书
+- `Key`：PEM 编码的私钥
 
 示例：
 
@@ -153,15 +152,15 @@ $ca := genCAWithKey "foo-ca" 365 (genPrivateKey "rsa")
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 可选的 IP 列表；可以为 nil
-* 可选的替代 DNS 名称列表；可以为 nil
-* 证书有效期（以天为单位）
+- 主体的通用名称（cn）
+- 可选的 IP 列表；可以为 nil
+- 可选的替代 DNS 名称列表；可以为 nil
+- 证书有效期（以天为单位）
 
 它返回具有以下属性的对象：
 
-* `Cert`：PEM 编码的证书
-* `Key`：PEM 编码的私钥
+- `Cert`：PEM 编码的证书
+- `Key`：PEM 编码的私钥
 
 示例：
 
@@ -175,16 +174,16 @@ $cert := genSelfSignedCert "foo.com" (list "10.0.0.1" "10.0.0.2") (list "bar.com
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 可选的 IP 列表；可以为 nil
-* 可选的替代 DNS 名称列表；可以为 nil
-* 证书有效期（以天为单位）
-* 私钥（PEM 编码）；不支持 DSA 密钥
+- 主体的通用名称（cn）
+- 可选的 IP 列表；可以为 nil
+- 可选的替代 DNS 名称列表；可以为 nil
+- 证书有效期（以天为单位）
+- 私钥（PEM 编码）；不支持 DSA 密钥
 
 它返回具有以下属性的对象：
 
-* `Cert`：PEM 编码的证书
-* `Key`：PEM 编码的私钥
+- `Cert`：PEM 编码的证书
+- `Key`：PEM 编码的私钥
 
 示例：
 
@@ -198,11 +197,11 @@ $cert := genSelfSignedCertWithKey "foo.com" (list "10.0.0.1" "10.0.0.2") (list "
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 可选的 IP 列表；可以为 nil
-* 可选的替代 DNS 名称列表；可以为 nil
-* 证书有效期（以天为单位）
-* CA（参见 `genCA`）
+- 主体的通用名称（cn）
+- 可选的 IP 列表；可以为 nil
+- 可选的替代 DNS 名称列表；可以为 nil
+- 证书有效期（以天为单位）
+- CA（参见 `genCA`）
 
 示例：
 
@@ -217,12 +216,12 @@ $cert := genSignedCert "foo.com" (list "10.0.0.1" "10.0.0.2") (list "bar.com" "b
 
 它接受以下参数：
 
-* 主体的通用名称（cn）
-* 可选的 IP 列表；可以为 nil
-* 可选的替代 DNS 名称列表；可以为 nil
-* 证书有效期（以天为单位）
-* CA（参见 `genCA`）
-* 私钥（PEM 编码）；不支持 DSA 密钥
+- 主体的通用名称（cn）
+- 可选的 IP 列表；可以为 nil
+- 可选的替代 DNS 名称列表；可以为 nil
+- 证书有效期（以天为单位）
+- CA（参见 `genCA`）
+- 私钥（PEM 编码）；不支持 DSA 密钥
 
 示例：
 

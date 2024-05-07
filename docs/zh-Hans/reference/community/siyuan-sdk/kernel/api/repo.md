@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/repo`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/repo/openRepoSnapshotDoc`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

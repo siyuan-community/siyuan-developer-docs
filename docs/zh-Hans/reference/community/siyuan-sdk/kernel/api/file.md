@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/file`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/file/getFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -25,6 +25,7 @@ outline: deep
 - `/api/file/putFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -32,6 +33,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -46,6 +48,7 @@ outline: deep
 - `/api/file/readDir`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -55,6 +58,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -69,6 +73,7 @@ outline: deep
 - `/api/file/removeFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -78,6 +83,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -92,6 +98,7 @@ outline: deep
 - `/api/file/renameFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -101,6 +108,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/system`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/system/bootProgress`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -25,6 +25,7 @@ outline: deep
 - `/api/system/currentTime`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -39,6 +40,7 @@ outline: deep
 - `/api/system/exit`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -48,6 +50,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -62,6 +65,7 @@ outline: deep
 - `/api/system/getConf`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -76,6 +80,7 @@ outline: deep
 - `/api/system/logoutAuth`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -90,6 +95,7 @@ outline: deep
 - `/api/system/version`
 
 ---
+
 **响应**
 
 ::: code-group

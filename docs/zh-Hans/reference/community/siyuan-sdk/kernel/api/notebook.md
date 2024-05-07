@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # `/api/notebook`
@@ -11,6 +10,7 @@ outline: deep
 - `/api/notebook/closeNotebook`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -34,6 +35,7 @@ outline: deep
 - `/api/notebook/createNotebook`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -57,6 +60,7 @@ outline: deep
 - `/api/notebook/getNotebookConf`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -66,6 +70,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -80,6 +85,7 @@ outline: deep
 - `/api/notebook/lsNotebooks`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -94,6 +100,7 @@ outline: deep
 - `/api/notebook/openNotebook`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -103,6 +110,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -117,6 +125,7 @@ outline: deep
 - `/api/notebook/removeNotebook`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -126,6 +135,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -140,6 +150,7 @@ outline: deep
 - `/api/notebook/renameNotebook`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -149,6 +160,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -163,6 +175,7 @@ outline: deep
 - `/api/notebook/setNotebookConf`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -172,6 +185,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

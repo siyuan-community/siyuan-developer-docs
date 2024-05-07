@@ -2,6 +2,7 @@
 <img src="./docs/public/static/siyuan-logo-512.png" style="width: 8em; height: 8em;">
 
 ---
+
 [![Vercel publish status](https://vercelbadge.vercel.app/api/siyuan-community/siyuan-developer-docs?style=flat-square)](https://docs.siyuan-note.club)
 [![GitHub License](https://img.shields.io/github/license/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/siyuan-community/siyuan-developer-docs?style=flat-square)](https://github.com/siyuan-community/siyuan-developer-docs/commits/main)
@@ -9,9 +10,11 @@
 ![hits](https://hits.b3log.org/siyuan-community/siyuan-developer-docs.svg)
 
 ---
+
 [简体中文](./README-zh-Hans.md) \| English
 
 ---
+
 </div>
 
 # SiYuan Developer Docs

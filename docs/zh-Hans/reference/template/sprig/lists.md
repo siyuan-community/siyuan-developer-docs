@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 列表与列表函数
@@ -151,10 +150,10 @@ $copy := compact $list
 
 要获取列表的部分元素，请使用 `slice list [n] [m]`。它相当于 `list[n:m]`。
 
-* `slice $myList` 返回 `[1 2 3 4 5]`。它与 `myList[:]` 相同。
-* `slice $myList 3` 返回 `[4 5]`。它与 `myList[3:]` 相同。
-* `slice $myList 1 3` 返回 `[2 3]`。它与 `myList[1:3]` 相同。
-* `slice $myList 0 3` 返回 `[1 2 3]`。它与 `myList[:3]` 相同。
+- `slice $myList` 返回 `[1 2 3 4 5]`。它与 `myList[:]` 相同。
+- `slice $myList 3` 返回 `[4 5]`。它与 `myList[3:]` 相同。
+- `slice $myList 1 3` 返回 `[2 3]`。它与 `myList[1:3]` 相同。
+- `slice $myList 0 3` 返回 `[1 2 3]`。它与 `myList[:3]` 相同。
 
 如果有问题，则 `slice` 会产生 panic，而 `mustSlice` 会返回错误到模板引擎。
 

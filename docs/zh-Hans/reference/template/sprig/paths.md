@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 路径与文件路径函数
@@ -13,8 +12,8 @@ outline: deep
 
 示例：
 
-* [Linux](https://en.wikipedia.org/wiki/Linux) 和 [MacOS](https://en.wikipedia.org/wiki/MacOS) 文件系统：`/home/user/file`，`/etc/config`；
-* [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 的路径部分：`https://example.com/some/content/`，`ftp://example.com/file/`。
+- [Linux](https://en.wikipedia.org/wiki/Linux) 和 [MacOS](https://en.wikipedia.org/wiki/MacOS) 文件系统：`/home/user/file`，`/etc/config`；
+- [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 的路径部分：`https://example.com/some/content/`，`ftp://example.com/file/`。
 
 ### `base`
 
@@ -62,9 +61,9 @@ ext "foo.bar"
 
 示例：
 
-* 在 Linux 或 MacOS 上运行时，文件系统路径由斜杠字符（`/`）分隔：
+- 在 Linux 或 MacOS 上运行时，文件系统路径由斜杠字符（`/`）分隔：
   `/home/user/file`，`/etc/config`；
-* 在 [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) 上运行时，文件系统路径由反斜杠字符（`\`）分隔：
+- 在 [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) 上运行时，文件系统路径由反斜杠字符（`\`）分隔：
   `C:\Users\Username\`，`C:\Program Files\Application\`。
 
 ### `osBase`

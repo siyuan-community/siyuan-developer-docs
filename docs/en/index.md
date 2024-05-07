@@ -23,5 +23,4 @@ hero:
     - theme: alt
       text: SiYuan Project Team
       link: https://github.com/siyuan-note
-
 ---

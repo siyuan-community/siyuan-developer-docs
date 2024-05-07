@@ -1,4 +1,4 @@
-import { createClient } from '@vercel/kv';
+import { createClient } from "@vercel/kv";
 
 const loadData = async () => {
   let version, bazaarHash, plugins, templates, themes, widgets, downloadCounts;
@@ -15,38 +15,21 @@ const loadData = async () => {
     version = await fetch(`${Constants.AliyunServer}/apis/siyuan/version`, {
       method: "GET",
       mode: "cors",
-    }).then((res) => res.json());
+    }).then(res => res.json());
     bazaarHash = version.bazaar;
   };
 
   const getResources = async () => {
-    return Promise.all([
-      fetch(
-        `${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/plugins.json`,
-        { mode: "no-cors" }
-      ).then((res) => res.json()),
-      fetch(
-        `${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/templates.json`,
-        { mode: "no-cors" }
-      ).then((res) => res.json()),
-      fetch(
-        `${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/themes.json`,
-        { mode: "no-cors" }
-      ).then((res) => res.json()),
-      fetch(
-        `${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/widgets.json`,
-        { mode: "no-cors" }
-      ).then((res) => res.json()),
-    ]).then((arr) => {
-      plugins = arr[0].repos.map((v) => ({ ...v, type: "plugin" }));
-      templates = arr[1].repos.map((v) => ({ ...v, type: "template" }));
-      themes = arr[2].repos.map((v) => ({ ...v, type: "theme" }));
-      widgets = arr[3].repos.map((v) => ({ ...v, type: "widget" }));
+    return Promise.all([fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/plugins.json`, { mode: "no-cors" }).then(res => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/templates.json`, { mode: "no-cors" }).then(res => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/themes.json`, { mode: "no-cors" }).then(res => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/widgets.json`, { mode: "no-cors" }).then(res => res.json())]).then(arr => {
+      plugins = arr[0].repos.map(v => ({ ...v, type: "plugin" }));
+      templates = arr[1].repos.map(v => ({ ...v, type: "template" }));
+      themes = arr[2].repos.map(v => ({ ...v, type: "theme" }));
+      widgets = arr[3].repos.map(v => ({ ...v, type: "widget" }));
     });
   };
 
   const getUserRepos = () => {
-    return [...plugins, ...templates, ...themes, ...widgets].map((p) => {
+    return [...plugins, ...templates, ...themes, ...widgets].map(p => {
       const reponame = p?.url.split("@")[0];
       const author = reponame.split("/")[0];
       return {
@@ -64,9 +47,7 @@ const loadData = async () => {
   };
 
   const getDownloadCounts = async () => {
-    const res = await fetch(`${URLS.DOWNLOAD_COUNTS}`, { method: "GET" }).then(
-      (res) => res.json()
-    );
+    const res = await fetch(`${URLS.DOWNLOAD_COUNTS}`, { method: "GET" }).then(res => res.json());
     downloadCounts = res;
   };
 
@@ -80,9 +61,7 @@ export default async function handler(request, response) {
   if (!request.url) return response.status(400);
 
   const date = new Date();
-  const day = `${date.getUTCFullYear()}-${
-    date.getUTCMonth() + 1
-  }-${date.getUTCDate()}`;
+  const day = `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}-${date.getUTCDate()}`;
 
   const storage = createClient({
     url: process.env.DOC_STORAGE_REST_API_URL || "",
@@ -97,4 +76,4 @@ export default async function handler(request, response) {
   }
 
   return response.status(200).send(null);
-};
+}
