@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-08
+
+- 添加思源内置模板函数介绍 | Add SiYuan built-in template function introduction
+
 ## 2024-05-07
 
 - 配置 prettier | Configure prettier

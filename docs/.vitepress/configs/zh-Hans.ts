@@ -231,8 +231,12 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: "模板",
                 base: "/zh-Hans/reference/template/",
-                // link: './',
+                link: './',
                 items: [
+                    {
+                        text: "思源内置模板函数",
+                        link: "./siyuan",
+                    },
                     {
                         text: "Sprig 模板函数",
                         base: "/zh-Hans/reference/template/sprig/",

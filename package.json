@@ -18,6 +18,7 @@
     "@types/node": "^20.12.10",
     "@vercel/node": "^3.0.28",
     "cspell": "^8.8.0",
+    "markdown-it-mathjax3": "^4.3.2",
     "prettier": "^3.2.5",
     "vitepress": "^1.1.4",
     "vue": "^3.4.27"

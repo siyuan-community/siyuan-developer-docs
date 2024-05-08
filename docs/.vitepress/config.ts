@@ -14,6 +14,7 @@ export default defineConfig({
     // REF https://vitepress.dev/reference/site-config#markdown
     markdown: {
         lineNumbers: true,
+        math: true,
     },
 
     head: [["link", { rel: "icon", type: "image/x-icon", href: "/static/siyuan-logo-128.png" }]],
