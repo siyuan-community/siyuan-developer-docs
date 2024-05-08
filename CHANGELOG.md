@@ -3,6 +3,7 @@
 ## 2024-05-08
 
 - 添加思源内置模板函数介绍 | Add SiYuan built-in template function introduction
+- 调整事件总线锚点 | Adjust event bus anchor
 
 ## 2024-05-07
 
