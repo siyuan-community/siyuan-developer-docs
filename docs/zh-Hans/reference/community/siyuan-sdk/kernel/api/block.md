@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/block`
 
-## `appendBlock`
+## `appendBlock` {#appendBlock}
 
 - 🔥 在下级块尾部插入块
 - `/api/block/appendBlock`
@@ -29,7 +29,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/appendBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `deleteBlock`
+## `deleteBlock` {#deleteBlock}
 
 - 🔥 删除块
 - `/api/block/deleteBlock`
@@ -54,7 +54,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/deleteBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `foldBlock`
+## `foldBlock` {#foldBlock}
 
 - 🔥 折叠块
 - `/api/block/foldBlock`
@@ -79,7 +79,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockBreadcrumb`
+## `getBlockBreadcrumb` {#getBlockBreadcrumb}
 
 - 🛠 获取块面包屑
 - `/api/block/getBlockBreadcrumb`
@@ -104,7 +104,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockBreadcrumb/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockDOM`
+## `getBlockDOM` {#getBlockDOM}
 
 - 🛠 获取块 HTML DOM
 - `/api/block/getBlockDOM`
@@ -129,7 +129,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockDOM/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockInfo`
+## `getBlockInfo` {#getBlockInfo}
 
 - 🛠 获取块信息
 - `/api/block/getBlockInfo`
@@ -154,7 +154,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockInfo/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockKramdown`
+## `getBlockKramdown` {#getBlockKramdown}
 
 - 🔥 获取块 [kramdown](https://kramdown.gettalong.org/)
 - `/api/block/getBlockKramdown`
@@ -179,7 +179,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockKramdown/response.schema.json [JSON Schema (json)]
 :::
 
-## `getChildBlocks`
+## `getChildBlocks` {#getChildBlocks}
 
 - 🔥 获取下级块
 - `/api/block/getChildBlocks`
@@ -204,7 +204,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getChildBlocks/response.schema.json [JSON Schema (json)]
 :::
 
-## `getDocInfo`
+## `getDocInfo` {#getDocInfo}
 
 - 🛠 获取文档信息
 - `/api/block/getDocInfo`
@@ -229,7 +229,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getDocInfo/response.schema.json [JSON Schema (json)]
 :::
 
-## `insertBlock`
+## `insertBlock` {#insertBlock}
 
 - 🔥 插入块
 - `/api/block/insertBlock`
@@ -254,7 +254,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/insertBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `moveBlock`
+## `moveBlock` {#moveBlock}
 
 - 🔥 移动块
 - `/api/block/moveBlock`
@@ -279,7 +279,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/moveBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `prependBlock`
+## `prependBlock` {#prependBlock}
 
 - 🔥 在下级块首部插入块
 - `/api/block/prependBlock`
@@ -304,7 +304,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/prependBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `transferBlockRef`
+## `transferBlockRef` {#transferBlockRef}
 
 - 🔥 转移块引用
 - `/api/block/transferBlockRef`
@@ -329,7 +329,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/transferBlockRef/response.schema.json [JSON Schema (json)]
 :::
 
-## `unfoldBlock`
+## `unfoldBlock` {#unfoldBlock}
 
 - 🔥 展开块
 - `/api/block/unfoldBlock`
@@ -354,7 +354,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `updateBlock`
+## `updateBlock` {#updateBlock}
 
 - 🔥 更新块
 - `/api/block/updateBlock`

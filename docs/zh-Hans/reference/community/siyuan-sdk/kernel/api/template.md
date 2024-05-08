@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/template`
 
-## `render`
+## `render` {#render}
 
 - 🔥 渲染模板
 - `/api/template/render`
@@ -29,7 +29,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/template/render/response.schema.json [JSON Schema (json)]
 :::
 
-## `renderSprig`
+## `renderSprig` {#renderSprig}
 
 - 🔥 渲染 [Sprig](https://masterminds.github.io/sprig/) 模板字符串
 - `/api/template/renderSprig`

@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/attr`
 
-## `getBlockAttrs`
+## `getBlockAttrs` {#getBlockAttrs}
 
 - 🔥 获取块属性
 - `/api/attr/getBlockAttrs`
@@ -29,7 +29,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/attr/getBlockAttrs/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBookmarkLabels`
+## `getBookmarkLabels` {#getBookmarkLabels}
 
 - 🛠 获取所有书签
 - `/api/attr/getBookmarkLabels`
@@ -44,7 +44,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/attr/getBookmarkLabels/response.schema.json [JSON Schema (json)]
 :::
 
-## `setBlockAttrs`
+## `setBlockAttrs` {#setBlockAttrs}
 
 - 🔥 设置块属性
 - `/api/attr/setBlockAttrs`

@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/search`
 
-## `fullTextSearchBlock`
+## `fullTextSearchBlock` {#fullTextSearchBlock}
 
 - 🛠 全文搜索
 - `/api/search/fullTextSearchBlock`

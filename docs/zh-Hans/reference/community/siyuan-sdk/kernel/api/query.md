@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/query`
 
-## `sql`
+## `sql` {#sql}
 
 - 🔥 SQL 查询
 - `/api/query/sql`

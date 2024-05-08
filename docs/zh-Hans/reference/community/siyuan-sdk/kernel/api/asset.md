@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/asset`
 
-## `upload`
+## `upload` {#upload}
 
 - 🔥 上传资源文件
 - `/api/asset/upload`

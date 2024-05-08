@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/export`
 
-## `exportMdContent`
+## `exportMdContent` {#exportMdContent}
 
 - 🔥 获取文档块 Markdown 导出文本
 - `/api/export/exportMdContent`
@@ -29,7 +29,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/export/exportMdContent/response.schema.json [JSON Schema (json)]
 :::
 
-## `exportResources`
+## `exportResources` {#exportResources}
 
 - 🔥 导出资源文件
 - `/api/export/exportResources`

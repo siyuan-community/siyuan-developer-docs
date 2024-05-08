@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/network`
 
-## `echo`
+## `echo` {#echo}
 
 - 🛠 回显请求内容
 - `/api/network/echo`
@@ -27,7 +27,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/network/echo/response.schema.json [JSON Schema (json)]
 :::
 
-## `forwardProxy`
+## `forwardProxy` {#forwardProxy}
 
 - 🔥 前置代理
 - `/api/network/forwardProxy`

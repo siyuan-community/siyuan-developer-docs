@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/filetree`
 
-## `createDailyNote`
+## `createDailyNote` {#createDailyNote}
 
 - 🛠 创建每日笔记 (Daily Note)
 - `/api/filetree/createDailyNote`
@@ -29,7 +29,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDailyNote/response.schema.json [JSON Schema (json)]
 :::
 
-## `createDocWithMd`
+## `createDocWithMd` {#createDocWithMd}
 
 - 🔥 通过 Markdown 创建文档
 - `/api/filetree/createDocWithMd`
@@ -54,7 +54,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/createDocWithMd/response.schema.json [JSON Schema (json)]
 :::
 
-## `getDoc`
+## `getDoc` {#getDoc}
 
 - 🛠 获取文档内容
 - `/api/filetree/getDoc`
@@ -79,7 +79,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getDoc/response.schema.json [JSON Schema (json)]
 :::
 
-## `getHPathByID`
+## `getHPathByID` {#getHPathByID}
 
 - 🔥 通过块 ID 获取文档的可读路径
 - `/api/filetree/getHPathByID`
@@ -104,7 +104,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getHPathByID/response.schema.json [JSON Schema (json)]
 :::
 
-## `getHPathByPath`
+## `getHPathByPath` {#getHPathByPath}
 
 - 🔥 通过文档路径获取文档的可读路径
 - `/api/filetree/getHPathByPath`
@@ -129,7 +129,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getHPathByPath/response.schema.json [JSON Schema (json)]
 :::
 
-## `listDocsByPath`
+## `listDocsByPath` {#listDocsByPath}
 
 - 🛠 通过文档路径获取下级文档列表
 - `/api/filetree/listDocsByPath`
@@ -154,7 +154,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/listDocsByPath/response.schema.json [JSON Schema (json)]
 :::
 
-## `getIDsByHPath`
+## `getIDsByHPath` {#getIDsByHPath}
 
 - 🔥 通过文档路径获取下级文档列表
 - `/api/filetree/getIDsByHPath`
@@ -179,7 +179,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/getIDsByHPath/response.schema.json [JSON Schema (json)]
 :::
 
-## `moveDocs`
+## `moveDocs` {#moveDocs}
 
 - 🔥 移动文档
 - `/api/filetree/moveDocs`
@@ -204,7 +204,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/moveDocs/response.schema.json [JSON Schema (json)]
 :::
 
-## `removeDoc`
+## `removeDoc` {#removeDoc}
 
 - 🔥 删除文档
 - `/api/filetree/removeDoc`
@@ -229,7 +229,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/removeDoc/response.schema.json [JSON Schema (json)]
 :::
 
-## `renameDoc`
+## `renameDoc` {#renameDoc}
 
 - 🔥 重命名文档
 - `/api/filetree/renameDoc`
@@ -254,7 +254,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/filetree/renameDoc/response.schema.json [JSON Schema (json)]
 :::
 
-## `searchDocs`
+## `searchDocs` {#searchDocs}
 
 - 🛠 搜索文档
 - `/api/filetree/searchDocs`

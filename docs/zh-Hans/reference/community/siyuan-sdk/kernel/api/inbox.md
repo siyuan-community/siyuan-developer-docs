@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/inbox`
 
-## `getShorthand`
+## `getShorthand` {#getShorthand}
 
 - 🛠 获取收集箱速记内容
 - `/api/inbox/getShorthand`

@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/system`
 
-## `bootProgress`
+## `bootProgress` {#bootProgress}
 
 - 🔥 获取内核启动进度
 - `/api/system/bootProgress`
@@ -19,7 +19,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/bootProgress/response.schema.json [JSON Schema (json)]
 :::
 
-## `currentTime`
+## `currentTime` {#currentTime}
 
 - 🔥 获取当前时间
 - `/api/system/currentTime`
@@ -34,7 +34,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/currentTime/response.schema.json [JSON Schema (json)]
 :::
 
-## `exit`
+## `exit` {#exit}
 
 - 🛠 退出内核
 - `/api/system/exit`
@@ -59,7 +59,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/exit/response.schema.json [JSON Schema (json)]
 :::
 
-## `getConf`
+## `getConf` {#getConf}
 
 - 🛠 获取工作空间完整配置
 - `/api/system/getConf`
@@ -74,7 +74,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/getConf/response.schema.json [JSON Schema (json)]
 :::
 
-## `logoutAuth`
+## `logoutAuth` {#logoutAuth}
 
 - 🛠 注销登录状态
 - `/api/system/logoutAuth`
@@ -89,7 +89,7 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/system/logoutAuth/response.schema.json [JSON Schema (json)]
 :::
 
-## `version`
+## `version` {#version}
 
 - 🔥 获取内核版本
 - `/api/system/version`

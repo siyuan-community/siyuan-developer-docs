@@ -4,7 +4,7 @@ outline: deep
 
 # `/api/sqlite`
 
-## `flushTransaction`
+## `flushTransaction` {#flushTransaction}
 
 - 🛠 等待业务数据持久化完成
 - `/api/sqlite/flushTransaction`
