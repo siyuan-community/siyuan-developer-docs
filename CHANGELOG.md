@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-09
+
+- 调整思源图标图片 | Adjust SiYuan icon image
+
 ## 2024-05-08
 
 - 添加思源内置模板函数介绍 | Add SiYuan built-in template function introduction

@@ -1,6 +1,7 @@
 # Custom
 temp
 docs/snippets/siyuan-sdk
+docs/public/schemas
 
 # VitePress
 docs/.vitepress/dist

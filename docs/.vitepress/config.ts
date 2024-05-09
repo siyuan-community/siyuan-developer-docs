@@ -17,14 +17,14 @@ export default defineConfig({
         math: true,
     },
 
-    head: [["link", { rel: "icon", type: "image/x-icon", href: "/static/siyuan-logo-128.png" }]],
+    head: [["link", { rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }]],
 
     // REF https://vitepress.dev/reference/default-theme-config
     themeConfig: {
         // REF https://vitepress.dev/reference/default-theme-config#logo
         logo: {
-            light: "/static/siyuan-logo-128.png",
-            dark: "/static/siyuan-logo-dark.svg",
+            light: "/static/logo/siyuan.svg",
+            dark: "/static/logo/siyuan-dark.svg",
             alt: "SiYuan logo",
         },
 

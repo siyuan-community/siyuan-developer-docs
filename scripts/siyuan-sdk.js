@@ -21,6 +21,10 @@ function copy() {
     const targets = [
         {
             src: "./node_modules/@siyuan-community/siyuan-sdk/dist/schemas/",
+            dest: "./docs/public/schemas/",
+        },
+        {
+            src: "./node_modules/@siyuan-community/siyuan-sdk/dist/schemas/",
             dest: "./docs/snippets/siyuan-sdk/schemas/",
         },
         {
