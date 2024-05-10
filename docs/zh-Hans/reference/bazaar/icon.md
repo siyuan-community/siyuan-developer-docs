@@ -2,35 +2,18 @@
 outline: deep
 ---
 
-```json
-{
-  "name": "icon-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/icon-sample",
-  "version": "0.0.3",
-  "minAppVersion": "2.8.8",
-  "displayName": {
-    "default": "Icon Sample",
-    "zh_CN": "图标示例"
-  },
-  "description": {
-    "default": "This is a icon sample",
-    "zh_CN": "这是一个图标示例"
-  },
-  "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
-  },
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": ["https://ld246.com/sponsor"]
-  }
-}
-```
+# 图标
 
-- `name`：图标名称，必须和库名一致，且全局唯一（集市中不能有重名图标）
+## 清单文件 {#manifest}
+
+::: code-group
+<<< @/snippets/examples/manifest/icon.json [Example]
+<<< @/snippets/siyuan-sdk/types/manifest/icon.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/manifest/icon.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/manifest/icon.schema.json [JSON Schema (json)]
+:::
+
+- `name`：图标名称，必须全局唯一（集市中不能有同名图标）
 - `author`：图标作者名
 - `url`：图标仓库地址
 - `version`：图标版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范

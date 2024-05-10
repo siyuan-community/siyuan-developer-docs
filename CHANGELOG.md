@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-10
+
+- 改进社区集市相关文档 | Improve community market-related documents
+
 ## 2024-05-09
 
 - 调整思源图标图片 | Adjust SiYuan icon image

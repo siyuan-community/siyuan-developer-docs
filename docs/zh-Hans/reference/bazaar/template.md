@@ -2,35 +2,18 @@
 outline: deep
 ---
 
-```json
-{
-  "name": "template-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/template-sample",
-  "version": "0.0.3",
-  "minAppVersion": "2.9.0",
-  "displayName": {
-    "default": "Template Sample",
-    "zh_CN": "模板示例"
-  },
-  "description": {
-    "default": "This is a template sample",
-    "zh_CN": "这是一个模板示例"
-  },
-  "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
-  },
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": ["https://ld246.com/sponsor"]
-  }
-}
-```
+# 模板
 
-- `name`：模板名称，必须和库名一致，且全局唯一（集市中不能有重名模板）
+## 清单文件 {#manifest}
+
+::: code-group
+<<< @/snippets/examples/manifest/template.json [Example]
+<<< @/snippets/siyuan-sdk/types/manifest/template.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/manifest/template.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/manifest/template.schema.json [JSON Schema (json)]
+:::
+
+- `name`：模板名称，必须全局唯一（集市中不能有同名模板）
 - `author`：模板作者名
 - `url`：模板仓库地址
 - `version`：模板版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范

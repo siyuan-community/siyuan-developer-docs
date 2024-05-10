@@ -1,0 +1,27 @@
+{
+    "name": "widget-sample",
+    "author": "Vanessa",
+    "url": "https://github.com/siyuan-note/widget-sample",
+    "version": "0.0.3",
+    "minAppVersion": "2.8.8",
+    "displayName": {
+        "default": "Widget Sample",
+        "zh_CN": "挂件示例"
+    },
+    "description": {
+        "default": "This is a widget sample",
+        "zh_CN": "这是一个挂件示例"
+    },
+    "readme": {
+        "default": "README.md",
+        "zh_CN": "README_zh_CN.md"
+    },
+    "funding": {
+        "openCollective": "",
+        "patreon": "",
+        "github": "",
+        "custom": [
+            "https://ld246.com/sponsor"
+        ]
+    }
+}

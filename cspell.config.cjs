@@ -88,6 +88,7 @@ module.exports = {
 
         "./docs/.vitepress/cache/**",
         "./docs/.vitepress/dist/**",
+        "./docs/public/schemas/**",
         "./docs/snippets/siyuan-sdk/**",
         "./docs/zh-Hans/reference/template/sprig/**",
     ],

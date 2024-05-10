@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./docs/public/static/siyuan-logo-512.png" style="width: 8em; height: 8em;">
+<img src="./docs/public/static/logo/siyuan.svg" style="width: 8em; height: 8em;">
 
 ---
 

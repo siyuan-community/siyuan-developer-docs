@@ -202,15 +202,15 @@ export const themeConfig: DefaultTheme.Config = {
 
         "/zh-Hans/reference/": [
             {
-                text: "清单文件",
-                base: "/zh-Hans/reference/manifest/",
+                text: "社区集市",
+                base: "/zh-Hans/reference/bazaar/",
                 link: "./",
                 items: [
-                    { text: "icon.json", link: "./icon" },
-                    { text: "plugin.json", link: "./plugin" },
-                    { text: "template.json", link: "./template" },
-                    { text: "theme.json", link: "./theme" },
-                    { text: "widget.json", link: "./widget" },
+                    { text: "图标 icon", link: "./icon" },
+                    { text: "插件 plugin", link: "./plugin" },
+                    { text: "模板 template", link: "./template" },
+                    { text: "主题 theme", link: "./theme" },
+                    { text: "挂件 widget", link: "./widget" },
                 ],
             },
             {

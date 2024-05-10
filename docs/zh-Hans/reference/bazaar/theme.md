@@ -2,36 +2,18 @@
 outline: deep
 ---
 
-```json
-{
-  "name": "theme-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/theme-sample",
-  "version": "0.0.3",
-  "minAppVersion": "2.8.8",
-  "displayName": {
-    "default": "Theme Sample",
-    "zh_CN": "主题示例"
-  },
-  "description": {
-    "default": "This is a theme sample",
-    "zh_CN": "这是一个主题示例"
-  },
-  "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
-  },
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": ["https://ld246.com/sponsor"]
-  },
-  "modes": ["light"]
-}
-```
+# 主题
 
-- `name`：主题名称，必须和库名一致，且全局唯一（集市中不能有重名主题）
+## 清单文件 {#manifest}
+
+::: code-group
+<<< @/snippets/examples/manifest/theme.json [Example]
+<<< @/snippets/siyuan-sdk/types/manifest/theme.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/manifest/theme.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/manifest/theme.schema.json [JSON Schema (json)]
+:::
+
+- `name`：主题名称，必须全局唯一（集市中不能有同名主题）
 - `author`：主题作者名
 - `url`：主题仓库地址
 - `version`：主题版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范

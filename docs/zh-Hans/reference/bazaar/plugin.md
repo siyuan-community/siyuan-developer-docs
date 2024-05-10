@@ -2,38 +2,18 @@
 outline: deep
 ---
 
-```json
-{
-  "name": "plugin-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/plugin-sample",
-  "version": "0.2.7",
-  "minAppVersion": "2.10.13",
-  "keywords": ["sample", "示例"],
-  "backends": ["windows", "linux", "darwin"],
-  "frontends": ["desktop", "desktop-window"],
-  "displayName": {
-    "default": "Plugin Sample",
-    "zh_CN": "插件示例"
-  },
-  "description": {
-    "default": "This is a plugin sample",
-    "zh_CN": "这是一个插件示例"
-  },
-  "readme": {
-    "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
-  },
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": ["https://ld246.com/sponsor"]
-  }
-}
-```
+# 插件
 
-- `name`：插件名称，必须和库名一致，且全局唯一（集市中不能有重名插件）
+## 清单文件 {#manifest}
+
+::: code-group
+<<< @/snippets/examples/manifest/plugin.json [Example]
+<<< @/snippets/siyuan-sdk/types/manifest/plugin.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/manifest/plugin.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/manifest/plugin.schema.json [JSON Schema (json)]
+:::
+
+- `name`：插件名称，必须全局唯一（集市中不能有同名插件）
 - `author`：插件作者名
 - `url`：插件仓库地址
 - `version`：插件版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
