@@ -46,6 +46,7 @@ outline: deep
   - [`convert`](./api/convert.md): 文件转换操作
     - [`pandoc`](./api/convert.md#pandoc): 🔥 使用 [Pandoc](https://www.pandoc.org/) 进行文件转换
   - [`export`](./api/export.md): 导出操作
+    - [`exportHTML`](./api/export.md#exportHTML): 🛠 获取文档块 HTML 导出文本
     - [`exportMdContent`](./api/export.md#exportMdContent): 🔥 获取文档块 Markdown 导出文本
     - [`exportResources`](./api/export.md#exportResources): 🔥 导出资源文件
   - [`file`](./api/file.md): 文件操作

@@ -3,6 +3,7 @@
 ## 2024-05-10
 
 - 改进社区集市相关文档 | Improve community market-related documents
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
 
 ## 2024-05-09
 
