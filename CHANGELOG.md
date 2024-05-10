@@ -4,6 +4,7 @@
 
 - 改进社区集市相关文档 | Improve community market-related documents
 - 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+- 修复参考内容上一页/下一页链接失效问题 | Fix the issue that the previous/next link of the reference content is invalid
 
 ## 2024-05-09
 
