@@ -9,7 +9,7 @@
     "init": "npm run init:siyuan-sdk",
     "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
     "check:cspell": "cspell .",
-    "format:prettier": "prettier -w \"**/*.{ts,vue,md}\"",
+    "format:prettier": "prettier -w \"**/*.{js,ts,vue,md}\"",
     "docs:dev": "npm run init && vitepress dev docs",
     "docs:build": "npm run init && vitepress build docs",
     "docs:preview": "vitepress preview docs"

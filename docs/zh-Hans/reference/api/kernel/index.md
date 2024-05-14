@@ -33,7 +33,7 @@ outline: deep
 ```typescript
 import { fetchPost } from "siyuan";
 
-fetchPost("/api/system/currentTime", {}, response => {
+fetchPost("/api/system/currentTime", {}, (response) => {
   dialog.element.querySelector("#time").innerHTML = new Date(response.data).toString();
 });
 ```

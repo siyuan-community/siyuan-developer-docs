@@ -3,6 +3,7 @@
 ## 2024-05-14
 
 - 更新社区集市资源 `manifest` 文件示例 | Update the example of the community market resource `manifest` file
+- 使用 prettier 格式化文档与代码 | Format documents and code using prettier
 
 ## 2024-05-10
 

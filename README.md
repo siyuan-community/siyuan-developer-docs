@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <div align="center">
 <img src="./docs/public/static/logo/siyuan.svg" style="width: 8em; height: 8em;">
 

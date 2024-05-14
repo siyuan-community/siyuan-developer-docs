@@ -91,27 +91,27 @@ export default defineConfig({
                 "^/siyuan-sync/.*": {
                     target: "https://siyuan-sync.b3logfile.com",
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/siyuan-sync/, ""),
+                    rewrite: (path) => path.replace(/^\/siyuan-sync/, ""),
                 },
                 "^/siyuan-data/.*": {
                     target: "https://siyuan-data.b3logfile.com",
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/siyuan-data/, ""),
+                    rewrite: (path) => path.replace(/^\/siyuan-data/, ""),
                 },
                 "^/bazaar/.*": {
                     target: "http://bazaar.b3logfile.com",
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/bazaar/, ""),
+                    rewrite: (path) => path.replace(/^\/bazaar/, ""),
                 },
                 "^/oss/.*": {
                     target: "https://oss.b3logfile.com",
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/oss/, ""),
+                    rewrite: (path) => path.replace(/^\/oss/, ""),
                 },
                 "^/ld246/.*": {
                     target: "https://ld246.com",
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/ld246/, ""),
+                    rewrite: (path) => path.replace(/^\/ld246/, ""),
                 },
             },
         },

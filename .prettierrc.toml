@@ -11,7 +11,7 @@ printWidth = 1024
 
 # tabWidth: <int>
 # tabWidth = 2
-tabWidth = 4
+tabWidth = 2
 
 
 # 是否使用 \t
@@ -82,7 +82,7 @@ bracketSameLine = false
 
 # arrowParens: "<always|avoid>"
 # arrowParens = "always"
-arrowParens = "always"
+arrowParens = "avoid"
 
 
 # 仅格式化文件的一部分
@@ -165,7 +165,7 @@ endOfLine = "lf"
 
 # embeddedLanguageFormatting: "<off|auto>"
 # embeddedLanguageFormatting = "auto"
-embeddedLanguageFormatting = "auto"
+embeddedLanguageFormatting = "off"
 
 
 # 在 HTML、Vue 和 JSX 中每行强制执行单个属性

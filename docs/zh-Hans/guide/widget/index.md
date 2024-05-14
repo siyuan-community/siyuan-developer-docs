@@ -151,14 +151,14 @@ function putFileContent(path, content) {
     method: "POST",
     body: formData,
   })
-    .then(response => {
+    .then((response) => {
       if (response.ok) {
         console.log("File saved successfully");
       } else {
         throw new Error("Failed to save file");
       }
     })
-    .catch(error => {
+    .catch((error) => {
       console.error(error);
     });
 }
@@ -223,14 +223,14 @@ function getFileContent(path) {
       path: path,
     }),
   })
-    .then(response => {
+    .then((response) => {
       if (response.ok) {
         return response.text();
       } else {
         throw new Error("Failed to get file content");
       }
     })
-    .catch(error => {
+    .catch((error) => {
       console.error(error);
     });
 }
