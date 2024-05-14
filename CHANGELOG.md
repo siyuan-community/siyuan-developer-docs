@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-14
+
+- 更新社区集市资源 `manifest` 文件示例 | Update the example of the community market resource `manifest` file
+
 ## 2024-05-10
 
 - 改进社区集市相关文档 | Improve community market-related documents

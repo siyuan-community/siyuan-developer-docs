@@ -11,24 +11,28 @@ printWidth = 1024
 
 # tabWidth: <int>
 # tabWidth = 2
+tabWidth = 4
 
 
 # 是否使用 \t
 
 # useTabs: <bool>
 # useTabs = false
+useTabs = false
 
 
 # 是否在语句末尾打印分号
 
 # semi: <bool>
 # semi = true
+semi = true
 
 
 # 是否优先使用单引号
 
 # singleQuote: <bool>
 # singleQuote = false
+singleQuote = false
 
 
 # 对象属性名是否使用引号
@@ -38,12 +42,14 @@ printWidth = 1024
 
 # quoteProps: "<as-needed|consistent|preserve>"
 # quoteProps = "as-needed"
+quoteProps = "as-needed"
 
 
 # 在 JSX 中使用单引号而不是双引号
 
 # jsxSingleQuote: <bool>
 # jsxSingleQuote = false
+jsxSingleQuote = false
 
 
 # 尾随逗号
@@ -60,12 +66,14 @@ trailingComma = "all"
 
 # bracketSpacing: <bool>
 # bracketSpacing = true
+bracketSpacing = true
 
 
 # 将多行 HTML（HTML、JSX、Vue、Angular）元素的 > 放在最后一行的末尾，而不是单独放在下一行（不适用于自闭合元素）
 
 # bracketSameLine: <bool>
 # bracketSameLine = true
+bracketSameLine = false
 
 
 # 为只有一个参数的箭头函数的参数添加括号
@@ -74,7 +82,7 @@ trailingComma = "all"
 
 # arrowParens: "<always|avoid>"
 # arrowParens = "always"
-arrowParens = "avoid"
+arrowParens = "always"
 
 
 # 仅格式化文件的一部分
@@ -103,12 +111,14 @@ arrowParens = "avoid"
 
 # requirePragma: <bool>
 # requirePragma = false
+requirePragma = false
 
 
 # 格式化时在文档首自动添加 @format 标记
 
 # insertPragma: <bool>
 # insertPragma = false
+insertPragma = false
 
 
 # 是否对超过长度的 markdown 进行换行
@@ -118,6 +128,7 @@ arrowParens = "avoid"
 
 # proseWrap: "<always|never|preserve>"
 # proseWrap = "preserve"
+proseWrap = "preserve"
 
 
 # 指定 HTML、Vue、Angular 和 Handlebars 的全局空白敏感度
@@ -127,12 +138,14 @@ arrowParens = "avoid"
 
 # htmlWhitespaceSensitivity: "<css|strict|ignore>"
 # htmlWhitespaceSensitivity = "css"
+htmlWhitespaceSensitivity = "css"
 
 
 # Vue 文件中 <script> 和 <style> 标签内的代码是否缩进
 
 # vueIndentScriptAndStyle: <bool>
 # vueIndentScriptAndStyle = false
+vueIndentScriptAndStyle = false
 
 
 # 文件换行符
@@ -143,6 +156,7 @@ arrowParens = "avoid"
 
 # endOfLine: "<lf|crlf|cr|auto>"
 # endOfLine = "lf"
+endOfLine = "lf"
 
 
 # 是否格式化嵌入在文件中的引用代码
@@ -151,6 +165,7 @@ arrowParens = "avoid"
 
 # embeddedLanguageFormatting: "<off|auto>"
 # embeddedLanguageFormatting = "auto"
+embeddedLanguageFormatting = "auto"
 
 
 # 在 HTML、Vue 和 JSX 中每行强制执行单个属性

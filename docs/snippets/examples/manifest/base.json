@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.siyuan-note.club/schemas/manifest/base.schema.json",
     "name": "example-name",
     "author": "Author Name Example",
     "url": "https://github.com/example-username/example-repository-name",

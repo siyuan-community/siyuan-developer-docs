@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.siyuan-note.club/schemas/manifest/plugin.schema.json",
     "name": "plugin-sample",
     "author": "Vanessa",
     "url": "https://github.com/siyuan-note/plugin-sample",

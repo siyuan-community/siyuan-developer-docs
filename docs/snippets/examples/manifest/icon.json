@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.siyuan-note.club/schemas/manifest/icon.schema.json",
     "name": "icon-sample",
     "author": "Vanessa",
     "url": "https://github.com/siyuan-note/icon-sample",
