@@ -40,25 +40,27 @@ bazaar 读取特定 json 文件来获悉社区资源的具体配置。
 <<< @/snippets/siyuan-sdk/schemas/manifest/base.schema.json [JSON Schema (json)]
 :::
 
-- `name`: 资源名称，必须全局唯一（集市中不能有同名图标）
-- `author`: 资源作者名
-- `url`: 资源 GitHub 仓库 URL
-- `version`: 资源版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
-- `minAppVersion`: 资源兼容的最低思源笔记版本号
-- `displayName`: 资源显示名称，主要用于集市列表中显示，支持多语言
-  - `default`: 默认语言，必须存在
-  - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
-- `description`: 资源描述，主要用于资源集市列表中显示，支持多语言
-  - `default`: 默认语言，必须存在
-  - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
-- `readme`: 自述文件名，主要用于资源集市详情页中显示，支持多语言
-  - `default`: 默认语言，必须存在
-  - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
-- `funding`: 项目赞助渠道
-  - `openCollective`: Open Collective 名称
-  - `patreon`: Patreon 名称
-  - `github`: GitHub 登录名
-  - `custom`: 自定义赞助链接列表
+- 基础字段
+  - `name`: 资源名称，必须全局唯一（集市中不能有同名图标）
+  - `author`: 资源作者名
+  - `url`: 资源 GitHub 仓库 URL
+  - `version`: 资源版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
+  - `minAppVersion`: 资源兼容的最低思源笔记版本号
+  - `keywords`: 用于在集市中搜索的关键词列表
+  - `displayName`: 资源显示名称，主要用于集市列表中显示，支持多语言
+    - `default`: 默认语言，必须存在
+    - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
+  - `description`: 资源描述，主要用于资源集市列表中显示，支持多语言
+    - `default`: 默认语言，必须存在
+    - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
+  - `readme`: 自述文件名，主要用于资源集市详情页中显示，支持多语言
+    - `default`: 默认语言，必须存在
+    - `zh_CN`、`en_US` 等其他语言: 可选，建议至少提供中文和英文
+  - `funding`: 项目赞助渠道
+    - `openCollective`: Open Collective 名称
+    - `patreon`: Patreon 名称
+    - `github`: GitHub 用户名
+    - `custom`: 自定义赞助链接列表
 
 ### 附加字段 {#manifest-added}
 

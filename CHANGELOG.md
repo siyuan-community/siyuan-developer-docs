@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-17
+
+- 改进集市资源的清单文件的介绍 | Improve the introduction of the manifest file of the market resource
+
 ## 2024-05-14
 
 - 更新社区集市资源 `manifest` 文件示例 | Update the example of the community market resource `manifest` file
