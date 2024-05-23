@@ -3,7 +3,6 @@ cache
 dist
 node_modules
 public
-snippets
 temp
 
 # Ignore files for PNPM, NPM and YARN

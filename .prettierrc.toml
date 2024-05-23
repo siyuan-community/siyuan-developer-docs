@@ -82,7 +82,7 @@ bracketSameLine = false
 
 # arrowParens: "<always|avoid>"
 # arrowParens = "always"
-arrowParens = "avoid"
+arrowParens = "always"
 
 
 # 仅格式化文件的一部分
@@ -175,3 +175,18 @@ embeddedLanguageFormatting = "off"
 # singleAttributePerLine: <bool>
 # singleAttributePerLine = false
 singleAttributePerLine = true
+
+
+# REF: https://prettier.io/docs/en/configuration#configuration-overrides
+
+[[overrides]]
+
+files = [ #
+    "*.js",
+    "*.ts",
+    "*.vue",
+]
+
+[overrides.options]
+
+tabWidth = 4

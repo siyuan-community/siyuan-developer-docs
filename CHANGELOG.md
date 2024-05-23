@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-23
+
+- 优化 Prettier 配置 | Optimize Prettier configuration
+
 ## 2024-05-17
 
 - 改进集市资源的清单文件的介绍 | Improve the introduction of the manifest file of the market resource
