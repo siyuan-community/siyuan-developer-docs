@@ -1,0 +1,5 @@
+pnpm check:cspell
+pnpm format:prettier
+pnpm docs:build
+
+exit 0

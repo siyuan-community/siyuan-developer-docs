@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-05-26
+
+- 添加 `Husky` 配置 | Add `Husky` configuration
+
 ## 2024-05-23
 
 - 优化 Prettier 配置 | Optimize Prettier configuration
