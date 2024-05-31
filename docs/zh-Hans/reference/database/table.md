@@ -24,7 +24,7 @@ outline: deep
 | `memo`      | 内容块备注                                               | `一级标题备注`                                                             |
 | `tag`       | 非文档块为块内包含的标签，文档块为文档的标签             | `#标签1# #标签2# #标签3#`                                                   |
 | `content`   | 去除了 Markdown 标记符的文本                             | `一级标题`                                                                 |
-| `fcontent`  | 容器块第一个子块去除了 Markdown 标记符的文本(1.9.9 添加) | `第一个子块`                                                               |
+| `fcontent`  | 第一个子块去除了 Markdown 标记符的文本(1.9.9 添加)       | `第一个子块`                                                               |
 | `markdown`  | 包含完整 Markdown 标记符的文本                           | `# 一级标题`                                                               |
 | `length`    | `fcontent` 长度                                         | `6`                                                                        |
 | `type`      | 内容块主类型，参考 [blocks.type](#blocks-type)           | `h`                                                                        |
