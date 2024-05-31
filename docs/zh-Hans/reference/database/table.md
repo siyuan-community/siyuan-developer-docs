@@ -22,11 +22,11 @@ outline: deep
 | `name`      | 内容块名称                                               | `一级标题命名`                                                             |
 | `alias`     | 内容块别名                                               | `一级标题别名`                                                             |
 | `memo`      | 内容块备注                                               | `一级标题备注`                                                             |
-| `tag`       | 非文档块为块内包含的标签，文档块为文档的标签             | `#标签1# #标签2# #标签3#`                                                   |
+| `tag`       | 非文档块为块内包含的标签，文档块为文档的标签              | `#标签1# #标签2# #标签3#`                                                   |
 | `content`   | 去除了 Markdown 标记符的文本                             | `一级标题`                                                                 |
 | `fcontent`  | 第一个子块去除了 Markdown 标记符的文本(1.9.9 添加)       | `第一个子块`                                                               |
 | `markdown`  | 包含完整 Markdown 标记符的文本                           | `# 一级标题`                                                               |
-| `length`    | `fcontent` 长度                                         | `6`                                                                        |
+| `length`    | `fcontent` 字段文本长度                                  | `6`                                                                        |
 | `type`      | 内容块主类型，参考 [blocks.type](#blocks-type)           | `h`                                                                        |
 | `subtype`   | 内容块次类型，参考 [blocks.subtype](#blocks-type)        | `h1`                                                                       |
 | `ial`       | 内联属性列表，形如 `{: name="value"}`                    | `{: id="20210104091228-d0rzbmm" updated="20210604222535"}`                 |
