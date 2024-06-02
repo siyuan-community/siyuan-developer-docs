@@ -16,18 +16,18 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
-    "@vercel/node": "^3.1.5",
+    "@types/node": "^20.14.0",
+    "@vercel/node": "^3.1.6",
     "cspell": "^8.8.3",
     "husky": "^9.0.11",
     "markdown-it-mathjax3": "^4.3.2",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "vitepress": "^1.2.2",
     "vue": "^3.4.27"
   },
   "dependencies": {
     "@siyuan-community/siyuan-sdk": "^0.3.11",
-    "@vercel/kv": "^1.0.1",
+    "@vercel/kv": "^2.0.0",
     "@vercel/speed-insights": "^1.0.11"
   }
 }

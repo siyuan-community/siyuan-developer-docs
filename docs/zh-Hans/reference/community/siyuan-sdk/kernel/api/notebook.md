@@ -86,6 +86,16 @@ outline: deep
 
 ---
 
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/notebook/lsNotebooks/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/notebook/lsNotebooks/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/notebook/lsNotebooks/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+
 **响应**
 
 ::: code-group

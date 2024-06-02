@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-06-02
+
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+
 ## 2024-05-26
 
 - 添加 `Husky` 配置 | Add `Husky` configuration
