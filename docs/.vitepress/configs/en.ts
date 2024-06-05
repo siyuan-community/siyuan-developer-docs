@@ -57,7 +57,9 @@ export const themeConfig: DefaultTheme.Config = {
         { text: "Reference", link: "/en/reference/" },
         {
             text: "SiYuan Community",
-            items: [{ text: "Organization", link: "https://github.com/siyuan-community" }],
+            items: [
+                { text: "Organization", link: "https://github.com/siyuan-community" },
+            ],
         },
         {
             text: "SiYuan",

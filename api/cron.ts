@@ -20,7 +20,12 @@ const loadData = async () => {
     };
 
     const getResources = async () => {
-        return Promise.all([fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/plugins.json`, { mode: "no-cors" }).then((res) => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/templates.json`, { mode: "no-cors" }).then((res) => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/themes.json`, { mode: "no-cors" }).then((res) => res.json()), fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/widgets.json`, { mode: "no-cors" }).then((res) => res.json())]).then((arr) => {
+        return Promise.all([
+            fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/plugins.json`, { mode: "no-cors" }).then((res) => res.json()),
+            fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/templates.json`, { mode: "no-cors" }).then((res) => res.json()),
+            fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/themes.json`, { mode: "no-cors" }).then((res) => res.json()),
+            fetch(`${Constants.BazaarOSSServer}/bazaar@${bazaarHash}/stage/widgets.json`, { mode: "no-cors" }).then((res) => res.json()),
+        ]).then((arr) => {
             plugins = arr[0].repos.map((v) => ({ ...v, type: "plugin" }));
             templates = arr[1].repos.map((v) => ({ ...v, type: "template" }));
             themes = arr[2].repos.map((v) => ({ ...v, type: "theme" }));
@@ -29,7 +34,12 @@ const loadData = async () => {
     };
 
     const getUserRepos = () => {
-        return [...plugins, ...templates, ...themes, ...widgets].map((p) => {
+        return [
+            ...plugins,
+            ...templates,
+            ...themes,
+            ...widgets,
+        ].map((p) => {
             const reponame = p?.url.split("@")[0];
             const author = reponame.split("/")[0];
             return {

@@ -1,5 +1,9 @@
 # 更改日志
 
+## 2024-06-05
+
+- Prettier 支持格式化模块导入列表与数组 | Prettier supports formatting module import lists and arrays
+
 ## 2024-06-02
 
 - 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document

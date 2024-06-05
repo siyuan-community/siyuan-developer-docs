@@ -64,7 +64,9 @@ export const themeConfig: DefaultTheme.Config = {
         { text: "参考", link: "/zh-Hans/reference/" },
         {
             text: "思源社区",
-            items: [{ text: "组织", link: "https://github.com/siyuan-community" }],
+            items: [
+                { text: "组织", link: "https://github.com/siyuan-community" },
+            ],
         },
         {
             text: "思源笔记",
@@ -115,7 +117,9 @@ export const themeConfig: DefaultTheme.Config = {
             },
             {
                 text: "快速开始",
-                items: [{ text: "入门", link: "/zh-Hans/guide/plugin/startup" }],
+                items: [
+                    { text: "入门", link: "/zh-Hans/guide/plugin/startup" },
+                ],
             },
             {
                 text: "开发",
@@ -127,7 +131,9 @@ export const themeConfig: DefaultTheme.Config = {
                     {
                         text: "用户界面",
                         link: "/zh-Hans/guide/plugin/user-interface/",
-                        items: [{ text: "顶栏", link: "/zh-Hans/guide/plugin/user-interface/topbar" }],
+                        items: [
+                            { text: "顶栏", link: "/zh-Hans/guide/plugin/user-interface/topbar" },
+                        ],
                     },
                     {
                         text: "事件总线",
@@ -215,7 +221,9 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: "数据库",
                 // link: "/zh-Hans/reference/database/",
-                items: [{ text: "表与字段", link: "/zh-Hans/reference/database/table" }],
+                items: [
+                    { text: "表与字段", link: "/zh-Hans/reference/database/table" },
+                ],
             },
             {
                 text: "内容块",

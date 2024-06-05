@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+
 import en from "./configs/en";
 import zh_Hans from "./configs/zh-Hans";
 
@@ -17,7 +18,12 @@ export default defineConfig({
         math: true,
     },
 
-    head: [["link", { rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }]],
+    head: [
+        [
+            "link",
+            { rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" },
+        ],
+    ],
 
     // REF https://vitepress.dev/reference/default-theme-config
     themeConfig: {
@@ -43,7 +49,9 @@ export default defineConfig({
         ],
 
         // REF https://vitepress.dev/reference/default-theme-config#sociallinks
-        socialLinks: [{ icon: "github", link: "https://github.com/siyuan-community/siyuan-developer-docs" }],
+        socialLinks: [
+            { icon: "github", link: "https://github.com/siyuan-community/siyuan-developer-docs" },
+        ],
 
         footer: {
             message: 'Released under the <a href="https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE" target="_black">AGPL-3.0</a> License.',
