@@ -8,7 +8,7 @@
 | `i18n`     | `IObject`          | Object 对象，结构同在 `i18n` 目录下的 json 文件。         |
 | `data`     | `any`              |                                                           |
 | `name`     | `string`           |                                                           |
-| `app`      | `App`              |                                                           |
+| `app`      | `App`              | 包含 plugins 和 appId 两个属性，plugins是当前所有已运行插件的实例，appId 为部分函数需要传入的参数 |
 | `commands` | `ICommandOption[]` |                                                           |
 | `setting`  | `Setting`          |                                                           |
 
