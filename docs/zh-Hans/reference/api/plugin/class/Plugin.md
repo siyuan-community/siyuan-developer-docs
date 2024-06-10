@@ -2,15 +2,15 @@
 
 ## 属性
 
-| Property   | Type               | Description                                               |
-| :--------- | :----------------- | :-------------------------------------------------------- |
-| `eventBus` | `EventBus`         | EventBus 对象，可以通过调用它的 `on` 方法来接受思源的事件 |
-| `i18n`     | `IObject`          | Object 对象，结构同在 `i18n` 目录下的 json 文件。         |
-| `data`     | `any`              |                                                           |
-| `name`     | `string`           |                                                           |
+| Property   | Type               | Description                                                                                       |
+| :--------- | :----------------- | :------------------------------------------------------------------------------------------------ |
+| `eventBus` | `EventBus`         | EventBus 对象，可以通过调用它的 `on` 方法来接受思源的事件                                         |
+| `i18n`     | `IObject`          | Object 对象，结构同在 `i18n` 目录下的 json 文件。                                                 |
+| `data`     | `any`              |                                                                                                   |
+| `name`     | `string`           |                                                                                                   |
 | `app`      | `App`              | 包含 plugins 和 appId 两个属性，plugins是当前所有已运行插件的实例，appId 为部分函数需要传入的参数 |
-| `commands` | `ICommandOption[]` |                                                           |
-| `setting`  | `Setting`          |                                                           |
+| `commands` | `ICommandOption[]` |                                                                                                   |
+| `setting`  | `Setting`          |                                                                                                   |
 
 ## `onload`
 
