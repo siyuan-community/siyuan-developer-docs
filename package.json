@@ -1,35 +1,42 @@
 {
-  "name": "siyuan-developer-docs",
-  "description": "Unofficial documentation for SiYuan community developers",
-  "author": "SiYuan Community",
-  "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
-  "license": "AGPL-3.0-or-later",
-  "type": "module",
-  "scripts": {
-    "init": "npm run init:siyuan-sdk",
-    "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
-    "check:cspell": "cspell .",
-    "format:prettier": "prettier -w \"**/*.{js,ts,vue,md}\"",
-    "docs:dev": "npm run init && vitepress dev docs",
-    "docs:build": "npm run init && vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
-    "@types/node": "^20.14.1",
-    "@vercel/node": "^3.1.6",
-    "cspell": "^8.8.4",
-    "husky": "^9.0.11",
-    "markdown-it-mathjax3": "^4.3.2",
-    "prettier": "^3.3.0",
-    "prettier-plugin-multiline-arrays": "^3.0.6",
-    "vitepress": "^1.2.3",
-    "vue": "^3.4.27"
-  },
-  "dependencies": {
-    "@siyuan-community/siyuan-sdk": "^0.3.11",
-    "@vercel/kv": "^2.0.0",
-    "@vercel/speed-insights": "^1.0.11"
-  }
+    "name": "siyuan-developer-docs",
+    "type": "module",
+    "description": "Unofficial documentation for SiYuan community developers",
+    "author": "SiYuan Community",
+    "license": "AGPL-3.0-or-later",
+    "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
+    "scripts": {
+        "init": "npm run init:siyuan-sdk",
+        "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
+
+        "check:cspell": "cspell .",
+        "check:eslint": "eslint --max-warnings 0 .",
+        "check:prettier": "prettier -c \"**/*.md\"",
+
+        "format:eslint": "eslint --fix .",
+        "format:prettier": "prettier -w \"**/*.md\"",
+
+        "docs:dev": "npm run init && vitepress dev docs",
+        "docs:build": "npm run init && vitepress build docs",
+        "docs:preview": "vitepress preview docs",
+
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@siyuan-community/siyuan-sdk": "^0.3.11",
+        "@vercel/kv": "^2.0.0",
+        "@vercel/speed-insights": "^1.0.11"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^2.21.1",
+        "@types/node": "^20.14.1",
+        "@vercel/node": "^3.1.6",
+        "cspell": "^8.8.4",
+        "eslint": "^9.5.0",
+        "husky": "^9.0.11",
+        "markdown-it-mathjax3": "^4.3.2",
+        "prettier": "^3.3.0",
+        "vitepress": "^1.2.3",
+        "vue": "^3.4.27"
+    }
 }

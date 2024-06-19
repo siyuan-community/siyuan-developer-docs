@@ -1,4 +1,8 @@
-# 更改日志
+# 更改日志 | Change Log
+
+## 2024-06-19
+
+- 配置 `ESLint` | Configure `ESLint`
 
 ## 2024-06-05
 

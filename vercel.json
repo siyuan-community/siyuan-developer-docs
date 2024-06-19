@@ -1,36 +1,36 @@
 {
-	"rewrites": [
-		{
-			"source": "/siyuan-sync/:match*",
-			"destination": "https://siyuan-sync.b3logfile.com/:match*"
-		},
-		{
-			"source": "/siyuan-data/:match*",
-			"destination": "https://siyuan-data.b3logfile.com/:match*"
-		},
-		{
-			"source": "/bazaar/:match*",
-			"destination": "http://bazaar.b3logfile.com/:match*"
-		},
-		{
-			"source": "/oss/:match*",
-			"destination": "https://oss.b3logfile.com/:match*"
-		},
-		{
-			"source": "/ld246/:match*",
-			"destination": "https://ld246.com/:match*"
-		}
-	],
-	"crons": [
-		{
-			"path": "/api/cron",
-			"schedule": "0 18 * * *"
-		}
-	],
-	"functions": {
-		"api/cron.ts": {
-			"memory": 1024,
-			"maxDuration": 10
-		}
-	}
+    "rewrites": [
+        {
+            "source": "/siyuan-sync/:match*",
+            "destination": "https://siyuan-sync.b3logfile.com/:match*"
+        },
+        {
+            "source": "/siyuan-data/:match*",
+            "destination": "https://siyuan-data.b3logfile.com/:match*"
+        },
+        {
+            "source": "/bazaar/:match*",
+            "destination": "http://bazaar.b3logfile.com/:match*"
+        },
+        {
+            "source": "/oss/:match*",
+            "destination": "https://oss.b3logfile.com/:match*"
+        },
+        {
+            "source": "/ld246/:match*",
+            "destination": "https://ld246.com/:match*"
+        }
+    ],
+    "crons": [
+        {
+            "path": "/api/cron",
+            "schedule": "0 18 * * *"
+        }
+    ],
+    "functions": {
+        "api/cron.ts": {
+            "memory": 1024,
+            "maxDuration": 10
+        }
+    }
 }

@@ -1,26 +1,22 @@
 <!--
  Copyright (C) 2024 SiYuan Community
- 
+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as
  published by the Free Software Foundation, either version 3 of the
  License, or (at your option) any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU Affero General Public License for more details.
- 
+
  You should have received a copy of the GNU Affero General Public License
  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
 <script setup>
 import { computed, onMounted, ref } from "vue";
-
-
-
-
 
 const types = [
     { type: "all", name: "全部" },
@@ -39,7 +35,7 @@ const downloadCounts = ref(null);
 const bazaarHash = ref("");
 const username = ref("");
 
-let selectedRankType = ref("all");
+const selectedRankType = ref("all");
 
 const version = ref(null);
 
@@ -51,15 +47,20 @@ const Constants = {
     LiandiServer: "/ld246", // 链滴服务地址，用于分享发布帖子
 };
 
-const getSiyuanVersions = async () => {
-    version.value = await fetch(`${Constants.AliyunServer}/apis/siyuan/version`, { method: "GET", mode: "cors" }).then(res => res.json());
+async function getSiyuanVersions() {
+    version.value = await fetch(
+        `${Constants.AliyunServer}/apis/siyuan/version`,
+        {
+            method: "GET",
+            mode: "cors",
+        },
+    ).then(res => res.json());
     bazaarHash.value = version.value.bazaar;
-};
+}
 
-const getResources = async () => {
+async function getResources() {
     return Promise.all(
         [
-            //
             "plugins",
             "templates",
             "themes",
@@ -67,16 +68,21 @@ const getResources = async () => {
         ]
             .map(name => `${Constants.BazaarOSSServer}/bazaar@${bazaarHash.value}/stage/${name}.json`)
             .map(url => fetch(url, { mode: "no-cors" }).then(res => res.json())),
-    ).then(arr => {
+    ).then((arr) => {
         plugins.value = arr[0].repos.map(v => ({ ...v, type: "plugin" }));
         templates.value = arr[1].repos.map(v => ({ ...v, type: "template" }));
         themes.value = arr[2].repos.map(v => ({ ...v, type: "theme" }));
         widgets.value = arr[3].repos.map(v => ({ ...v, type: "widget" }));
     });
-};
+}
 
-const getUserRepos = () => {
-    return [...plugins.value, ...templates.value, ...themes.value, ...widgets.value].map(p => {
+function getUserRepos() {
+    return [
+        ...plugins.value,
+        ...templates.value,
+        ...themes.value,
+        ...widgets.value,
+    ].map((p) => {
         const reponame = p?.url.split("@")[0];
         const author = reponame.split("/")[0];
         return {
@@ -87,16 +93,16 @@ const getUserRepos = () => {
             icon: `https://oss.b3logfile.com/package/${p.url}/icon.png`,
         };
     });
-};
+}
 
 const URLS = {
     DOWNLOAD_COUNTS: `${Constants.BazaarStatServer}/bazaar/index.json`,
 };
 
-const getDownloadCounts = async () => {
+async function getDownloadCounts() {
     const res = await fetch(`${URLS.DOWNLOAD_COUNTS}`, { method: "GET" }).then(res => res.json());
     downloadCounts.value = res;
-};
+}
 
 const namedUserRepos = computed(() => {
     let result = userRepos.value;
@@ -110,11 +116,21 @@ const namedUserRepos = computed(() => {
 });
 const total = computed(() => namedUserRepos.value.reduce((a, i) => (i.downloads || 0) + a, 0));
 
-const getStyle = type => {
+function getStyle(type) {
     return {
-        backgroundColor: ["red", "blue", "orange", "green"][["theme", "template", "plugin", "widget"].findIndex(v => v === type)],
+        backgroundColor: [
+            "red",
+            "blue",
+            "orange",
+            "green",
+        ][[
+            "theme",
+            "template",
+            "plugin",
+            "widget",
+        ].findIndex(v => v === type)],
     };
-};
+}
 
 onMounted(async () => {
     await getDownloadCounts();
@@ -131,9 +147,10 @@ onMounted(async () => {
     >
         <div class="center">
             <button
+                v-for="(t, i) in types"
+                :key="i"
                 class="b3-button"
                 style="margin-right: 8px"
-                v-for="t in types"
                 @click="selectedRankType = t.type"
             >
                 {{ t.name }}
@@ -145,37 +162,47 @@ onMounted(async () => {
         </div>
         <div>
             <div class="user-repo-container">
-                <template v-for="p in namedUserRepos">
+                <template
+                    v-for="(p, i) in namedUserRepos"
+                    :key="i"
+                >
                     <div
-                        class="user-repo fn__flex"
                         v-if="p.package"
+                        class="user-repo fn__flex"
                     >
                         <div class="fn__flex-1">
                             <div>
-                                <dt>Name:&nbsp</dt>
+                                <dt>Name:&nbsp;</dt>
                                 <dd style="display: inline-block">
                                     <a
                                         :href="p.package.url"
                                         target="_blank"
-                                        >{{ (p?.package?.displayName || {})["zh_CN"] || (p?.package?.displayName || {})["default"] || p?.package?.name }}</a
-                                    >
+                                    >{{ (p?.package?.displayName || {}).zh_CN || (p?.package?.displayName || {}).default || p?.package?.name }}</a>
                                 </dd>
                             </div>
                             <div>
-                                <dt>Username:&nbsp</dt>
-                                <dd style="display: inline-block">{{ p.username }}</dd>
+                                <dt>Username:&nbsp;</dt>
+                                <dd style="display: inline-block">
+                                    {{ p.username }}
+                                </dd>
                             </div>
                             <div>
-                                <dt>Type:&nbsp</dt>
-                                <dd :style="getStyle(p.type)">{{ p.type }}</dd>
+                                <dt>Type:&nbsp;</dt>
+                                <dd :style="getStyle(p.type)">
+                                    {{ p.type }}
+                                </dd>
                             </div>
                             <div>
-                                <dt>Download:&nbsp</dt>
-                                <dd style="display: inline-block">{{ p.downloads }}</dd>
+                                <dt>Download:&nbsp;</dt>
+                                <dd style="display: inline-block">
+                                    {{ p.downloads }}
+                                </dd>
                             </div>
                             <div>
-                                <dt>Version:&nbsp</dt>
-                                <dd style="display: inline-block">{{ p.package.version }}</dd>
+                                <dt>Version:&nbsp;</dt>
+                                <dd style="display: inline-block">
+                                    {{ p.package.version }}
+                                </dd>
                             </div>
                         </div>
                         <img

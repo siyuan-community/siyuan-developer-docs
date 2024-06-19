@@ -1,5 +1,8 @@
+#!/bin/sh
+
 pnpm check:cspell
-pnpm format:prettier
+pnpm check:eslint
+pnpm check:prettier
 pnpm docs:build
 
 exit 0

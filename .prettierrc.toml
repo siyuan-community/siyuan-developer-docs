@@ -6,13 +6,11 @@
 # printWidth = 80
 printWidth = 1024
 
-
 # 缩进宽度
 
 # tabWidth: <int>
 # tabWidth = 2
 tabWidth = 2
-
 
 # 是否使用 \t
 
@@ -20,20 +18,17 @@ tabWidth = 2
 # useTabs = false
 useTabs = false
 
-
 # 是否在语句末尾打印分号
 
 # semi: <bool>
 # semi = true
 semi = true
 
-
 # 是否优先使用单引号
 
 # singleQuote: <bool>
 # singleQuote = false
 singleQuote = false
-
 
 # 对象属性名是否使用引号
 # "as-needed" - 按需添加引号
@@ -44,13 +39,11 @@ singleQuote = false
 # quoteProps = "as-needed"
 quoteProps = "as-needed"
 
-
 # 在 JSX 中使用单引号而不是双引号
 
 # jsxSingleQuote: <bool>
 # jsxSingleQuote = false
 jsxSingleQuote = false
-
 
 # 尾随逗号
 # "es5" - 在 ES5 (对象、数组等) 中有效的尾随逗号, TypeScript 的类型参数中没有尾随逗号
@@ -61,20 +54,17 @@ jsxSingleQuote = false
 # trailingComma = "es5"
 trailingComma = "all"
 
-
 # 对象大括号添加空格
 
 # bracketSpacing: <bool>
 # bracketSpacing = true
 bracketSpacing = true
 
-
 # 将多行 HTML（HTML、JSX、Vue、Angular）元素的 > 放在最后一行的末尾，而不是单独放在下一行（不适用于自闭合元素）
 
 # bracketSameLine: <bool>
 # bracketSameLine = true
 bracketSameLine = false
-
 
 # 为只有一个参数的箭头函数的参数添加括号
 # "always" - (x) => x
@@ -84,7 +74,6 @@ bracketSameLine = false
 # arrowParens = "always"
 arrowParens = "always"
 
-
 # 仅格式化文件的一部分
 
 # rangeStart: <int>
@@ -93,19 +82,16 @@ arrowParens = "always"
 # rangeEnd: <int>
 # rangeEnd = Infinity
 
-
 # 指定要使用的解析器
 # parser: require("./my-parser")
 
 # parser: "<string>"
 # parser = none
 
-
 # 指定用于推断要使用哪个解析器的文件名
 
 # filepath: "<string>"
 # filepath = none
-
 
 # 仅格式化在文件顶部包含特殊注释 @prettier 或 @format 的文件
 
@@ -113,13 +99,11 @@ arrowParens = "always"
 # requirePragma = false
 requirePragma = false
 
-
 # 格式化时在文档首自动添加 @format 标记
 
 # insertPragma: <bool>
 # insertPragma = false
 insertPragma = false
-
 
 # 是否对超过长度的 markdown 进行换行
 # "always" - 如果超出打印宽度，则将其换行
@@ -130,7 +114,6 @@ insertPragma = false
 # proseWrap = "preserve"
 proseWrap = "preserve"
 
-
 # 指定 HTML、Vue、Angular 和 Handlebars 的全局空白敏感度
 # "css" - 遵守 CSS display 属性的默认值，对于 Handlebars，视为 "strict"
 # "strict" - 所有标签周围的空格（或缺少空格）被认为是重要的
@@ -140,24 +123,21 @@ proseWrap = "preserve"
 # htmlWhitespaceSensitivity = "css"
 htmlWhitespaceSensitivity = "css"
 
-
 # Vue 文件中 <script> 和 <style> 标签内的代码是否缩进
 
 # vueIndentScriptAndStyle: <bool>
 # vueIndentScriptAndStyle = false
 vueIndentScriptAndStyle = false
 
-
 # 文件换行符
 # "lf" - \n
 # "crlf" - \r\n
-# "cr" - \r 
+# "cr" - \r
 # "auto" - 使用原文件的换行符
 
 # endOfLine: "<lf|crlf|cr|auto>"
 # endOfLine = "lf"
 endOfLine = "lf"
-
 
 # 是否格式化嵌入在文件中的引用代码
 # "auto" - 如果 Prettier 可以自动识别嵌入代码，则格式化嵌入代码
@@ -167,7 +147,6 @@ endOfLine = "lf"
 # embeddedLanguageFormatting = "auto"
 embeddedLanguageFormatting = "off"
 
-
 # 在 HTML、Vue 和 JSX 中每行强制执行单个属性
 # false - 不强制每行使用一个属性
 # true - 每行强制执行单个属性
@@ -175,56 +154,3 @@ embeddedLanguageFormatting = "off"
 # singleAttributePerLine: <bool>
 # singleAttributePerLine = false
 singleAttributePerLine = true
-
-
-plugins = [
-    "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-multiline-arrays",
-]
-
-# REF: https://www.npmjs.com/package/@ianvs/prettier-plugin-sort-imports#importorder
-importOrder = [ #
-    "^node:(.*)$",                  # Node.js builtins modules
-    "<BUILTIN_MODULES>",            # Node.js builtins modules
-    "",
-    "<THIRD_PARTY_MODULES>",        # Third-party modules
-    "",
-    "^[.]/(.*)$",
-    "",
-    "<TYPES>^node:(.*)$",
-    "",
-    "<TYPES><BUILTIN_MODULES>",
-    "",
-    "<TYPES><THIRD_PARTY_MODULES>",
-    "",
-    "<TYPES>^[.]/(.*)$",
-    "",
-    "\\.(c|le|sc)ss$",
-]
-
-# REF: https://www.npmjs.com/package/prettier-plugin-multiline-arrays
-# 数组的元素多于此处指定的数量，则会强制换行
-# 可以在注释中使用 `prettier-multiline-arrays-set-threshold: 5` 覆盖
-# -1 表示由用户手动控制是否换行 (原数组已换行则换行, 否则不换行)
-# @default -1
-multilineArraysWrapThreshold = -1
-
-# 每行元素的数量
-# 可以使用空格分隔指定一组数字
-# 可以在注释中使用 `prettier-multiline-arrays-set-line-pattern: 2 1 3` 覆盖
-# @default "1"
-multilineArraysLinePattern = "1"
-
-# REF: https://prettier.io/docs/en/configuration#configuration-overrides
-
-[[overrides]]
-
-files = [ #
-    "*.js",
-    "*.ts",
-    "*.vue",
-]
-
-[overrides.options]
-
-tabWidth = 4

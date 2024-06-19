@@ -12,6 +12,7 @@ module.exports = {
         "afterbegin",
         "afterend",
         "aliyun",
+        "antfu",
         "araddon",
         "backlink",
         "beforebegin",
