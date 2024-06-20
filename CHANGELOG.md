@@ -1,5 +1,9 @@
 # 更改日志 | Change Log
 
+## 2024-06-20
+
+- 配置 `EditorConfig` | Configure `EditorConfig`
+
 ## 2024-06-19
 
 - 配置 `ESLint` | Configure `ESLint`
