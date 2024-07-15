@@ -20,7 +20,7 @@ addf 1.5 2 2
 
 使用 `add1f` +1
 
-```powershell
+```
 add1f 1.5
 ```
 
@@ -38,7 +38,7 @@ subf 7.5 2 3
 
 ## `divf`
 
-使用 `divf` 进行整数除法。
+使用 `divf` 进行除法。
 
 ```
 divf 10 2 4
