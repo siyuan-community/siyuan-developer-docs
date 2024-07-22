@@ -199,13 +199,14 @@ $ pnpm build
 不同于常规的开发，像 C 语言或者 Java 有 Main 函数作为入口，插件的入口在 `/src/index.ts` 中，简化如下：
 
 ```ts
-import { Plugin } from "siyuan";
 import "./index.scss";
 
+import { Plugin } from "siyuan";
+
 export default class PluginSample extends Plugin {
-  onload() {
-    console.log("Hello World!");
-  }
+    onload() {
+        console.log("Hello World!");
+    }
 }
 ```
 
@@ -263,7 +264,7 @@ export default class PluginSample extends Plugin {
 >
 > ```json
 > {
->   "repos": ["username/reponame"]
+>     "repos": ["username/reponame"]
 > }
 > ```
 >
@@ -275,4 +276,4 @@ export default class PluginSample extends Plugin {
 
 1. 通常需要将代码更改提交到仓库，一是方便代码管理与备份，二是便于他人学习与参考，当然你也可以只发布`package.zip`
 2. 以插件的版本号作为“Tag version”，也就是`plugin.json`中的`version`字段，使用官方样板工程需要手动上传`package.zip`，使用社区样板工程，在正确配置后会自动打包，无需手动上传
-3. **请务必更改**`plugin.json`**中的**`version`**字段**，集市只有当检测到`version`字段变化才会拉取更新，并依据`version`字段拉取相应tag的releases中的`package.zip`，向用户推送
+3. **请务必更改** `plugin.json` **中的** `version` **字段**，集市只有当检测到`version`字段变化才会拉取更新，并依据`version`字段拉取相应tag的releases中的`package.zip`，向用户推送

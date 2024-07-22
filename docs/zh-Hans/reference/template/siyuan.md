@@ -67,7 +67,6 @@ outline: deep
 
 => {{FormatFloat "#'###.######" 12345.6789}} // [!code highlight]
 <= 12'345.678900
-
 ```
 
 :::
@@ -104,7 +103,6 @@ outline: deep
 
 => 2024-01-01 在 2024 年第 {{toDate "2006-01-02" "2024-01-01" | ISOWeek}} 周 // [!code highlight]
 <= 2024-01-01 在 2024 年第 1 周
-
 ```
 
 :::
@@ -145,7 +143,6 @@ outline: deep
 
 => 2024-01-07 星期{{toDate "2006-01-02" "2024-01-07" | WeekdayCN2}} // [!code highlight]
 <= 2024-01-07 星期天
-
 ```
 
 :::
@@ -186,7 +183,6 @@ outline: deep
 
 => 2024-01-07 周{{toDate "2006-01-02" "2024-01-07" | WeekdayCN}} // [!code highlight]
 <= 2024-01-07 周日
-
 ```
 
 :::
@@ -211,7 +207,7 @@ outline: deep
        | `6` | 周六 |
 - 参考
   - [Pull Request #9812 · siyuan-note/siyuan · GitHub](https://github.com/siyuan-note/siyuan/pull/9812)
-  - [time package ](https://pkg.go.dev/time#Time.Weekday)[`Time.Weekday`](https://pkg.go.dev/time#Time.Weekday)[ - time - Go Packages](https://pkg.go.dev/time#Time.Weekday)
+  - [time package](https://pkg.go.dev/time#Time.Weekday) [`Time.Weekday`](https://pkg.go.dev/time#Time.Weekday) [- time - Go Packages](https://pkg.go.dev/time#Time.Weekday)
 
 ::: details 示例
 
@@ -236,7 +232,6 @@ outline: deep
 
 => {{toDate "2006-01-02" "2024-01-07" | Weekday}} // [!code highlight]
 <= 0
-
 ```
 
 :::
@@ -293,7 +288,6 @@ outline: deep
 
 => {{log -10 -10}} // [!code highlight]
 <= -9223372036854775808
-
 ```
 
 :::
@@ -350,7 +344,6 @@ outline: deep
 
 => {{logf -10 -10}} // [!code highlight]
 <= NaN
-
 ```
 
 :::
@@ -694,7 +687,6 @@ outline: deep
 
 => {{parseTime "1384216367111222333"}} // [!code highlight]
 <= 2013-11-12 00:32:47.111222333 +0000 UTC
-
 ```
 
 :::
@@ -751,7 +743,6 @@ outline: deep
 
 => {{pow -10 -1}} // [!code highlight]
 <= 0
-
 ```
 
 :::
@@ -808,7 +799,6 @@ outline: deep
 
 => {{powf -10 -1}} // [!code highlight]
 <= -0.1
-
 ```
 
 :::

@@ -71,36 +71,36 @@
 
   ```ts
   export function openTab(options: {
-    app: App;
-    doc?: {
-      id: string; // 块 id
-      action?: string[]; // cb-get-all：获取所有内容；cb-get-focus：打开后光标定位在 id 所在的块；cb-get-hl: 打开后 id 块高亮
-      zoomIn?: boolean; // 是否缩放
-    };
-    pdf?: {
-      path: string;
-      page?: number; // pdf 页码
-      id?: string; // File Annotation id
-    };
-    asset?: {
-      path: string;
-    };
-    search?: ISearchOption;
-    card?: {
-      type: TCardType;
-      id?: string; //  cardType 为 all 时不传，否则传文档或笔记本 id
-      title?: string; //  cardType 为 all 时不传，否则传文档或笔记本名称
-    };
-    custom?: {
-      title: string;
-      icon: string;
-      data?: any;
-      fn?: () => IModel;
-    };
-    position?: "right" | "bottom";
-    keepCursor?: boolean; // 是否跳转到新 tab 上
-    removeCurrentTab?: boolean; // 在当前页签打开时需移除原有页签
-    afterOpen?: () => void; // 打开后回调
+      app: App;
+      doc?: {
+          id: string; // 块 id
+          action?: string[]; // cb-get-all：获取所有内容；cb-get-focus：打开后光标定位在 id 所在的块；cb-get-hl: 打开后 id 块高亮
+          zoomIn?: boolean; // 是否缩放
+      };
+      pdf?: {
+          path: string;
+          page?: number; // pdf 页码
+          id?: string; // File Annotation id
+      };
+      asset?: {
+          path: string;
+      };
+      search?: ISearchOption;
+      card?: {
+          type: TCardType;
+          id?: string; //  cardType 为 all 时不传，否则传文档或笔记本 id
+          title?: string; //  cardType 为 all 时不传，否则传文档或笔记本名称
+      };
+      custom?: {
+          title: string;
+          icon: string;
+          data?: any;
+          fn?: () => IModel;
+      };
+      position?: "bottom" | "right";
+      keepCursor?: boolean; // 是否跳转到新 tab 上
+      removeCurrentTab?: boolean; // 在当前页签打开时需移除原有页签
+      afterOpen?: () => void; // 打开后回调
   }): ITab;
   ```
 
@@ -132,7 +132,7 @@
 - 函数签名
 
   ```ts
-  export function getFrontend(): "desktop" | "desktop-window" | "mobile" | "browser-desktop" | "browser-mobile";
+  export function getFrontend(): "browser-desktop" | "browser-mobile" | "desktop-window" | "desktop" | "mobile";
   ```
 
 - 描述
@@ -148,7 +148,7 @@
 - 函数签名
 
   ```ts
-  export function getBackend(): "windows" | "linux" | "darwin" | "docker" | "android" | "ios";
+  export function getBackend(): "android" | "darwin" | "docker" | "ios" | "linux" | "windows";
   ```
 
 - 描述
@@ -207,7 +207,7 @@
 - 函数签名
 
   ```ts
-  export function showMessage(text: string, timeout?: number, type?: "info" | "error", id?: string): void;
+  export function showMessage(text: string, timeout?: number, type?: "error" | "info", id?: string): void;
   ```
 
 - 描述

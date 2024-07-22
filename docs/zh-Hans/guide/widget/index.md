@@ -34,45 +34,45 @@ HTML是构建网页的基础，它与CSS（层叠样式表）和JavaScript等技
 ```html
 <!doctype html>
 <html>
-  <head>
-    <title>我的网页</title>
-  </head>
-  <body>
-    <h1>欢迎来到我的网页</h1>
-    <p>这是一个示例网页，用于演示HTML标记语言的基本用法。</p>
+    <head>
+        <title>我的网页</title>
+    </head>
+    <body>
+        <h1>欢迎来到我的网页</h1>
+        <p>这是一个示例网页，用于演示HTML标记语言的基本用法。</p>
 
-    <h2>链接示例</h2>
-    <a href="https://www.example.com">点击这里</a>访问示例网站。
+        <h2>链接示例</h2>
+        <a href="https://www.example.com">点击这里</a>访问示例网站。
 
-    <h2>图像示例</h2>
-    <img
-      src="image.jpg"
-      alt="示例图片"
-    />
+        <h2>图像示例</h2>
+        <img
+            src="image.jpg"
+            alt="示例图片"
+        />
 
-    <h2>列表示例</h2>
-    <ul>
-      <li>项目1</li>
-      <li>项目2</li>
-      <li>项目3</li>
-    </ul>
+        <h2>列表示例</h2>
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
 
-    <h2>表格示例</h2>
-    <table>
-      <tr>
-        <td>姓名</td>
-        <td>年龄</td>
-      </tr>
-      <tr>
-        <td>张三</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td>李四</td>
-        <td>30</td>
-      </tr>
-    </table>
-  </body>
+        <h2>表格示例</h2>
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </body>
 </html>
 ```
 
@@ -109,7 +109,7 @@ index.html是挂件插入时会首先加载的界面，入口文件，通常作�
 
 ```javascript
 // 获取当前挂件的块id
-const id = window.frameElement.parentElement.parentElement.getAttribute(​"data-node-id");
+const id = window.frameElement.parentElement.parentElement.getAttribute("data-node-id");
 ```
 
 这里获取到的`id`是当前挂件所在的块id，可以用来给数据加上唯一性标识，并和它所在的块儿联系起来。
@@ -127,15 +127,15 @@ const id = window.frameElement.parentElement.parentElement.getAttribute(​"data
 - `/api/file/putFile`
 - 参数为 HTTP Multipart 表单
   - `path`：工作空间路径下的文件路径
-  - `isDir`：是否为创建文件夹，为 `true` 时仅创建文件夹，忽略 `file`
+  - `isDir`：是否为创建文件夹，为 `true` 时仅创建文件夹，忽略 `file`
   - `modTime`：最近访问和修改时间，Unix time
   - `file`：上传的文件
   - 返回值
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -144,23 +144,24 @@ const id = window.frameElement.parentElement.parentElement.getAttribute(​"data
 ```javascript
 // 写入文件内容
 function putFileContent(path, content) {
-  const formData = new FormData();
-  formData.append("path", path);
-  formData.append("file", new Blob([content]));
-  return fetch("/api/file/putFile", {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => {
-      if (response.ok) {
-        console.log("File saved successfully");
-      } else {
-        throw new Error("Failed to save file");
-      }
+    const formData = new FormData();
+    formData.append("path", path);
+    formData.append("file", new Blob([content]));
+    return fetch("/api/file/putFile", {
+        method: "POST",
+        body: formData,
     })
-    .catch((error) => {
-      console.error(error);
-    });
+        .then((response) => {
+            if (response.ok) {
+                console.log("File saved successfully");
+            }
+            else {
+                throw new Error("Failed to save file");
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
 }
 ```
 
@@ -172,10 +173,10 @@ function putFileContent(path, content) {
 
 ```javascript
 function saveIdCityMap(id, city) {
-  var idCityMap = getIdCityMap();
-  idCityMap[id] = city;
-  // 将 idCityMap 写入文件
-  putFileContent("/data/widgets/Simple-weather-forecast/data/data.json", JSON.stringify(idCityMap));
+    const idCityMap = getIdCityMap();
+    idCityMap[id] = city;
+    // 将 idCityMap 写入文件
+    putFileContent("/data/widgets/Simple-weather-forecast/data/data.json", JSON.stringify(idCityMap));
 }
 ```
 
@@ -192,18 +193,18 @@ function saveIdCityMap(id, city) {
 - 参数
   ```json
   {
-    "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
+      "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ```
   - `path`：工作空间路径下的文件路径
 - 返回值
-  - 响应状态码 `200`: 文件内容
-  - 响应状态码 `202`: 异常信息
+  - 响应状态码 `200`: 文件内容
+  - 响应状态码 `202`: 异常信息
     ```json
     {
-      "code": 404,
-      "msg": "",
-      "data": null
+        "code": 404,
+        "msg": "",
+        "data": null
     }
     ```
 
@@ -214,25 +215,26 @@ function saveIdCityMap(id, city) {
 ```javascript
 // 获取文件内容
 function getFileContent(path) {
-  return fetch("/api/file/getFile", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      path: path,
-    }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error("Failed to get file content");
-      }
+    return fetch("/api/file/getFile", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            path,
+        }),
     })
-    .catch((error) => {
-      console.error(error);
-    });
+        .then((response) => {
+            if (response.ok) {
+                return response.text();
+            }
+            else {
+                throw new Error("Failed to get file content");
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
 }
 ```
 
@@ -242,32 +244,34 @@ function getFileContent(path) {
 
 ```javascript
 getIdCityMap()
-  .then(function (idCityMap) {
-    var idCityMapJ = {};
+    .then((idCityMap) => {
+        const idCityMapJ = {};
 
-    // 使用正则表达式提取键值对中的键和值
-    var regex = /"([^"]+)":"([^"]+)"/g;
-    var match;
-    while ((match = regex.exec(idCityMap)) !== null) {
-      var key = match[1];
-      var value = match[2];
-      idCityMapJ[key] = value;
-    }
+        // 使用正则表达式提取键值对中的键和值
+        const regex = /"([^"]+)":"([^"]+)"/g;
+        let match;
+        // eslint-disable-next-line no-cond-assign
+        while ((match = regex.exec(idCityMap)) !== null) {
+            const key = match[1];
+            const value = match[2];
+            idCityMapJ[key] = value;
+        }
 
-    var city = idCityMapJ[id];
-    console.log(city); // 检查 city 变量的值是否正确获取到
+        const city = idCityMapJ[id];
+        console.log(city); // 检查 city 变量的值是否正确获取到
 
-    if (city) {
-      //执行自定义函数
-      loadWeatherWidget(city);
-    } else {
-      //执行自定义函数
-      showInputBox();
-    }
-  })
-  .catch(function (error) {
-    console.log("获取 idCityMap 出错:", error);
-  });
+        if (city) {
+            // 执行自定义函数
+            loadWeatherWidget(city);
+        }
+        else {
+            // 执行自定义函数
+            showInputBox();
+        }
+    })
+    .catch((error) => {
+        console.log("获取 idCityMap 出错:", error);
+    });
 ```
 
 这里通过寻找有没有id对应的city，来返回结果，可以自定义在两种情况下进行什么自定义操作。

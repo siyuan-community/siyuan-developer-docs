@@ -54,8 +54,8 @@ export default defineConfig({
         ],
 
         footer: {
-            message: 'Released under the <a href="https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE" target="_black">AGPL-3.0</a> License.',
-            copyright: 'Copyright © 2023-present <a href="https://github.com/siyuan-community" target="_black">SiYuan Community</a>',
+            message: "Released under the <a href=\"https://github.com/siyuan-community/siyuan-developer-docs/blob/main/LICENSE\" target=\"_black\">AGPL-3.0</a> License.",
+            copyright: "Copyright © 2023-present <a href=\"https://github.com/siyuan-community\" target=\"_black\">SiYuan Community</a>",
         },
 
         // REF https://vitepress.dev/reference/default-theme-search
@@ -89,7 +89,7 @@ export default defineConfig({
 
     // REF https://vitepress.dev/guide/i18n
     locales: {
-        en: en.localeConfig,
+        "en": en.localeConfig,
         "zh-Hans": zh_Hans.localeConfig,
     },
 

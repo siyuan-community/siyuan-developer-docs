@@ -1,9 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
+import "./style.css";
+
 import { injectSpeedInsights } from "@vercel/speed-insights";
 import Theme from "vitepress/theme";
 import { h } from "vue";
-
-import "./style.css";
 
 import Bazaar from "../components/bazaar.vue";
 

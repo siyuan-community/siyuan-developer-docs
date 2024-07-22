@@ -1,8 +1,9 @@
 #!/bin/sh
 
-pnpm check:cspell
-pnpm check:eslint
-pnpm check:prettier
+pnpm format:lint-staged
+
+pnpm check
+
 pnpm docs:build
 
 exit 0

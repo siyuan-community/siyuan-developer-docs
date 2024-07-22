@@ -49,6 +49,6 @@ const coreMembers = [
     以下排名不分先后。
     </template>
   </VPTeamPageTitle>
-  
-  <VPTeamMembers size="medium" :members="coreMembers" />
+
+<VPTeamMembers size="medium" :members="coreMembers" />
 </VPTeamPage>

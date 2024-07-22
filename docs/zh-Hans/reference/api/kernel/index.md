@@ -18,9 +18,9 @@ outline: deep
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {}
+      "code": 0,
+      "msg": "",
+      "data": {}
   }
   ```
 
@@ -34,7 +34,7 @@ outline: deep
 import { fetchPost } from "siyuan";
 
 fetchPost("/api/system/currentTime", {}, (response) => {
-  dialog.element.querySelector("#time").innerHTML = new Date(response.data).toString();
+    dialog.element.querySelector("#time").innerHTML = new Date(response.data).toString();
 });
 ```
 
@@ -110,26 +110,26 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "notebooks": [
-        {
-          "id": "20210817205410-2kvfpfn",
-          "name": "测试笔记本",
-          "icon": "1f41b",
-          "sort": 0,
-          "closed": false
-        },
-        {
-          "id": "20210808180117-czj9bvb",
-          "name": "思源笔记用户指南",
-          "icon": "1f4d4",
-          "sort": 1,
-          "closed": false
-        }
-      ]
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "notebooks": [
+              {
+                  "id": "20210817205410-2kvfpfn",
+                  "name": "测试笔记本",
+                  "icon": "1f41b",
+                  "sort": 0,
+                  "closed": false
+              },
+              {
+                  "id": "20210808180117-czj9bvb",
+                  "name": "思源笔记用户指南",
+                  "icon": "1f4d4",
+                  "sort": 1,
+                  "closed": false
+              }
+          ]
+      }
   }
   ```
 
@@ -140,7 +140,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0"
+      "notebook": "20210831090520-7dvbdv0"
   }
   ```
 
@@ -150,9 +150,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -163,7 +163,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0"
+      "notebook": "20210831090520-7dvbdv0"
   }
   ```
 
@@ -173,9 +173,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -186,8 +186,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0",
-    "name": "笔记本的新名称"
+      "notebook": "20210831090520-7dvbdv0",
+      "name": "笔记本的新名称"
   }
   ```
 
@@ -197,9 +197,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -210,7 +210,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "name": "笔记本的名称"
+      "name": "笔记本的名称"
   }
   ```
 
@@ -218,17 +218,17 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "notebook": {
-        "id": "20220126215949-r1wvoch",
-        "name": "笔记本的名称",
-        "icon": "",
-        "sort": 0,
-        "closed": false
+      "code": 0,
+      "msg": "",
+      "data": {
+          "notebook": {
+              "id": "20220126215949-r1wvoch",
+              "name": "笔记本的名称",
+              "icon": "",
+              "sort": 0,
+              "closed": false
+          }
       }
-    }
   }
   ```
 
@@ -239,7 +239,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0"
+      "notebook": "20210831090520-7dvbdv0"
   }
   ```
 
@@ -249,9 +249,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -262,7 +262,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210817205410-2kvfpfn"
+      "notebook": "20210817205410-2kvfpfn"
   }
   ```
 
@@ -272,20 +272,20 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "box": "20210817205410-2kvfpfn",
-      "conf": {
-        "name": "测试笔记本",
-        "closed": false,
-        "refCreateSavePath": "",
-        "createDocNameTemplate": "",
-        "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
-        "dailyNoteTemplatePath": ""
-      },
-      "name": "测试笔记本"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "box": "20210817205410-2kvfpfn",
+          "conf": {
+              "name": "测试笔记本",
+              "closed": false,
+              "refCreateSavePath": "",
+              "createDocNameTemplate": "",
+              "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
+              "dailyNoteTemplatePath": ""
+          },
+          "name": "测试笔记本"
+      }
   }
   ```
 
@@ -296,15 +296,15 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210817205410-2kvfpfn",
-    "conf": {
-      "name": "测试笔记本",
-      "closed": false,
-      "refCreateSavePath": "",
-      "createDocNameTemplate": "",
-      "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
-      "dailyNoteTemplatePath": ""
-    }
+      "notebook": "20210817205410-2kvfpfn",
+      "conf": {
+          "name": "测试笔记本",
+          "closed": false,
+          "refCreateSavePath": "",
+          "createDocNameTemplate": "",
+          "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
+          "dailyNoteTemplatePath": ""
+      }
   }
   ```
 
@@ -314,16 +314,16 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "name": "测试笔记本",
-      "closed": false,
-      "refCreateSavePath": "",
-      "createDocNameTemplate": "",
-      "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
-      "dailyNoteTemplatePath": ""
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "name": "测试笔记本",
+          "closed": false,
+          "refCreateSavePath": "",
+          "createDocNameTemplate": "",
+          "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
+          "dailyNoteTemplatePath": ""
+      }
   }
   ```
 
@@ -336,9 +336,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210817205410-2kvfpfn",
-    "path": "/foo/bar",
-    "markdown": ""
+      "notebook": "20210817205410-2kvfpfn",
+      "path": "/foo/bar",
+      "markdown": ""
   }
   ```
 
@@ -350,9 +350,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": "20210914223645-oj2vnx2"
+      "code": 0,
+      "msg": "",
+      "data": "20210914223645-oj2vnx2"
   }
   ```
 
@@ -366,9 +366,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0",
-    "path": "/20210902210113-0avi12f.sy",
-    "title": "文档新标题"
+      "notebook": "20210831090520-7dvbdv0",
+      "path": "/20210902210113-0avi12f.sy",
+      "title": "文档新标题"
   }
   ```
 
@@ -379,9 +379,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -392,8 +392,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0",
-    "path": "/20210902210113-0avi12f.sy"
+      "notebook": "20210831090520-7dvbdv0",
+      "path": "/20210902210113-0avi12f.sy"
   }
   ```
 
@@ -404,9 +404,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -417,9 +417,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "fromPaths": ["/20210917220056-yxtyl7i.sy"],
-    "toNotebook": "20210817205410-2kvfpfn",
-    "toPath": "/"
+      "fromPaths": ["/20210917220056-yxtyl7i.sy"],
+      "toNotebook": "20210817205410-2kvfpfn",
+      "toPath": "/"
   }
   ```
 
@@ -431,9 +431,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -444,8 +444,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "notebook": "20210831090520-7dvbdv0",
-    "path": "/20210917220500-sz588nq/20210917220056-yxtyl7i.sy"
+      "notebook": "20210831090520-7dvbdv0",
+      "path": "/20210917220500-sz588nq/20210917220056-yxtyl7i.sy"
   }
   ```
 
@@ -456,9 +456,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": "/foo/bar"
+      "code": 0,
+      "msg": "",
+      "data": "/foo/bar"
   }
   ```
 
@@ -469,7 +469,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20210917220056-yxtyl7i"
+      "id": "20210917220056-yxtyl7i"
   }
   ```
 
@@ -479,9 +479,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": "/foo/bar"
+      "code": 0,
+      "msg": "",
+      "data": "/foo/bar"
   }
   ```
 
@@ -505,14 +505,14 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "errFiles": [""],
-      "succMap": {
-        "foo.png": "assets/foo-20210719092549-9j5y79r.png"
+      "code": 0,
+      "msg": "",
+      "data": {
+          "errFiles": [""],
+          "succMap": {
+              "foo.png": "assets/foo-20210719092549-9j5y79r.png"
+          }
       }
-    }
   }
   ```
 
@@ -528,11 +528,11 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "dataType": "markdown",
-    "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
-    "nextID": "",
-    "previousID": "20211229114650-vrek5x6",
-    "parentID": ""
+      "dataType": "markdown",
+      "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
+      "nextID": "",
+      "previousID": "20211229114650-vrek5x6",
+      "parentID": ""
   }
   ```
 
@@ -548,23 +548,23 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "insert",
-            "data": "<div data-node-id=\"20211230115020-g02dfx0\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
-            "id": "20211230115020-g02dfx0",
-            "parentID": "",
-            "previousID": "20211229114650-vrek5x6",
-            "retData": null
+              "doOperations": [
+                  {
+                      "action": "insert",
+                      "data": "<div data-node-id=\"20211230115020-g02dfx0\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
+                      "id": "20211230115020-g02dfx0",
+                      "parentID": "",
+                      "previousID": "20211229114650-vrek5x6",
+                      "retData": null
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -578,9 +578,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
-    "dataType": "markdown",
-    "parentID": "20220107173950-7f9m1nb"
+      "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
+      "dataType": "markdown",
+      "parentID": "20220107173950-7f9m1nb"
   }
   ```
 
@@ -592,23 +592,23 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "insert",
-            "data": "<div data-node-id=\"20220108003710-hm0x9sc\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
-            "id": "20220108003710-hm0x9sc",
-            "parentID": "20220107173950-7f9m1nb",
-            "previousID": "",
-            "retData": null
+              "doOperations": [
+                  {
+                      "action": "insert",
+                      "data": "<div data-node-id=\"20220108003710-hm0x9sc\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
+                      "id": "20220108003710-hm0x9sc",
+                      "parentID": "20220107173950-7f9m1nb",
+                      "previousID": "",
+                      "retData": null
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -622,9 +622,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
-    "dataType": "markdown",
-    "parentID": "20220107173950-7f9m1nb"
+      "data": "foo**bar**{: style=\"color: var(--b3-font-color8);\"}baz",
+      "dataType": "markdown",
+      "parentID": "20220107173950-7f9m1nb"
   }
   ```
 
@@ -636,23 +636,23 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "insert",
-            "data": "<div data-node-id=\"20220108003642-y2wmpcv\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
-            "id": "20220108003642-y2wmpcv",
-            "parentID": "20220107173950-7f9m1nb",
-            "previousID": "20220108003615-7rk41t1",
-            "retData": null
+              "doOperations": [
+                  {
+                      "action": "insert",
+                      "data": "<div data-node-id=\"20220108003642-y2wmpcv\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong style=\"color: var(--b3-font-color8);\">bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
+                      "id": "20220108003642-y2wmpcv",
+                      "parentID": "20220107173950-7f9m1nb",
+                      "previousID": "20220108003615-7rk41t1",
+                      "retData": null
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -666,9 +666,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "dataType": "markdown",
-    "data": "foo bar baz",
-    "id": "20211230161520-querkps"
+      "dataType": "markdown",
+      "data": "foo bar baz",
+      "id": "20211230161520-querkps"
   }
   ```
 
@@ -680,23 +680,23 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "update",
-            "data": "<div data-node-id=\"20211230161520-querkps\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong>bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
-            "id": "20211230161520-querkps",
-            "parentID": "",
-            "previousID": "",
-            "retData": null
+              "doOperations": [
+                  {
+                      "action": "update",
+                      "data": "<div data-node-id=\"20211230161520-querkps\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\"><div contenteditable=\"true\" spellcheck=\"false\">foo<strong>bar</strong>baz</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
+                      "id": "20211230161520-querkps",
+                      "parentID": "",
+                      "previousID": "",
+                      "retData": null
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -709,7 +709,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20211230161520-querkps"
+      "id": "20211230161520-querkps"
   }
   ```
 
@@ -719,23 +719,23 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "delete",
-            "data": null,
-            "id": "20211230162439-vtm09qo",
-            "parentID": "",
-            "previousID": "",
-            "retData": null
+              "doOperations": [
+                  {
+                      "action": "delete",
+                      "data": null,
+                      "id": "20211230162439-vtm09qo",
+                      "parentID": "",
+                      "previousID": "",
+                      "retData": null
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -746,9 +746,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20230406180530-3o1rqkc",
-    "previousID": "20230406152734-if5kyx6",
-    "parentID": "20230404183855-woe52ko"
+      "id": "20230406180530-3o1rqkc",
+      "previousID": "20230406152734-if5kyx6",
+      "parentID": "20230404183855-woe52ko"
   }
   ```
 
@@ -760,27 +760,27 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "doOperations": [
+      "code": 0,
+      "msg": "",
+      "data": [
           {
-            "action": "move",
-            "data": null,
-            "id": "20230406180530-3o1rqkc",
-            "parentID": "20230404183855-woe52ko",
-            "previousID": "20230406152734-if5kyx6",
-            "nextID": "",
-            "retData": null,
-            "srcIDs": null,
-            "name": "",
-            "type": ""
+              "doOperations": [
+                  {
+                      "action": "move",
+                      "data": null,
+                      "id": "20230406180530-3o1rqkc",
+                      "parentID": "20230404183855-woe52ko",
+                      "previousID": "20230406152734-if5kyx6",
+                      "nextID": "",
+                      "retData": null,
+                      "srcIDs": null,
+                      "name": "",
+                      "type": ""
+                  }
+              ],
+              "undoOperations": null
           }
-        ],
-        "undoOperations": null
-      }
-    ]
+      ]
   }
   ```
 
@@ -791,7 +791,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20201225220955-l154bn4"
+      "id": "20201225220955-l154bn4"
   }
   ```
 
@@ -801,12 +801,12 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "id": "20201225220955-l154bn4",
-      "kramdown": "* {: id=\"20201225220955-2nn1mns\"}新建笔记本，在笔记本下新建文档\n  {: id=\"20210131155408-3t627wc\"}\n* {: id=\"20201225220955-uwhqnug\"}在编辑器中输入 <kbd>/</kbd> 触发功能菜单\n  {: id=\"20210131155408-btnfw88\"}\n* {: id=\"20201225220955-04ymi2j\"}((20200813131152-0wk5akh \"在内容块中遨游\"))、((20200822191536-rm6hwid \"窗口和页签\"))\n  {: id=\"20210131155408-hh1z442\"}"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "id": "20201225220955-l154bn4",
+          "kramdown": "* {: id=\"20201225220955-2nn1mns\"}新建笔记本，在笔记本下新建文档\n  {: id=\"20210131155408-3t627wc\"}\n* {: id=\"20201225220955-uwhqnug\"}在编辑器中输入 <kbd>/</kbd> 触发功能菜单\n  {: id=\"20210131155408-btnfw88\"}\n* {: id=\"20201225220955-04ymi2j\"}((20200813131152-0wk5akh \"在内容块中遨游\"))、((20200822191536-rm6hwid \"窗口和页签\"))\n  {: id=\"20210131155408-hh1z442\"}"
+      }
   }
   ```
 
@@ -817,7 +817,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20230506212712-vt9ajwj"
+      "id": "20230506212712-vt9ajwj"
   }
   ```
 
@@ -828,24 +828,24 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "id": "20230512083858-mjdwkbn",
-        "type": "h",
-        "subType": "h1"
-      },
-      {
-        "id": "20230513213727-thswvfd",
-        "type": "s"
-      },
-      {
-        "id": "20230513213633-9lsj4ew",
-        "type": "l",
-        "subType": "u"
-      }
-    ]
+      "code": 0,
+      "msg": "",
+      "data": [
+          {
+              "id": "20230512083858-mjdwkbn",
+              "type": "h",
+              "subType": "h1"
+          },
+          {
+              "id": "20230513213727-thswvfd",
+              "type": "s"
+          },
+          {
+              "id": "20230513213633-9lsj4ew",
+              "type": "l",
+              "subType": "u"
+          }
+      ]
   }
   ```
 
@@ -856,9 +856,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "fromID": "20230612160235-mv6rrh1",
-    "toID": "20230613093045-uwcomng",
-    "refIDs": ["20230613092230-cpyimmd"]
+      "fromID": "20230612160235-mv6rrh1",
+      "toID": "20230613093045-uwcomng",
+      "refIDs": ["20230613092230-cpyimmd"]
   }
   ```
 
@@ -870,9 +870,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -885,10 +885,10 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20210912214605-uhi5gco",
-    "attrs": {
-      "custom-attr1": "line1\nline2"
-    }
+      "id": "20210912214605-uhi5gco",
+      "attrs": {
+          "custom-attr1": "line1\nline2"
+      }
   }
   ```
 
@@ -899,9 +899,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -912,7 +912,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20210912214605-uhi5gco"
+      "id": "20210912214605-uhi5gco"
   }
   ```
 
@@ -922,15 +922,15 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "custom-attr1": "line1\nline2",
-      "id": "20210912214605-uhi5gco",
-      "title": "PDF 标注双链演示",
-      "type": "doc",
-      "updated": "20210916120715"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "custom-attr1": "line1\nline2",
+          "id": "20210912214605-uhi5gco",
+          "title": "PDF 标注双链演示",
+          "type": "doc",
+          "updated": "20210916120715"
+      }
   }
   ```
 
@@ -943,7 +943,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "stmt": "SELECT * FROM blocks WHERE content LIKE'%content%' LIMIT 7"
+      "stmt": "SELECT * FROM blocks WHERE content LIKE'%content%' LIMIT 7"
   }
   ```
 
@@ -953,9 +953,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [{ "列": "值" }]
+      "code": 0,
+      "msg": "",
+      "data": [{ "列": "值" }]
   }
   ```
 
@@ -968,8 +968,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": "20220724223548-j6g0o87",
-    "path": "F:\\SiYuan\\data\\templates\\foo.md"
+      "id": "20220724223548-j6g0o87",
+      "path": "F:\\SiYuan\\data\\templates\\foo.md"
   }
   ```
 
@@ -980,12 +980,12 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "content": "<div data-node-id=\"20220729234848-dlgsah7\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\" updated=\"20220729234840\"><div contenteditable=\"true\" spellcheck=\"false\">foo</div><div class=\"protyle-attr\" contenteditable=\"false\">​</div></div>",
-      "path": "F:\\SiYuan\\data\\templates\\foo.md"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "content": "<div data-node-id=\"20220729234848-dlgsah7\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\" updated=\"20220729234840\"><div contenteditable=\"true\" spellcheck=\"false\">foo</div><div class=\"protyle-attr\" contenteditable=\"false\"></div></div>",
+          "path": "F:\\SiYuan\\data\\templates\\foo.md"
+      }
   }
   ```
 
@@ -996,7 +996,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "template": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}"
+      "template": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}"
   }
   ```
 
@@ -1006,9 +1006,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": "/daily note/2023/03/2023-03-24"
+      "code": 0,
+      "msg": "",
+      "data": "/daily note/2023/03/2023-03-24"
   }
   ```
 
@@ -1021,7 +1021,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
+      "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ```
 
@@ -1045,9 +1045,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -1058,7 +1058,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
+      "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ```
 
@@ -1068,9 +1068,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -1081,8 +1081,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "path": "/data/assets/image-20230523085812-k3o9t32.png",
-    "newPath": "/data/assets/test-20230523085812-k3o9t32.png"
+      "path": "/data/assets/image-20230523085812-k3o9t32.png",
+      "newPath": "/data/assets/test-20230523085812-k3o9t32.png"
   }
   ```
 
@@ -1093,9 +1093,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -1106,7 +1106,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
+      "path": "/data/20210808180117-6v0mkxr/20200923234011-ieuun1p.sy"
   }
   ```
 
@@ -1116,18 +1116,18 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": [
-      {
-        "isDir": true,
-        "name": "20210808180320-abz7w6k"
-      },
-      {
-        "isDir": false,
-        "name": "20210808180320-abz7w6k.sy"
-      }
-    ]
+      "code": 0,
+      "msg": "",
+      "data": [
+          {
+              "isDir": true,
+              "name": "20210808180320-abz7w6k"
+          },
+          {
+              "isDir": false,
+              "name": "20210808180320-abz7w6k.sy"
+          }
+      ]
   }
   ```
 
@@ -1140,7 +1140,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "id": ""
+      "id": ""
   }
   ```
 
@@ -1150,12 +1150,12 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "hPath": "/0 请从这里开始",
-      "content": "## 🍫 内容块\n\n在思源中，唯一重要的核心概念是..."
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "hPath": "/0 请从这里开始",
+          "content": "## 🍫 内容块\n\n在思源中，唯一重要的核心概念是..."
+      }
   }
   ```
 
@@ -1178,7 +1178,7 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "args": ["--to", "markdown_strict-raw_html", "foo.epub", "-o", "foo.md"]
+      "args": ["--to", "markdown_strict-raw_html", "foo.epub", "-o", "foo.md"]
   }
   ```
 
@@ -1188,9 +1188,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": null
+      "code": 0,
+      "msg": "",
+      "data": null
   }
   ```
 
@@ -1203,8 +1203,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "msg": "test",
-    "timeout": 7000
+      "msg": "test",
+      "timeout": 7000
   }
   ```
 
@@ -1214,11 +1214,11 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "id": "62j1m2i"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "id": "62j1m2i"
+      }
   }
   ```
 
@@ -1231,8 +1231,8 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "msg": "test",
-    "timeout": 7000
+      "msg": "test",
+      "timeout": 7000
   }
   ```
 
@@ -1242,11 +1242,11 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "id": "1q2c9z3"
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "id": "1q2c9z3"
+      }
   }
   ```
 
@@ -1262,12 +1262,12 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": {
-      "details": "Finishing boot...",
-      "progress": 100
-    }
+      "code": 0,
+      "msg": "",
+      "data": {
+          "details": "Finishing boot...",
+          "progress": 100
+      }
   }
   ```
 
@@ -1279,9 +1279,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": "1.3.5"
+      "code": 0,
+      "msg": "",
+      "data": "1.3.5"
   }
   ```
 
@@ -1293,9 +1293,9 @@ fetchPost("/api/system/currentTime", {}, (response) => {
 
   ```json
   {
-    "code": 0,
-    "msg": "",
-    "data": 1631850968131
+      "code": 0,
+      "msg": "",
+      "data": 1631850968131
   }
   ```
 

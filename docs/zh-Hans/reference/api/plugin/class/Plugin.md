@@ -25,11 +25,12 @@
   插件初始化函数，思源在初始化的时候会调用该方法。
 
   ```ts
-  //https://github.com/siyuan-note/siyuan/blob/master/app/src/plugin/loader.ts
+  // https://github.com/siyuan-note/siyuan/blob/master/app/src/plugin/loader.ts
   try {
-    await plugin.onload();
-  } catch (e) {
-    console.error(`plugin ${item.name} onload error:`, e);
+      await plugin.onload();
+  }
+  catch (e) {
+      console.error(`plugin ${item.name} onload error:`, e);
   }
   ```
 

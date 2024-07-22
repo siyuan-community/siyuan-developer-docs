@@ -17,21 +17,21 @@ outline: deep
    ```json
    // plugin.json
    {
-     "name": "siyuan-plugin-example",
-     "version": "v0.1.0",
-     "author": "example",
-     "url": "https://github.com/example/siyuan-plugin/example",
-     "displayName": {
-       "default": "example",
-       "zh_CN": "example"
-     },
-     "description": {
-       "default": "example",
-       "zh_CN": "example"
-     },
-     "readme": {
-       "default": "README.md"
-     }
+       "name": "siyuan-plugin-example",
+       "version": "v0.1.0",
+       "author": "example",
+       "url": "https://github.com/example/siyuan-plugin/example",
+       "displayName": {
+           "default": "example",
+           "zh_CN": "example"
+       },
+       "description": {
+           "default": "example",
+           "zh_CN": "example"
+       },
+       "readme": {
+           "default": "README.md"
+       }
    }
    ```
 
@@ -40,9 +40,9 @@ outline: deep
    const siyuan = require("siyuan");
 
    module.exports = class ExamplePlugin extends siyuan.Plugin {
-     onload() {
-       console.log("Hello World");
-     }
+       onload() {
+           console.log("Hello World");
+       }
    };
    ```
 

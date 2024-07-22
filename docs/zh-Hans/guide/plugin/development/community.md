@@ -21,25 +21,25 @@ const siyuan = require("siyuan");
 const { CustomBlock, CustomBlockManager } = require("siyuan-package-custom-block");
 
 class CarouselBlock extends CustomBlock {
-  static type = "CarouselBlock";
-  static css = ".hello { color: red; }";
+    static type = "CarouselBlock";
+    static css = ".hello { color: red; }";
 
-  onMount(el, data) {
-    console.log("hello world");
-    el.insertAdjacentHTML("afterbegin", `<div class="hello">hello ${data.name}</div>`);
-  }
+    onMount(el, data) {
+        console.log("hello world");
+        el.insertAdjacentHTML("afterbegin", `<div class="hello">hello ${data.name}</div>`);
+    }
 }
 
 module.exports = class P extends siyuan.Plugin {
-  onload() {
-    CustomBlockManager.init(this);
-    CustomBlockManager.load(CarouselBlock);
-    const content = CustomBlockManager.buildBlock("CarouselBlock", {
-      name: "123",
-    });
-    // use content for paste in editor.
-    console.log(content);
-  }
+    onload() {
+        CustomBlockManager.init(this);
+        CustomBlockManager.load(CarouselBlock);
+        const content = CustomBlockManager.buildBlock("CarouselBlock", {
+            name: "123",
+        });
+        // use content for paste in editor.
+        console.log(content);
+    }
 };
 ```
 
@@ -61,10 +61,10 @@ module.exports = class P extends siyuan.Plugin {
    import { changelog } from "sy-plugin-changelog";
 
    export default class PluginSample extends Plugin {
-     async onload() {
-       //... everything done
-       changelog(this);
-     }
+       async onload() {
+       // ... everything done
+           changelog(this);
+       }
    }
    ```
 
@@ -86,9 +86,9 @@ module.exports = class P extends siyuan.Plugin {
 
 ## `siyuan-sdk`
 
-| 作者          | GitHub 仓库                                                                                                                                                                                                                                                                                                              | npm                                                                                                                                                                                                                                                                        | 语言环境                |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| Zuoqiu-Yingyi | [siyuan-community/siyuan-sdk](https://github.com/siyuan-community/siyuan-sdk)<br/>[![GitHub 最新发行版本 (最新一次发行/预发行)](https://img.shields.io/github/v/release/siyuan-community/siyuan-sdk?include_prereleases&style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-plugin-custom-fonts/releases/latest) | [@siyuan-community/siyuan-sdk](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk)<br/>[![NPM 版本](https://img.shields.io/npm/v/%40siyuan-community/siyuan-sdk?style=flat-square)](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk?activeTab=versions) | JavaScript / TypeScript |
+| 作者          | GitHub 仓库                                                                                                                                                                                                                                                                                                               | npm                                                                                                                                                                                                                                                                         | 语言环境                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Zuoqiu-Yingyi | [siyuan-community/siyuan-sdk](https://github.com/siyuan-community/siyuan-sdk)<br/> [![GitHub 最新发行版本 (最新一次发行/预发行)](https://img.shields.io/github/v/release/siyuan-community/siyuan-sdk?include_prereleases&style=flat-square)](https://github.com/Zuoqiu-Yingyi/siyuan-plugin-custom-fonts/releases/latest) | [@siyuan-community/siyuan-sdk](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk)<br/> [![NPM 版本](https://img.shields.io/npm/v/%40siyuan-community/siyuan-sdk?style=flat-square)](https://www.npmjs.com/package/@siyuan-community/siyuan-sdk?activeTab=versions) | JavaScript / TypeScript |
 
 思源内核 API 的封装，提供了一些常用的方法，可以帮助开发者更快的开发插件。
 

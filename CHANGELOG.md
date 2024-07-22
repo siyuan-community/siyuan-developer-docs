@@ -1,5 +1,9 @@
 # 更改日志 | Change Log
 
+## 2024-07-23
+
+- 配置 `lint-staged` | Configure `lint-staged`
+
 ## 2024-06-20
 
 - 配置 `EditorConfig` | Configure `EditorConfig`

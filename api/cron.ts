@@ -1,6 +1,8 @@
+import process from "node:process";
+
 import { createClient } from "@vercel/kv";
 
-const loadData = async () => {
+async function loadData() {
     let version, bazaarHash, plugins, templates, themes, widgets, downloadCounts;
 
     const Constants = {
@@ -65,10 +67,11 @@ const loadData = async () => {
     await getSiyuanVersions();
     await getResources();
     return getUserRepos();
-};
+}
 
 export default async function handler(request, response) {
-    if (!request.url) return response.status(400);
+    if (!request.url)
+        return response.status(400);
 
     const date = new Date();
     const day = `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}-${date.getUTCDate()}`;

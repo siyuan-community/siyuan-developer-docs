@@ -54,7 +54,7 @@ async function getSiyuanVersions() {
             method: "GET",
             mode: "cors",
         },
-    ).then(res => res.json());
+    ).then((res) => res.json());
     bazaarHash.value = version.value.bazaar;
 }
 
@@ -66,13 +66,13 @@ async function getResources() {
             "themes",
             "widgets",
         ]
-            .map(name => `${Constants.BazaarOSSServer}/bazaar@${bazaarHash.value}/stage/${name}.json`)
-            .map(url => fetch(url, { mode: "no-cors" }).then(res => res.json())),
+            .map((name) => `${Constants.BazaarOSSServer}/bazaar@${bazaarHash.value}/stage/${name}.json`)
+            .map((url) => fetch(url, { mode: "no-cors" }).then((res) => res.json())),
     ).then((arr) => {
-        plugins.value = arr[0].repos.map(v => ({ ...v, type: "plugin" }));
-        templates.value = arr[1].repos.map(v => ({ ...v, type: "template" }));
-        themes.value = arr[2].repos.map(v => ({ ...v, type: "theme" }));
-        widgets.value = arr[3].repos.map(v => ({ ...v, type: "widget" }));
+        plugins.value = arr[0].repos.map((v) => ({ ...v, type: "plugin" }));
+        templates.value = arr[1].repos.map((v) => ({ ...v, type: "template" }));
+        themes.value = arr[2].repos.map((v) => ({ ...v, type: "theme" }));
+        widgets.value = arr[3].repos.map((v) => ({ ...v, type: "widget" }));
     });
 }
 
@@ -100,17 +100,17 @@ const URLS = {
 };
 
 async function getDownloadCounts() {
-    const res = await fetch(`${URLS.DOWNLOAD_COUNTS}`, { method: "GET" }).then(res => res.json());
+    const res = await fetch(`${URLS.DOWNLOAD_COUNTS}`, { method: "GET" }).then((res) => res.json());
     downloadCounts.value = res;
 }
 
 const namedUserRepos = computed(() => {
     let result = userRepos.value;
     if (username.value) {
-        result = result.filter(v => v.username === username.value);
+        result = result.filter((v) => v.username === username.value);
     }
     if (selectedRankType.value !== "all") {
-        result = result.filter(v => v.type === selectedRankType.value);
+        result = result.filter((v) => v.type === selectedRankType.value);
     }
     return result.sort((a, b) => b.downloads - a.downloads);
 });
@@ -128,7 +128,7 @@ function getStyle(type) {
             "template",
             "plugin",
             "widget",
-        ].findIndex(v => v === type)],
+        ].findIndex((v) => v === type)],
     };
 }
 
@@ -206,11 +206,11 @@ onMounted(async () => {
                             </div>
                         </div>
                         <img
-                            class="user-repo-icon"
                             :src="p.icon"
                             :alt="p.package.name"
+                            class="user-repo-icon"
                             loading="lazy"
-                        />
+                        >
                     </div>
                 </template>
             </div>
