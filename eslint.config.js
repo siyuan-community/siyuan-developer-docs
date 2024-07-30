@@ -27,7 +27,6 @@ const rules = {
     "perfectionist/sort-array-includes": [
         "warn",
         {
-            "spread-last": true,
         },
     ],
     "perfectionist/sort-exports": [
@@ -37,7 +36,7 @@ const rules = {
     "perfectionist/sort-imports": [
         "warn",
         {
-            "groups": [
+            groups: [
                 "side-effect-style", // import "style.css";
                 "side-effect", // import "module";
 
@@ -88,10 +87,10 @@ const rules = {
                 "style", // import styles from "./index.module.css";
                 "object", // import log = console.log;
             ],
-            "internal-pattern": [
+            internalPattern: [
                 "@/**",
             ],
-            "custom-groups": {
+            customGroups: {
                 value: {
                     $node: "node:**",
                     $repo: "@repo/**",
@@ -114,20 +113,19 @@ const rules = {
     "perfectionist/sort-named-exports": [
         "warn",
         {
-            "group-kind": "values-first",
+            groupKind: "values-first",
         },
     ],
     "perfectionist/sort-named-imports": [
         "warn",
         {
-            "group-kind": "values-first",
-            "ignore-alias": false,
+            groupKind: "values-first",
+            ignoreAlias: false,
         },
     ],
     "perfectionist/sort-union-types": [
         "warn",
         {
-            "nullable-last": true,
         },
     ],
 };
@@ -159,7 +157,6 @@ export default antfu({
         css: "prettier",
         html: "prettier",
         markdown: "dprint",
-        graphql: "prettier",
         prettierOptions: {
             tabWidth: 4,
             printWidth: Infinity,

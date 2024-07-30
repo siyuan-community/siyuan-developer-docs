@@ -21,6 +21,7 @@ module.exports = {
         "blockref",
         "breadcrumbmore",
         "cest",
+        "commitlint",
         "contenteditable",
         "dailynote",
         "dateparse",
