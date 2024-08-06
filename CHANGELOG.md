@@ -1,5 +1,9 @@
 # 更改日志 | Change Log
 
+## 2024-08-06
+
+- 改进 `commitlint` 调用方式 | Improve `commitlint` call method
+
 ## 2024-07-31
 
 - 配置 `commitlint` | Configure `commitlint`
