@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 开始
@@ -59,10 +58,10 @@ import { Client } from "@siyuan-community/siyuan-sdk";
 /* 初始化为 XHR 客户端 (使用 Axios 发起 XHR 请求) */
 const client = new Client(
     {
-        /**
-         * (可选) 思源内核服务地址
-         * @default: document.baseURI
-         */
+    /**
+     * (可选) 思源内核服务地址
+     * @default: document.baseURI
+     */
         baseURL: "http://localhost:6806/",
 
         /**
@@ -71,11 +70,11 @@ const client = new Client(
          */
         token: "0123456789abcdef", // , 默认为空
 
-        /**
-         * (可选) Axios 其他请求配置
-         * REF: https://axios-http.com/zh/docs/req_config
-         * REF: https://www.axios-http.cn/docs/req_config
-         */
+    /**
+     * (可选) Axios 其他请求配置
+     * REF: https://axios-http.com/zh/docs/req_config
+     * REF: https://www.axios-http.cn/docs/req_config
+     */
     },
     "xhr",
 );
@@ -93,10 +92,10 @@ import { Client } from "@siyuan-community/siyuan-sdk";
 /* 初始化为 Fetch 客户端 (使用 ofetch 发起 Fetch 请求) */
 const client = new Client(
     {
-        /**
-         * (可选) 思源内核服务地址
-         * @default: document.baseURI
-         */
+    /**
+     * (可选) 思源内核服务地址
+     * @default: document.baseURI
+     */
         baseURL: "http://localhost:6806/",
 
         /**
@@ -105,11 +104,11 @@ const client = new Client(
          */
         token: "0123456789abcdef", // , 默认为空
 
-        /**
-         * (可选) ofetch 其他请求配置
-         * REF: https://www.npmjs.com/package/ofetch
-         * REF: https://www.jsdocs.io/package/ofetch
-         */
+    /**
+     * (可选) ofetch 其他请求配置
+     * REF: https://www.npmjs.com/package/ofetch
+     * REF: https://www.jsdocs.io/package/ofetch
+     */
     },
     "fetch",
 );
@@ -140,7 +139,7 @@ client._updateOptions({
 client._updateOptions(
     {
         timeout: 10_000, // 请求超时时间为 10s
-        /* 其他 Axios 请求配置 */
+    /* 其他 Axios 请求配置 */
     },
     "xhr",
 );
@@ -149,7 +148,7 @@ client._updateOptions(
 client._updateOptions(
     {
         retry: 3, // 请求重试次数为 3 次
-        /* 其他 ofetch 请求配置 */
+    /* 其他 ofetch 请求配置 */
     },
     "fetch",
 );

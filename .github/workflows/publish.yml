@@ -24,10 +24,10 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          ## Node.js 版本号 | Node.js version
+          # Node.js 版本号 | Node.js version
           node-version: 20
 
-          ## Node.js 源 | Node.js registry
+          # Node.js 源 | Node.js registry
           registry-url: https://registry.npmjs.org
 
       # Install pnpm
@@ -36,10 +36,10 @@ jobs:
         uses: pnpm/action-setup@v2
         id: pnpm-install
         with:
-          ## pnpm 版本号 | pnpm version
+          # # pnpm 版本号 | pnpm version
           version: 8
 
-          ## 是否安装 npm 包 | if install npm package?
+          # # 是否安装 npm 包 | if install npm package?
           run_install: false
 
       # Get pnpm store directory

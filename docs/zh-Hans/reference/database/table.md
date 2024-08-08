@@ -1,6 +1,5 @@
 ---
 outline: deep
-
 ---
 
 # 数据库表与字段
@@ -11,30 +10,29 @@ outline: deep
 
 存储了所有的内容块数据。
 
-| 字段名      | 说明                                              | 字段值示例                                                                 |
-| ----------- | ------------------------------------------------- | -------------------------------------------------------------------------- |
-| `id`        | 内容块 ID                                         | `20210104091228-d0rzbmm`                                                   |
-| `parent_id` | 双亲块 ID，如果内容块是文档块则该字段为空         | `20200825162036-4dx365o`                                                   |
-| `root_id`   | 文档块 ID                                         | `20200825162036-4dx365o`                                                   |
-| `hash`      | `content` 字段的 SHA256 校验和                    | `a75d25c`                                                                  |
-| `box`       | 笔记本 ID                                         | `20210808180117-czj9bvb`                                                   |
-| `path`      | 内容块所在文档路径                                | `/20200812220555-lj3enxa/20210808180320-abz7w6k/20200825162036-4dx365o.sy` |
-| `hpath`     | 人类可读的内容块所在文档路径                      | `/0 请从这里开始/编辑器/排版元素`                                          |
-| `name`      | 内容块名称                                        | `一级标题命名`                                                             |
-| `alias`     | 内容块别名                                        | `一级标题别名`                                                             |
-| `memo`      | 内容块备注                                        | `一级标题备注`                                                             |
-| `tag`       | 非文档块为块内包含的标签，文档块为文档的标签      | `#标签1 #标签2# #标签3#`                                                   |
-| `content`   | 去除了 Markdown 标记符的文本                      | `一级标题`                                                                 |
-| `fcontent`  | 存储容器块第一个子块的内容(1.9.9 添加)            | `第一个子块`                                                               |
-| `markdown`  | 包含完整 Markdown 标记符的文本                    | `# 一级标题`                                                               |
-| `length`    | `markdown` 字段文本长度                           | `6`                                                                        |
-| `type`      | 内容块主类型，参考 [blocks.type](#blocks-type)    | `h`                                                                        |
-| `subtype`   | 内容块次类型，参考 [blocks.subtype](#blocks-type) | `h1`                                                                       |
-| `ial`       | 内联属性列表，形如 `{: name="value"}`             | `{: id="20210104091228-d0rzbmm" updated="20210604222535"}`                 |
-| `sort`      | 排序权重，数值越小排序越靠前                      | `5`                                                                        |
-| `created`   | 创建时间                                          | `20210104091228`                                                           |
-| `updated`   | 更新时间                                          | `20210604222535`                                                           |
-
+| 字段名      | 说明                                               | 字段值示例                                                                 |
+| ----------- | -------------------------------------------------- | -------------------------------------------------------------------------- |
+| `id`        | 内容块 ID                                          | `20210104091228-d0rzbmm`                                                   |
+| `parent_id` | 上级块的 ID，文档块该字段为空                      | `20200825162036-4dx365o`                                                   |
+| `root_id`   | 顶层块的 ID，即文档块 ID                           | `20200825162036-4dx365o`                                                   |
+| `hash`      | `content` 字段的 SHA256 校验和                     | `a75d25c`                                                                  |
+| `box`       | 笔记本 ID                                          | `20210808180117-czj9bvb`                                                   |
+| `path`      | 内容块所在文档路径                                 | `/20200812220555-lj3enxa/20210808180320-abz7w6k/20200825162036-4dx365o.sy` |
+| `hpath`     | 人类可读的内容块所在文档路径                       | `/0 请从这里开始/编辑器/排版元素`                                          |
+| `name`      | 内容块名称                                         | `一级标题命名`                                                             |
+| `alias`     | 内容块别名                                         | `一级标题别名`                                                             |
+| `memo`      | 内容块备注                                         | `一级标题备注`                                                             |
+| `tag`       | 非文档块为块内包含的标签，文档块为文档的标签       | `#标签1# #标签2# #标签3#`                                                  |
+| `content`   | 去除了 Markdown 标记符的文本                       | `一级标题`                                                                 |
+| `fcontent`  | 第一个子块去除了 Markdown 标记符的文本(1.9.9 添加) | `第一个子块`                                                               |
+| `markdown`  | 包含完整 Markdown 标记符的文本                     | `# 一级标题`                                                               |
+| `length`    | `fcontent` 字段文本长度                            | `6`                                                                        |
+| `type`      | 内容块主类型，参考 [blocks.type](#blocks-type)     | `h`                                                                        |
+| `subtype`   | 内容块次类型，参考 [blocks.subtype](#blocks-type)  | `h1`                                                                       |
+| `ial`       | 内联属性列表，形如 `{: name="value"}`              | `{: id="20210104091228-d0rzbmm" updated="20210604222535"}`                 |
+| `sort`      | 排序权重，数值越小排序越靠前                       | `5`                                                                        |
+| `created`   | 创建时间                                           | `20210104091228`                                                           |
+| `updated`   | 更新时间                                           | `20210604222535`                                                           |
 
 ### `blocks.type`
 
@@ -50,7 +48,7 @@ outline: deep
 | `h`           | 标题块    |
 | `html`        | HTML 块   |
 | `i`           | 列表项    |
-| `iframe`      | IFrame 块 |
+| `iframe`      | iframe 块 |
 | `l`           | 列表块    |
 | `m`           | 公式块    |
 | `p`           | 段落块    |
@@ -74,11 +72,8 @@ outline: deep
 | `h5`   | `h`                  | 五级标题块 |
 | `h6`   | `h`                  | 六级标题块 |
 | `o`    | `l`                  | 有序列表块 |
-| `t`    | `l`                  | 无需列表块 |
-| `u`    | `l`                  | 任务列表块 |
-| `o`    | `i`                  | 有序列表项 |
-| `t`    | `i`                  | 无需列表项 |
-| `u`    | `i`                  | 任务列表项 |
+| `u`    | `l`                  | 无序列表块 |
+| `t`    | `l`                  | 任务列表块 |
 
 ## `refs`
 
@@ -99,20 +94,18 @@ outline: deep
 | `markdown`            | 包含完整 Markdown 标记符的文本 | `((20200925095848-aon4lem "元类型"))`                                      |
 | `type`                | 引用类型                       | `ref_id`                                                                   |
 
-
 ## `attributes`
 
-| 字段名     | 说明           | 字段值示例                   |
-| ---------- | -------------- | ---------------------------- |
-| `id`       | 属性 ID<br />  | `20211127144458-h7y55zu`     |
-| `name`     | 属性名称<br /> | `bookmark`                   |
-| `value`    | 属性值         | `✨`                          |
-| `type`     | 类型<br />     | `b`                          |
-| `block_id` | 块 ID          | `20210428212840-859h45j`     |
-| `root_id`  | 文档 ID        | `20200812220555-lj3enxa`     |
-| `box`      | 笔记本 ID      | `20210808180117-czj9bvb`     |
-| `path`     | 文档文件路径   | `/20200812220555-lj3enxa.sy` |
-
+| 字段名     | 说明         | 字段值示例                   |
+| ---------- | ------------ | ---------------------------- |
+| `id`       | 属性 ID      | `20211127144458-h7y55zu`     |
+| `name`     | 属性名称     | `bookmark`                   |
+| `value`    | 属性值       | `✨`                         |
+| `type`     | 类型         | `b`                          |
+| `block_id` | 块 ID        | `20210428212840-859h45j`     |
+| `root_id`  | 文档 ID      | `20200812220555-lj3enxa`     |
+| `box`      | 笔记本 ID    | `20210808180117-czj9bvb`     |
+| `path`     | 文档文件路径 | `/20200812220555-lj3enxa.sy` |
 
 ## `assets`
 
@@ -130,7 +123,6 @@ outline: deep
 | `title`    | `源于思考，饮水思源`                                               | 资源标题     |
 | `hash`     | `788c154262194a126b433b1055fbddcf5ada066e0d1f565a54e5550125675075` | 资源哈希值   |
 
-
 ## `file_annotation_refs`
 
 文件 PDF 的注释引用
@@ -147,7 +139,6 @@ outline: deep
 | content       | `Vim 中文手册`                                                    | 引用锚文本         |
 | type          |                                                                   | 注释类型           |
 
-
 ## `spans`
 
 行内元素
@@ -161,9 +152,28 @@ outline: deep
 | `path`     | `/20200812220555-lj3enxa.sy`                                                                                                                                  | 元素所在文档块路径                 |
 | `content`  | `请勿在帮助指南中保存数据`                                                                                                                                    | 元素内容                           |
 | `markdown` | `请勿在帮助指南中保存数据`                                                                                                                                    | 包含完整 Markdown 标记符的元素内容 |
-| `type`     | `strong`                                                                                                                                                      | 元素类型                           |
+| `type`     | 元素类型，参考 [spans.type](#spans-type)                                                                                                                      | 元素类型                           |
 | `ial`      | `{: style="background-image: linear-gradient(to right, var(--b3-theme-primary), var(--b3-theme-error)); -webkit-background-clip: text; color: transparent;"}` | 元素样式                           |
 
+### `spans.type`
+
+| 字段值               | 说明     |
+| -------------------- | -------- |
+| img                  | 图片     |
+| tag                  | 文档标签 |
+| textmark a           | 链接     |
+| textmark block-ref   | 引用     |
+| textmark code        | 行内代码 |
+| textmark inline-memo | 备注     |
+| textmark tag         | #标签#   |
+| textmark inline-math | 行内公式 |
+| textmark mark        | 高亮标记 |
+| textmark em          | HTML tag |
+| textmark s           | HTML tag |
+| textmark strong      | HTML tag |
+| textmark sub         | HTML tag |
+| textmark sup         | HTML tag |
+| textmark u           | HTML tag |
 
 ## `stat`
 

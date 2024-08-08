@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/file`
 
-## `getFile`
+## `getFile` {#getFile}
 
 - 🔥 获取文件
 - `/api/file/getFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -19,12 +19,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/file/getFile/payload.schema.json [JSON Schema (json)]
 :::
 
-## `putFile`
+## `putFile` {#putFile}
 
 - 🔥 写入文件
 - `/api/file/putFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -32,6 +33,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -40,12 +42,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/file/putFile/response.schema.json [JSON Schema (json)]
 :::
 
-## `readDir`
+## `readDir` {#readDir}
 
 - 🔥 获取文件目录下级内容
 - `/api/file/readDir`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -55,6 +58,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -63,12 +67,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/file/readDir/response.schema.json [JSON Schema (json)]
 :::
 
-## `removeFile`
+## `removeFile` {#removeFile}
 
 - 🔥 删除 文件/目录
 - `/api/file/removeFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -78,6 +83,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -86,12 +92,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/file/removeFile/response.schema.json [JSON Schema (json)]
 :::
 
-## `renameFile`
+## `renameFile` {#renameFile}
 
 - 🔥 重命名/移动 文件/目录
 - `/api/file/renameFile`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -101,6 +108,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+
 <script setup>
 import {
   VPTeamPage,
@@ -40,14 +41,14 @@ const coreMembers = [
 
 <VPTeamPage>
   <VPTeamPageTitle>
-    <template #title>关于我们</template>
+    <template #title>加入我们</template>
     <template #lead>
     本站由思源爱好者们开源构建，欢迎更多志同道合者参与，一起构建思源开发社区。
-    <br><br>QQ群：1017854502
+    <br><br>QQ群: 201266294
     <br><br>
     以下排名不分先后。
     </template>
   </VPTeamPageTitle>
-  
-  <VPTeamMembers size="medium" :members="coreMembers" />
+
+<VPTeamMembers size="medium" :members="coreMembers" />
 </VPTeamPage>

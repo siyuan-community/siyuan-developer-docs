@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/asset`
 
-## `upload`
+## `upload` {#upload}
 
 - 🔥 上传资源文件
 - `/api/asset/upload`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -18,6 +18,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

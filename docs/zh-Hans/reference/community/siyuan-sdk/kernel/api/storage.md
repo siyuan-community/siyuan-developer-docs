@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/storage`
 
-## `getLocalStorage`
+## `getLocalStorage` {#getLocalStorage}
 
 - 🛠 获取持久化的本地存储数据
 - `/api/storage/getLocalStorage`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -19,12 +19,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/storage/getLocalStorage/response.schema.json [JSON Schema (json)]
 :::
 
-## `getRecentDocs`
+## `getRecentDocs` {#getRecentDocs}
 
 - 🛠 获取最近打开的文档
 - `/api/storage/getRecentDocs`
 
 ---
+
 **响应**
 
 ::: code-group
@@ -33,12 +34,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/storage/getRecentDocs/response.schema.json [JSON Schema (json)]
 :::
 
-## `setLocalStorage`
+## `setLocalStorage` {#setLocalStorage}
 
 - 🛠 持久化本地存储数据
 - `/api/storage/setLocalStorage`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -48,6 +50,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

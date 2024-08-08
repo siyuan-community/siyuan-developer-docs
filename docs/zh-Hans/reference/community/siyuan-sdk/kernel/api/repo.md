@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/repo`
 
-## `openRepoSnapshotDoc`
+## `openRepoSnapshotDoc` {#openRepoSnapshotDoc}
 
 - 🛠 读取快照文件内容
 - `/api/repo/openRepoSnapshotDoc`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

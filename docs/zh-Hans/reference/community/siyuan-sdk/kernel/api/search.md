@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/search`
 
-## `fullTextSearchBlock`
+## `fullTextSearchBlock` {#fullTextSearchBlock}
 
 - 🛠 全文搜索
 - `/api/search/fullTextSearchBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

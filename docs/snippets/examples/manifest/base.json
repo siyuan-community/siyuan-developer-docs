@@ -1,0 +1,35 @@
+{
+    "$schema": "https://docs.siyuan-note.club/schemas/manifest/base.schema.json",
+    "name": "example-name",
+    "author": "Author Name Example",
+    "url": "https://github.com/example-username/example-repository-name",
+    "version": "0.1.0",
+    "minAppVersion": "2.8.8",
+    "keywords": [
+        "example",
+        "示例"
+    ],
+    "displayName": {
+        "default": "Example Name",
+        "zh_CHT": "示例名稱",
+        "zh_CN": "示例名称"
+    },
+    "description": {
+        "default": "Descriptive information about this example",
+        "zh_CHT": "關於本示例的描述信息",
+        "zh_CN": "关于本示例的描述信息"
+    },
+    "readme": {
+        "default": "README.md",
+        "en_US": "README_en_US.md",
+        "zh_CN": "README_zh_CN.md"
+    },
+    "funding": {
+        "openCollective": "siyuan",
+        "patreon": "",
+        "github": "88250",
+        "custom": [
+            "https://ld246.com/sponsor"
+        ]
+    }
+}

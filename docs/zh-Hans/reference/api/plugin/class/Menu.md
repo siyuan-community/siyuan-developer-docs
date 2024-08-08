@@ -1,79 +1,85 @@
 # `Menu`
 
 ## 构造函数
-* 函数签名
 
-    ```ts
-    constructor(id?: string, closeCallback?: () => void);
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  constructor(id?: string, closeCallback?: () => void);
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `showSubMenu`
-* 函数签名
 
-    ```ts
-    showSubMenu(subMenuElement: HTMLElement): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  showSubMenu(subMenuElement: HTMLElement): void;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `addItem`
-* 函数签名
 
-    ```ts
-    addItem(options: IMenuItemOption): HTMLElement;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  addItem(options: IMenuItemOption): HTMLElement;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `addSeparator`
-* 函数签名
 
-    ```ts
-    addSeparator(index?: number): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  addSeparator(index?: number): void;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `open`
-* 函数签名
 
-    ```ts
-    open(options: { x: number, y: number, h?: number, w?: number, isLeft?: boolean }): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  open(options: { x: number, y: number, h?: number, w?: number, isLeft?: boolean }): void;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `fullscreen`
-* 函数签名
 
-    ```ts
-    fullscreen(position?: "bottom" | "all"): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  fullscreen(position?: "bottom" | "all"): void;
+  ```
 
-    #TODO
+- 描述
+
+  #TODO
 
 ## 方法: `close`
-* 函数签名
 
-    ```ts
-    close(): void;
-    ```
+- 函数签名
 
-* 描述
+  ```ts
+  close(): void;
+  ```
 
-    #TODO
+- 描述
 
+  #TODO

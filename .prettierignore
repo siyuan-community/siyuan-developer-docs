@@ -1,0 +1,12 @@
+build
+cache
+dist
+node_modules
+public
+temp
+
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+pnpm-workspace.yaml
+package-lock.json
+yarn.lock

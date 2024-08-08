@@ -1,16 +1,39 @@
 ---
 outline: deep
-
 ---
 
 # `/api/network`
 
-## `forwardProxy`
+## `echo` {#echo}
+
+- 🛠 回显请求内容
+- `/api/network/echo`
+
+---
+
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/network/echo/payload.d.ts#content [Types]
+:::
+
+---
+
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/network/echo/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/network/echo/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/network/echo/response.schema.json [JSON Schema (json)]
+:::
+
+## `forwardProxy` {#forwardProxy}
 
 - 🔥 前置代理
 - `/api/network/forwardProxy`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +43,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

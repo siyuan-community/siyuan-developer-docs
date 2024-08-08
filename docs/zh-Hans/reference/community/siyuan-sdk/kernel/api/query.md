@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/query`
 
-## `sql`
+## `sql` {#sql}
 
 - 🔥 SQL 查询
 - `/api/query/sql`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

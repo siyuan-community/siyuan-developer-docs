@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/block`
 
-## `appendBlock`
+## `appendBlock` {#appendBlock}
 
 - 🔥 在下级块尾部插入块
 - `/api/block/appendBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -28,12 +29,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/appendBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `deleteBlock`
+## `deleteBlock` {#deleteBlock}
 
 - 🔥 删除块
 - `/api/block/deleteBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -51,12 +54,38 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/deleteBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockBreadcrumb`
+## `foldBlock` {#foldBlock}
+
+- 🔥 折叠块
+- `/api/block/foldBlock`
+
+---
+
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/foldBlock/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/foldBlock/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/foldBlock/response.schema.json [JSON Schema (json)]
+:::
+
+## `getBlockBreadcrumb` {#getBlockBreadcrumb}
 
 - 🛠 获取块面包屑
 - `/api/block/getBlockBreadcrumb`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -66,6 +95,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -74,12 +104,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockBreadcrumb/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockDOM`
+## `getBlockDOM` {#getBlockDOM}
 
 - 🛠 获取块 HTML DOM
 - `/api/block/getBlockDOM`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -89,6 +120,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -97,12 +129,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockDOM/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockInfo`
+## `getBlockInfo` {#getBlockInfo}
 
 - 🛠 获取块信息
 - `/api/block/getBlockInfo`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -112,6 +145,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -120,12 +154,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockInfo/response.schema.json [JSON Schema (json)]
 :::
 
-## `getBlockKramdown`
+## `getBlockKramdown` {#getBlockKramdown}
 
 - 🔥 获取块 [kramdown](https://kramdown.gettalong.org/)
 - `/api/block/getBlockKramdown`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -135,6 +170,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -143,12 +179,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getBlockKramdown/response.schema.json [JSON Schema (json)]
 :::
 
-## `getChildBlocks`
+## `getChildBlocks` {#getChildBlocks}
 
 - 🔥 获取下级块
 - `/api/block/getChildBlocks`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -158,6 +195,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -166,12 +204,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getChildBlocks/response.schema.json [JSON Schema (json)]
 :::
 
-## `getDocInfo`
+## `getDocInfo` {#getDocInfo}
 
 - 🛠 获取文档信息
 - `/api/block/getDocInfo`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -181,6 +220,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -189,12 +229,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/getDocInfo/response.schema.json [JSON Schema (json)]
 :::
 
-## `insertBlock`
+## `insertBlock` {#insertBlock}
 
 - 🔥 插入块
 - `/api/block/insertBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -204,6 +245,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -212,12 +254,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/insertBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `moveBlock`
+## `moveBlock` {#moveBlock}
 
 - 🔥 移动块
 - `/api/block/moveBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -227,6 +270,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -235,12 +279,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/moveBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `prependBlock`
+## `prependBlock` {#prependBlock}
 
 - 🔥 在下级块首部插入块
 - `/api/block/prependBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -250,6 +295,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -258,12 +304,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/prependBlock/response.schema.json [JSON Schema (json)]
 :::
 
-## `transferBlockRef`
+## `transferBlockRef` {#transferBlockRef}
 
 - 🔥 转移块引用
 - `/api/block/transferBlockRef`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -273,6 +320,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -281,12 +329,38 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/block/transferBlockRef/response.schema.json [JSON Schema (json)]
 :::
 
-## `updateBlock`
+## `unfoldBlock` {#unfoldBlock}
+
+- 🔥 展开块
+- `/api/block/unfoldBlock`
+
+---
+
+**请求**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/unfoldBlock/payload.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/payload.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/payload.schema.json [JSON Schema (json)]
+:::
+
+---
+
+**响应**
+
+::: code-group
+<<< @/snippets/siyuan-sdk/types/kernel/api/block/unfoldBlock/response.d.ts#content [Types]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/response.schema.json5 [JSON Schema (json5)]
+<<< @/snippets/siyuan-sdk/schemas/kernel/api/block/unfoldBlock/response.schema.json [JSON Schema (json)]
+:::
+
+## `updateBlock` {#updateBlock}
 
 - 🔥 更新块
 - `/api/block/updateBlock`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -296,6 +370,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

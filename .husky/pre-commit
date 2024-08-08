@@ -1,0 +1,7 @@
+#!/bin/sh
+
+pnpm format:lint-staged
+
+pnpm docs:build
+
+exit 0

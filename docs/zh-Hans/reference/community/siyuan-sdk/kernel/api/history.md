@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/history`
 
-## `getDocHistoryContent`
+## `getDocHistoryContent` {#getDocHistoryContent}
 
 - 🛠 获取历史文档内容
 - `/api/history/getDocHistoryContent`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -28,12 +29,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/history/getDocHistoryContent/response.schema.json [JSON Schema (json)]
 :::
 
-## `getHistoryItems`
+## `getHistoryItems` {#getHistoryItems}
 
 - 🛠 查询历史项
 - `/api/history/getHistoryItems`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

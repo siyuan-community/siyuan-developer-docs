@@ -1,4 +1,205 @@
-# 更改日志
+# 更改日志 | Change Log
+
+## 2024-08-06
+
+- 改进 `commitlint` 调用方式 | Improve `commitlint` call method
+
+## 2024-07-31
+
+- 配置 `commitlint` | Configure `commitlint`
+
+## 2024-07-23
+
+- 配置 `lint-staged` | Configure `lint-staged`
+
+## 2024-06-20
+
+- 配置 `EditorConfig` | Configure `EditorConfig`
+
+## 2024-06-19
+
+- 配置 `ESLint` | Configure `ESLint`
+
+## 2024-06-05
+
+- Prettier 支持格式化模块导入列表与数组 | Prettier supports formatting module import lists and arrays
+
+## 2024-06-02
+
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+
+## 2024-05-26
+
+- 添加 `Husky` 配置 | Add `Husky` configuration
+
+## 2024-05-23
+
+- 优化 Prettier 配置 | Optimize Prettier configuration
+
+## 2024-05-17
+
+- 改进集市资源的清单文件的介绍 | Improve the introduction of the manifest file of the market resource
+
+## 2024-05-14
+
+- 更新社区集市资源 `manifest` 文件示例 | Update the example of the community market resource `manifest` file
+- 使用 prettier 格式化文档与代码 | Format documents and code using prettier
+
+## 2024-05-10
+
+- 改进社区集市相关文档 | Improve community market-related documents
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+- 修复参考内容上一页/下一页链接失效问题 | Fix the issue that the previous/next link of the reference content is invalid
+
+## 2024-05-09
+
+- 调整思源图标图片 | Adjust SiYuan icon image
+
+## 2024-05-08
+
+- 添加思源内置模板函数介绍 | Add SiYuan built-in template function introduction
+- 调整事件总线锚点 | Adjust event bus anchor
+- 调整 `siyuan-SDK` 锚点 | Adjust `siyuan-SDK` anchor
+
+## 2024-05-07
+
+- 配置 prettier | Configure prettier
+
+## 2024-05-06
+
+- 完善事件总线内容 | Improve event bus content
+
+## 2024-05-05
+
+- 完善插件相关类型说明 | Improve plugin-related type descriptions
+
+## 2024-05-04
+
+- 完善事件总线内容 | Improve event bus content
+
+## 2024-04-28
+
+- 添加事件总线 `sync-end` | Add event bus `sync-end`
+- 添加事件总线 `sync-fail` | Add event bus `sync-fail`
+- 添加事件总线 `sync-start` | Add event bus `sync-start`
+
+## 2024-04-27
+
+- 添加事件总线 `click-flashcard-action` | Add event bus `click-flashcard-action`
+- 添加事件总线 `mobile-keyboard-hide` | Add event bus `mobile-keyboard-hide`
+- 添加事件总线 `mobile-keyboard-show` | Add event bus `mobile-keyboard-show`
+
+## 2024-04-10
+
+- 格式化代码 | Format code
+
+## 2024-04-08
+
+- 更新 `siyuan-sdk` 文档 | Update `siyuan-sdk` document
+
+## 2024-04-07
+
+- 更新 `siyuan-sdk` 版本 | Update `siyuan-sdk` version
+
+## 2024-03-20
+
+## 2024-03-08
+
+- 修复 `Sprig` 文档中部分错误的示例 | Fix some incorrect examples in `Sprig`
+
+## 2024-03-07
+
+- 添加 `Sprig` 中密码学与安全函数介绍 | Add `Sprig` cryptography and security function introduction
+- 完善 `Sprig` 文档的侧边导航栏 | Improve the side navigation bar of `Sprig` documentation
+
+## 2024-02-26
+
+- 添加 `Sprig` 中字典和字典函数介绍 | Add `Sprig` dictionary and dictionary function introduction
+
+## 2024-02-25
+
+- 添加 `Sprig` 中列表和列表函数介绍 | Add `Sprig` list and list function introduction
+
+## 2024-02-19
+
+- 添加 `Sprig` 中语义化版本号函数介绍 | Add `Sprig` semantic versioning function introduction
+
+## 2024-02-18
+
+- 添加 `Sprig` 中路径和文件路径函数介绍 | Add `Sprig` path and file path function introduction
+
+## 2024-02-16
+
+- 添加 `Sprig` 中默认值函数介绍 | Add `Sprig` default value function introduction
+
+## 2024-02-15
+
+- 添加 `Sprig` 中流程控制函数介绍 | Add `Sprig` flow control function introduction
+
+## 2024-02-13
+
+- 添加 `Sprig` 中类型转换函数介绍 | Add `Sprig` type conversion function introduction
+
+## 2024-02-12
+
+- 添加 `Sprig` 中编码函数介绍 | Add `Sprig` encoding function introduction
+
+## 2024-02-11
+
+- 添加 `Sprig` 中反射函数介绍 | Add `Sprig` reflection function introduction
+
+## 2024-02-10
+
+- 添加 `Sprig` 中网络函数介绍 | Add `Sprig` network function introduction
+
+## 2024-01-15
+
+- 添加 `Sprig` 中操作系统函数介绍 | Add `Sprig` operating system function introduction
+
+## 2024-01-13
+
+- 添加 `Sprig` 中日期处理函数介绍 | Add `Sprig` date processing function introduction
+
+## 2024-01-12
+
+- 添加 `Sprig` 中浮点数处理函数介绍 | Add `Sprig` floating point processing function introduction
+
+## 2024-01-08
+
+- 添加 `Sprig` 中整数切片处理函数介绍 | Add `Sprig` integer slice processing function introduction
+
+## 2024-01-07
+
+- 添加 `Sprig` 中字符串切片处理函数介绍 | Add `Sprig` string slice processing function introduction
+- 添加 `Sprig` 中整数数学函数介绍 | Add `Sprig` integer math function introduction
+
+## 2024-01-05
+
+- 添加 `Sprig` 中字符串处理函数介绍 | Add `Sprig` string processing function introduction
+
+## 2024-01-02
+
+- 添加事件总线 `lock-screen` | Add event bus `lock-screen`
+
+## 2024-01-01
+
+- 添加 `uuidv4` 函数介绍 | Add `uuidv4` function introduction
+
+## 2023-12-28
+
+- 添加 `sprig` 模板函数介绍 | Add `sprig` template function introduction
+
+## 2023-12-26
+
+- 添加 API `/api/filetree/createDailyNote` 的介绍 | Add the introduction to the API `/api/filetree/createDailyNote`
+- 添加 `siyuan-CE` 中命令行参数 `--proxy` 的介绍 | Add the introduction to the command line argument `--proxy` in `siyuan-CE`
+- 添加事件总线 `open-menu-inbox` | Add event bus `open-menu-inbox`
+
+## 2023-11-29
+
+- 删除 API `/api/broadcast/channels` 的介绍 | Delete the introduction to the API `/api/broadcast/channels`
+- 添加 API `/api/broadcast/getChannels` 的介绍 | Add the introduction to the API `/api/broadcast/getChannels`
+- 添加 API `/api/broadcast/echo` 的介绍 | Add the introduction to the API `/api/broadcast/echo`
 
 ## 2023-11-20
 

@@ -1,25 +1,49 @@
 {
-  "name": "siyuan-developer-docs",
-  "description": "Unofficial documentation for SiYuan community developers",
-  "author": "SiYuan Community",
-  "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
-  "license": "AGPL-3.0-or-later",
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "^20.9.2",
-    "cspell": "^8.0.0",
-    "vitepress": "1.0.0-rc.29",
-    "vue": "^3.3.8"
-  },
-  "scripts": {
-    "init": "npm run init:siyuan-sdk",
-    "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
-    "check:spell": "cspell .",
-    "docs:dev": "npm run init && vitepress dev docs",
-    "docs:build": "npm run init && vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "dependencies": {
-    "@siyuan-community/siyuan-sdk": "^0.3.4"
-  }
+    "name": "siyuan-developer-docs",
+    "type": "module",
+    "description": "Unofficial documentation for SiYuan community developers",
+    "author": "SiYuan Community",
+    "license": "AGPL-3.0-or-later",
+    "repository": "https://github.com/siyuan-community/siyuan-developer-docs",
+    "scripts": {
+        "init": "npm run init:siyuan-sdk",
+        "init:siyuan-sdk": "node ./scripts/siyuan-sdk.js",
+        "check": "run-p check:cspell check:eslint check:prettier",
+        "check:cspell": "cspell .",
+        "check:eslint": "eslint --max-warnings 0 --no-warn-ignored .",
+        "check:prettier": "prettier -c \"**/*.md\"",
+        "format": "run-p format:eslint format:prettier",
+        "format:eslint": "eslint --fix .",
+        "format:prettier": "prettier --ignore-unknown -w \"**/*.md\"",
+        "format:lint-staged": "lint-staged --allow-empty",
+        "docs:dev": "npm run init && vitepress dev docs",
+        "docs:build": "npm run init && vitepress build docs",
+        "docs:preview": "vitepress preview docs",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@siyuan-community/siyuan-sdk": "^0.3.12",
+        "@vercel/kv": "^2.0.0",
+        "@vercel/speed-insights": "^1.0.12",
+        "npm-run-all": "^4.1.5"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^2.24.1",
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@commitlint/types": "^19.0.3",
+        "@types/lint-staged": "^13.3.0",
+        "@types/node": "^22.1.0",
+        "@vercel/node": "^3.2.8",
+        "cspell": "^8.13.1",
+        "eslint": "^9.8.0",
+        "eslint-plugin-format": "^0.1.2",
+        "eslint-plugin-tsdoc": "^0.3.0",
+        "husky": "^9.1.4",
+        "lint-staged": "^15.2.8",
+        "markdown-it-mathjax3": "^4.3.2",
+        "prettier": "^3.3.3",
+        "vitepress": "^1.3.2",
+        "vue": "^3.4.35"
+    }
 }

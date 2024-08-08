@@ -1,0 +1,156 @@
+"$schema" = "https://json.schemastore.org/prettierrc.json"
+
+# 换行宽度
+# printWidth: <int>
+
+# printWidth = 80
+printWidth = 1024
+
+# 缩进宽度
+
+# tabWidth: <int>
+# tabWidth = 2
+tabWidth = 2
+
+# 是否使用 \t
+
+# useTabs: <bool>
+# useTabs = false
+useTabs = false
+
+# 是否在语句末尾打印分号
+
+# semi: <bool>
+# semi = true
+semi = true
+
+# 是否优先使用单引号
+
+# singleQuote: <bool>
+# singleQuote = false
+singleQuote = false
+
+# 对象属性名是否使用引号
+# "as-needed" - 按需添加引号
+# "consistent" - 如果有一个需要, 则全部添加引号
+# "preserve" - 保持原样
+
+# quoteProps: "<as-needed|consistent|preserve>"
+# quoteProps = "as-needed"
+quoteProps = "as-needed"
+
+# 在 JSX 中使用单引号而不是双引号
+
+# jsxSingleQuote: <bool>
+# jsxSingleQuote = false
+jsxSingleQuote = false
+
+# 尾随逗号
+# "es5" - 在 ES5 (对象、数组等) 中有效的尾随逗号, TypeScript 的类型参数中没有尾随逗号
+# "none" - 没有尾随逗号
+# "all" - 尽可能以逗号结尾 (包括函数参数和调用)
+
+# trailingComma: "<es5|none|all>"
+# trailingComma = "es5"
+trailingComma = "all"
+
+# 对象大括号添加空格
+
+# bracketSpacing: <bool>
+# bracketSpacing = true
+bracketSpacing = true
+
+# 将多行 HTML（HTML、JSX、Vue、Angular）元素的 > 放在最后一行的末尾，而不是单独放在下一行（不适用于自闭合元素）
+
+# bracketSameLine: <bool>
+# bracketSameLine = true
+bracketSameLine = false
+
+# 为只有一个参数的箭头函数的参数添加括号
+# "always" - (x) => x
+# "avoid" - x => x
+
+# arrowParens: "<always|avoid>"
+# arrowParens = "always"
+arrowParens = "always"
+
+# 仅格式化文件的一部分
+
+# rangeStart: <int>
+# rangeStart = 0
+
+# rangeEnd: <int>
+# rangeEnd = Infinity
+
+# 指定要使用的解析器
+# parser: require("./my-parser")
+
+# parser: "<string>"
+# parser = none
+
+# 指定用于推断要使用哪个解析器的文件名
+
+# filepath: "<string>"
+# filepath = none
+
+# 仅格式化在文件顶部包含特殊注释 @prettier 或 @format 的文件
+
+# requirePragma: <bool>
+# requirePragma = false
+requirePragma = false
+
+# 格式化时在文档首自动添加 @format 标记
+
+# insertPragma: <bool>
+# insertPragma = false
+insertPragma = false
+
+# 是否对超过长度的 markdown 进行换行
+# "always" - 如果超出打印宽度，则将其换行
+# "never" - 将每一段拆成一行
+# "preserve" - 什么都不做，保持原样
+
+# proseWrap: "<always|never|preserve>"
+# proseWrap = "preserve"
+proseWrap = "preserve"
+
+# 指定 HTML、Vue、Angular 和 Handlebars 的全局空白敏感度
+# "css" - 遵守 CSS display 属性的默认值，对于 Handlebars，视为 "strict"
+# "strict" - 所有标签周围的空格（或缺少空格）被认为是重要的
+# "ignore" - 所有标签周围的空格（或缺少空格）被认为是无关紧要的
+
+# htmlWhitespaceSensitivity: "<css|strict|ignore>"
+# htmlWhitespaceSensitivity = "css"
+htmlWhitespaceSensitivity = "css"
+
+# Vue 文件中 <script> 和 <style> 标签内的代码是否缩进
+
+# vueIndentScriptAndStyle: <bool>
+# vueIndentScriptAndStyle = false
+vueIndentScriptAndStyle = false
+
+# 文件换行符
+# "lf" - \n
+# "crlf" - \r\n
+# "cr" - \r
+# "auto" - 使用原文件的换行符
+
+# endOfLine: "<lf|crlf|cr|auto>"
+# endOfLine = "lf"
+endOfLine = "lf"
+
+# 是否格式化嵌入在文件中的引用代码
+# "auto" - 如果 Prettier 可以自动识别嵌入代码，则格式化嵌入代码
+# "off" - 从不自动格式化嵌入代码
+
+# embeddedLanguageFormatting: "<off|auto>"
+# embeddedLanguageFormatting = "auto"
+embeddedLanguageFormatting = "off"
+
+# 在 HTML、Vue 和 JSX 中每行强制执行单个属性
+# false - 不强制每行使用一个属性
+# true - 每行强制执行单个属性
+
+# singleAttributePerLine: <bool>
+# singleAttributePerLine = false
+singleAttributePerLine = true

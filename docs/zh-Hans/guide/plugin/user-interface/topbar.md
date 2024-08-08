@@ -9,7 +9,7 @@
 将下面的代码粘贴到你的插件的 `index.js` 中，即可查看这部分效果。
 
 ```javascript
-const { Plugin, Menu, getFrontend } = require('siyuan');
+const { Plugin, Menu, getFrontend } = require("siyuan");
 
 module.exports = class ExamplePlugin extends Plugin {
     onload() {
@@ -17,13 +17,14 @@ module.exports = class ExamplePlugin extends Plugin {
         this.isMobile = frontEnd === "mobile" || frontEnd === "browser-mobile";
 
         const topBarElement = this.addTopBar({
-            icon: "iconHelp",   // 使用图标库中的图标，可以在工作空间/conf/appearance/icons/index.html中查看内置图标
-            title: 'Siyuan Example',
+            icon: "iconHelp", // 使用图标库中的图标，可以在工作空间/conf/appearance/icons/index.html中查看内置图标
+            title: "Siyuan Example",
             position: "right",
             callback: () => {
-                if (this.isMobile) {  
+                if (this.isMobile) {
                     this.addMenu();
-                } else {
+                }
+                else {
                     let rect = topBarElement.getBoundingClientRect();
                     // 如果被隐藏，则使用更多按钮
                     if (rect.width === 0) {
@@ -34,7 +35,7 @@ module.exports = class ExamplePlugin extends Plugin {
                     }
                     this.addMenu(rect);
                 }
-            }
+            },
         });
     }
 
@@ -44,12 +45,13 @@ module.exports = class ExamplePlugin extends Plugin {
             icon: "iconInfo",
             label: "Console Help",
             click: () => {
-                console.log('Help');
-            }
+                console.log("Help");
+            },
         });
         if (this.isMobile) {
             menu.fullscreen();
-        } else {
+        }
+        else {
             menu.open({
                 x: rect.right,
                 y: rect.bottom,
@@ -57,7 +59,7 @@ module.exports = class ExamplePlugin extends Plugin {
             });
         }
     }
-}
+};
 ```
 
 ## 效果

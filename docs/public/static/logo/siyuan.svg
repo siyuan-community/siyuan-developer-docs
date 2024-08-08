@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 432 432" xmlns="http://www.w3.org/2000/svg">
+    <title>SiYuan</title>
+    <polygon fill="#D23F31" points="40 164, 140 64, 140 268, 40 368"/>
+    <polygon fill="#3B3E43" points="140 64, 216 140, 216 344, 140 268"/>
+    <polygon fill="#D23F31" points="216 140, 292 64, 292 268, 216 344"/>
+    <polygon fill="#3B3E43" points="292 64, 392 164, 392 368, 292 268"/>
+</svg>

@@ -1,12 +1,12 @@
 ---
 outline: deep
-
 ---
 
 # `/ws`
 
 ---
-## `broadcast`
+
+## `broadcast` {#broadcast}
 
 ---
 
@@ -14,6 +14,7 @@ outline: deep
 - `/ws/broadcast`
 
 ---
+
 **请求**
 
 ::: code-group

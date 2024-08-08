@@ -19,9 +19,8 @@ hero:
       link: https://b3log.org/siyuan
     - theme: alt
       text: 思源笔记社区
-      link: https://ld246.com/domain/siyuan
+      link: https://ld246.com/tags/siyuan
     - theme: alt
       text: 思源笔记项目组
       link: https://github.com/siyuan-note
-
 ---

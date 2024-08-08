@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/notification`
 
-## `pushErrMsg`
+## `pushErrMsg` {#pushErrMsg}
 
 - 🔥 推送错误消息
 - `/api/notification/pushErrMsg`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -28,12 +29,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/notification/pushErrMsg/response.schema.json [JSON Schema (json)]
 :::
 
-## `pushMsg`
+## `pushMsg` {#pushMsg}
 
 - 🔥 推送消息
 - `/api/notification/pushMsg`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group

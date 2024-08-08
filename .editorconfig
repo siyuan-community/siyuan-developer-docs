@@ -1,0 +1,16 @@
+# REF: https://spec.editorconfig.org/#supported-pairs
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+[*.{md}]
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{js,ts,vue,css,json}]
+indent_size = 4
+trim_trailing_whitespace = true

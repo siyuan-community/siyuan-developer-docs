@@ -1,0 +1,5 @@
+#!/bin/sh
+
+commitlint --edit $1
+
+exit 0

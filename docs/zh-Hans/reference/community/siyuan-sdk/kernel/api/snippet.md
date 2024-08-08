@@ -1,16 +1,16 @@
 ---
 outline: deep
-
 ---
 
 # `/api/snippet`
 
-## `getSnippet`
+## `getSnippet` {#getSnippet}
 
 - 🛠 获取代码片段
 - `/api/snippet/getSnippet`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -20,6 +20,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
@@ -28,12 +29,13 @@ outline: deep
 <<< @/snippets/siyuan-sdk/schemas/kernel/api/snippet/getSnippet/response.schema.json [JSON Schema (json)]
 :::
 
-## `setSnippet`
+## `setSnippet` {#setSnippet}
 
 - 🛠 设置代码片段
 - `/api/snippet/setSnippet`
 
 ---
+
 **请求**
 
 ::: code-group
@@ -43,6 +45,7 @@ outline: deep
 :::
 
 ---
+
 **响应**
 
 ::: code-group
