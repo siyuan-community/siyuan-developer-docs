@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
+import { postsSidebar } from "./components/Forward/DocData";
 import en from "./configs/en";
-import rewrites from "./configs/rewrites";
 import zh_Hans from "./configs/zh-Hans";
 
 // https://vitepress.dev/reference/site-config
@@ -52,6 +52,13 @@ export default defineConfig({
                 ],
             },
         ],
+
+        sidebar: {
+            "/contents/": {
+                base: "/contents",
+                items: postsSidebar,
+            },
+        },
 
         // REF https://vitepress.dev/reference/default-theme-config#sociallinks
         socialLinks: [
@@ -129,6 +136,4 @@ export default defineConfig({
             },
         },
     },
-
-    rewrites,
 });

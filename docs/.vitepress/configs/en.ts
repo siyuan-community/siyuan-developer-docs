@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import { contentsSidebar } from "./rewrites";
+import { postsSidebarWithLocale } from "../components/Forward/DocData";
 
 import type { DefaultTheme, LocaleSpecificConfig } from "vitepress";
 
@@ -230,7 +230,7 @@ export const themeConfig: DefaultTheme.Config = {
                 items: [],
             },
         ],
-        "en/contents/": contentsSidebar.en,
+        "en/contents/": postsSidebarWithLocale.en,
     },
 };
 
