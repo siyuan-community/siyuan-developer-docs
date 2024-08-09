@@ -135,5 +135,18 @@ export default defineConfig({
                 },
             },
         },
+        build: {
+            rollupOptions: {
+                output: {
+                    assetFileNames: (assetInfo) => {
+                        // 检查文件的扩展名，避免对图片文件生成哈希
+                        if (/\.(?:png|jpg|jpeg|gif|svg)$/.test(assetInfo.name as string)) {
+                            return "assets/[name][extname]"; // 图片文件不包含哈希
+                        }
+                        return "assets/[name]-[hash][extname]"; // 其他文件使用默认命名方式
+                    },
+                },
+            },
+        },
     },
 });
