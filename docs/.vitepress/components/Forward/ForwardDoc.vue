@@ -13,7 +13,7 @@ onMounted(() => {
     doms.forEach((dom) => {
         const originSrc = dom.getAttribute("src");
 
-        dom.setAttribute("src", `/members/${props.member}/assets${originSrc.split("assets").pop()}`);
+        dom.setAttribute("src", import.meta.env.DEV ? `/members/${props.member}/assets${originSrc.split("assets").pop()}` : `/assets${originSrc.split("assets").pop()}`);
     });
 });
 </script>
