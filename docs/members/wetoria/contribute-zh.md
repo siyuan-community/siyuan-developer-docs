@@ -196,4 +196,4 @@ VitePress 采用按目录划分的方式规划页面。
 
 ## 获取支持
 
-如果你需要帮助 <LinkContactUS />。
+如果你需要帮助 <a href="/zh-Hans/about/#contactUS" style="color: var(--vp-c-brand-1);" target="_blank">联系我们</a>。
