@@ -13,6 +13,8 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import { contentsSidebar } from "./rewrites";
+
 import type { DefaultTheme, LocaleSpecificConfig } from "vitepress";
 
 export const themeConfig: DefaultTheme.Config = {
@@ -209,7 +211,7 @@ export const themeConfig: DefaultTheme.Config = {
                         items: [],
                     },
                     {
-                        text: "inferface",
+                        text: "interface",
                         items: [],
                     },
                     {
@@ -228,6 +230,7 @@ export const themeConfig: DefaultTheme.Config = {
                 items: [],
             },
         ],
+        "en/contents/": contentsSidebar.en,
     },
 };
 
@@ -236,8 +239,8 @@ export const localeConfig: LocaleSpecificConfig<DefaultTheme.Config> & { label: 
     lang: "en",
     dir: "/en/",
 
-    title: "SiYuan Developer Docs",
-    description: "Unofficial documentation for SiYuan community developers",
+    title: "SiYuan Community Docs",
+    description: "Unofficial documentation for SiYuan Community",
 
     themeConfig,
 };

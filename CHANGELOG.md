@@ -1,5 +1,9 @@
 # 更改日志 | Change Log
 
+## 2024-08-09
+
+- 添加关于页面 | Add about page
+
 ## 2024-08-06
 
 - 改进 `commitlint` 调用方式 | Improve `commitlint` call method

@@ -1,14 +1,15 @@
 import { defineConfig } from "vitepress";
 
 import en from "./configs/en";
+import rewrites from "./configs/rewrites";
 import zh_Hans from "./configs/zh-Hans";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     // base: '/siyuan-developer-docs/',
 
-    title: "SiYuan Developer Docs",
-    description: "Unofficial documentation for SiYuan community developers",
+    title: "SiYuan Community Docs",
+    description: "Unofficial documentation for SiYuan Community",
 
     lastUpdated: true,
 
@@ -32,6 +33,10 @@ export default defineConfig({
             light: "/static/logo/siyuan.svg",
             dark: "/static/logo/siyuan-dark.svg",
             alt: "SiYuan logo",
+        },
+
+        outline: {
+            level: "deep",
         },
 
         nav: [
@@ -124,4 +129,6 @@ export default defineConfig({
             },
         },
     },
+
+    rewrites,
 });

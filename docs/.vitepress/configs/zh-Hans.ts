@@ -13,6 +13,8 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import { contentsSidebar } from "./rewrites";
+
 import type { DefaultTheme, LocaleSpecificConfig } from "vitepress";
 
 // REF https://vitepress.dev/reference/default-theme-config
@@ -393,6 +395,9 @@ export const themeConfig: DefaultTheme.Config = {
                 ],
             },
         ],
+        "/zh-Hans/contents/": [
+            ...contentsSidebar["zh-Hans"],
+        ],
     },
 };
 
@@ -401,8 +406,8 @@ export const localeConfig: LocaleSpecificConfig<DefaultTheme.Config> & { label: 
     lang: "zh-Hans", // 设置 `<html>` 标签 lang 属性
     dir: "/zh-Hans/",
 
-    title: "思源开发者文档",
-    description: "思源社区开发者的非官方文档",
+    title: "思源社区文档",
+    description: "思源社区的非官方文档",
 
     themeConfig,
 };

@@ -1,0 +1,45 @@
+$schema: "https://github.com/streetsidesoftware/cspell/raw/main/packages/cspell-types/cspell.schema.json"
+
+# Version of the setting file.
+version: "0.2"
+
+# language - current active spelling language
+language: en
+
+# words - list of words to be always considered correct
+dictionaryDefinitions:
+  - name: cspell-words
+    path: ./cspell-words.txt
+    addWords: true
+
+dictionaries:
+  - cspell-words
+
+ignoreRegExpList:
+  - \d{14}-[0-9a-z]{7}
+
+# flagWords - list of words to be always considered incorrect
+# This is useful for offensive words and common spelling errors.
+# For example "hte" should be "the"
+flagWords: []
+
+ignorePaths:
+  - node_modules
+  - temp
+
+  - ./docs/.vitepress/cache/
+  - ./docs/.vitepress/dist/
+  - ./docs/public/schemas/
+  - ./docs/snippets/siyuan-sdk/
+  - ./docs/zh-Hans/reference/template/sprig/
+
+  - .gitignore
+  - package.json
+  - pnpm-lock.yaml
+
+  - "**/*.png"
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.gif"
+  - "**/*.svg"
+  - "**/*.ico"

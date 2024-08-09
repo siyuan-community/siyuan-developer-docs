@@ -3,9 +3,8 @@
 layout: home
 
 hero:
-  name: "SiYuan Developer Documentation"
-  text: "For all of SiYuan community developers"
-  tagline: Make community developers happier!
+  name: "SiYuan Community Documentation"
+  text: "High-quality content from Siyuan Community"
   actions:
     - theme: brand
       text: 简体中文

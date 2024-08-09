@@ -1,2 +1,3 @@
 # REF: https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
-* text eol=lf
+*       text    eol=lf
+*.png   binary
