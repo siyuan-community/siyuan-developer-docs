@@ -1,6 +1,7 @@
 {
     "name": "siyuan-developer-docs",
     "type": "module",
+    "packageManager": "pnpm@9.7.0",
     "description": "Unofficial documentation for SiYuan community developers",
     "author": "SiYuan Community",
     "license": "AGPL-3.0-or-later",
@@ -11,9 +12,6 @@
     },
     "bugs": {
         "url": "https://github.com/siyuan-community/siyuan-developer-docs/issues"
-    },
-    "engines": {
-        "node": "22"
     },
     "scripts": {
         "init": "npm run init:siyuan-sdk",
