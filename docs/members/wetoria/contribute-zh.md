@@ -78,6 +78,37 @@ local: 'en' // [!code focus]
 
 你的这篇 `Title of a article` 将会在英文环境下显示。
 
+### 文章发布逻辑
+
+当你在 `members/[yours]/` 下发布了文章以后，你可以在 [这里](/contents/) 查看所有的文章列表。
+
+对应的 i18n 版本，将会全部列在多语言对应的 `/[locale]/contents` 目录下。 你可以在 [这里](/zh-Hans/contents/) 查看一个示例。
+
+#### 如何将文档归类到对应的页面下
+
+在仓库 `/docs/.vitepress/components/Forward` 里，提供了 `ForwardDoc.vue` 组件。
+
+你只需要按照下面的方式使用，就能在页面中嵌入你的文档内容。支持选择行范围，具体请参考 [包含 markdown 文件](https://vitepress.dev/zh/guide/markdown#markdown-file-inclusion)。
+
+```vue
+<ForwardDoc
+	member="[yours]"
+>
+  // 为了防止死循环，尖括号加了空格
+  < !--@include: ../../members/wetoria/contribute-zh.md-- >
+</ForwardDoc>
+```
+
+参数 `member` 为你的文件夹名称，目的是为了在嵌入时能正确地获取图片资源。
+
+:::warning
+
+目前没有处理使用相对路径的链接。如果你的文章中使用了相对路径，将有可能出现跳转 404 的问题。
+
+在自动生成的 `contents` 目录下使用是没有问题的。
+
+:::
+
 ### 注意事项 & 公约
 
 #### 1. 配置发布工具的注意事项

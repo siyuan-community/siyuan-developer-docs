@@ -85,7 +85,7 @@ export const themeConfig: DefaultTheme.Config = {
             text: "关于",
             items: [
                 { text: "加入我们", link: "/zh-Hans/about/" },
-                { text: "如何贡献", link: "/zh-Hans/about/contribute" },
+                { text: "如何贡献", link: "/zh-Hans/contents/contribute" },
             ],
         },
     ],
