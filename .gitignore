@@ -2,6 +2,7 @@
 temp
 docs/snippets/siyuan-sdk
 docs/public/schemas
+.vscode/tasks.json
 
 # VitePress
 docs/.vitepress/dist

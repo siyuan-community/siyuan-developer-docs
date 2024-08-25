@@ -1,4 +1,5 @@
 - [入门](./startup.md)
+- [插件开发快速指南](./sy-plugin-dev-quick-start.md)
 - 开发
   - 开发环境
   - 用户界面

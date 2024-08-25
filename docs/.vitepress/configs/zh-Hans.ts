@@ -119,6 +119,7 @@ export const themeConfig: DefaultTheme.Config = {
                 text: "快速开始",
                 items: [
                     { text: "入门", link: "/zh-Hans/guide/plugin/startup" },
+                    { text: "插件开发快速指南", link: "/zh-Hans/guide/plugin/sy-plugin-dev-quick-start" },
                 ],
             },
             {

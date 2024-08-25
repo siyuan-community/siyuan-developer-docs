@@ -99,7 +99,9 @@ export const themeConfig: DefaultTheme.Config = {
             },
             {
                 text: "Getting started",
-                items: [],
+                items: [
+                    { text: "SiYuan Plugin Development Quick Start", link: "/en/guide/plugin/sy-plugin-dev-quick-start" },
+                ],
             },
             {
                 text: "Development",

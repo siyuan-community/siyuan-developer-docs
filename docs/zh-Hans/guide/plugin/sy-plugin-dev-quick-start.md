@@ -1,35 +1,31 @@
 ---
-title: 插件开发 Quick Start
-date: '2024-07-31 17:03:57'
-head:
-  - name: keywords
-    content: 思源笔记
-outline: deep
-sidebar: false
-prev: false
-next: false
+title: 插件开发快速指南
+date: 2024-07-31T17:03:57.000Z
+lastmod: 2024-08-25T16:26:59.000Z
+tags:
+  - 思源笔记
+locale: zh
 ---
-
-
 
 ​🔔 **前提说明**
 
 1. 本文并非手把手的插件开发教程
 
-    * 本文旨在提供给有一定经验的开发者编写的思源插件开发指南，以帮助他们降低插件开发的门槛
-    * 很多前置技术会默认读者已经会了，同时语言风格上会偏向简略而不做过多解释。
+   - 本文旨在提供给有一定经验的开发者编写的思源插件开发指南，以帮助他们降低插件开发的门槛
+   - 很多前置技术会默认读者已经会了，同时语言风格上会偏向简略而不做过多解释。
+
 2. 本文也并非插件开发的说明文档
 
-    1. 只包含我个人认为的最常用的概念和用法
-    2. 关于插件如何发布、更新；请阅读官方插件模板的 [README](https://github.com/siyuan-note/plugin-sample/blob/main/README.md)，不在这里赘述
-    3. 思源的插件开发的文档并不充分（人手不足），如果你想要自行研究，请参考
+   1. 只包含我个人认为的最常用的概念和用法
+   2. 关于插件如何发布、更新；请阅读官方插件模板的 [README](https://github.com/siyuan-note/plugin-sample/blob/main/README.md)，不在这里赘述
+   3. 思源的插件开发的文档并不充分（人手不足），如果你想要自行研究，请参考
 
-        1. siyuan 提供的 [d.ts 声明文件](https://github.com/siyuan-note/petal)
-        2. 扒思源源代码
-        3. [社区文档](https://docs.siyuan-note.club/zh-Hans/reference/) （同样不全面）
-        4. 或者加入思源爱好者 QQ 群进行技术咨询
+      1. siyuan 提供的 [d.ts 声明文件](https://github.com/siyuan-note/petal)
+      2. 扒思源源代码
+      3. [社区文档](https://docs.siyuan-note.club/zh-Hans/reference/) （同样不全面）
+      4. 或者加入思源爱好者 QQ 群进行技术咨询
 
-            ​![image](assets/image-20240731195519-xgw9ya7.png)​
+         ​![image](/frostime/image-20240731195519-xgw9ya7.png)​
 
 ‍
 
@@ -47,9 +43,9 @@ next: false
 1. nodejs 环境
 2. ​`npm install siyuan`​
 
-   * 一个纯 typescript 接口声明项目
-   * 内部声明了思源插件的各种 API
-   * 由于思源缺少插件文档，所以你有必要认真阅读内部的接口定义
+   - 一个纯 typescript 接口声明项目
+   - 内部声明了思源插件的各种 API
+   - 由于思源缺少插件文档，所以你有必要认真阅读内部的接口定义
 
 ### 单开一个工作空间
 
@@ -59,29 +55,30 @@ next: false
 
 目前官方 SiYuan 仓库下提供的插件开发模板有两套：
 
-* [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)
+- [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)
 
-  * 思源核心开发者提供，但是并不推荐使用
-* [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)
+  - 思源核心开发者提供，但是并不推荐使用
 
-  * 使用 **vite** 打包项目，并内置了对 **svelte** 的支持
-  * 💡 **更推荐使用**
-  * 提供了软链接、热重载等功能；内置 typescript 类型声明、一系列 util 函数；开发效率显著高于前者
+- [SiYuan plugin sample (Vite &amp; Svelte)](https://github.com/siyuan-note/plugin-sample-vite-svelte)
+
+  - 使用 **vite** 打包项目，并内置了对 **svelte** 的支持
+  - 💡 **更推荐使用**
+  - 提供了软链接、热重载等功能；内置 typescript 类型声明、一系列 util 函数；开发效率显著高于前者
 
 如果你不想用 svelte 框架，可以选择：
 
-* [frostime/plugin-sample-vite](https://github.com/frostime/plugin-sample-vite) 项目，剔除了 svelte 的部分，其他的和 svelte 模板保持了一致
-* [frostime/plugin-sample-vite-solidjs](https://github.com/frostime/plugin-sample-vite-solidjs) 项目，基于 solidjs 框架，其他部分基本和 svelte 模板保持一致
+- [frostime/plugin-sample-vite](https://github.com/frostime/plugin-sample-vite) 项目，剔除了 svelte 的部分，其他的和 svelte 模板保持了一致
+- [frostime/plugin-sample-vite-solidjs](https://github.com/frostime/plugin-sample-vite-solidjs) 项目，基于 solidjs 框架，其他部分基本和 svelte 模板保持一致
 
 > ❓ 为什么是 svelte，而不是更加常见的例如 react 框架？
 >
-> * React 的流行主要源自其先发地位和优秀的生态环境；但是在插件开发的场景下，前端库的生态如何、组件库是否够多带来的影响并不大
-> * svelte 足够轻量级、性能足够高；而 React 这类基于 vdom 的框架，往往打包结果偏大，并不适合插件开发这种小型项目
-> * svelte 的开发和上手成本最低
+> - React 的流行主要源自其先发地位和优秀的生态环境；但是在插件开发的场景下，前端库的生态如何、组件库是否够多带来的影响并不大
+> - svelte 足够轻量级、性能足够高；而 React 这类基于 vdom 的框架，往往打包结果偏大，并不适合插件开发这种小型项目
+> - svelte 的开发和上手成本最低
 
 ### 插件的生命周期
 
-​![6317cf25a7642e03e6e142e1eaa8c434](assets/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)​
+​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)​
 
 #### Plugin 的生命周期 Hooks
 
@@ -150,49 +147,51 @@ class MyPlugin extends Plugin {
 
 1. 内核 API：思源的后端开放的网络 API，通过发出网络请求来调用（如 js 的 `fetch`​、python 的 `requests`​ ​等）
 
-    * 内核 API 往往和数据、思源底层配置相关
-    * 内核 API 也可以分为两部分
+   - 内核 API 往往和数据、思源底层配置相关
+   - 内核 API 也可以分为两部分
 
-      * 开放 API
+     - 开放 API
 
-        * 这部份的 API 是思源已经明确固定，肯定不会变动的 API
-        * 可以参考 [API 文档](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)查看详细的用法
-      * 非开放 API
+       - 这部份的 API 是思源已经明确固定，肯定不会变动的 API
+       - 可以参考 [API 文档](https://github.com/siyuan-note/siyuan/blob/master/API_zh_CN.md)查看详细的用法
 
-        * 这部分 API 本质上和开放 API <u>没有什么区别</u>，同样可以自由地通过网络请求来调用
-        * 但是这部分 API 被定义为「不稳定的 API」，这意味着开发者<u>理论上</u>有权力不考虑第三方的使用需求而对 API 进行更改
-        * 这部分 API 没有官方的说明文档，如果你想要使用，只能去自行检查思源的网络请求或者查看思源后端的 api 代码，并自行推导出使用方式
-        * 相关源代码见：[https://github.com/siyuan-note/siyuan/tree/master/kernel/api](https://github.com/siyuan-note/siyuan/tree/master/kernel/api)
+     - 非开放 API
+
+       - 这部分 API 本质上和开放 API <u>没有什么区别</u>，同样可以自由地通过网络请求来调用
+       - 但是这部分 API 被定义为「不稳定的 API」，这意味着开发者<u>理论上</u>有权力不考虑第三方的使用需求而对 API 进行更改
+       - 这部分 API 没有官方的说明文档，如果你想要使用，只能去自行检查思源的网络请求或者查看思源后端的 api 代码，并自行推导出使用方式
+       - 相关源代码见：[https://github.com/siyuan-note/siyuan/tree/master/kernel/api](https://github.com/siyuan-note/siyuan/tree/master/kernel/api)
+
 2. 插件 API：专供插件使用的 javascript 前端 API
 
-    * 只能在插件当中使用
-    * 在插件开发中，通过 `require('siyuan')`​ 获取 API 对象
-    * 详情见插件 API 类型定义接口：[https://github.com/siyuan-note/petal](https://github.com/siyuan-note/petal)
+   - 只能在插件当中使用
+   - 在插件开发中，通过 `require('siyuan')`​ 获取 API 对象
+   - 详情见插件 API 类型定义接口：[https://github.com/siyuan-note/petal](https://github.com/siyuan-note/petal)
 
 ### Protyle
 
 Protyle 是思源中最重要的概念，他是指的是一个完整的思源文档对象。最核心的部分是这两个：
 
-* element：文档的前端 HTML 元素
-* ws连接：通过 websocket 和后端相连，实时读取思源本体的数据
+- element：文档的前端 HTML 元素
+- ws连接：通过 websocket 和后端相连，实时读取思源本体的数据
 
 你可以打开开发者模式，可以看到每个文档的顶层 div 都是一个含有 `protyle`​ 类名的元素。这里的 protyle 就代表了完整的文档。
 
-​![image](assets/image-20240731201659-bli82ae.png)​
+​![image](/frostime/image-20240731201659-bli82ae.png)​
 
 一个 protyle 中最重要的组成部分如下：
 
 1. title：文档的块标题部分
 2. wysiwyg：所见即所得编辑器（what you see is what you get），是整个思源最核心的部分
 
-    > 注意：尽量不要手动改 DOM！如果想要更改文档内容，请使用后端 API。
-    >
+   > 注意：尽量不要手动改 DOM！如果想要更改文档内容，请使用后端 API。
+
 3. gutter：也就是块图标；一个文档内共用一个元素
 
 ### Block 和 Node
 
-* Block 是思源内核中的概念，对应的是 SQLITE 数据库当中的 Block 对象
-* Node 是前端的概念，一个 Block 在前端往往通过一个 Node 来表示；wysiwyg 中就是由若干个 Node 组成的
+- Block 是思源内核中的概念，对应的是 SQLITE 数据库当中的 Block 对象
+- Node 是前端的概念，一个 Block 在前端往往通过一个 Node 来表示；wysiwyg 中就是由若干个 Node 组成的
 
 以下是一个 protyle 当中标题块对应的元素:
 
@@ -203,9 +202,9 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 </div>
 ```
 
-* ​`data-node-id`​ 对应了块的 ID
-* ​`data-type`​ 对应了块的 type
-* ​`data-subtype`​ 对应了块的 subtype
+- ​`data-node-id`​ 对应了块的 ID
+- ​`data-type`​ 对应了块的 type
+- ​`data-subtype`​ 对应了块的 subtype
 
 ## HOWTO
 
@@ -215,7 +214,7 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 你可以调用 `plugin.addTopbar`​ 来为插件添加一个顶栏的按钮。
 
-​![image](assets/image-20240731175413-cyqym0q.png)​
+​![image](/frostime/image-20240731175413-cyqym0q.png)​
 
 ```ts
   /**
@@ -238,16 +237,17 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 ### 使用 icon
 
-* 在思源插件的很多 API 中，会有一个 `icon`​ 参数
-* 这个参数需要传入一个 [svg symbol](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element/symbol) 的名称，例如我们可以传入一个名称为 `iconRight`​ 的参数
+- 在思源插件的很多 API 中，会有一个 `icon`​ 参数
+- 这个参数需要传入一个 [svg symbol](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element/symbol) 的名称，例如我们可以传入一个名称为 `iconRight`​ 的参数
 
   ```html
   <svg class="b3-menu__icon b3-menu__icon--small">
     <use xlink:href="#iconRight"></use>
   </svg>
   ```
-* 在 `body>svg>defs`​ 下，你可以查看到所有思源内置的 `symbol`​
-* 你可以可以调用 `plugin.addIcons`​ 来传入自定义的 svg symbol，例如
+
+- 在 `body>svg>defs`​ 下，你可以查看到所有思源内置的 `symbol`​
+- 你可以可以调用 `plugin.addIcons`​ 来传入自定义的 svg symbol，例如
 
   ```js
   plugin.addIcons(`
@@ -259,19 +259,19 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 你可以在开发者模式当中看到所有的 symbol 定义
 
-​![image](assets/image-20240815182549-k81nkl3.png)​
+​![image](/frostime/image-20240815182549-k81nkl3.png)​
 
 如何自己制作一个 symbol 呢？你可以在网上找到很多自动化的工具，不过大部分时候，也可以手动解决。
 
 1. 找到一个你喜欢的 svg 图标（例如在 [https://www.iconfont.cn/](https://www.iconfont.cn/) 上面）
 2. 下载下来，并修改 svg 字符串
 
-    1. 把 svg 标签名称改成 symbol
-    2. 去掉 svg 当中关于固定的颜色、固定的尺寸等相关的属性
+   1. 把 svg 标签名称改成 symbol
+   2. 去掉 svg 当中关于固定的颜色、固定的尺寸等相关的属性
 
 ### 打开一个 Menu
 
-​![image](assets/image-20240815182918-mprnmn9.png)​
+​![image](/frostime/image-20240815182918-mprnmn9.png)​
 
 通过插件创建/打开菜单需要三步：
 
@@ -323,7 +323,7 @@ export interface IMenuItemOption {
 
 ### 注册块菜单
 
-​![image](assets/image-20240815191851-hi4lrbv.png)​
+​![image](/frostime/image-20240815191851-hi4lrbv.png)​
 
 块菜单事件，可以通过 eventBus 来注册。以下示例参考 [sy-bq-callout/index.ts](https://github.com/frostime/sy-bq-callout/blob/main/src/index.ts)
 
@@ -379,7 +379,7 @@ this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
 
 ### 打开一个 Dialog
 
-​![image](assets/image-20240815183249-vol0uoa.png)​
+​![image](/frostime/image-20240815183249-vol0uoa.png)​
 
 通过插件创建/打开一个对话框需要调用 `Dialog`​ 对象，比如这样：
 
@@ -431,7 +431,7 @@ export const inputDialog = (args: {
 };
 ```
 
-每次都直接传入 HTML 字符串显然有些烦人。为了方便，我们可以使用 dialog 对象中的 `element`​ 元素，这个属性就代表了 Dialog 对象本身的  HTMLElement。比如我们可以把 Dialog 封装一下，让他接受一个传入的 Element：
+每次都直接传入 HTML 字符串显然有些烦人。为了方便，我们可以使用 dialog 对象中的 `element`​ 元素，这个属性就代表了 Dialog 对象本身的 HTMLElement。比如我们可以把 Dialog 封装一下，让他接受一个传入的 Element：
 
 ```ts
 //参考 https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/libs/dialog.ts
@@ -456,7 +456,7 @@ export const simpleDialog = (args: {
 
 ### 打开一个文档页面
 
-* 在桌面端使用 tab 标签页打开一个块 ID
+- 在桌面端使用 tab 标签页打开一个块 ID
 
   ```ts
   import { openTab } from 'siyuan';
@@ -468,7 +468,8 @@ export const simpleDialog = (args: {
       }
   });
   ```
-* 在移动端打开一个块文档，需要用另一个 API（移动端没有页面 Tab）
+
+- 在移动端打开一个块文档，需要用另一个 API（移动端没有页面 Tab）
 
   ```ts
   openMobileFileById(plugin.app, blockId)
@@ -487,14 +488,15 @@ window.open(url)
 
 Tab 就是正中央的页签，他可以是文档，也可以是自定义的页面。
 
-​![image](assets/image-20240815185213-pufh1pw.png)​
+​![image](/frostime/image-20240815185213-pufh1pw.png)​
 
 在上一个小节当中，我们展示了使用 `openTab`​ 来打开一个文档。而如果你想要打开一个自定义的 tab，可以参考下面这个使用案例（参考 [sy-test-template/index.ts](https://github.com/frostime/sy-test-template/blob/main/src/index.ts)）。
 
 1. ​`addTab`​ 创建一个 Tab 对象
 
-    * ​`type`​ 参数：传入 Tab 的唯一标识符
-    * 在 `init`​ 函数中初始化内部 dom
+   - ​`type`​ 参数：传入 Tab 的唯一标识符
+   - 在 `init`​ 函数中初始化内部 dom
+
 2. 使用 `openTab`​ 打开 tab；对于 plugin 创建的自定义 tab 而言，id 为 `<Plugin 名称> + <type名称>`​
 
 ```ts
@@ -658,7 +660,7 @@ export default class PluginSample extends Plugin {
         //读取
         let data = await this.loadData(File);
         data = data ?? DefaultConfig;
-    
+
         //保存
         this.saveData(File, data);
     }
@@ -670,19 +672,20 @@ export default class PluginSample extends Plugin {
 
 #### UI
 
-​![image](assets/image-20240815194618-9qc8lbb.png)​
+​![image](/frostime/image-20240815194618-9qc8lbb.png)​
 
-​![image](assets/image-20240815194704-kppabzx.png)​
+​![image](/frostime/image-20240815194704-kppabzx.png)​
 
 在思源插件中创建用户交互的设置面板一般有两种方案，三种方法
 
 1. 实现 setting 对象
 
-    1. 使用思源内置的 `plugin.setting`​
-    2. 使用插件模板提供的 `SettingUtils`​
+   1. 使用思源内置的 `plugin.setting`​
+   2. 使用插件模板提供的 `SettingUtils`​
+
 2. 实现 openSetting 方法
 
-    * 使用自定义的 Setting 组件
+   - 使用自定义的 Setting 组件
 
 ​`plugin.setting`​ 对象是思源提供的一个特殊的工具，可以帮助开发者创建一个 Setting 面板。
 
@@ -769,7 +772,7 @@ export default class PluginSample extends Plugin {
 
 当点击插件的「设置」按钮的时候，`plugin.openSetting`​ 方法会被自动调用。
 
-​![image](assets/image-20240815195839-n430ijr.png)​
+​![image](/frostime/image-20240815195839-n430ijr.png)​
 
 ```ts
 import SettingExample from "@/setting-example.svelte";
@@ -793,7 +796,7 @@ openSetting(): void {
 
 如果你使用了[plugin-sample-vite-svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte)插件模板，那么该模板提供了可供参考的组件案例 [src/setting-example.svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte)。
 
-​![image](assets/image-20240815200507-fxu576j.png)​
+​![image](/frostime/image-20240815200507-fxu576j.png)​
 
 ‍
 
@@ -803,32 +806,33 @@ openSetting(): void {
 
 1. 多端同时操作的问题
 
-    存在这样一种情况：设备 A 和 设备 B 在同时运行。
+   存在这样一种情况：设备 A 和 设备 B 在同时运行。
 
-    现在当我们在设备 A 中更新了配置，写入了新的 `configs.json`​ 之后，该文件会通过云端同步同步到设备 B 中。
+   现在当我们在设备 A 中更新了配置，写入了新的 `configs.json`​ 之后，该文件会通过云端同步同步到设备 B 中。
 
-    但是此时设备 B 同样处于运行状态，插件的配置文件虽然更新了，可 B 上的插件并不知道这一点。
+   但是此时设备 B 同样处于运行状态，插件的配置文件虽然更新了，可 B 上的插件并不知道这一点。
 
-    这个时候，如果用户同时在设备 B 上更新设置，那么设备 B 的 `configs.json`​ 就会覆盖掉上一次同步的结果。
+   这个时候，如果用户同时在设备 B 上更新设置，那么设备 B 的 `configs.json`​ 就会覆盖掉上一次同步的结果。
+
 2. 同步之前写入新的配置造成的冲突
 
-    假定在 T 时刻，思源被启动了，同样插件也启动了。
+   假定在 T 时刻，思源被启动了，同样插件也启动了。
 
-    思源在启动之后，会自动获取云端最新的数据然后拉到本地。
+   思源在启动之后，会自动获取云端最新的数据然后拉到本地。
 
-    但是如果：插件在 T + 1 时刻在启动时候在 `onload`​ 函数当中更新了本地的配置文件；而思源在 T + 2 时刻才开始更新相关的云端数据，那么在合并而时候，会误以为本地的文件才是最新的，从而丢弃云端传送过来的数据。
+   但是如果：插件在 T + 1 时刻在启动时候在 `onload`​ 函数当中更新了本地的配置文件；而思源在 T + 2 时刻才开始更新相关的云端数据，那么在合并而时候，会误以为本地的文件才是最新的，从而丢弃云端传送过来的数据。
 
 ‍
 
 ### 注册 Dock 侧边栏
 
-​![image](assets/image-20240815201644-tlatb7s.png)​
+​![image](/frostime/image-20240815201644-tlatb7s.png)​
 
 使用 plugin 的 `addDock`​ API：
 
-* config：配置侧边栏的位置、大小、标题等
-* data：传入一个 object，被传入 object 的对象，可以在 `init`​ api 里面直接被 `this`​ 获取
-* init：初始化函数；在这里可以使用 this 访问侧边栏的 element，从而设置内部的元素（所以不要用箭头函数来调用）
+- config：配置侧边栏的位置、大小、标题等
+- data：传入一个 object，被传入 object 的对象，可以在 `init`​ api 里面直接被 `this`​ 获取
+- init：初始化函数；在这里可以使用 this 访问侧边栏的 element，从而设置内部的元素（所以不要用箭头函数来调用）
 
 以下参考 [sy-bookmark-plus/src/index.ts](https://github.com/frostime/sy-bookmark-plus/blob/main/src/index.ts)
 
@@ -907,7 +911,7 @@ export interface ICommandOption {
 
 当然，插件注册的 hotkey 是默认的 hotkey，而用户是可以在设置面板里面进行覆盖的。
 
-​![image](assets/image-20240815225754-zkhd49o.png)​
+​![image](/frostime/image-20240815225754-zkhd49o.png)​
 
 而如果你想要覆盖思源内置的快捷键，可以把快捷键配置的 `custom`​ 字段置空；等到恢复的时候，在从 `default`​ 中填写回来。
 
@@ -923,11 +927,11 @@ bookmarkKeymap.custom = '';
 bookmarkKeymap.custom = bookmarkKeymap.default;
 ```
 
-​![image](assets/image-20240815230000-kp6d11u.png)​
+​![image](/frostime/image-20240815230000-kp6d11u.png)​
 
 ### 注册 `/`​ 命令
 
-​![image](assets/image-20240815213424-c6nqqm4.png)​
+​![image](/frostime/image-20240815213424-c6nqqm4.png)​
 
 ​`/`​ 命令，又称 slash 命令，就是思源中通过 `/`​ 触发，并快速在编辑器中插入某些元素的命令。
 
@@ -942,12 +946,12 @@ protyleSlash: {
 }[];
 ```
 
-* filter：指触发命令的关键词
-* html：指在选择面板中显示的元素
-* id：唯一标识符
-* callback：Enter 选择命令项目后，触发的回调函数
+- filter：指触发命令的关键词
+- html：指在选择面板中显示的元素
+- id：唯一标识符
+- callback：Enter 选择命令项目后，触发的回调函数
 
-  * 一般在 callback 当中，通过 `protyle.insert`​ 在编辑器中插入元素。
+  - 一般在 callback 当中，通过 `protyle.insert`​ 在编辑器中插入元素。
 
 以下是一个案例：
 
@@ -991,7 +995,7 @@ this.protyleSlash = Object.values(Templates).map((template) => {
 
 效果如下：
 
-​![image](assets/image-20240815214009-h8jy59d.png)​
+​![image](/frostime/image-20240815214009-h8jy59d.png)​
 
 ‍
 
@@ -1013,7 +1017,7 @@ protyle.insert(Lute.Carte);
 
 访问 `window.siyuan`​ 变量；在内部中存储了大量思源内部的设置。
 
-​![image](assets/image-20240815192530-ziu4ke1.png)​
+​![image](/frostime/image-20240815192530-ziu4ke1.png)​
 
 ⚠️ **请以只读的方式来使用这个变量，不要随意更改内部的值！否则可能会造成意外的错误！**
 
@@ -1063,7 +1067,7 @@ const nodePath = window.require('path') as typeof import('path');
 const electron = window.require('electron');
 ```
 
- **<u>⚠️ 一定不要使用 node fs 写思源的工作空间！</u>**
+**<u>⚠️ 一定不要使用 node fs 写思源的工作空间！</u>**
 
 插件或者外部扩展如果有直接读取或者写入 data 下文件的需求，请通过调用内核 API 来实现，**不要自行调用** **​`fs`​**​ **或者其他 electron、nodejs API**，否则可能会导致数据同步时分块丢失，造成云端数据损坏。
 
