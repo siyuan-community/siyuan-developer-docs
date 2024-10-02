@@ -1,8 +1,10 @@
 ---
 title: SiYuan Plugin Development Quick Start
-date: 2024-08-25T10:47:42.000Z
-lastmod: 2024-08-25T15:57:06.000Z
-locale: en
+locale: zh
+document: 20240825104742-u3btnxd
+notebook: Life
+hpath: /杂项关注/思源笔记/思源插件开发Tips/插件开发 Quick Start/SiYuan Plugin Dev Quick Start
+export: '2024-10-02 20:19:20'
 ---
 
 🔔 **Preliminary Remarks**
@@ -36,7 +38,7 @@ The typical workflow for SiYuan plugin development is as follows:
 ### Plugin Development Environment Dependencies
 
 1. Node.js environment.
-2. ​`npm install siyuan`
+2. ​`npm install siyuan`​
 
    - A pure TypeScript interface declaration project.
    - It declares various APIs for SiYuan plugins.
@@ -46,7 +48,7 @@ The typical workflow for SiYuan plugin development is as follows:
 
 When developing plugins, it is highly recommended to **use a separate workspace** to avoid adverse effects on your own note data, due to unexpected situations encountered during plugin development.
 
-### Plugin Development Templates
+### Build from Plugin Templates
 
 Currently, there are two sets of plugin development templates provided under the official SiYuan repository:
 
@@ -59,6 +61,12 @@ Currently, there are two sets of plugin development templates provided under the
   - Uses **vite** to package the project and has built-in support for **svelte**.
   - 💡 **Recommended**.
   - Provides features such as symbolic links and hot reloading; includes TypeScript type declarations and a series of utility functions; significantly improves development efficiency compared to the former.
+
+You can choose to click "Use Template" on GitHub and then clone it to your local machine.
+
+Alternatively, you can use the npm [siyuan-plugin-cli](https://www.npmjs.com/package/siyuan-plugin-cli) tool to select and pull a template program from the local command line.
+
+#### About framework
 
 If you don't want to use the Svelte framework, you can choose:
 
@@ -73,7 +81,7 @@ If you don't want to use the Svelte framework, you can choose:
 
 ### Plugin Lifecycle
 
-​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)
+​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)​
 
 #### Plugin Lifecycle Hooks
 
@@ -172,7 +180,7 @@ Protyle is the most important concept in SiYuan. It refers to a complete SiYuan 
 
 You can open developer mode and see that the top-level div of each document is an element with the class name `protyle`​. This `protyle`​ represents the complete document.
 
-​![image](/frostime/image-20240731201659-bli82ae.png)
+​![image](/frostime/image-20240731201659-bli82ae.png)​
 
 The most important components of a `protyle`​ are as follows:
 
@@ -209,20 +217,20 @@ This section quickly introduces common requirements encountered in SiYuan plugin
 
 You can call `plugin.addTopbar`​ to add a button with svg icon to the top bar for your plugin.
 
-​![image](/frostime/image-20240731175413-cyqym0q.png)
+​![image](/frostime/image-20240731175413-cyqym0q.png)​
 
 ```ts
-/**
- * Must be executed before the synchronous function.
- * @param {string} [options.position=right]
- * @param {string} options.icon - Support svg id or svg tag.
- */
-addTopBar(options: {
-    icon: string,
-    title: string,
-    callback: (event: MouseEvent) => void
-    position?: "right" | "left"
-}): HTMLElement;
+  /**
+   * Must be executed before the synchronous function.
+   * @param {string} [options.position=right]
+   * @param {string} options.icon - Support svg id or svg tag.
+   */
+  addTopBar(options: {
+      icon: string,
+      title: string,
+      callback: (event: MouseEvent) => void
+      position?: "right" | "left"
+  }): HTMLElement;
 ```
 
 The most common practice in SiYuan is:
@@ -254,7 +262,7 @@ The most common practice in SiYuan is:
 
 You can see all the symbol definitions in developer mode.
 
-​![image](/frostime/image-20240815182549-k81nkl3.png)
+​![image](/frostime/image-20240815182549-k81nkl3.png)​
 
 Here provides a manual way to create a custom symbol.
 
@@ -268,7 +276,7 @@ Here provides a manual way to create a custom symbol.
 
 Menu is the most commonly used user interface in SiYuan.
 
-​![image](/frostime/image-20240825114150-lih9rwa.png)
+​![image](/frostime/image-20240825114150-lih9rwa.png)​
 
 Creating/opening a menu via a plugin requires three steps:
 
@@ -322,9 +330,9 @@ export interface IMenuItemOption {
 
 Block menu pops up when you click the gutter button.
 
-​![image](/frostime/image-20240825114418-7gwkj8u.png)
+​![image](/frostime/image-20240825114418-7gwkj8u.png)​
 
-​![image](/frostime/image-20240825114433-rjgqchg.png)
+​![image](/frostime/image-20240825114433-rjgqchg.png)​
 
 It is essentially a normal menu, but the `menu`​ variable is offered through the eventBus, on the `click-blockicon`​ event.
 
@@ -377,7 +385,7 @@ export default class BqCalloutPlugin extends Plugin {
 
 📝 Note: The document block menu and the block menu within the editor are not together but are **separate events**. (Because the document title icon is not a `gutter`​ element)
 
-​![image](/frostime/image-20240825114713-gkyqy1h.png)
+​![image](/frostime/image-20240825114713-gkyqy1h.png)​
 
 ```ts
 this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
@@ -385,7 +393,7 @@ this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
 
 ### Opening a Dialog
 
-​![image](/frostime/image-20240825114905-6t5y0w7.png)
+​![image](/frostime/image-20240825114905-6t5y0w7.png)​
 
 To create/open a dialog box through a plugin, you need to call the `Dialog`​ object, like this:
 
@@ -494,7 +502,7 @@ However, this approach is not recommended.
 
 A Tab is a center page which can be either a document or a custom page.
 
-​![image](/frostime/image-20240815185213-pufh1pw.png)
+​![image](/frostime/image-20240815185213-pufh1pw.png)​
 
 In the previous section, we've showed how to use `openTab`​ to open a document. If you want to open a custom tab, you can refer to the following use case (refer to [sy-test-template/index.ts](https://github.com/frostime/sy-test-template/blob/main/src/index.ts)).
 
@@ -512,6 +520,7 @@ import {
 } from "siyuan";
 import "@/index.scss";
 import { createElement } from "./func";
+
 
 export default class PluginTestTemplate extends Plugin {
 
@@ -673,11 +682,11 @@ export default class PluginSample extends Plugin {
 }
 ```
 
-Plugin data will be saved under `data/petal/<name>/`​.
+Plugin data will be saved under `data/storage/petal/<name>/`​.
 
 #### UI
 
-​![image](/frostime/image-20240825115954-nbke1nt.png)
+​![image](/frostime/image-20240825115954-nbke1nt.png)​
 
 There are generally <u>two approaches/three methods</u> to create a user-interactive settings panel in SiYuan plugins:
 
@@ -771,7 +780,7 @@ However, `SettingUtils`​ only provides a single-panel settings interface (i.e.
 
 When you click the "Settings" button of the plugin, the `plugin.openSetting`​ method will be automatically called.
 
-​![image](/frostime/image-20240815195839-n430ijr.png)
+​![image](/frostime/image-20240815195839-n430ijr.png)​
 
 So, you can implement the `openSetting`​ method yourself and open a custom setting interface like this:
 
@@ -797,33 +806,48 @@ openSetting(): void {
 
 If you are using the [plugin-sample-vite-svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte) plugin template, it provides a multi-tabs example: [src/setting-example.svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte).
 
-​![image](/frostime/image-20240815200507-fxu576j.png)
+​![image](/frostime/image-20240815200507-fxu576j.png)​
 
-#### Potential Issues Regarding Syncing Settings
+### MISC: Plugins and Synchronization
 
-Below are some issues (🐛) that may be triggered during synchronization. Due to the unstable nature of these bugs, I merely list them here as a reference for developers during debugging.
+SiYuan can synchronize installed plugins across multiple devices, but when plugins encounter the synchronization mechanism, they may face some tricky issues.
 
-1. **Issues with simultaneous multi-device operations:**
+This section briefly discusses some synchronization-related issues in plugin development, with topics being somewhat fragmented.
 
-   Consider a scenario where Device A and Device B are running simultaneously.
+#### Bugs Caused by saveData
 
-   When we update the configuration in Device A and write the new `configs.json`​, the file will be synchronized to Device B through the cloud.
+For plugin developers, it might be natural to write code like this:
 
-   However, since Device B is also running. Thought the plugin's configuration file is updated, the plugin on Device B in runtime is unaware of this changes.
+```js
+async onload() {
+    let config = await this.loadData(CONFIG_FILE);
+}
 
-   If the user updates the settings on Device B at the same time, the `configs.json`​ on Device B will overwrite the results of the previous synchronization.
+async onunload() {
+    this.saveData(CONFIG_FILE, this.config);
+}
+```
 
-2. **Conflicts caused by writing new configurations before synchronization:**
+🐛 However, this kind of code can actually trigger a potential bug: Suppose there is a device A, and on 2024-08-27, device A saves a config.json file through the plugin. This config.json file is then uploaded to the cloud through the synchronization algorithm. Now, there is a device B whose data version is still at 2024-08-01. When we start SiYuan on device B, the following will happen:
 
-   Assume that at time T, SiYuan is started, and the plugin is also started.
+1. SiYuan B starts.
+2. The plugin starts and reads the local 2024-08-01 version of the config.json file.
+3. SiYuan starts synchronizing data and pulls the 2024-08-27 version of the data.
+4. The local 2024-08-01 version of the config.json file is replaced with the 2024-08-27 version.
+5. **Critical step**: When the data version difference is significant, SiYuan will automatically restart. During the restart process, the plugin will be unloaded, and **the plugin will write back the runtime-read 2024-08-01 version of the config data to the local file, overwriting the new version with the old version!**
+6. After SiYuan B restarts, the plugin reads the **2024-08-01 version of the config.json file** again and synchronizes the data—thus, the latest 2024-08-27 config data is **lost**.
 
-   After SiYuan starts, it automatically fetches the latest data from the cloud and pulls it locally.
+💡 To avoid this situation: Do not save plugin data in onunload! Only update the file when the configuration information changes.
 
-   Supposing that the plugin updates the local configuration file in the `onload`​ function at time T + 1, and SiYuan starts updating the relevant cloud data at time T + 2. During the merge, it will mistakenly believe that the local file is the latest, thereby discarding the data transmitted from the cloud.
+#### Multi-Device Data Synchronization for Plugins
+
+After version v3.1.8, if a plugin runs simultaneously on multiple SiYuan instances across different devices, when the data in the `petal/`​ directory corresponding to the plugin on one device is updated, it will notify other devices through synchronization.
+
+When other devices receive the change in the `petal`​ directory, they will reload the plugin (i.e., execute unload + load) to ensure the plugin data state is synchronized across multiple devices.
 
 ### Registering a Dock Sidebar
 
-​![image](/frostime/image-20240825122938-duieqmr.png)
+​![image](/frostime/image-20240825122938-duieqmr.png)​
 
 Use the `plugin.addDock`​ API:
 
@@ -908,7 +932,7 @@ All the hotkey configurations can be found under `siyuan.config.keymap`​.
 
 The hotkey registered by the plugin is stored in `default`​ attribute, while the `custom`​ attribute can be set by users in Setting panel.
 
-​![image](/frostime/image-20240815225754-zkhd49o.png)
+​![image](/frostime/image-20240815225754-zkhd49o.png)​
 
 If you want to programmatically override SiYuan's built-in hotkeys, you can leave the `custom`​ field of the hotkey configuration empty; when restoring, fill it back in from `default`​.
 
@@ -924,11 +948,11 @@ bookmarkKeymap.custom = '';
 bookmarkKeymap.custom = bookmarkKeymap.default;
 ```
 
-​![image](/frostime/image-20240815230000-kp6d11u.png)
+​![image](/frostime/image-20240815230000-kp6d11u.png)​
 
 ### Registering "/" Commands
 
-​![image](/frostime/image-20240815213424-c6nqqm4.png)
+​![image](/frostime/image-20240815213424-c6nqqm4.png)​
 
 "/" commands, also known as slash commands, are commands in SiYuan that are triggered by "/" and quickly insert certain elements into the editor.
 
@@ -971,6 +995,7 @@ let Templates = {
     }
 };
 
+
 this.protyleSlash = Object.values(Templates).map((template) => {
     return {
         filter: template.filter,
@@ -987,7 +1012,7 @@ this.protyleSlash = Object.values(Templates).map((template) => {
 
 The effect is as follows:
 
-​![image](/frostime/image-20240815214009-h8jy59d.png)
+​![image](/frostime/image-20240815214009-h8jy59d.png)​
 
 ℹ️ Tip: Generally, using slash commands is intended to insert something into the `protyle`​. However, in some cases, we may not want to insert content but want to perform other operations, which requires us to manually clear the entered `/xxx`​. The specific method is to insert a `Lute.Carte`​ character to clear the previous input. Here is a reference case: [quick-attr plugin](https://github.com/frostime/sy-quick-attr/blob/c127d99762cee485ec597e29e479c6356f3177f7/src/index.ts#L255)
 
@@ -1007,7 +1032,7 @@ For example, in the [Callout plugin](https://github.com/frostime/sy-bq-callout/b
 
 Access the `window.siyuan`​ variable; it stores a large number of SiYuan's internal settings.
 
-​![image](/frostime/image-20240815192530-ziu4ke1.png)
+​![image](/frostime/image-20240815192530-ziu4ke1.png)​
 
 ⚠️ **Please use this variable in a read-only manner. Do not arbitrarily change the internal values! Otherwise, it may cause unexpected errors!**
 
