@@ -106,21 +106,25 @@ export const themeConfig: DefaultTheme.Config = {
             {
                 text: "Development",
                 items: [
+                    // {
+                    //     text: "设备环境",
+                    //     items: [],
+                    // },
+                    // {
+                    //     text: "用户界面",
+                    //     items: [],
+                    // },
+                    // {
+                    //     text: "事件总线",
+                    //     items: [],
+                    // },
                     {
-                        text: "设备环境",
-                        items: [],
-                    },
-                    {
-                        text: "用户界面",
-                        items: [],
-                    },
-                    {
-                        text: "事件总线",
-                        items: [],
+                        text: "CLI Building Tool",
+                        link: "/en/guide/plugin/development/siyuan-plugin-cli",
                     },
                     {
                         text: "Community Support",
-                        // link: '/zh-Hans/guide/plugin/development/community',
+                        link: "/zh-Hans/guide/plugin/development/community",
                     },
                 ],
             },

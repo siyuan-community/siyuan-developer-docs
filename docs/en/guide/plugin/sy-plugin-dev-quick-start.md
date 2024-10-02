@@ -36,7 +36,7 @@ The typical workflow for SiYuan plugin development is as follows:
 ### Plugin Development Environment Dependencies
 
 1. Node.js environment.
-2. ​`npm install siyuan`​
+2. ​`npm install siyuan`
 
    - A pure TypeScript interface declaration project.
    - It declares various APIs for SiYuan plugins.
@@ -73,7 +73,7 @@ If you don't want to use the Svelte framework, you can choose:
 
 ### Plugin Lifecycle
 
-​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)​
+​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)
 
 #### Plugin Lifecycle Hooks
 
@@ -172,7 +172,7 @@ Protyle is the most important concept in SiYuan. It refers to a complete SiYuan 
 
 You can open developer mode and see that the top-level div of each document is an element with the class name `protyle`​. This `protyle`​ represents the complete document.
 
-​![image](/frostime/image-20240731201659-bli82ae.png)​
+​![image](/frostime/image-20240731201659-bli82ae.png)
 
 The most important components of a `protyle`​ are as follows:
 
@@ -209,20 +209,20 @@ This section quickly introduces common requirements encountered in SiYuan plugin
 
 You can call `plugin.addTopbar`​ to add a button with svg icon to the top bar for your plugin.
 
-​![image](/frostime/image-20240731175413-cyqym0q.png)​
+​![image](/frostime/image-20240731175413-cyqym0q.png)
 
 ```ts
-  /**
-   * Must be executed before the synchronous function.
-   * @param {string} [options.position=right]
-   * @param {string} options.icon - Support svg id or svg tag.
-   */
-  addTopBar(options: {
-      icon: string,
-      title: string,
-      callback: (event: MouseEvent) => void
-      position?: "right" | "left"
-  }): HTMLElement;
+/**
+ * Must be executed before the synchronous function.
+ * @param {string} [options.position=right]
+ * @param {string} options.icon - Support svg id or svg tag.
+ */
+addTopBar(options: {
+    icon: string,
+    title: string,
+    callback: (event: MouseEvent) => void
+    position?: "right" | "left"
+}): HTMLElement;
 ```
 
 The most common practice in SiYuan is:
@@ -254,7 +254,7 @@ The most common practice in SiYuan is:
 
 You can see all the symbol definitions in developer mode.
 
-​![image](/frostime/image-20240815182549-k81nkl3.png)​
+​![image](/frostime/image-20240815182549-k81nkl3.png)
 
 Here provides a manual way to create a custom symbol.
 
@@ -268,7 +268,7 @@ Here provides a manual way to create a custom symbol.
 
 Menu is the most commonly used user interface in SiYuan.
 
-​![image](/frostime/image-20240825114150-lih9rwa.png)​
+​![image](/frostime/image-20240825114150-lih9rwa.png)
 
 Creating/opening a menu via a plugin requires three steps:
 
@@ -322,9 +322,9 @@ export interface IMenuItemOption {
 
 Block menu pops up when you click the gutter button.
 
-​![image](/frostime/image-20240825114418-7gwkj8u.png)​
+​![image](/frostime/image-20240825114418-7gwkj8u.png)
 
-​![image](/frostime/image-20240825114433-rjgqchg.png)​
+​![image](/frostime/image-20240825114433-rjgqchg.png)
 
 It is essentially a normal menu, but the `menu`​ variable is offered through the eventBus, on the `click-blockicon`​ event.
 
@@ -377,7 +377,7 @@ export default class BqCalloutPlugin extends Plugin {
 
 📝 Note: The document block menu and the block menu within the editor are not together but are **separate events**. (Because the document title icon is not a `gutter`​ element)
 
-​![image](/frostime/image-20240825114713-gkyqy1h.png)​
+​![image](/frostime/image-20240825114713-gkyqy1h.png)
 
 ```ts
 this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
@@ -385,7 +385,7 @@ this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
 
 ### Opening a Dialog
 
-​![image](/frostime/image-20240825114905-6t5y0w7.png)​
+​![image](/frostime/image-20240825114905-6t5y0w7.png)
 
 To create/open a dialog box through a plugin, you need to call the `Dialog`​ object, like this:
 
@@ -494,7 +494,7 @@ However, this approach is not recommended.
 
 A Tab is a center page which can be either a document or a custom page.
 
-​![image](/frostime/image-20240815185213-pufh1pw.png)​
+​![image](/frostime/image-20240815185213-pufh1pw.png)
 
 In the previous section, we've showed how to use `openTab`​ to open a document. If you want to open a custom tab, you can refer to the following use case (refer to [sy-test-template/index.ts](https://github.com/frostime/sy-test-template/blob/main/src/index.ts)).
 
@@ -512,7 +512,6 @@ import {
 } from "siyuan";
 import "@/index.scss";
 import { createElement } from "./func";
-
 
 export default class PluginTestTemplate extends Plugin {
 
@@ -678,7 +677,7 @@ Plugin data will be saved under `data/petal/<name>/`​.
 
 #### UI
 
-​![image](/frostime/image-20240825115954-nbke1nt.png)​
+​![image](/frostime/image-20240825115954-nbke1nt.png)
 
 There are generally <u>two approaches/three methods</u> to create a user-interactive settings panel in SiYuan plugins:
 
@@ -772,7 +771,7 @@ However, `SettingUtils`​ only provides a single-panel settings interface (i.e.
 
 When you click the "Settings" button of the plugin, the `plugin.openSetting`​ method will be automatically called.
 
-​![image](/frostime/image-20240815195839-n430ijr.png)​
+​![image](/frostime/image-20240815195839-n430ijr.png)
 
 So, you can implement the `openSetting`​ method yourself and open a custom setting interface like this:
 
@@ -798,7 +797,7 @@ openSetting(): void {
 
 If you are using the [plugin-sample-vite-svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte) plugin template, it provides a multi-tabs example: [src/setting-example.svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte).
 
-​![image](/frostime/image-20240815200507-fxu576j.png)​
+​![image](/frostime/image-20240815200507-fxu576j.png)
 
 #### Potential Issues Regarding Syncing Settings
 
@@ -824,7 +823,7 @@ Below are some issues (🐛) that may be triggered during synchronization. Due t
 
 ### Registering a Dock Sidebar
 
-​![image](/frostime/image-20240825122938-duieqmr.png)​
+​![image](/frostime/image-20240825122938-duieqmr.png)
 
 Use the `plugin.addDock`​ API:
 
@@ -909,7 +908,7 @@ All the hotkey configurations can be found under `siyuan.config.keymap`​.
 
 The hotkey registered by the plugin is stored in `default`​ attribute, while the `custom`​ attribute can be set by users in Setting panel.
 
-​![image](/frostime/image-20240815225754-zkhd49o.png)​
+​![image](/frostime/image-20240815225754-zkhd49o.png)
 
 If you want to programmatically override SiYuan's built-in hotkeys, you can leave the `custom`​ field of the hotkey configuration empty; when restoring, fill it back in from `default`​.
 
@@ -925,11 +924,11 @@ bookmarkKeymap.custom = '';
 bookmarkKeymap.custom = bookmarkKeymap.default;
 ```
 
-​![image](/frostime/image-20240815230000-kp6d11u.png)​
+​![image](/frostime/image-20240815230000-kp6d11u.png)
 
 ### Registering "/" Commands
 
-​![image](/frostime/image-20240815213424-c6nqqm4.png)​
+​![image](/frostime/image-20240815213424-c6nqqm4.png)
 
 "/" commands, also known as slash commands, are commands in SiYuan that are triggered by "/" and quickly insert certain elements into the editor.
 
@@ -972,7 +971,6 @@ let Templates = {
     }
 };
 
-
 this.protyleSlash = Object.values(Templates).map((template) => {
     return {
         filter: template.filter,
@@ -989,7 +987,7 @@ this.protyleSlash = Object.values(Templates).map((template) => {
 
 The effect is as follows:
 
-​![image](/frostime/image-20240815214009-h8jy59d.png)​
+​![image](/frostime/image-20240815214009-h8jy59d.png)
 
 ℹ️ Tip: Generally, using slash commands is intended to insert something into the `protyle`​. However, in some cases, we may not want to insert content but want to perform other operations, which requires us to manually clear the entered `/xxx`​. The specific method is to insert a `Lute.Carte`​ character to clear the previous input. Here is a reference case: [quick-attr plugin](https://github.com/frostime/sy-quick-attr/blob/c127d99762cee485ec597e29e479c6356f3177f7/src/index.ts#L255)
 
@@ -1009,7 +1007,7 @@ For example, in the [Callout plugin](https://github.com/frostime/sy-bq-callout/b
 
 Access the `window.siyuan`​ variable; it stores a large number of SiYuan's internal settings.
 
-​![image](/frostime/image-20240815192530-ziu4ke1.png)​
+​![image](/frostime/image-20240815192530-ziu4ke1.png)
 
 ⚠️ **Please use this variable in a read-only manner. Do not arbitrarily change the internal values! Otherwise, it may cause unexpected errors!**
 

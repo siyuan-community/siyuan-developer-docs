@@ -141,6 +141,10 @@ export const themeConfig: DefaultTheme.Config = {
                         link: "/zh-Hans/reference/api/plugin/event-bus/",
                     },
                     {
+                        text: "CLI 构建工具",
+                        link: "/zh-Hans/guide/plugin/development/siyuan-plugin-cli",
+                    },
+                    {
                         text: "Svelte组件库",
                         link: "/zh-Hans/guide/plugin/development/svelte-kit",
                     },

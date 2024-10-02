@@ -8,6 +8,7 @@
   - [社区资源](./development/community.md)
 - 其他
   - [5 分钟快速开启插件开发](./five-minutes-quick-start.md)
+  - [siyuan-plugin-cli](./development/siyuan-plugin-cli.md)
 
 更多文档说明请参考 [插件 API](/zh-Hans/reference/api/plugin/)
 
