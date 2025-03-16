@@ -58,7 +58,7 @@ outline: deep
 
 - [SiYuan plugin sample](https://github.com/siyuan-note/plugin-sample)
 
-它使用 **webpake** 打包项目
+它使用 **webpack** 打包项目
 
 一个是<u>社区维护</u>的
 
