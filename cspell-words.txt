@@ -75,7 +75,7 @@ vdom
 vitepress
 vuepress
 webdav
-webpake
+webpack
 wechat
 wetoria
 yingyi
