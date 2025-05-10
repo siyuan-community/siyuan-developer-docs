@@ -1,10 +1,6 @@
 ---
 title: 插件开发快速指南
 locale: zh
-document: 20240731170357-zw120g8
-notebook: Life
-hpath: /杂项关注/思源笔记/思源插件开发Tips/插件开发 Quick Start
-export: '2024-10-02 20:16:43'
 ---
 
 ​🔔 **前提说明**
@@ -25,9 +21,7 @@ export: '2024-10-02 20:16:43'
       3. [社区文档](https://docs.siyuan-note.club/zh-Hans/reference/) （同样不全面）
       4. 或者加入思源爱好者 QQ 群进行技术咨询
 
-         ​![image](/frostime/image-20240731195519-xgw9ya7.png)​
-
-‍
+         ![image](/frostime/image-20240731195519-xgw9ya7.png)
 
 ## START UP
 
@@ -41,7 +35,7 @@ export: '2024-10-02 20:16:43'
 ### 插件开发的依赖环境
 
 1. nodejs 环境
-2. ​`npm install siyuan`​
+2. ​`npm install siyuan`
 
    - 一个纯 typescript 接口声明项目
    - 内部声明了思源插件的各种 API
@@ -63,7 +57,13 @@ export: '2024-10-02 20:16:43'
 
   - 使用 **vite** 打包项目，并内置了对 **svelte** 的支持
   - 💡 **更推荐使用**
-  - 提供了软链接、热重载等功能；内置 typescript 类型声明、一系列 util 函数；开发效率显著高于前者
+  - 提供了软链接、热重载等功能；内置 typescript 类型声明、一系列 util 函数；内置一系列 svelte 组件
+
+- [SiYuan plugin sample (Vite &amp; Vue)](https://github.com/siyuan-note/plugin-sample-vite-vue)
+
+  - 使用 **vite** 打包项目，并内置了对 **vue** 的支持
+  - 💡 **更推荐使用**
+  - 提供了软链接、热重载等功能；内置 typescript 类型声明、一系列 util 函数；内置一系列 vue 组件
 
 你可以选择在 github 上点击 "Use Template"，然后 clone 到本地。
 
@@ -71,7 +71,7 @@ export: '2024-10-02 20:16:43'
 
 #### 关于框架
 
-如果你不想用 svelte 框架，可以选择：
+其他选择：
 
 - [frostime/plugin-sample-vite](https://github.com/frostime/plugin-sample-vite) 项目，剔除了 svelte 的部分，其他的和 svelte 模板保持了一致
 - [frostime/plugin-sample-vite-solidjs](https://github.com/frostime/plugin-sample-vite-solidjs) 项目，基于 solidjs 框架，其他部分基本和 svelte 模板保持一致
@@ -84,7 +84,7 @@ export: '2024-10-02 20:16:43'
 
 ### 插件的生命周期
 
-​![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)​
+![6317cf25a7642e03e6e142e1eaa8c434](/frostime/6317cf25a7642e03e6e142e1eaa8c434-20240801114854-7w3nmxe.png)
 
 #### Plugin 的生命周期 Hooks
 
@@ -183,7 +183,7 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 你可以打开开发者模式，可以看到每个文档的顶层 div 都是一个含有 `protyle`​ 类名的元素。这里的 protyle 就代表了完整的文档。
 
-​![image](/frostime/image-20240731201659-bli82ae.png)​
+![image](/frostime/image-20240731201659-bli82ae.png)
 
 一个 protyle 中最重要的组成部分如下：
 
@@ -212,6 +212,8 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 - ​`data-type`​ 对应了块的 type
 - ​`data-subtype`​ 对应了块的 subtype
 
+‍
+
 ## HOWTO
 
 这部分快速地介绍在思源插件开发中，常常会遇到的需求，以及如何实现对应的需求。
@@ -220,20 +222,20 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 你可以调用 `plugin.addTopbar`​ 来为插件添加一个顶栏的按钮。
 
-​![image](/frostime/image-20240731175413-cyqym0q.png)​
+![image](/frostime/image-20240731175413-cyqym0q.png)
 
 ```ts
-  /**
-   * Must be executed before the synchronous function.
-   * @param {string} [options.position=right]
-   * @param {string} options.icon - Support svg id or svg tag.
-   */
-  addTopBar(options: {
-      icon: string,
-      title: string,
-      callback: (event: MouseEvent) => void
-      position?: "right" | "left"
-  }): HTMLElement;
+/**
+ * Must be executed before the synchronous function.
+ * @param {string} [options.position=right]
+ * @param {string} options.icon - Support svg id or svg tag.
+ */
+addTopBar(options: {
+    icon: string,
+    title: string,
+    callback: (event: MouseEvent) => void
+    position?: "right" | "left"
+}): HTMLElement;
 ```
 
 思源中最常见的实践方案是：
@@ -252,7 +254,7 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
   </svg>
   ```
 
-- 在 `body>svg>defs`​ 下，你可以查看到所有思源内置的 `symbol`​
+- 在 `body>svg>defs`​ 下，你可以查看到所有思源内置的 `symbol`
 - 你可以可以调用 `plugin.addIcons`​ 来传入自定义的 svg symbol，例如
 
   ```js
@@ -265,7 +267,7 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 你可以在开发者模式当中看到所有的 symbol 定义
 
-​![image](/frostime/image-20240815182549-k81nkl3.png)​
+![image](/frostime/image-20240815182549-k81nkl3.png)
 
 如何自己制作一个 symbol 呢？你可以在网上找到很多自动化的工具，不过大部分时候，也可以手动解决。
 
@@ -277,7 +279,7 @@ Protyle 是思源中最重要的概念，他是指的是一个完整的思源文
 
 ### 打开一个 Menu
 
-​![image](/frostime/image-20240815182918-mprnmn9.png)​
+![image](/frostime/image-20240815182918-mprnmn9.png)
 
 通过插件创建/打开菜单需要三步：
 
@@ -305,7 +307,7 @@ private addMenu() {
 }
 ```
 
-addItem 的具体参数，参考插件类型中的 `IMenuItemOption`​
+addItem 的具体参数，参考插件类型中的 `IMenuItemOption`
 
 ```ts
 export interface IMenuItemOption {
@@ -329,7 +331,7 @@ export interface IMenuItemOption {
 
 ### 注册块菜单
 
-​![image](/frostime/image-20240815191851-hi4lrbv.png)​
+![image](/frostime/image-20240815191851-hi4lrbv.png)
 
 块菜单事件，可以通过 eventBus 来注册。以下示例参考 [sy-bq-callout/index.ts](https://github.com/frostime/sy-bq-callout/blob/main/src/index.ts)
 
@@ -385,7 +387,7 @@ this.eventBus.on('click-editortitleicon', this.blockIconEventBindThis);
 
 ### 打开一个 Dialog
 
-​![image](/frostime/image-20240815183249-vol0uoa.png)​
+![image](/frostime/image-20240815183249-vol0uoa.png)
 
 通过插件创建/打开一个对话框需要调用 `Dialog`​ 对象，比如这样：
 
@@ -494,7 +496,7 @@ window.open(url)
 
 Tab 就是正中央的页签，他可以是文档，也可以是自定义的页面。
 
-​![image](/frostime/image-20240815185213-pufh1pw.png)​
+![image](/frostime/image-20240815185213-pufh1pw.png)
 
 在上一个小节当中，我们展示了使用 `openTab`​ 来打开一个文档。而如果你想要打开一个自定义的 tab，可以参考下面这个使用案例（参考 [sy-test-template/index.ts](https://github.com/frostime/sy-test-template/blob/main/src/index.ts)）。
 
@@ -503,7 +505,7 @@ Tab 就是正中央的页签，他可以是文档，也可以是自定义的页�
    - ​`type`​ 参数：传入 Tab 的唯一标识符
    - 在 `init`​ 函数中初始化内部 dom
 
-2. 使用 `openTab`​ 打开 tab；对于 plugin 创建的自定义 tab 而言，id 为 `<Plugin 名称> + <type名称>`​
+2. 使用 `openTab`​ 打开 tab；对于 plugin 创建的自定义 tab 而言，id 为 `<Plugin 名称> + <type名称>`
 
 ```ts
 import {
@@ -512,7 +514,6 @@ import {
 } from "siyuan";
 import "@/index.scss";
 import { createElement } from "./func";
-
 
 export default class PluginTestTemplate extends Plugin {
 
@@ -678,16 +679,16 @@ export default class PluginSample extends Plugin {
 
 #### UI
 
-​![image](/frostime/image-20240815194618-9qc8lbb.png)​
+![image](/frostime/image-20240815194618-9qc8lbb.png)
 
-​![image](/frostime/image-20240815194704-kppabzx.png)​
+![image](/frostime/image-20240815194704-kppabzx.png)
 
 在思源插件中创建用户交互的设置面板一般有两种方案，三种方法
 
 1. 实现 setting 对象
 
-   1. 使用思源内置的 `plugin.setting`​
-   2. 使用插件模板提供的 `SettingUtils`​
+   1. 使用思源内置的 `plugin.setting`
+   2. 使用插件模板提供的 `SettingUtils`
 
 2. 实现 openSetting 方法
 
@@ -778,7 +779,7 @@ export default class PluginSample extends Plugin {
 
 当点击插件的「设置」按钮的时候，`plugin.openSetting`​ 方法会被自动调用。
 
-​![image](/frostime/image-20240815195839-n430ijr.png)​
+![image](/frostime/image-20240815195839-n430ijr.png)
 
 ```ts
 import SettingExample from "@/setting-example.svelte";
@@ -802,7 +803,7 @@ openSetting(): void {
 
 如果你使用了[plugin-sample-vite-svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte)插件模板，那么该模板提供了可供参考的组件案例 [src/setting-example.svelte](https://github.com/siyuan-note/plugin-sample-vite-svelte/blob/main/src/setting-example.svelte)。
 
-​![image](/frostime/image-20240815200507-fxu576j.png)​
+![image](/frostime/image-20240815200507-fxu576j.png)
 
 ‍
 
@@ -845,7 +846,7 @@ v3.1.8 版本之后，如果插件同时在多端的思源实例中运行；当�
 
 ### 注册 Dock 侧边栏
 
-​![image](/frostime/image-20240815201644-tlatb7s.png)​
+![image](/frostime/image-20240815201644-tlatb7s.png)
 
 使用 plugin 的 `addDock`​ API：
 
@@ -930,7 +931,7 @@ export interface ICommandOption {
 
 当然，插件注册的 hotkey 是默认的 hotkey，而用户是可以在设置面板里面进行覆盖的。
 
-​![image](/frostime/image-20240815225754-zkhd49o.png)​
+![image](/frostime/image-20240815225754-zkhd49o.png)
 
 而如果你想要覆盖思源内置的快捷键，可以把快捷键配置的 `custom`​ 字段置空；等到恢复的时候，在从 `default`​ 中填写回来。
 
@@ -946,11 +947,11 @@ bookmarkKeymap.custom = '';
 bookmarkKeymap.custom = bookmarkKeymap.default;
 ```
 
-​![image](/frostime/image-20240815230000-kp6d11u.png)​
+![image](/frostime/image-20240815230000-kp6d11u.png)
 
 ### 注册 `/`​ 命令
 
-​![image](/frostime/image-20240815213424-c6nqqm4.png)​
+![image](/frostime/image-20240815213424-c6nqqm4.png)
 
 ​`/`​ 命令，又称 slash 命令，就是思源中通过 `/`​ 触发，并快速在编辑器中插入某些元素的命令。
 
@@ -993,7 +994,6 @@ let Templates = {
     }
 };
 
-
 this.protyleSlash = Object.values(Templates).map((template) => {
     return {
         filter: template.filter,
@@ -1014,7 +1014,7 @@ this.protyleSlash = Object.values(Templates).map((template) => {
 
 效果如下：
 
-​![image](/frostime/image-20240815214009-h8jy59d.png)​
+![image](/frostime/image-20240815214009-h8jy59d.png)
 
 ‍
 
@@ -1036,7 +1036,7 @@ protyle.insert(Lute.Carte);
 
 访问 `window.siyuan`​ 变量；在内部中存储了大量思源内部的设置。
 
-​![image](/frostime/image-20240815192530-ziu4ke1.png)​
+![image](/frostime/image-20240815192530-ziu4ke1.png)
 
 ⚠️ **请以只读的方式来使用这个变量，不要随意更改内部的值！否则可能会造成意外的错误！**
 
@@ -1091,5 +1091,3 @@ const electron = window.require('electron');
 插件或者外部扩展如果有直接读取或者写入 data 下文件的需求，请通过调用内核 API 来实现，**不要自行调用** **​`fs`​**​ **或者其他 electron、nodejs API**，否则可能会导致数据同步时分块丢失，造成云端数据损坏。
 
 相关 API 见 `/api/file/*`​（例如 `/api/file/getFile`​ 等）。
-
-‍
